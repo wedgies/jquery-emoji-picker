@@ -6,11 +6,24 @@
   <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="jquery.emojipicker.js"></script>
   
+  <script type="text/html" id="emojiPickerTemplate">
+    <div id="emojiPicker">
+      <nav>
+        <a href="#" class="">a</a>
+        <a href="#" class="">a</a>
+        <a href="#" class="">a</a>
+        <a href="#" class="">a</a>
+        <a href="#" class="">a</a>
+        <a href="#" class="">a</a>
+      </nav>
+    </div>
+  </script>
+
   <script type="text/javascript">
     $(document).ready(function(e) {
       $('.question').emojiPicker({
-        height: '50px',
-        width: '50px'
+        height: '200px',
+        width: '350px'
       });
     });
   </script>
@@ -18,6 +31,7 @@
   <style type="text/css">
     form {margin:200px 0 0 0; text-align:center;}
     input {width:400px; height:30px; padding:5px 10px; font-size:28px;}
+    #emojiPickerWrap {margin:10px 0 0 0;}
   </style>
 
 </head>
@@ -27,5 +41,9 @@
     <input type="text" class="question" placeholder="My favorite emoji is...">
   </form>
 
+
+
 </body>
+
+
 </html>
