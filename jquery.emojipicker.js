@@ -31,7 +31,6 @@ TODO: Disable for mobile devices
     $('.emojiPickerIconWrap').append('<div class="emojiPickerIcon"></div><div id="emojiPickerWrap"></div>');
     
     $('#emojiPickerWrap')
-      .css('border','1px solid blue')
       .width(settings.width)
       .height(settings.height);
 
@@ -41,8 +40,9 @@ TODO: Disable for mobile devices
       .addClass(settings.iconColor)
       .css('backgroundColor', settings.iconBackgroundColor);
     
+    showPicker();
     $('.emojiPickerIcon').click(function(e) {
-      showPicker();
+      //showPicker();
     });
   }
 
