@@ -1,0 +1,5 @@
+.emojiPickerIconWrap {display:inline-block; position:relative;}
+.emojiPickerIcon {position:absolute; top:0; right:0; cursor:pointer; }
+
+.white {background:url('images/icon-emoji-picker-white.svg') center center no-repeat; background-size:60%;}
+.black {background:url('images/icon-emoji-picker-black.svg') center center no-repeat; background-size:60%;}

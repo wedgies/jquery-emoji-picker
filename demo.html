@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <title>jQuery Emoji Picker Demo</title>
+  <link rel="stylesheet" type="text/css" href="emojipicker.css">
+  <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="jquery.emojipicker.js"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $('.question').emojiPicker({
+        height: '50px',
+        width: '50px'
+      });
+    });
+  </script>
+
+  <style type="text/css">
+    form {margin:200px 0 0 0; text-align:center;}
+    input {width:400px; height:30px; padding:5px 10px; font-size:28px;}
+  </style>
+
+</head>
+<body>
+
+  <form>
+    <input type="text" class="question" placeholder="My favorite emoji is...">
+  </form>
+
+</body>
+</html>
