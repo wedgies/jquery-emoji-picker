@@ -89,7 +89,7 @@ Position of picker
     // Click event for emoji
     $('.emojiPicker section div').click(function(e) {
       var emojiShortcode = $(e.target).attr('class').split('emoji-')[1];
-      var emojiUnicode = '\\u' + findEmoji(emojiShortcode).unicode ;
+      var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
       
       
       insertAtCaret(inputField, emojiUnicode);
@@ -130,8 +130,16 @@ Position of picker
     }
   }
 
-  function encode_utf8( s ){
-    return unescape( encodeURIComponent( s ) );
+  function toUnicode(code) {
+    var codes = code.split('-').map(function(value, index) {
+      return parseInt(value, 16);
+    });
+    return String.fromCodePoint.apply(null, codes);
+  }
+
+  /*! http://mths.be/fromcodepoint v0.1.0 by @mathias */
+  if (!String.fromCodePoint) {
+    
   }
 
 })(jQuery);
