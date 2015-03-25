@@ -2,37 +2,58 @@
 <html>
 <head>
   <title>jQuery Emoji Picker Demo</title>
-  <link rel="stylesheet" type="text/css" href="emojipicker.css">
-  <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
-  <script type="text/javascript" src="jquery.emojipicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/emojipicker.css">
+  <link rel="stylesheet" type="text/css" href="css/emojipicker-emojis.css">
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.emojipicker.js"></script>
   
   <script type="text/html" id="emojiPickerTemplate">
-    <div id="emojiPicker">
+    <div class="emojiPicker">
       <nav>
-        <a href="#" class="active"><img src="images/16x16/1f33b.png"></a>
-        <a href="#" class=""><img src="images/16x16/1f33b.png"></a>
-        <a href="#" class=""><img src="images/16x16/1f33b.png"></a>
-        <a href="#" class=""><img src="images/16x16/1f33b.png"></a>
-        <a href="#" class=""><img src="images/16x16/1f33b.png"></a>
-        <a href="#" class=""><img src="images/16x16/1f33b.png"></a>
-        <a href="#" class=""><img src="images/16x16/1f33b.png"></a>
+        <div class="tab active" data-tab="tab1"><div class="emoji emoji-grinning"></div></div>
+        <div class="tab" data-tab="tab2"><div class="emoji emoji-whale"></div></div>
+        <div class="tab" data-tab="tab3"><div class="emoji emoji-hamburger"></div></div>
+        <div class="tab" data-tab="tab4"><div class="emoji emoji-sunny"></div></div>
+        <div class="tab" data-tab="tab5"><div class="emoji emoji-kiss"></div></div>
+        <div class="tab" data-tab="tab6"><div class="emoji emoji-rocket"></div></div>
+        <div class="tab" data-tab="tab7"><div class="emoji emoji-rocket"></div></div>
       </nav>
-      <section>
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
-        <img src="images/16x16/1f33b.png">
+      <section class="tab1">
+        <div class="emoji emoji-broken_heart"></div>
+        <div class="emoji emoji-broken_heart"></div>
+        <div class="emoji emoji-broken_heart"></div>
+        <div class="emoji emoji-broken_heart"></div>
+        <div class="emoji emoji-broken_heart"></div>
+        <div class="emoji emoji-broken_heart"></div>
+        <div class="emoji emoji-broken_heart"></div>
+        <div class="emoji emoji-broken_heart"></div>
+        <div class="emoji emoji-broken_heart"></div>
+        <div class="emoji emoji-broken_heart"></div>
+      </section>
+      <section class="tab2 hidden">
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+        <div class="emoji emoji-sunflower"></div>
+      </section>
+      <section class="tab3 hidden">
+
       </section>
     </div>
   </script>
@@ -55,12 +76,15 @@
 
 </head>
 <body>
-
+<!-- &#x1F335; -->
   <form>
     <input type="text" class="question" placeholder="My favorite emoji is...">
   </form>
 
-
+<!-- <div contentEditable="true">Type here. You can insert images too
+  <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQCze-mfukcuvzKk7Ilj2zQ0CS6PbOkq7ZhRInnNd1Yz3TQzU4e&t=1" />
+</div>
+ -->
 
 </body>
 
