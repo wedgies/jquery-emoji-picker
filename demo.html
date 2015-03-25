@@ -94,7 +94,8 @@
     $(document).ready(function(e) {
       $('.question').emojiPicker({
         height: '200px',
-        width: '325px'
+        width: '325px',
+        
       });
     });
   </script>
@@ -102,23 +103,16 @@
   <style type="text/css">
     body {background:#888;}
     form {margin:200px 0 0 0; text-align:center;}
-    input {width:400px; height:30px; padding:5px 10px; font-size:28px;}
+    input {width:400px; height:30px; padding:5px 10px; font-family:"Helvetica Neue", "Helvetica", "Arial", sans-serif; font-size:24px; font-weight:300; outline:none; border:none;}
     #emojiPickerWrap {margin:10px 0 0 0;}
   </style>
 
 </head>
 <body>
-&#x1F335;
+  <!-- &#x1F335; -->
   <form>
     <input type="text" class="question" placeholder="My favorite emoji is...">
   </form>
 
-<!-- <div contentEditable="true">Type here. You can insert images too
-  <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQCze-mfukcuvzKk7Ilj2zQ0CS6PbOkq7ZhRInnNd1Yz3TQzU4e&t=1" />
-</div>
- -->
-
 </body>
-
-
 </html>

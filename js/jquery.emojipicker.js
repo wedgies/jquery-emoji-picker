@@ -1,11 +1,8 @@
 /*
-TODO: 
-
+TODO:
 Min/max height requirements for picker
 Disable for mobile devices
-Cache picker
 Position of picker
-
 */
 
 (function($) {
@@ -19,7 +16,8 @@ Position of picker
     settings = $.extend({
       width: '200',
       height: '350',
-      position: 'top',
+      position: 'bottom',
+      fadeTime: 100,
       iconColor: 'black',
       iconBackgroundColor: '#eee'
     }, options );
@@ -47,14 +45,15 @@ Position of picker
       .width(iconHeight)
       .addClass(settings.iconColor)
       .css('backgroundColor', settings.iconBackgroundColor);
-    
-    showPicker(inputField);
+
+    setupPicker(inputField)
+
     $('.emojiPickerIcon').click(function(e) {
-      //showPicker();
+      $('.emojiPicker').toggle(settings.fadeTime, 'linear');
     });
   }
 
-  function showPicker(inputField) {
+  function setupPicker(inputField) {
     // Get and populate Emoji table
     $.getJSON("emojis.json", function(json) {
       emojis = json;
@@ -66,6 +65,25 @@ Position of picker
 
     // Picker height
     $('.emojiPicker section').height(parseInt(settings.height) - 40);// 40 is height of the tabs
+
+    // Picker position
+    switch(settings.position) {
+      case 'top':
+        var top = parseInt(settings.height) + 20;
+        $('#emojiPickerWrap').css({'top': -top + 'px', 'right':'0'});
+        break;
+      case 'bottom':
+        $('#emojiPickerWrap').css({'right':'0'});
+        break;
+      case 'left':
+        var left = $('.emojiPickerIcon').width() + 10;
+        $('#emojiPickerWrap').css({'top':'-10px', 'right': left + 'px'});
+        break;
+      case 'right':
+        var right = parseInt(settings.width) + $('.emojiPickerIcon').width() - 30;
+        $('#emojiPickerWrap').css({'top':'-10px', 'right': -right + 'px'});
+        break;
+    }
 
     // Click event for active tab
     $('.emojiPicker nav .tab').click(function (e) {
@@ -90,9 +108,16 @@ Position of picker
     $('.emojiPicker section div').click(function(e) {
       var emojiShortcode = $(e.target).attr('class').split('emoji-')[1];
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
-      
-      
+
       insertAtCaret(inputField, emojiUnicode);
+    });
+
+    // Show or hide picker if clicked off
+    $('body').click(function(e) {
+      $('.emojiPicker').hide();
+    });
+    $('.emojiPicker, .emojiPickerIcon').click(function(e) {
+      e.stopPropagation();
     });
 
   }
@@ -137,9 +162,18 @@ Position of picker
     return String.fromCodePoint.apply(null, codes);
   }
 
-  /*! http://mths.be/fromcodepoint v0.1.0 by @mathias */
   if (!String.fromCodePoint) {
-    
+    // ES6 Unicode Shims 0.1 , © 2012 Steven Levithan http://slevithan.com/ , MIT License
+    String.fromCodePoint = function fromCodePoint () {
+        var chars = [], point, offset, units, i;
+        for (i = 0; i < arguments.length; ++i) {
+            point = arguments[i];
+            offset = point - 0x10000;
+            units = point > 0xFFFF ? [0xD800 + (offset >> 10), 0xDC00 + (offset & 0x3FF)] : [point];
+            chars.push(String.fromCharCode.apply(null, units));
+        }
+        return chars.join("");
+    }
   }
 
 })(jQuery);
