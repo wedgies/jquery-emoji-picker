@@ -22,6 +22,10 @@ Position of picker
       iconBackgroundColor: '#eee'
     }, options );
 
+    // Acceptable width range:  [200-600]
+    // Acceptable height range: [75-250]
+    // if(options.height >
+
     setupEmojiPickerIcon(self);
   };
 

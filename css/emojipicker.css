@@ -8,6 +8,7 @@
 #emojiPickerWrap {position:absolute;}
 .emojiPicker {display:none; position:relative; outline:none; border:none; box-shadow:0 0 7px #555; border-top-left-radius:4px; border-top-right-radius:4px;}
 .emojiPicker div.emoji {width:1.3em; height:1.3em; position:relative; display:inline-block;}
+.emojiPicker span.emoji {width:1.3em; height:1.3em; display:inline-block; position:relative; overflow:hidden; text-indent:-9999px; vertical-align:middle;}
 
 .emojiPicker nav {position:relative; z-index:0; background-color:#f2f2f2; border-top-left-radius:4px; border-top-right-radius:4px;}
 .emojiPicker nav div.tab {display:inline-block; margin:2% 1% 0 1%; padding:2% 2% 1% 2%; border-top-left-radius:4px; border-top-right-radius:4px; cursor:pointer;}
@@ -16,3 +17,6 @@
 .emojiPicker section {overflow:scroll; position:relative; z-index:10; background:#fff;}
 .emojiPicker section div {width:40px; float:left; margin:3%;}
 .emojiPicker section div:hover {cursor:pointer;}
+
+
+
