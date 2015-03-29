@@ -8,6 +8,10 @@ Position of picker
 (function($) {
   var emojis = {};
   var settings = {};
+  var MIN_WIDTH = 200,
+    MAX_WIDTH = 600,
+    MIN_HEIGHT = 75,
+    MAX_HEIGHT = 350;
 
   $.fn.emojiPicker = function(options) {
     var self = this;
@@ -21,10 +25,20 @@ Position of picker
       iconColor: 'black',
       iconBackgroundColor: '#eee'
     }, options );
+    settings.width = parseInt(settings.width);
+    settings.height = parseInt(settings.height);
 
-    // Acceptable width range:  [200-600]
-    // Acceptable height range: [75-250]
-    // if(options.height >
+    // Check for valid width/height
+    if(settings.width >= MAX_WIDTH) {
+      settings.width = MAX_WIDTH;
+    } else if (settings.width < MIN_WIDTH) {
+      settings.width = MIN_WIDTH;
+    }
+    if (settings.height >= MAX_HEIGHT) {
+      settings.height = MAX_HEIGHT;
+    } else if (settings.height < MIN_HEIGHT) {
+      settings.height = MIN_HEIGHT;
+    }
 
     setupEmojiPickerIcon(self);
   };
@@ -88,6 +102,21 @@ Position of picker
         $('#emojiPickerWrap').css({'top':'-10px', 'right': -right + 'px'});
         break;
     }
+
+    // Emoji size depending on width/height
+    console.log(settings.width, MAX_WIDTH);
+    if(settings.width >= MAX_WIDTH) {
+      $('.emoji').css({'width':'1em', 'height':'1em'});
+    } else if (settings.width < MIN_WIDTH) {
+      console.log('hi');
+      $('.emoji').css({'width':'1em', 'height':'1em'});
+    }
+    if (settings.height >= MAX_HEIGHT) {
+      
+    } else if (settings.height < MIN_HEIGHT) {
+      
+    }
+    
 
     // Click event for active tab
     $('.emojiPicker nav .tab').click(function (e) {
