@@ -1,5 +1,15 @@
 # jQuery Emoji Picker #
 
+## Description ##
+
+The top 3 things your users love:
+
+1. Animated GIFs
+2. Emojis
+3. 🍩's
+
+This JQuery Plugin allows you to add support for both Emojis and 🍩 to any text input on your web app.  With this plugin, your desktop users can enjoy the same great Emoji support your mobile users already have. All while eating a 🍩.
+
 ## Installation ##
 
 Make sure that jQuery is included in your `<head></head>` tag:
