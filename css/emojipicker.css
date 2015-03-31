@@ -3,6 +3,9 @@
 
 .white {background:url('/images/icon-emoji-picker-white.svg') center center no-repeat; background-size:60%;}
 .black {background:url('/images/icon-emoji-picker-black.svg') center center no-repeat; background-size:60%;}
+.yellow {background:url('/images/icon-emoji-picker-yellow.svg') center center no-repeat; background-size:60%;}
+.grey {background:url('/images/icon-emoji-picker-grey.svg') center center no-repeat; background-size:60%;}
+.gray {background:url('/images/icon-emoji-picker-gray.svg') center center no-repeat; background-size:60%;}
 .hidden {display:none;}
 
 #emojiPickerWrap {position:absolute;}
