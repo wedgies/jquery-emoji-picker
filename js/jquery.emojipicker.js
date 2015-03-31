@@ -1,17 +1,6 @@
-/*
-TODO:
-Min/max height requirements for picker
-Disable for mobile devices
-Position of picker
-*/
-
 (function($) {
   var emojis = {};
   var settings = {};
-  var MIN_WIDTH = 200,
-    MAX_WIDTH = 600,
-    MIN_HEIGHT = 75,
-    MAX_HEIGHT = 350;
 
   $.fn.emojiPicker = function(options) {
     var self = this;
@@ -23,29 +12,22 @@ Position of picker
       position: 'bottom',
       fadeTime: 100,
       iconColor: 'black',
-      iconBackgroundColor: '#eee'
+      iconBackgroundColor: '#eee',
+      iconSet: 'apple'
     }, options );
-    settings.width = parseInt(settings.width);
-    settings.height = parseInt(settings.height);
 
-    // Check for valid width/height
-    if(settings.width >= MAX_WIDTH) {
-      settings.width = MAX_WIDTH;
-    } else if (settings.width < MIN_WIDTH) {
-      settings.width = MIN_WIDTH;
-    }
-    if (settings.height >= MAX_HEIGHT) {
-      settings.height = MAX_HEIGHT;
-    } else if (settings.height < MIN_HEIGHT) {
-      settings.height = MIN_HEIGHT;
+    // Do not enable if on mobile device (emojis already present)
+    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      setupEmojiPickerIcon(self);
     }
 
-    setupEmojiPickerIcon(self);
   };
 
   function setupEmojiPickerIcon(inputField) {
     var iconHeight = $(inputField).outerHeight();
     var objectWidth = $(inputField).width();
+
+    // Check for input vs textarea
 
     $(inputField)
       .wrap("<div class='emojiPickerIconWrap'></div>")
@@ -72,86 +54,82 @@ Position of picker
   }
 
   function setupPicker(inputField) {
-    // Get and populate Emoji table
-    $.getJSON("emojis.json", function(json) {
+    // Get Emoji table
+    var iconSet = settings.iconSet;
+    $.getJSON("js/wemoji-" + iconSet + ".json", function(json) {
       emojis = json;
-    });
 
-    // Show template
-    var results = document.getElementById("emojiPickerWrap");
-    results.innerHTML = tmpl("emojiPickerTemplate", {});
+      // Show template
+      var results = document.getElementById("emojiPickerWrap");
+      results.innerHTML = tmpl("emojiPickerTemplate", {});
 
-    // Picker height
-    $('.emojiPicker section').height(parseInt(settings.height) - 40);// 40 is height of the tabs
+      // Picker height
+      $('.emojiPicker section').height(parseInt(settings.height) - 40); // 40 is height of the tabs
 
-    // Picker position
-    switch(settings.position) {
-      case 'top':
-        var top = parseInt(settings.height) + 20;
-        $('#emojiPickerWrap').css({'top': -top + 'px', 'right':'0'});
-        break;
-      case 'bottom':
-        $('#emojiPickerWrap').css({'right':'0'});
-        break;
-      case 'left':
-        var left = $('.emojiPickerIcon').width() + 10;
-        $('#emojiPickerWrap').css({'top':'-10px', 'right': left + 'px'});
-        break;
-      case 'right':
-        var right = parseInt(settings.width) + $('.emojiPickerIcon').width() - 30;
-        $('#emojiPickerWrap').css({'top':'-10px', 'right': -right + 'px'});
-        break;
-    }
-
-    // Emoji size depending on width/height
-    console.log(settings.width, MAX_WIDTH);
-    if(settings.width >= MAX_WIDTH) {
-      $('.emoji').css({'width':'1em', 'height':'1em'});
-    } else if (settings.width < MIN_WIDTH) {
-      console.log('hi');
-      $('.emoji').css({'width':'1em', 'height':'1em'});
-    }
-    if (settings.height >= MAX_HEIGHT) {
-      
-    } else if (settings.height < MIN_HEIGHT) {
-      
-    }
-    
-
-    // Click event for active tab
-    $('.emojiPicker nav .tab').click(function (e) {
-      var section = '';
-
-      // Update tab
-      $('.emojiPicker nav .tab').removeClass('active');
-      if ($(e.target).parent().hasClass('tab')) {
-        section = $(e.target).parent().attr('data-tab');
-        $(e.target).parent('.tab').addClass('active');
-      } else {
-        section = $(e.target).attr('data-tab');
-        $(e.target).addClass('active');
+      // Picker position
+      switch(settings.position) {
+        case 'top':
+          var top = parseInt(settings.height) + 20;
+          $('#emojiPickerWrap').css({'top': -top + 'px', 'right':'0'});
+          break;
+        case 'bottom':
+          $('#emojiPickerWrap').css({'right':'0'});
+          break;
+        case 'left':
+          var left = $('.emojiPickerIcon').width() + 10;
+          $('#emojiPickerWrap').css({'top':'-10px', 'right': left + 'px'});
+          break;
+        case 'right':
+          var right = parseInt(settings.width) + $('.emojiPickerIcon').width() - 30;
+          $('#emojiPickerWrap').css({'top':'-10px', 'right': -right + 'px'});
+          break;
       }
 
-      // Update section
-      $('.emojiPicker section').hide();
-      $('.emojiPicker section.' + section).show();
+      // Populate Emoji table
+      $.each(emojis, function(i, emoji) {
+        var tab = emoji.category;
+        $('.emojiPicker .' + tab).append('<div class="emoji emoji-' + emoji.shortcode + '"></div>');
+        //
+      });
+
+      // Click event for active tab
+      $('.emojiPicker nav .tab').click(function (e) {
+        var section = '';
+
+        // Update tab
+        $('.emojiPicker nav .tab').removeClass('active');
+        if ($(e.target).parent().hasClass('tab')) {
+          section = $(e.target).parent().attr('data-tab');
+          $(e.target).parent('.tab').addClass('active');
+        } else {
+          section = $(e.target).attr('data-tab');
+          $(e.target).addClass('active');
+        }
+
+        // Update section
+        $('.emojiPicker section').hide();
+        $('.emojiPicker section.' + section).show();
+      });
+
+      // Click event for emoji
+      $('.emojiPicker section div').click(function(e) {
+        var emojiShortcode = $(e.target).attr('class').split('emoji-')[1];
+        var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
+
+        insertAtCaret(inputField, emojiUnicode);
+      });
+
+      // Show or hide picker if clicked off
+      $('body').click(function(e) {
+        $('.emojiPicker').hide();
+      });
+      $('.emojiPicker, .emojiPickerIcon').click(function(e) {
+        e.stopPropagation();
+      });
+
     });
 
-    // Click event for emoji
-    $('.emojiPicker section div').click(function(e) {
-      var emojiShortcode = $(e.target).attr('class').split('emoji-')[1];
-      var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
 
-      insertAtCaret(inputField, emojiUnicode);
-    });
-
-    // Show or hide picker if clicked off
-    $('body').click(function(e) {
-      $('.emojiPicker').hide();
-    });
-    $('.emojiPicker, .emojiPickerIcon').click(function(e) {
-      e.stopPropagation();
-    });
 
   }
 

@@ -19,20 +19,20 @@ Make sure that jQuery is included in your `<head></head>` tag:
 Add the following to your `<head></head>` tag:
 
 	<link rel="stylesheet" type="text/css" href="css/emojipicker.css">
-	<link rel="stylesheet" type="text/css" href="css/wemoji-a.css">
+	<link rel="stylesheet" type="text/css" href="css/wemoji-apple.css">
 	<script type="text/javascript" src="js/jquery.emojipicker.js"></script>
 
 The jQuery Emoji Picker has 3 icon sets to choose from - Apple, Twitter, and Google icons. The Apple icons are used by default. To instead use Twitter or Google icons, replace:
 
-	<link rel="stylesheet" type="text/css" href="css/wemoji-a.css">
+	<link rel="stylesheet" type="text/css" href="css/wemoji-apple.css">
 
 with either Google:
 
-	<link rel="stylesheet" type="text/css" href="css/wemoji-g.css">
+	<link rel="stylesheet" type="text/css" href="css/wemoji-google.css">
 
 or Twitter:
 
-	<link rel="stylesheet" type="text/css" href="css/wemoji-tw.css">
+	<link rel="stylesheet" type="text/css" href="css/wemoji-twitter.css">
 
 Initialize the jQuery Emoji Picker by calling `emojiPicker` on an input element with optional parameters, described below:
 
