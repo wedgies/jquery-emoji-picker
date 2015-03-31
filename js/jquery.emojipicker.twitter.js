@@ -1,18 +1,5 @@
-[
-  {
-    "name": "copyright",
-    "unicode": "00A9",
-    "shortcode": "copyright",
-    "description": "COPYRIGHT SIGN",
-    "category": "folderol"
-  },
-  {
-    "name": "registered",
-    "unicode": "00AE",
-    "shortcode": "registered",
-    "description": "REGISTERED SIGN",
-    "category": "folderol"
-  },
+$(function() {
+$.fn.emojiPicker.emojis = [
   {
     "name": "bangbang",
     "unicode": "203C",
@@ -5844,73 +5831,10 @@
     "category": "folderol"
   },
   {
-    "name": "flag-ae",
-    "unicode": "1F1E6-1F1EA",
-    "shortcode": "flag-ae",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS AE",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-at",
-    "unicode": "1F1E6-1F1F9",
-    "shortcode": "flag-at",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS AT",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-au",
-    "unicode": "1F1E6-1F1FA",
-    "shortcode": "flag-au",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS AU",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-be",
-    "unicode": "1F1E7-1F1EA",
-    "shortcode": "flag-be",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS BE",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-br",
-    "unicode": "1F1E7-1F1F7",
-    "shortcode": "flag-br",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS BR",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-ca",
-    "unicode": "1F1E8-1F1E6",
-    "shortcode": "flag-ca",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS CA",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-ch",
-    "unicode": "1F1E8-1F1ED",
-    "shortcode": "flag-ch",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS CH",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-cl",
-    "unicode": "1F1E8-1F1F1",
-    "shortcode": "flag-cl",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS CL",
-    "category": "folderol"
-  },
-  {
     "name": "flag-cn",
     "unicode": "1F1E8-1F1F3",
     "shortcode": "flag-cn",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS CN",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-co",
-    "unicode": "1F1E8-1F1F4",
-    "shortcode": "flag-co",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS CO",
     "category": "folderol"
   },
   {
@@ -5921,24 +5845,10 @@
     "category": "folderol"
   },
   {
-    "name": "flag-dk",
-    "unicode": "1F1E9-1F1F0",
-    "shortcode": "flag-dk",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS DK",
-    "category": "folderol"
-  },
-  {
     "name": "flag-es",
     "unicode": "1F1EA-1F1F8",
     "shortcode": "flag-es",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS ES",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-fi",
-    "unicode": "1F1EB-1F1EE",
-    "shortcode": "flag-fi",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS FI",
     "category": "folderol"
   },
   {
@@ -5953,41 +5863,6 @@
     "unicode": "1F1EC-1F1E7",
     "shortcode": "flag-gb",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS GB",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-hk",
-    "unicode": "1F1ED-1F1F0",
-    "shortcode": "flag-hk",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS HK",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-id",
-    "unicode": "1F1EE-1F1E9",
-    "shortcode": "flag-id",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS ID",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-ie",
-    "unicode": "1F1EE-1F1EA",
-    "shortcode": "flag-ie",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS IE",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-il",
-    "unicode": "1F1EE-1F1F1",
-    "shortcode": "flag-il",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS IL",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-in",
-    "unicode": "1F1EE-1F1F3",
-    "shortcode": "flag-in",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS IN",
     "category": "folderol"
   },
   {
@@ -6012,108 +5887,10 @@
     "category": "folderol"
   },
   {
-    "name": "flag-mo",
-    "unicode": "1F1F2-1F1F4",
-    "shortcode": "flag-mo",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS MO",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-mx",
-    "unicode": "1F1F2-1F1FD",
-    "shortcode": "flag-mx",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS MX",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-my",
-    "unicode": "1F1F2-1F1FE",
-    "shortcode": "flag-my",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS MY",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-nl",
-    "unicode": "1F1F3-1F1F1",
-    "shortcode": "flag-nl",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS NL",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-no",
-    "unicode": "1F1F3-1F1F4",
-    "shortcode": "flag-no",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS NO",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-nz",
-    "unicode": "1F1F3-1F1FF",
-    "shortcode": "flag-nz",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS NZ",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-ph",
-    "unicode": "1F1F5-1F1ED",
-    "shortcode": "flag-ph",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS PH",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-pl",
-    "unicode": "1F1F5-1F1F1",
-    "shortcode": "flag-pl",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS PL",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-pr",
-    "unicode": "1F1F5-1F1F7",
-    "shortcode": "flag-pr",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS PR",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-pt",
-    "unicode": "1F1F5-1F1F9",
-    "shortcode": "flag-pt",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS PT",
-    "category": "folderol"
-  },
-  {
     "name": "flag-ru",
     "unicode": "1F1F7-1F1FA",
     "shortcode": "flag-ru",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS RU",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-sa",
-    "unicode": "1F1F8-1F1E6",
-    "shortcode": "flag-sa",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS SA",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-se",
-    "unicode": "1F1F8-1F1EA",
-    "shortcode": "flag-se",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS SE",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-sg",
-    "unicode": "1F1F8-1F1EC",
-    "shortcode": "flag-sg",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS SG",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-tr",
-    "unicode": "1F1F9-1F1F7",
-    "shortcode": "flag-tr",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS TR",
     "category": "folderol"
   },
   {
@@ -6122,19 +5899,6 @@
     "shortcode": "flag-us",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS US",
     "category": "folderol"
-  },
-  {
-    "name": "flag-vn",
-    "unicode": "1F1FB-1F1F3",
-    "shortcode": "flag-vn",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS VN",
-    "category": "folderol"
-  },
-  {
-    "name": "flag-za",
-    "unicode": "1F1FF-1F1E6",
-    "shortcode": "flag-za",
-    "description": "REGIONAL INDICATOR SYMBOL LETTERS ZA",
-    "category": "folderol"
   }
 ]
+});

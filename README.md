@@ -79,7 +79,7 @@ Twitter Emoji Copyright (C) Twitter, Inc. - The original release
 
 ## License ##
 
-The jQuery Emoji Picker is licensed under [INSERT HERE].
+The jQuery Emoji Picker is licensed under ISC.
 
 ## About ##
 
@@ -90,3 +90,5 @@ Wedgies is a digital survey platform that gives media, journalists and brands in
 Wedgies, a darling of Tony Hsieh’s Las Vegas’ Vegas Tech Fund, is backed by an all-star list of investors including Greycroft, Advancit Capital, MESA Ventures, Knight Foundation, kbs+ Ventures, Battle Born Ventures, Twilio, 500 Startups and SV Angel.
 
 Wedgies founding team consists of top talent in developer tools and community management with experience that includes Zappos.com, Overstock.com, and Backcountry.com.
+
+[![Built with Wedgies](https://d3v9r9uda02hel.cloudfront.net/production/1.55.17/img/built-with-wedgies.png)](http://wedgies.com)

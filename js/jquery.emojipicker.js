@@ -1,5 +1,4 @@
 (function($) {
-  var emojis = {};
   var settings = {};
   var MIN_WIDTH = 200,
       MAX_WIDTH = 600,
@@ -53,7 +52,7 @@
       .width(objectWidth - iconHeight - 10);
 
     $('.emojiPickerIconWrap').append('<div class="emojiPickerIcon"></div><div id="emojiPickerWrap"></div>');
-    
+
     $('#emojiPickerWrap')
       .width(settings.width)
       .height(settings.height);
@@ -74,87 +73,84 @@
   function setupPicker(inputField) {
     // Get Emoji table
     var iconSet = settings.iconSet;
-    $.getJSON("js/wemoji-" + iconSet + ".json", function(json) {
-      emojis = json;
 
-      // Show template
-      var results = document.getElementById("emojiPickerWrap");
-      results.innerHTML = tmpl("emojiPickerTemplate", {});
+    // Show template
+    var results = document.getElementById("emojiPickerWrap");
+    results.innerHTML = tmpl("emojiPickerTemplate", {});
 
-      // Picker height
-      $('.emojiPicker section').height(parseInt(settings.height) - 40); // 40 is height of the tabs
+    // Picker height
+    $('.emojiPicker section').height(parseInt(settings.height) - 40); // 40 is height of the tabs
 
-      // Picker position
-      switch(settings.position) {
-        case 'top':
-          var top = parseInt(settings.height) + 20;
-          $('#emojiPickerWrap').css({'top': -top + 'px', 'right':'0'});
-          break;
-        case 'bottom':
-          $('#emojiPickerWrap').css({'right':'0'});
-          break;
-        case 'left':
-          var left = $('.emojiPickerIcon').width() + 10;
-          $('#emojiPickerWrap').css({'top':'-10px', 'right': left + 'px'});
-          break;
-        case 'right':
-          var right = parseInt(settings.width) + $('.emojiPickerIcon').width() - 30;
-          $('#emojiPickerWrap').css({'top':'-10px', 'right': -right + 'px'});
-          break;
+    // Picker position
+    switch(settings.position) {
+      case 'top':
+        var top = parseInt(settings.height) + 20;
+        $('#emojiPickerWrap').css({'top': -top + 'px', 'right':'0'});
+        break;
+      case 'bottom':
+        $('#emojiPickerWrap').css({'right':'0'});
+        break;
+      case 'left':
+        var left = $('.emojiPickerIcon').width() + 10;
+        $('#emojiPickerWrap').css({'top':'-10px', 'right': left + 'px'});
+        break;
+      case 'right':
+        var right = parseInt(settings.width) + $('.emojiPickerIcon').width() - 30;
+        $('#emojiPickerWrap').css({'top':'-10px', 'right': -right + 'px'});
+        break;
+    }
+
+    // Populate Emoji table
+    $.each($.fn.emojiPicker.emojis, function(i, emoji) {
+      var tab = emoji.category;
+      $('.emojiPicker .' + tab).append('<div class="emoji emoji-' + emoji.shortcode + '"></div>');
+      //
+    });
+
+    // Tab size based on width
+    if (settings.width < 240) {
+      $('.emoji').css({'width':'1em', 'height':'1em'});
+    }
+
+    // Click event for active tab
+    $('.emojiPicker nav .tab').click(function (e) {
+      var section = '';
+
+      // Update tab
+      $('.emojiPicker nav .tab').removeClass('active');
+      if ($(e.target).parent().hasClass('tab')) {
+        section = $(e.target).parent().attr('data-tab');
+        $(e.target).parent('.tab').addClass('active');
+      } else {
+        section = $(e.target).attr('data-tab');
+        $(e.target).addClass('active');
       }
 
-      // Populate Emoji table
-      $.each(emojis, function(i, emoji) {
-        var tab = emoji.category;
-        $('.emojiPicker .' + tab).append('<div class="emoji emoji-' + emoji.shortcode + '"></div>');
-        //
-      });
+      // Update section
+      $('.emojiPicker section').hide();
+      $('.emojiPicker section.' + section).show();
+    });
 
-      // Tab size based on width
-      if (settings.width < 240) {
-        $('.emoji').css({'width':'1em', 'height':'1em'});
-      }
+    // Click event for emoji
+    $('.emojiPicker section div').click(function(e) {
+      var emojiShortcode = $(e.target).attr('class').split('emoji-')[1];
+      var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
 
-      // Click event for active tab
-      $('.emojiPicker nav .tab').click(function (e) {
-        var section = '';
+      insertAtCaret(inputField, emojiUnicode);
+    });
 
-        // Update tab
-        $('.emojiPicker nav .tab').removeClass('active');
-        if ($(e.target).parent().hasClass('tab')) {
-          section = $(e.target).parent().attr('data-tab');
-          $(e.target).parent('.tab').addClass('active');
-        } else {
-          section = $(e.target).attr('data-tab');
-          $(e.target).addClass('active');
-        }
-
-        // Update section
-        $('.emojiPicker section').hide();
-        $('.emojiPicker section.' + section).show();
-      });
-
-      // Click event for emoji
-      $('.emojiPicker section div').click(function(e) {
-        var emojiShortcode = $(e.target).attr('class').split('emoji-')[1];
-        var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
-
-        insertAtCaret(inputField, emojiUnicode);
-      });
-
-      // Show or hide picker if clicked off
-      $('body').click(function(e) {
-        $('.emojiPicker').hide();
-      });
-      $('.emojiPicker, .emojiPickerIcon').click(function(e) {
-        e.stopPropagation();
-      });
-
+    // Show or hide picker if clicked off
+    $('body').click(function(e) {
+      $('.emojiPicker').hide();
+    });
+    $('.emojiPicker, .emojiPickerIcon').click(function(e) {
+      e.stopPropagation();
     });
 
   }
 
   function findEmoji(emojiShortcode) {
+    var emojis = $.fn.emojiPicker.emojis;
     for (var i = 0; i < emojis.length; i++) {
       if (emojis[i].shortcode == emojiShortcode) {
         return emojis[i];
@@ -215,7 +211,7 @@
 // John Resig - http://ejohn.org/ - MIT Licensed
 (function(){
   var cache = {};
- 
+
   this.tmpl = function tmpl(str, data){
     //console.log(str);
     // Figure out if we're getting a template, or if we need to
@@ -223,15 +219,15 @@
     var fn = !/\W/.test(str) ?
       cache[str] = cache[str] ||
         tmpl(document.getElementById(str).innerHTML) :
-     
+
       // Generate a reusable function that will serve as a template
       // generator (and which will be cached).
       new Function("obj",
         "var p=[],print=function(){p.push.apply(p,arguments);};" +
-       
+
         // Introduce the data as local variables using with(){}
         "with(obj){p.push('" +
-       
+
         // Convert the template into pure JavaScript
         str
           .replace(/[\r\t\n]/g, " ")
@@ -242,8 +238,8 @@
           .split("%>").join("p.push('")
           .split("\r").join("\\'")
       + "');}return p.join('');");
-   
+
     // Provide some basic currying to the user
     return data ? fn( data ) : fn;
   };
-})();
+})(jQuery);
