@@ -47,7 +47,7 @@ Initialize the jQuery Emoji Picker by calling `emojiPicker` on an input element 
 The width of the picker in pixels. Must be between 200-600px. Defaults to 200px if no width is specified.
 
 ### height (int) ###
-The height of the picker in pixels. Must be between 75-350px. Defaults to 250px if no height is specified.
+The height of the picker in pixels. Must be between 100-350px. Defaults to 250px if no height is specified.
 
 ### position (string) ###
 The position of the picker relative to the icon. Acceptable values are ['top', 'bottom', 'left', 'right']. Defaults to 'top' if no position is specified.

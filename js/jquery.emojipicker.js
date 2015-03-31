@@ -1,6 +1,10 @@
 (function($) {
   var emojis = {};
   var settings = {};
+  var MIN_WIDTH = 200,
+      MAX_WIDTH = 600,
+      MIN_HEIGHT = 100,
+      MAX_HEIGHT = 350;
 
   $.fn.emojiPicker = function(options) {
     var self = this;
@@ -15,6 +19,20 @@
       iconBackgroundColor: '#eee',
       iconSet: 'apple'
     }, options );
+    settings.width = parseInt(settings.width);
+    settings.height = parseInt(settings.height);
+
+    // Check for valid width/height
+    if(settings.width >= MAX_WIDTH) {
+      settings.width = MAX_WIDTH;
+    } else if (settings.width < MIN_WIDTH) {
+      settings.width = MIN_WIDTH;
+    }
+    if (settings.height >= MAX_HEIGHT) {
+      settings.height = MAX_HEIGHT;
+    } else if (settings.height < MIN_HEIGHT) {
+      settings.height = MIN_HEIGHT;
+    }
 
     // Do not enable if on mobile device (emojis already present)
     if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -92,6 +110,11 @@
         //
       });
 
+      // Tab size based on width
+      if (settings.width < 240) {
+        $('.emoji').css({'width':'1em', 'height':'1em'});
+      }
+
       // Click event for active tab
       $('.emojiPicker nav .tab').click(function (e) {
         var section = '';
@@ -128,8 +151,6 @@
       });
 
     });
-
-
 
   }
 
