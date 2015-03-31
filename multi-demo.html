@@ -2,35 +2,16 @@
 <html>
 <head>
   <title>jQuery Emoji Picker Demo</title>
-  <link rel="stylesheet" type="text/css" href="css/emojipicker.css">
-  <link rel="stylesheet" type="text/css" href="css/wemoji-apple.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.twitter.css">
   <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="js/jquery.emojipicker.js"></script>
-  <script type="text/javascript" src="js/jquery.emojipicker.apple.js"></script>
-
-  <script type="text/html" id="emojiPickerTemplate">
-    <div class="emojiPicker">
-      <nav>
-        <div class="tab active" data-tab="emotion"><div class="emoji emoji-grinning"></div></div>
-        <div class="tab" data-tab="travel"><div class="emoji emoji-whale"></div></div>
-        <div class="tab" data-tab="people"><div class="emoji emoji-hamburger"></div></div>
-        <div class="tab" data-tab="thing"><div class="emoji emoji-sunny"></div></div>
-        <div class="tab" data-tab="folderol"><div class="emoji emoji-kiss"></div></div>
-        <div class="tab" data-tab="symbol"><div class="emoji emoji-rocket"></div></div>
-      </nav>
-      <section class="emotion"></section>
-      <section class="travel hidden"></section>
-      <section class="people hidden"></section>
-      <section class="thing hidden"></section>
-      <section class="folderol hidden"></section>
-      <section class="symbol hidden"></section>
-    </div>
-  </script>
+  <script type="text/javascript" src="js/jquery.emojipicker.twitter.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function(e) {
       $('.emojiable-question').emojiPicker({
-        width: '800px',
+        width: '410px',
         height: '200px'
       });
       $('.emojiable-option').emojiPicker({
