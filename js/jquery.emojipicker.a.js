@@ -1,4 +1,5 @@
-[
+$(function() {
+$.fn.emojiPicker.emojis = [
   {
     "name": "copyright",
     "unicode": "00A9",
@@ -5984,3 +5985,4 @@
     "category": "folderol"
   }
 ]
+});

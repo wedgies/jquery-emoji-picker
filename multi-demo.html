@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <title>jQuery Emoji Picker Demo</title>
+  <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.tw.css">
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.emojipicker.js"></script>
+  <script type="text/javascript" src="js/jquery.emojipicker.tw.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+
+      $('.emojiable-question').emojiPicker({
+        width: '300px',
+        height: '200px',
+        button: false
+      });
+
+      $('.emojiable-option').emojiPicker({
+        width: '300px',
+        height: '100px'
+      });
+
+      $('#trigger').click(function(e) {
+        e.preventDefault();
+        $('#question').emojiPicker('toggle');
+      });
+
+    });
+  </script>
+
+  <style type="text/css">
+    body {background:#888;}
+    form {margin:200px 0 0 0; text-align:center;}
+    input {width:400px; height:30px;}
+    input,textarea,button {padding:5px 10px; font-family:"Helvetica Neue", "Helvetica", "Arial", sans-serif; font-size:24px; font-weight:300; outline:none; border:none;}
+    #emojiPickerWrap {margin:10px 0 0 0;}
+    .field { padding: 20px 0; }
+    textarea { width: 400px; height: 200px; }
+  </style>
+
+</head>
+<body>
+  <!-- &#x1F335; -->
+  <form>
+
+    <button id="trigger">Custom emoji trigger</button>
+
+    <div class="field">
+      <textarea id="question" class="emojiable-question" placeholder="Your Question"></textarea>
+    </div>
+
+    <div class="field">
+      <input type="text" id="option1" class="emojiable-option" placeholder="Choice Text">
+    </div>
+
+    <div class="field">
+      <input type="text" id="option2" class="emojiable-option" placeholder="Choice Text">
+    </div>
+
+  </form>
+
+</body>
+</html>
