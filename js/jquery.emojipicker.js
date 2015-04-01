@@ -97,25 +97,6 @@
       this.$picker.find('section')
         .height(parseInt(this.settings.height) - 40); // 40 is height of the tabs
 
-      // Picker position
-      // switch(this.settings.position) {
-      //   case 'top':
-      //     var top = parseInt(this.settings.height) + 20;
-      //     this.$pickerWrap.css({'top': -top + 'px', 'right':'0'});
-      //     break;
-      //   case 'bottom':
-      //     this.$pickerWrap.css({'right':'0'});
-      //     break;
-      //   case 'left':
-      //     var left = this.$icon.width() + 10;
-      //     this.$pickerWrap.css({'top':'-10px', 'right': left + 'px'});
-      //     break;
-      //   case 'right':
-      //     var right = parseInt(this.settings.width) + this.$icon.width() - 30;
-      //     this.$pickerWrap.css({'top':'-10px', 'right': -right + 'px'});
-      //     break;
-      // }
-
       // Tab size based on width
       if (this.settings.width < 240) {
         this.$picker.find('.emoji').css({'width':'1em', 'height':'1em'});
@@ -152,6 +133,26 @@
           top = this.$el.position().top + this.$el.height();
           left = this.$el.position().left;
       }
+
+      // Picker position
+      // switch(this.settings.position) {
+      //   case 'top':
+      //     var top = parseInt(this.settings.height) + 20;
+      //     this.$pickerWrap.css({'top': -top + 'px', 'right':'0'});
+      //     break;
+      //   case 'bottom':
+      //     this.$pickerWrap.css({'right':'0'});
+      //     break;
+      //   case 'left':
+      //     var left = this.$icon.width() + 10;
+      //     this.$pickerWrap.css({'top':'-10px', 'right': left + 'px'});
+      //     break;
+      //   case 'right':
+      //     var right = parseInt(this.settings.width) + this.$icon.width() - 30;
+      //     this.$pickerWrap.css({'top':'-10px', 'right': -right + 'px'});
+      //     break;
+      // }
+
       this.$picker.css({
           top: top + 15,
           left: left
