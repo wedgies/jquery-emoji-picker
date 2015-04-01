@@ -14,6 +14,12 @@ Want to see a [demo](http://wedgies.github.io/jquery-emoji-picker/demo.html)?
 
 ## Installation ##
 
+You can install the assets via bower:
+
+```bash
+$ bower install jquery-emoji-picker
+```
+
 Make sure that jQuery is included in your `<head></head>` tag.  If you are not already including it, you can load it from jQuery's CDN:
 
 ```html
