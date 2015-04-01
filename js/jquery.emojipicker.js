@@ -8,7 +8,7 @@
         fadeTime: 100,
         iconColor: 'black',
         iconBackgroundColor: '#eee',
-        container: 'body'
+        button: true
       };
 
   var MIN_WIDTH = 200,
@@ -70,18 +70,19 @@
         .wrap("<div class='emojiPickerIconWrap'></div>")
         .parent()
 
-      this.$icon = $('<div class="emojiPickerIcon"></div>')
-        .height(iconHeight)
-        .width(iconHeight)
-        .addClass(this.settings.iconColor)
-        .css('backgroundColor', this.settings.iconBackgroundColor);
+      if (this.settings.button) {
+        this.$icon = $('<div class="emojiPickerIcon"></div>')
+          .height(iconHeight)
+          .width(iconHeight)
+          .addClass(this.settings.iconColor)
+          .css('backgroundColor', this.settings.iconBackgroundColor);
+          this.$wrapper.append( this.$icon );
+      }
 
       this.$pickerWrap = $('<div id="emojiPickerWrap"></div>')
         .width(this.settings.width)
         .height(this.settings.height);
-
-      this.$wrapper
-        .append( this.$icon, this.$pickerWrap );
+      this.$wrapper.append( this.$pickerWrap );
     },
 
     createPicker: function() {

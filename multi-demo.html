@@ -13,7 +13,8 @@
 
       $('.emojiable-question').emojiPicker({
         width: '410px',
-        height: '200px'
+        height: '200px',
+        button: false
       });
 
       $('.emojiable-option').emojiPicker({
@@ -23,8 +24,7 @@
 
       $('#trigger').click(function(e) {
         e.preventDefault();
-        console.log('button');
-        $('#option1').emojiPicker('toggle');
+        $('#question').emojiPicker('toggle');
       });
 
     });
@@ -45,6 +45,8 @@
   <!-- &#x1F335; -->
   <form>
 
+    <button id="trigger">Custom emoji trigger</button>
+
     <div class="field">
       <textarea id="question" class="emojiable-question" placeholder="Your Question"></textarea>
     </div>
@@ -56,9 +58,6 @@
     <div class="field">
       <input type="text" id="option2" class="emojiable-option" placeholder="Choice Text">
     </div>
-
-
-    <button id="trigger">Custom emoji trigger</button>
 
   </form>
 
