@@ -158,7 +158,6 @@
      ************/
 
     iconClicked : function(e) {
-      console.log( e );
       this.$wrapper.find('.emojiPicker').toggle(this.settings.fadeTime, 'linear');
     },
 
@@ -190,6 +189,20 @@
   });
 
   $.fn[ pluginName ] = function ( options ) {
+
+    // Calling a function
+    if (typeof options === 'string') {
+      this.each(function() {
+        var plugin = $.data( this, pluginName );
+        switch(options) {
+          case 'toggle':
+            plugin.iconClicked();
+          break;
+        }
+      });
+      return this;
+    }
+
     this.each(function() {
       // Don't attach to the same element twice
       if ( !$.data( this, pluginName ) ) {
