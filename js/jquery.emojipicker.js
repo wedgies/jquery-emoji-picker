@@ -53,6 +53,7 @@
   $.extend(Plugin.prototype, {
 
     init: function() {
+      this.active = false;
       this.addPickerIcon();
       this.createPicker();
       this.listen();
@@ -88,9 +89,9 @@
 
       // Show template
       this.$picker = $( getPickerHTML() )
+        .appendTo( this.$container )
         .width(this.settings.width)
         .height(this.settings.height)
-        .appendTo( this.$container )
         .css('z-index',10000);
 
       // Picker height
@@ -118,9 +119,9 @@
       this.$picker.find('nav .tab')
         .click( $.proxy(this.emojiCategoryClicked, this) );
 
-      // Losing focus
-      // this.$el.blur( $.proxy(this.lostFocus, this) );
+      this.$picker.click( $.proxy(this.pickerClicked, this) );
 
+      $(document.body).click( $.proxy(this.clickOutside, this) );
     },
 
     updatePosition: function() {
@@ -155,25 +156,34 @@
 
       this.$picker.css({
           top: top + 15,
-          left: left
+          left: left + this.$el.outerWidth() - this.settings.width
       });
       return this;
+    },
+
+    hide: function() {
+      this.$picker.hide(this.settings.fadeTime, 'linear', function() {
+        this.active = false;
+      }.bind(this));
+    },
+
+    show: function() {
+      this.$el.focus();
+      this.updatePosition();
+      this.$picker.show(this.settings.fadeTime, 'linear', function() {
+        this.active = true;
+      }.bind(this));
     },
 
     /************
      *  EVENTS  *
      ************/
 
-    lostFocus: function(e) {
-    },
-
     iconClicked : function(e) {
       if ( this.$picker.is(':hidden') ) {
-        this.updatePosition();
-        this.$picker.show(this.settings.fadeTime, 'linear');
-        this.$el.focus();
+        this.show();
       } else {
-        this.$picker.hide(this.settings.fadeTime, 'linear');
+        this.hide();
       }
     },
 
@@ -200,6 +210,16 @@
       // Update section
       this.$picker.find('section').hide();
       this.$picker.find('section.' + section).show();
+    },
+
+    pickerClicked: function(e) {
+      e.stopPropagation();
+    },
+
+    clickOutside: function(e) {
+      if ( e.target != this.element && this.active ) {
+        this.hide();
+      }
     }
 
   });
