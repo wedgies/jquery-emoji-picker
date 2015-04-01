@@ -14,10 +14,10 @@ Want to see a [demo](http://wedgies.github.io/jquery-emoji-picker/demo.html)?
 
 ## Installation ##
 
-Make sure that jQuery is included in your `<head></head>` tag:
+Make sure that jQuery is included in your `<head></head>` tag.  If you are not already including it, you can load it from jQuery's CDN:
 
 ```html
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 ```
 
 Add the following to your `<head></head>` tag:
@@ -25,7 +25,7 @@ Add the following to your `<head></head>` tag:
 ```html
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.css">
 <script type="text/javascript" src="js/jquery.emojipicker.js"></script>
-	
+
 <!-- Emoji Data -->
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.a.css">
 <script type="text/javascript" src="js/jquery.emojipicker.a.js"></script>
@@ -83,7 +83,7 @@ Whether to show the emoji button on the input or not. Defaults to true. If you h
 
 ## Triggering Emoji Picker Manually ##
 
-To trigger the button manually, you can call a jQuery function on the same element you bound it to. 
+To trigger the button manually, you can call a jQuery function on the same element you bound it to.
 
 ```javascript
 $('#question').emojiPicker('toggle');
