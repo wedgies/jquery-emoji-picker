@@ -24,7 +24,7 @@
 
     this.settings = $.extend( {}, defaults, options );
 
-    // Safety first
+    // (type) Safety first
     this.settings.width = parseInt(this.settings.width);
     this.settings.height = parseInt(this.settings.height);
 
@@ -116,13 +116,6 @@
           break;
       }
 
-      // Populate Emoji table
-      $.each($.fn.emojiPicker.emojis, function(i, emoji) {
-        var tab = emoji.category;
-        this.$pickerWrap.find('.emojiPicker .' + tab)
-          .append('<div class="emoji emoji-' + emoji.shortcode + '"></div>');
-      }.bind(this));
-
       // Tab size based on width
       if (this.settings.width < 240) {
         this.$pickerWrap.find('.emoji').css({'width':'1em', 'height':'1em'});
@@ -139,19 +132,9 @@
       this.$wrapper.find('.emojiPicker section div')
         .click( $.proxy(this.emojiClicked, this) );
 
-      // TODO Show or hide picker if clicked off
-      // $('body').click(function(e) {
-      //   $('.emojiPicker').hide();
-      // });
-
-      // TODO $('.emojiPicker, .emojiPickerIcon').click(function(e) {
-      //   e.stopPropagation();
-      // });
-
       // Click event for active tab
       this.$wrapper.find('.emojiPicker nav .tab')
         .click( $.proxy(this.emojiCategoryClicked, this) );
-
     },
 
     /************
@@ -215,24 +198,55 @@
 
   /* ---------------------------------------------------------------------- */
 
-  // TODO : Generate in a nicer way.
   function getPickerHTML() {
-    return '<div class="emojiPicker">' +
-      '<nav>' +
-      '<div class="tab active" data-tab="emotion"><div class="emoji emoji-grinning"></div></div>' +
-      '<div class="tab" data-tab="travel"><div class="emoji emoji-whale"></div></div>' +
-      '<div class="tab" data-tab="people"><div class="emoji emoji-hamburger"></div></div>' +
-      '<div class="tab" data-tab="thing"><div class="emoji emoji-sunny"></div></div>' +
-      '<div class="tab" data-tab="folderol"><div class="emoji emoji-kiss"></div></div>' +
-      '<div class="tab" data-tab="symbol"><div class="emoji emoji-rocket"></div></div>' +
-      '</nav>' +
-      '<section class="emotion"></section>' +
-      '<section class="travel hidden"></section>' +
-      '<section class="people hidden"></section>' +
-      '<section class="thing hidden"></section>' +
-      '<section class="folderol hidden"></section>' +
-      '<section class="symbol hidden"></section>' +
-      '</div>';
+    var nodes = [];
+    var categories = [
+      { name: 'emotion',  symbol: 'grinning' },
+      { name: 'animal',   symbol: 'whale' },
+      { name: 'food',     symbol: 'hamburger' },
+      { name: 'folderol', symbol: 'sunny' },
+      { name: 'thing',    symbol: 'kiss' },
+      { name: 'travel',   symbol: 'rocket' }
+    ];
+    var aliases = {
+      'people':    'emotion',
+      'symbol':    'thing',
+      'undefined': 'thing'
+    }
+    var items = {};
+
+    // Re-Sort Emoji table
+    $.each($.fn.emojiPicker.emojis, function(i, emoji) {
+      var category = aliases[ emoji.category ] || emoji.category;
+      items[ category ] = items[ category ] || [];
+      items[ category ].push( emoji );
+    });
+
+    nodes.push('<div class="emojiPicker">');
+    nodes.push('<nav>');
+    for (var i in categories) {
+      nodes.push('<div class="tab' +
+      ( i == 0 ? ' active' : '' ) +
+      '" data-tab="' +
+      categories[i].name +
+      '"><div class="emoji emoji-' +
+      categories[i].symbol +
+      '"></div></div>');
+    }
+    nodes.push('</nav>');
+    for (var i in categories) {
+      nodes.push('<section class="' +
+        categories[i].name +
+        ( i == 0 ? '' : ' hidden' ) +
+        '">');
+      for (var j in items[ categories[i].name ] ) {
+        var emoji = items[ categories[i].name ][ j ];
+        nodes.push('<div class="emoji emoji-' + emoji.shortcode + '"></div>');
+      }
+      nodes.push('</section>');
+    }
+    nodes.push('</div>');
+    return nodes.join("\n");
   }
 
   function findEmoji(emojiShortcode) {
