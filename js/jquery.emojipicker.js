@@ -215,7 +215,7 @@
     },
 
     clickOutside: function(e) {
-      if ( e.target != this.element && this.active ) {
+      if ( this.active ) {
         this.hide();
       }
     }
