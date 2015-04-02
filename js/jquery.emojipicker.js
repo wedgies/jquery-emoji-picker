@@ -66,10 +66,6 @@
         elementHeight;
       var objectWidth = this.$el.width();
 
-      this.$el
-        .css('paddingRight', iconHeight + 10 + 'px')
-        .width(objectWidth - iconHeight - 10)
-
       this.$wrapper = this.$el
         .wrap("<div class='emojiPickerIconWrap'></div>")
         .parent()
