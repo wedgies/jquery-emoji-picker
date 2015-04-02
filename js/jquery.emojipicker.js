@@ -66,6 +66,8 @@
         elementHeight;
       var objectWidth = this.$el.width();
 
+      this.$el.width(objectWidth)
+
       this.$wrapper = this.$el
         .wrap("<div class='emojiPickerIconWrap'></div>")
         .parent()
