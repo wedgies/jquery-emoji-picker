@@ -18,3 +18,11 @@
 .emojiPicker section {overflow:scroll; position:relative; z-index:10; background:#fff;}
 .emojiPicker section div {width:40px; float:left; margin:3%;}
 .emojiPicker section div:hover {cursor:pointer;}
+
+.emojiArea {
+  display: inline-block;
+  background-color: white;
+  -moz-appearance: textfield-multiline;
+  -webkit-appearance: textarea;
+  text-align: left;
+}
