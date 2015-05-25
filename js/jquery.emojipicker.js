@@ -206,8 +206,8 @@
       }
 
       // Update section
-      this.$picker.find('section').hide();
-      this.$picker.find('section.' + section).show();
+      this.$picker.find('section').addClass('hidden');//.hide();
+      this.$picker.find('section.' + section).removeClass('hidden');//.show();
     },
 
     pickerClicked: function(e) {
