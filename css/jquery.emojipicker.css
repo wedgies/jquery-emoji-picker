@@ -15,6 +15,16 @@
 .emojiPicker nav div.tab {display:inline-block; margin:2% 1% 0 1%; padding:2% 2% 1% 2%; border-top-left-radius:4px; border-top-right-radius:4px; cursor:pointer;}
 .emojiPicker nav div.tab.active {background-color:#fff; box-shadow:0 0 3px #ccc;}
 
-.emojiPicker section {overflow:scroll; position:relative; z-index:10; background:#fff;}
+.emojiPicker section {overflow-y:scroll; position:relative; z-index:10; background:#fff;}
 .emojiPicker section div {width:40px; float:left; margin:3%;}
 .emojiPicker section div:hover {cursor:pointer;}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  background-color:#f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, .5);
+}

@@ -92,14 +92,17 @@
         .height(this.settings.height)
         .css('z-index',10000);
 
-      // Picker height
-      this.$picker.find('section')
-        .height(parseInt(this.settings.height) - 40); // 40 is height of the tabs
-
-      // Tab size based on width
+      // Tab size based on width, picker height
+      var height = 0;
       if (this.settings.width < 240) {
         this.$picker.find('.emoji').css({'width':'1em', 'height':'1em'});
+        height = parseInt(this.settings.height) - 30;
+      } else {
+        height = parseInt(this.settings.height) - 40;
       }
+
+      // Picker height
+      this.$picker.find('section').height(height);
 
     },
 
