@@ -4,7 +4,7 @@
       defaults = {
         width: '200',
         height: '350',
-        position: 'bottom',
+        position: 'right',
         fadeTime: 100,
         iconColor: 'black',
         iconBackgroundColor: '#eee',
@@ -43,6 +43,14 @@
       this.settings.height = MIN_HEIGHT;
     }
 
+    var possiblePositions = [ 'left',
+                              'right'
+                              /*,'top',
+                              'bottom'*/];
+    if($.inArray(this.settings.position,possiblePositions) == -1) {
+      this.settings.position = defaults.position; //current default
+    }
+
     // Do not enable if on mobile device (emojis already present)
     if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       this.init();
@@ -60,19 +68,22 @@
     },
 
     addPickerIcon: function() {
-      var elementHeight = this.$el.outerHeight();
-      var iconHeight = elementHeight > MAX_ICON_HEIGHT ?
-        MAX_ICON_HEIGHT :
-        elementHeight;
-      var objectWidth = this.$el.width();
-
-      this.$el.width(objectWidth)
-
-      this.$wrapper = this.$el
-        .wrap("<div class='emojiPickerIconWrap'></div>")
-        .parent()
-
+      // The wrapper is not needed if they have chosen to not use a button
       if (this.settings.button) {
+        var elementHeight = this.$el.outerHeight();
+        var iconHeight = elementHeight > MAX_ICON_HEIGHT ?
+          MAX_ICON_HEIGHT :
+          elementHeight;
+
+        // This can cause issues if the element is not visible when it is initiated
+        var objectWidth = this.$el.width();
+
+        this.$el.width(objectWidth);
+
+        this.$wrapper = this.$el
+          .wrap("<div class='emojiPickerIconWrap'></div>")
+          .parent();
+
         this.$icon = $('<div class="emojiPickerIcon"></div>')
           .height(iconHeight)
           .width(iconHeight)
@@ -104,10 +115,13 @@
     },
 
     listen: function() {
-
-      // Clicking on the picker icon
-      this.$wrapper.find('.emojiPickerIcon')
-        .click( $.proxy(this.iconClicked, this) );
+      // If the button is being used, wrapper has not been set, 
+      //    and will not need a listener
+      if (this.settings.button){
+        // Clicking on the picker icon
+        this.$wrapper.find('.emojiPickerIcon')
+          .click( $.proxy(this.iconClicked, this) );
+      }
 
       // Click event for emoji
       this.$picker.find('section div')
@@ -120,42 +134,45 @@
       this.$picker.click( $.proxy(this.pickerClicked, this) );
 
       $(document.body).click( $.proxy(this.clickOutside, this) );
+
+      // Resize events forces a reposition, which may or may not actually be required
+      $(window).resize( $.proxy(this.updatePosition, this) );
     },
 
     updatePosition: function() {
-      var top, left;
-      if (this.settings.container === 'body') {
-          top = this.$el.offset().top + this.$el.height();
-          left = this.$el.offset().left;
-      }
-      else {
-          top = this.$el.position().top + this.$el.height();
-          left = this.$el.position().left;
-      }
+  
+      /*  Process:
+          1. Find the nearest positioned element by crawling up the ancestors, record it's offset 
+          2. Find the bottom left or right of the input element, record this (Account for position setting of left or right)
+          3. Find the difference between the two, as this will become our new position
+          4. Magic.
 
-      // Picker position
-      // switch(this.settings.position) {
-      //   case 'top':
-      //     var top = parseInt(this.settings.height) + 20;
-      //     this.$pickerWrap.css({'top': -top + 'px', 'right':'0'});
-      //     break;
-      //   case 'bottom':
-      //     this.$pickerWrap.css({'right':'0'});
-      //     break;
-      //   case 'left':
-      //     var left = this.$icon.width() + 10;
-      //     this.$pickerWrap.css({'top':'-10px', 'right': left + 'px'});
-      //     break;
-      //   case 'right':
-      //     var right = parseInt(this.settings.width) + this.$icon.width() - 30;
-      //     this.$pickerWrap.css({'top':'-10px', 'right': -right + 'px'});
-      //     break;
-      // }
+          N.B. The removed code had a reference to top/bottom positioning, but I don't see the use case for this..
+      */    
+     
+      // Step 1
+      // Luckily jquery already does this...
+      var positionedParent = this.$picker.offsetParent();
+      var parentOffset = positionedParent.offset(); // now have a top/left object
+
+      // Step 2
+      var elOffset = this.$el.offset();
+      if(this.settings.position == 'right'){
+        elOffset.left += this.$el.outerWidth() - this.settings.width;
+      }
+      elOffset.top += this.$el.outerHeight();
+
+      // Step 3
+      var diffOffset = {
+        top: (elOffset.top - parentOffset.top),
+        left: (elOffset.left - parentOffset.top)
+      };
 
       this.$picker.css({
-          top: top + 15,
-          left: left + this.$el.outerWidth() - this.settings.width
+        top: diffOffset.top,
+        left: diffOffset.left
       });
+
       return this;
     },
 

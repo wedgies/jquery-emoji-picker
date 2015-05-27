@@ -13,20 +13,26 @@
   <script type="text/javascript">
     $(document).ready(function(e) {
 
-      $('.emojiable-question').emojiPicker({
+      $('#text-custom-trigger').emojiPicker({
         width: '300px',
         height: '200px',
         button: false
       });
+      
+      $('#input-default').emojiPicker();
 
-      $('.emojiable-option').emojiPicker({
-        width: '200px',
-        height: '100px'
+      $('#input-custom-size').emojiPicker({
+        width: '300px',
+        height: '200px'
+      });
+
+      $('#input-left-position').emojiPicker({
+        position: 'left'
       });
 
       $('#trigger').click(function(e) {
         e.preventDefault();
-        $('#question').emojiPicker('toggle');
+        $('#text-custom-trigger').emojiPicker('toggle');
       });
 
     });
@@ -50,15 +56,19 @@
     <button id="trigger">Custom emoji trigger</button>
 
     <div class="field">
-      <textarea id="question" class="emojiable-question" placeholder="Your Question"></textarea>
+      <textarea id="text-custom-trigger" class="emojiable-question" placeholder="Your Question"></textarea>
     </div>
 
     <div class="field">
-      <input type="text" id="option1" class="emojiable-option" placeholder="Choice Text">
+      <input type="text" id="input-default" class="emojiable-option" placeholder="Default">
     </div>
 
     <div class="field">
-      <input type="text" id="option2" class="emojiable-option" placeholder="Choice Text">
+      <input type="text" id="input-custom-size" class="emojiable-option" placeholder="Custom Size">
+    </div>
+
+    <div class="field">
+      <input type="text" id="input-left-position" class="emojiable-option" placeholder="Position Left">
     </div>
 
   </form>
