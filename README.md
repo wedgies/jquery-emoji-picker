@@ -1,5 +1,25 @@
 # jQuery Emoji Picker #
 
+## Note ##
+This is fork of wedgies/jquery-emoji-picker with support of content-editable.
+
+Use:
+
+ ```javascript
+ $('.question').emojiPicker({
+   height: '300px',
+   width: '450px',
+   contenteditable: true
+ });
+ ```
+ 
+Also you always can get pure text with unicode emoji and save it to your DB for example:
+  ```javascript
+  alert($('.question').data(text));
+  ```
+
+When content-editable is enabled, all unicode emoji in editor wil be automaticaly changed to images on plugin init
+
 ## Description ##
 
 The top 3 things your users love:
@@ -31,7 +51,6 @@ Add the following to your `<head></head>` tag:
 ```html
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.css">
 <script type="text/javascript" src="js/jquery.emojipicker.js"></script>
-
 <!-- Emoji Data -->
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.a.css">
 <script type="text/javascript" src="js/jquery.emojipicker.a.js"></script>

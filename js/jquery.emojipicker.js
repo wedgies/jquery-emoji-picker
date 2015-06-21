@@ -9,7 +9,8 @@
         iconColor: 'black',
         iconBackgroundColor: '#eee',
         container: 'body',
-        button: true
+        button: true,
+        contenteditable: false
       };
 
   var MIN_WIDTH = 200,
@@ -30,6 +31,7 @@
     // (type) Safety first
     this.settings.width = parseInt(this.settings.width);
     this.settings.height = parseInt(this.settings.height);
+    this.settings.contenteditable = this.settings.contenteditable.constructor === Boolean ? this.settings.contenteditable : false;
 
     // Check for valid width/height
     if(this.settings.width >= MAX_WIDTH) {
@@ -65,6 +67,49 @@
       this.addPickerIcon();
       this.createPicker();
       this.listen();
+      this.ce();
+    },
+
+    ce: function () {
+      if (this.settings.contenteditable) {
+        var editor = this.$el;
+        var that = this;
+        var t = editor.text();
+        if(t.length > 0){
+          for (var i = 0; i < $.fn.emojiPicker.emojis.length; ++i) {
+            var emojiHtml = "<img src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAQAIBRAA7' class='emojiCe emoji-" + $.fn.emojiPicker.emojis[i].shortcode + "' data-unicode='" + toUnicode($.fn.emojiPicker.emojis[i].unicode) + "'/>";
+            t = t.replace(new RegExp(toUnicode($.fn.emojiPicker.emojis[i].unicode), 'g'), emojiHtml);
+          }
+        }
+        editor.html(t);
+        editor.on('input click', function (e) {
+          var element = this;
+          var doc = element.ownerDocument || element.document;
+          var win = doc.defaultView || doc.parentWindow;
+          var sel;
+          sel = win.getSelection();
+          if (sel.rangeCount > 0) {
+            var range = sel.getRangeAt(0);
+            sel.removeAllRanges();
+            sel.addRange(range);
+            that.editorRange = range;
+          }
+          that.getCeText();
+        });
+        editor.on('paste', function (e) {
+          e.preventDefault();
+          var text = (e.originalEvent || e).clipboardData.getData('text/plain') || prompt('Paste something..');
+          window.document.execCommand('insertText', false, text);
+        });
+      }
+    },
+
+    getCeText: function() {
+      var editor = this.$el.clone();
+      $('img', editor).each(function(){
+        $(this).replaceWith($(this).data('unicode'));
+      });
+      this.$el.data('text', editor.text());
     },
 
     addPickerIcon: function() {
@@ -206,7 +251,18 @@
       var emojiShortcode = $(e.target).attr('class').split('emoji-')[1];
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
 
-      insertAtCaret(this.element, emojiUnicode);
+      if (this.settings.contenteditable) {
+        if(typeof this.editorRange === 'undefined'){
+            this.$el.focus();
+            this.$el.trigger('input');
+        }
+        var emojiHtml = "<img src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAQAIBRAA7' class='emojiCe " + $(e.target).attr('class') + "' data-unicode='" + emojiUnicode + "'/>";
+        this.editorRange = insertAtCeCaret(emojiHtml, this.editorRange);
+        this.getCeText();
+      }
+      else {
+        insertAtCaret(this.element, emojiUnicode);
+      }
     },
 
     emojiCategoryClicked: function(e) {
@@ -347,6 +403,21 @@
       inputField.focus();
       inputField.value += myValue;
     }
+  }
+
+  function insertAtCeCaret(myValue, range) {
+    var el = document.createElement("div");
+    el.innerHTML = myValue;
+    var frag = document.createDocumentFragment(), node, lastNode;
+    while ((node = el.firstChild)) {
+      lastNode = frag.appendChild(node);
+    }
+    range.insertNode(frag);
+    if (lastNode) {
+      range.setStartAfter(lastNode);
+      range.collapse(false);
+    }
+    return range;
   }
 
   function toUnicode(code) {
