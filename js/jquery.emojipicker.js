@@ -347,6 +347,8 @@
       inputField.focus();
       inputField.value += myValue;
     }
+    // trigger change event on input
+    $(inputField).trigger("change");
   }
 
   function toUnicode(code) {
