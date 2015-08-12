@@ -35,6 +35,11 @@
         $('#text-custom-trigger').emojiPicker('toggle');
       });
 
+      // keyup event is fired 
+      $(".emojiable-question, .emojiable-option").on("keyup", function () {
+        console.log("emoji added, input val() is: " + $(this).val());
+      });
+
     });
   </script>
 

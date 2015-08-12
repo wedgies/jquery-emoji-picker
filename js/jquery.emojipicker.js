@@ -207,6 +207,9 @@
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
 
       insertAtCaret(this.element, emojiUnicode);
+      
+      // trigger change event on input
+      $(this.element).trigger("keyup");
     },
 
     emojiCategoryClicked: function(e) {
@@ -347,8 +350,6 @@
       inputField.focus();
       inputField.value += myValue;
     }
-    // trigger change event on input
-    $(inputField).trigger("change");
   }
 
   function toUnicode(code) {
