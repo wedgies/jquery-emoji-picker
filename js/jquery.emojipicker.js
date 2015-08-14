@@ -207,6 +207,9 @@
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
 
       insertAtCaret(this.element, emojiUnicode);
+      
+      // trigger change event on input
+      $(this.element).trigger("keyup");
     },
 
     emojiCategoryClicked: function(e) {
