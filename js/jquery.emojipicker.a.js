@@ -1,5 +1,4 @@
-$(function() {
-$.fn.emojiPicker.emojis = [
+window.emojis = [
   {
     "name": "copyright",
     "unicode": "00A9",
@@ -2886,7 +2885,7 @@ $.fn.emojiPicker.emojis = [
   {
     "name": "+1",
     "unicode": "1F44D",
-    "shortcode": "plus1",
+    "shortcode": "+1", 
     "description": "THUMBS UP SIGN",
     "category": "people"
   },
@@ -3088,7 +3087,7 @@ $.fn.emojiPicker.emojis = [
   },
   {
     "name": "family",
-    "unicode": "1F46A",
+    "unicode": "1f46a.0.famdef",
     "shortcode": "family",
     "description": "FAMILY",
     "category": "people"
@@ -3347,7 +3346,7 @@ $.fn.emojiPicker.emojis = [
   },
   {
     "name": "couplekiss",
-    "unicode": "1F48F",
+    "unicode": "1f48f.0.defwm",
     "shortcode": "couplekiss",
     "description": "KISS",
     "category": "emotion"
@@ -3361,7 +3360,7 @@ $.fn.emojiPicker.emojis = [
   },
   {
     "name": "couple_with_heart",
-    "unicode": "1F491",
+    "unicode": "1f491.0.defwm",
     "shortcode": "couple_with_heart",
     "description": "COUPLE WITH HEART",
     "category": "emotion"
@@ -5984,5 +5983,4 @@ $.fn.emojiPicker.emojis = [
     "description": "REGIONAL INDICATOR SYMBOL LETTERS US",
     "category": "folderol"
   }
-]
-});
+];
