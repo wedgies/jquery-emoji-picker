@@ -115,7 +115,7 @@
     },
 
     listen: function() {
-      // If the button is being used, wrapper has not been set, 
+      // If the button is being used, wrapper has not been set,
       //    and will not need a listener
       if (this.settings.button){
         // Clicking on the picker icon
@@ -140,16 +140,16 @@
     },
 
     updatePosition: function() {
-  
+
       /*  Process:
-          1. Find the nearest positioned element by crawling up the ancestors, record it's offset 
+          1. Find the nearest positioned element by crawling up the ancestors, record it's offset
           2. Find the bottom left or right of the input element, record this (Account for position setting of left or right)
           3. Find the difference between the two, as this will become our new position
           4. Magic.
 
           N.B. The removed code had a reference to top/bottom positioning, but I don't see the use case for this..
-      */    
-     
+      */
+
       // Step 1
       // Luckily jquery already does this...
       var positionedParent = this.$picker.offsetParent();
@@ -207,7 +207,7 @@
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
 
       insertAtCaret(this.element, emojiUnicode);
-      
+
       // trigger change event on input
       $(this.element).trigger("keyup");
     },
@@ -294,7 +294,8 @@
 
     nodes.push('<div class="emojiPicker">');
     nodes.push('<nav>');
-    for (var i in categories) {
+    var categories_length = categories.length;
+    for (var i = 0; i < categories_length; i++) {
       nodes.push('<div class="tab' +
       ( i == 0 ? ' active' : '' ) +
       '" data-tab="' +
@@ -304,12 +305,13 @@
       '"></div></div>');
     }
     nodes.push('</nav>');
-    for (var i in categories) {
+    for (var i = 0; i < categories_length; i++) {
       nodes.push('<section class="' +
         categories[i].name +
         ( i == 0 ? '' : ' hidden' ) +
         '">');
-      for (var j in items[ categories[i].name ] ) {
+      var category_length = items[ categories[i].name ].length;
+      for (var j = 0; j < category_length; j++) {
         var emoji = items[ categories[i].name ][ j ];
         nodes.push('<div class="emoji emoji-' + emoji.shortcode + '"></div>');
       }
