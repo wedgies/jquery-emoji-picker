@@ -8,11 +8,12 @@
         fadeTime: 100,
         iconColor: 'black',
         iconBackgroundColor: '#eee',
+        recentCount: 28,
         container: 'body',
         button: true
       };
 
-  var MIN_WIDTH = 200,
+  var MIN_WIDTH = 300,
       MAX_WIDTH = 600,
       MIN_HEIGHT = 100,
       MAX_HEIGHT = 350,
@@ -131,6 +132,10 @@
       this.$picker.find('nav .tab')
         .click( $.proxy(this.emojiCategoryClicked, this) );
 
+      // Click event for recent tab
+      this.$picker.find('nav div[data-tab=recent]')
+        .click( $.proxy(this.emojiRecentClicked, this) );
+
       this.$picker.click( $.proxy(this.pickerClicked, this) );
 
       $(document.body).click( $.proxy(this.clickOutside, this) );
@@ -207,6 +212,7 @@
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
 
       insertAtCaret(this.element, emojiUnicode);
+      addToLocalStorage(emojiShortcode);
 
       // trigger change event on input
       $(this.element).trigger("keyup");
@@ -228,6 +234,15 @@
       // Update section
       this.$picker.find('section').addClass('hidden');//.hide();
       this.$picker.find('section.' + section).removeClass('hidden');//.show();
+    },
+
+    emojiRecentClicked: function(e) {
+      $('section.recent').empty();
+
+      var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+      for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
+        $('section.recent').append('<div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div>');
+      }
     },
 
     pickerClicked: function(e) {
@@ -284,6 +299,7 @@
       'undefined': 'thing'
     }
     var items = {};
+    var localStorageSupport = (typeof(Storage) !== 'undefined') ? true : false;
 
     // Re-Sort Emoji table
     $.each($.fn.emojiPicker.emojis, function(i, emoji) {
@@ -294,10 +310,17 @@
 
     nodes.push('<div class="emojiPicker">');
     nodes.push('<nav>');
+
+    // Recent Tab, if localstorage support
+    if (localStorageSupport) {
+      nodes.push('<div class="tab active" data-tab="recent"><div class="emoji emoji-clock1"></div></div>');
+    }
+
+    // Emoji categories
     var categories_length = categories.length;
     for (var i = 0; i < categories_length; i++) {
       nodes.push('<div class="tab' +
-      ( i == 0 ? ' active' : '' ) +
+      ( !localStorageSupport && i == 0 ? ' active' : '' ) +
       '" data-tab="' +
       categories[i].name +
       '"><div class="emoji emoji-' +
@@ -305,10 +328,22 @@
       '"></div></div>');
     }
     nodes.push('</nav>');
+
+    // Recent Section, if localstorage support
+    if (localStorageSupport) {
+      nodes.push('<section class="recent">');
+
+      var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+      for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
+        nodes.push('<div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div>');
+      }
+      nodes.push('</section>');
+    }
+
     for (var i = 0; i < categories_length; i++) {
       nodes.push('<section class="' +
         categories[i].name +
-        ( i == 0 ? '' : ' hidden' ) +
+        ( !localStorageSupport && i == 0 ? '' : ' hidden' ) +
         '">');
       var category_length = items[ categories[i].name ].length;
       for (var j = 0; j < category_length; j++) {
@@ -359,6 +394,23 @@
       return parseInt(value, 16);
     });
     return String.fromCodePoint.apply(null, codes);
+  }
+
+  function addToLocalStorage(emoji) {
+    var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+
+    // If already in recently used, move to front
+    var index = recentlyUsedEmojis.indexOf(emoji);
+    if (index > -1) {
+      recentlyUsedEmojis.splice(index, 1);
+    }
+    recentlyUsedEmojis.push(emoji);
+
+    if (recentlyUsedEmojis.length > defaults.recentCount) {
+      recentlyUsedEmojis.shift();
+    }
+
+    localStorage.emojis = JSON.stringify(recentlyUsedEmojis);
   }
 
   if (!String.fromCodePoint) {
