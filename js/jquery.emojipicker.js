@@ -241,7 +241,7 @@
 
       var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
       for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
-        $('section.recent').append('<div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div>');
+        $('section.recent').append('<em><div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div></em>');
       }
     },
 
@@ -335,7 +335,7 @@
 
       var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
       for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
-        nodes.push('<div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div>');
+        nodes.push('<em><div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div></em>');
       }
       nodes.push('</section>');
     }
@@ -348,7 +348,7 @@
       var category_length = items[ categories[i].name ].length;
       for (var j = 0; j < category_length; j++) {
         var emoji = items[ categories[i].name ][ j ];
-        nodes.push('<div class="emoji emoji-' + emoji.shortcode + '"></div>');
+        nodes.push('<em><div class="emoji emoji-' + emoji.shortcode + '"></div></em>');
       }
       nodes.push('</section>');
     }
