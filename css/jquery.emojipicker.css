@@ -21,3 +21,7 @@
 .emojiPicker section div:hover {cursor:pointer;}
 .emojiPicker section em {display:inline-block; padding:2%; border-radius:4px;}
 .emojiPicker section em:hover {background-color:#eee;}
+
+.emojiPicker .shortcode {height:40px; background:#eee; border-top:1px solid #ddd; vertical-align:middle;}
+.emojiPicker .shortcode .emoji {position:relative; top:4px; left:8px; width:1.9em; height:1.9em; margin-right:20px;}
+.emojiPicker .shortcode em {position:relative; top:-5px; font-family:Helvetica, Arial, sans-serif; color:#555; font-size:12px; font-weight:900; font-style:normal;}

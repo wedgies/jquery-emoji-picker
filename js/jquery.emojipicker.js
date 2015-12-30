@@ -128,6 +128,12 @@
       this.$picker.find('section div')
         .click( $.proxy(this.emojiClicked, this) );
 
+      // Hover event for emoji
+      this.$picker.find('section em')
+        .mouseover( $.proxy(this.emojiMouseover, this) );
+      this.$picker.find('section em')
+        .mouseout( $.proxy(this.emojiMouseout, this) );
+
       // Click event for active tab
       this.$picker.find('nav .tab')
         .click( $.proxy(this.emojiCategoryClicked, this) );
@@ -216,6 +222,15 @@
 
       // trigger change event on input
       $(this.element).trigger("keyup");
+    },
+
+    emojiMouseover: function(e) {
+      var emojiShortcode = $(e.target).parent().find('.emoji').attr('class').split('emoji-')[1];
+      $(e.target).parents('.emojiPicker').find('.shortcode').html('<div class="emoji emoji-' + emojiShortcode + '"></div><em>' + emojiShortcode + '</em>');
+    },
+
+    emojiMouseout: function(e) {
+      $(e.target).parents('.emojiPicker').find('.shortcode').empty();
     },
 
     emojiCategoryClicked: function(e) {
@@ -352,6 +367,12 @@
       }
       nodes.push('</section>');
     }
+
+    // Shortcode
+    nodes.push('<div class="shortcode"></div>');
+
+
+
     nodes.push('</div>');
     return nodes.join("\n");
   }
