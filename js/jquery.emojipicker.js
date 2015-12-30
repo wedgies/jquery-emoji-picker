@@ -144,6 +144,10 @@
 
       this.$picker.click( $.proxy(this.pickerClicked, this) );
 
+      // Key events for search
+      this.$picker.find('section.recent .search input')
+        .keyup( $.proxy(this.searchCharEntered, this) );
+
       $(document.body).click( $.proxy(this.clickOutside, this) );
 
       // Resize events forces a reposition, which may or may not actually be required
@@ -208,6 +212,9 @@
     iconClicked : function(e) {
       if ( this.$picker.is(':hidden') ) {
         this.show();
+        if( this.$picker.find('.search input').length > 0 ) {
+          this.$picker.find('.search input').focus();
+        }
       } else {
         this.hide();
       }
@@ -252,7 +259,8 @@
     },
 
     emojiRecentClicked: function(e) {
-      $('section.recent').empty();
+      console.log('asdlfkjalskdjf');
+      $('section.recent').find('.emoji').remove();
 
       var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
       for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
@@ -268,8 +276,34 @@
       if ( this.active ) {
         this.hide();
       }
-    }
+    },
 
+    searchCharEntered: function(e) {
+      var searchTerm = $(e.target).val();
+      var recentSection = $(e.target).parents('section.recent');
+      var searchEmojis = recentSection.find('.searchEmojis');
+      var recentEmojis = recentSection.find('.recentEmojis');
+
+      if (searchTerm.length > 0) {
+        recentEmojis.hide();
+        searchEmojis.show();
+
+        var results = [];
+        var searchEmojiWrap = searchEmojis.find('.wrap');
+        searchEmojiWrap.empty();
+
+        $.each($.fn.emojiPicker.emojis, function(i, emoji) {
+          var shortcode = emoji.shortcode;          
+          if ( shortcode.indexOf(searchTerm) > -1 ) {
+            results.push('<em><div class="emoji emoji-' + shortcode + '"></div></em>');
+          }
+        });
+        searchEmojiWrap.html(results.join(''));
+      } else {
+        recentEmojis.show();
+        searchEmojis.hide();
+      }
+    }
   });
 
   $.fn[ pluginName ] = function ( options ) {
@@ -347,11 +381,17 @@
     // Recent Section, if localstorage support
     if (localStorageSupport) {
       nodes.push('<section class="recent">');
+      nodes.push('<div class="search"><input type="text" placeholder="Search..."></div>');
+      nodes.push('<div class="recentEmojis"><h1>Recently Used</h1><div class="wrap">');
 
       var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
       for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
         nodes.push('<em><div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div></em>');
       }
+      nodes.push('</div></div>');
+
+      nodes.push('<div class="searchEmojis"><h1>Search Results</h1><div class="wrap"></div></div>')
+
       nodes.push('</section>');
     }
 
@@ -370,8 +410,6 @@
 
     // Shortcode
     nodes.push('<div class="shortcode"></div>');
-
-
 
     nodes.push('</div>');
     return nodes.join("\n");
