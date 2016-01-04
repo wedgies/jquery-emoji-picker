@@ -16,19 +16,17 @@
 .emojiPicker nav div.tab.active {background-color:#fff; box-shadow:0 0 3px #ccc; border:1px solid #ddd; border-bottom:none;}
 .emojiPicker nav div.tab:first-of-type {margin-left:2%;}
 
-.emojiPicker section {overflow:scroll; position:relative; padding-top:1%; z-index:10; background:#fff;}
-.emojiPicker section div {width:40px; float:left; margin:1%;}
-.emojiPicker section div:hover {cursor:pointer;}
-.emojiPicker section em {display:inline-block; padding:2%; border-radius:4px;}
+.emojiPicker .sections {overflow:scroll; position:relative; background:#fff; z-index:10;}
+.emojiPicker section {width:100%; padding-top:1%;}
+.emojiPicker section h1 {clear:both; margin:0; padding:2%; color:#444; font-size:14px;}
+.emojiPicker section em {float:left; display:inline-block; padding:2%; border-radius:4px;}
 .emojiPicker section em:hover {background-color:#eee;}
-.emojiPicker section.recent .search {width:95%; padding:0 1%;}
-.emojiPicker section.recent .search input { display:block; width:94%; height:20px; padding:1% 3%; font-size:12px; border:1px solid #ddd; border-radius:4px;}
-.emojiPicker section.recent h1 {clear:both; margin:0; padding:2%; color:#444; font-size:14px;}
+.emojiPicker section em div {width:40px; margin:1%;}
+.emojiPicker section em div:hover {cursor:pointer;}
 
-.emojiPicker section.recent .recentEmojis {width:98%;}
-.emojiPicker section.recent .searchEmojis {width:98%; display:none;}
-
-.emojiPicker section.recent .wrap {width:100%;}
+.emojiPicker section .wrap {width:100%;}
+.emojiPicker section.search .wrap {padding-top:1%;}
+.emojiPicker section.search input {display:block; width:90%; height:20px; margin:2%; padding:1% 3%; font-size:12px; border:1px solid #ddd; border-radius:4px;}
 
 .emojiPicker .shortcode {height:40px; background:#eee; border-top:1px solid #ddd; vertical-align:middle;}
 .emojiPicker .shortcode .emoji {position:relative; top:4px; left:8px; width:1.9em; height:1.9em; margin-right:20px;}

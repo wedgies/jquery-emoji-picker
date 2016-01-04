@@ -8,7 +8,7 @@
         fadeTime: 100,
         iconColor: 'black',
         iconBackgroundColor: '#eee',
-        recentCount: 28,
+        recentCount: 36,
         container: 'body',
         button: true
       };
@@ -18,6 +18,8 @@
       MIN_HEIGHT = 100,
       MAX_HEIGHT = 350,
       MAX_ICON_HEIGHT = 50;
+
+  var prevSectionPosition = 0;
 
   function Plugin( element, options ) {
 
@@ -105,7 +107,7 @@
         .css('z-index',10000);
 
       // Picker height
-      this.$picker.find('section')
+      this.$picker.find('.sections')
         .height(parseInt(this.settings.height) - 40); // 40 is height of the tabs
 
       // Tab size based on width
@@ -125,7 +127,7 @@
       }
 
       // Click event for emoji
-      this.$picker.find('section div')
+      this.$picker.find('section em')
         .click( $.proxy(this.emojiClicked, this) );
 
       // Hover event for emoji
@@ -145,7 +147,7 @@
       this.$picker.click( $.proxy(this.pickerClicked, this) );
 
       // Key events for search
-      this.$picker.find('section.recent .search input')
+      this.$picker.find('section.search input')
         .keyup( $.proxy(this.searchCharEntered, this) );
 
       $(document.body).click( $.proxy(this.clickOutside, this) );
@@ -221,7 +223,7 @@
     },
 
     emojiClicked: function(e) {
-      var emojiShortcode = $(e.target).attr('class').split('emoji-')[1];
+      var emojiShortcode = $(e.target).parent().find('.emoji').attr('class').split('emoji-')[1];
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
 
       insertAtCaret(this.element, emojiUnicode);
@@ -248,24 +250,34 @@
       if ($(e.target).parent().hasClass('tab')) {
         section = $(e.target).parent().attr('data-tab');
         $(e.target).parent('.tab').addClass('active');
-      } else {
+      } 
+      else {
         section = $(e.target).attr('data-tab');
         $(e.target).addClass('active');
       }
 
-      // Update section
-      this.$picker.find('section').addClass('hidden');//.hide();
-      this.$picker.find('section.' + section).removeClass('hidden');//.show();
+      // Scroll to section
+      var scrollHeight = $('.sections')[0].scrollHeight;
+      var scrollTo = this.$picker.find('section.' + section + ' h1').position().top;
+
+      if (scrollTo == 0) return; // Already on the active section
+      $('.sections').animate({
+        scrollTop: scrollTo + prevSectionPosition
+      }, 250);
+
+      prevSectionPosition = scrollTo + prevSectionPosition;
     },
 
     emojiRecentClicked: function(e) {
-      console.log('asdlfkjalskdjf');
-      $('section.recent').find('.emoji').remove();
+      var emojiWrap = $('section.recent .recentEmojis .wrap');
+      emojiWrap.find('em').remove();
 
       var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+      var emojiMarkup = [];
       for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
-        $('section.recent').append('<em><div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div></em>');
+        emojiMarkup.push('<em><div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div></em>');
       }
+      emojiWrap.append(emojiMarkup.join(''));
     },
 
     pickerClicked: function(e) {
@@ -280,17 +292,17 @@
 
     searchCharEntered: function(e) {
       var searchTerm = $(e.target).val();
-      var recentSection = $(e.target).parents('section.recent');
-      var searchEmojis = recentSection.find('.searchEmojis');
-      var recentEmojis = recentSection.find('.recentEmojis');
+      var searchEmojis = $(e.target).parents('.sections').find('section.search');
+      var searchEmojiWrap = searchEmojis.find('.wrap');
+      var sections = $(e.target).parents('.sections').find('section');
 
       if (searchTerm.length > 0) {
-        recentEmojis.hide();
+        sections.hide();
         searchEmojis.show();
+        searchEmojiWrap.show();
 
         var results = [];
-        var searchEmojiWrap = searchEmojis.find('.wrap');
-        searchEmojiWrap.empty();
+        searchEmojiWrap.find('em').remove();
 
         $.each($.fn.emojiPicker.emojis, function(i, emoji) {
           var shortcode = emoji.shortcode;          
@@ -298,10 +310,10 @@
             results.push('<em><div class="emoji emoji-' + shortcode + '"></div></em>');
           }
         });
-        searchEmojiWrap.html(results.join(''));
+        searchEmojiWrap.append(results.join(''));
       } else {
-        recentEmojis.show();
-        searchEmojis.hide();
+        sections.show();
+        searchEmojiWrap.hide();
       }
     }
   });
@@ -377,29 +389,30 @@
       '"></div></div>');
     }
     nodes.push('</nav>');
+    nodes.push('<div class="sections">');
+
+    // Search
+    nodes.push('<section class="search">');
+    nodes.push('<input type="text" placeholder="Search...">');
+    nodes.push('<div class="wrap" style="display:none;"><h1>Search Results</h1></div>');
+    nodes.push('</section>');
 
     // Recent Section, if localstorage support
     if (localStorageSupport) {
-      nodes.push('<section class="recent">');
-      nodes.push('<div class="search"><input type="text" placeholder="Search..."></div>');
-      nodes.push('<div class="recentEmojis"><h1>Recently Used</h1><div class="wrap">');
-
       var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+      nodes.push('<section class="recent">');
+      nodes.push('<h1>Recently Used</h1><div class="wrap">');
+
       for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
         nodes.push('<em><div class="emoji emoji-' + recentlyUsedEmojis[i] + '"></div></em>');
       }
-      nodes.push('</div></div>');
-
-      nodes.push('<div class="searchEmojis"><h1>Search Results</h1><div class="wrap"></div></div>')
-
+      nodes.push('</div>');
       nodes.push('</section>');
     }
 
     for (var i = 0; i < categories_length; i++) {
-      nodes.push('<section class="' +
-        categories[i].name +
-        ( !localStorageSupport && i == 0 ? '' : ' hidden' ) +
-        '">');
+      nodes.push('<section class="' + categories[i].name + '">');
+      nodes.push('<h1>' + categories[i].name + '</h1>');
       var category_length = items[ categories[i].name ].length;
       for (var j = 0; j < category_length; j++) {
         var emoji = items[ categories[i].name ][ j ];
@@ -407,6 +420,7 @@
       }
       nodes.push('</section>');
     }
+    nodes.push('</div>');
 
     // Shortcode
     nodes.push('<div class="shortcode"></div>');
