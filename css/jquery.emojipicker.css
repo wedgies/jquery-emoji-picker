@@ -18,7 +18,7 @@
 
 .emojiPicker .sections {overflow:scroll; position:relative; background:#fff; z-index:10;}
 .emojiPicker section {width:100%; padding-top:1%;}
-.emojiPicker section h1 {clear:both; margin:0; padding:2%; color:#444; font-size:14px;}
+.emojiPicker section h1 {clear:both; margin:0; padding:2%; color:#444; font-size:14px; text-transform:capitalize;}
 .emojiPicker section em {float:left; display:inline-block; padding:2%; border-radius:4px;}
 .emojiPicker section em:hover {background-color:#eee;}
 .emojiPicker section em div {width:40px; margin:1%;}
