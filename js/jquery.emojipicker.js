@@ -250,7 +250,7 @@
       if ($(e.target).parent().hasClass('tab')) {
         section = $(e.target).parent().attr('data-tab');
         $(e.target).parent('.tab').addClass('active');
-      } 
+      }
       else {
         section = $(e.target).attr('data-tab');
         $(e.target).addClass('active');
@@ -305,7 +305,7 @@
         searchEmojiWrap.find('em').remove();
 
         $.each($.fn.emojiPicker.emojis, function(i, emoji) {
-          var shortcode = emoji.shortcode;          
+          var shortcode = emoji.shortcode;
           if ( shortcode.indexOf(searchTerm) > -1 ) {
             results.push('<em><div class="emoji emoji-' + shortcode + '"></div></em>');
           }
@@ -398,7 +398,7 @@
     nodes.push('</section>');
 
     // Recent Section, if localstorage support
-    if (localStorageSupport) {
+    if (localStorageSupport && localStorage.emojis) {
       var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
       nodes.push('<section class="recent">');
       nodes.push('<h1>Recently Used</h1><div class="wrap">');
@@ -470,7 +470,10 @@
   }
 
   function addToLocalStorage(emoji) {
-    var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+    var recentlyUsedEmojis = [];
+    if (localStorage.emojis) {
+      recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+    }
 
     // If already in recently used, move to front
     var index = recentlyUsedEmojis.indexOf(emoji);
