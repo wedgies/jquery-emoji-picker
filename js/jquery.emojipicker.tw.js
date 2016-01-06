@@ -96,7 +96,7 @@ $.fn.emojiPicker.emojis = [
     "unicode": "231B",
     "shortcode": "hourglass",
     "description": "HOURGLASS",
-    "category": "thing"
+    "category": "object"
   },
   {
     "name": "fast_forward",
@@ -354,14 +354,14 @@ $.fn.emojiPicker.emojis = [
     "unicode": "2663",
     "shortcode": "clubs",
     "description": "BLACK CLUB SUIT",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "hearts",
     "unicode": "2665",
     "shortcode": "hearts",
     "description": "BLACK HEART SUIT",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "diamonds",
@@ -529,7 +529,7 @@ $.fn.emojiPicker.emojis = [
     "unicode": "2708",
     "shortcode": "airplane",
     "description": "AIRPLANE",
-    "category": "thing"
+    "category": "travel"
   },
   {
     "name": "email",
@@ -1299,7 +1299,7 @@ $.fn.emojiPicker.emojis = [
     "unicode": "1F335",
     "shortcode": "cactus",
     "description": "CACTUS",
-    "category": "thing"
+    "category": "nature"
   },
   {
     "name": "tulip",
@@ -2209,7 +2209,7 @@ $.fn.emojiPicker.emojis = [
     "unicode": "1F3C8",
     "shortcode": "football",
     "description": "AMERICAN FOOTBALL",
-    "category": "people"
+    "category": "sport"
   },
   {
     "name": "rugby_football",
@@ -5835,49 +5835,49 @@ $.fn.emojiPicker.emojis = [
     "unicode": "1F1E8-1F1F3",
     "shortcode": "flag-cn",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS CN",
-    "category": "folderol"
+    "category": "flag"
   },
   {
     "name": "flag-de",
     "unicode": "1F1E9-1F1EA",
     "shortcode": "flag-de",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS DE",
-    "category": "folderol"
+    "category": "flag"
   },
   {
     "name": "flag-es",
     "unicode": "1F1EA-1F1F8",
     "shortcode": "flag-es",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS ES",
-    "category": "folderol"
+    "category": "flag"
   },
   {
     "name": "flag-fr",
     "unicode": "1F1EB-1F1F7",
     "shortcode": "flag-fr",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS FR",
-    "category": "folderol"
+    "category": "flag"
   },
   {
     "name": "flag-gb",
     "unicode": "1F1EC-1F1E7",
     "shortcode": "flag-gb",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS GB",
-    "category": "folderol"
+    "category": "flag"
   },
   {
     "name": "flag-it",
     "unicode": "1F1EE-1F1F9",
     "shortcode": "flag-it",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS IT",
-    "category": "folderol"
+    "category": "flag"
   },
   {
     "name": "flag-jp",
     "unicode": "1F1EF-1F1F5",
     "shortcode": "flag-jp",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS JP",
-    "category": "folderol"
+    "category": "flag"
   },
   {
     "name": "flag-kr",

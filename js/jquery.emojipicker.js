@@ -350,16 +350,17 @@
   function getPickerHTML() {
     var nodes = [];
     var categories = [
-      { name: 'emotion',  symbol: 'grinning' },
-      { name: 'animal',   symbol: 'whale' },
-      { name: 'food',     symbol: 'hamburger' },
-      { name: 'folderol', symbol: 'sunny' },
-      { name: 'thing',    symbol: 'kiss' },
-      { name: 'travel',   symbol: 'rocket' }
+      { name: 'emotion' },
+      { name: 'nature' },
+      { name: 'food' },
+      { name: 'sport' },
+      { name: 'travel' },
+      { name: 'object' },
+      { name: 'symbol' },
+      { name: 'flag' }
     ];
     var aliases = {
       'people':    'emotion',
-      'symbol':    'thing',
       'undefined': 'thing'
     }
     var items = {};
@@ -377,7 +378,7 @@
 
     // Recent Tab, if localstorage support
     if (localStorageSupport) {
-      nodes.push('<div class="tab active" data-tab="recent"><div class="emoji emoji-clock1"></div></div>');
+      nodes.push('<div class="tab active" data-tab="recent"><div class="emoji emoji-tab-recent"></div></div>');
     }
 
     // Emoji categories
@@ -387,8 +388,8 @@
       ( !localStorageSupport && i == 0 ? ' active' : '' ) +
       '" data-tab="' +
       categories[i].name +
-      '"><div class="emoji emoji-' +
-      categories[i].symbol +
+      '"><div class="emoji emoji-tab-' +
+      categories[i].name +
       '"></div></div>');
     }
     nodes.push('</nav>');
