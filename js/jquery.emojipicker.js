@@ -376,14 +376,14 @@
   function getPickerHTML() {
     var nodes = [];
     var categories = [
-      { name: 'emotion' },
-      { name: 'nature' },
-      { name: 'food' },
-      { name: 'sport' },
-      { name: 'travel' },
-      { name: 'object' },
-      { name: 'symbol' },
-      { name: 'flag' }
+      { name: 'emotion', label: 'Emotions' },
+      { name: 'nature', label: 'Nature' },
+      { name: 'food', label: 'Food' },
+      { name: 'sport', label: 'Sports' },
+      { name: 'travel', label: 'Travel' },
+      { name: 'object', label: 'Objects' },
+      { name: 'symbol', label: 'Symbols' },
+      { name: 'flag', label: 'Flags' }
     ];
     var aliases = {
       'people':    'emotion',
@@ -442,7 +442,7 @@
 
     for (var i = 0; i < categories_length; i++) {
       nodes.push('<section class="' + categories[i].name + '">');
-      nodes.push('<h1>' + categories[i].name + '</h1>');
+      nodes.push('<h1>' + categories[i].label + '</h1>');
       var category_length = items[ categories[i].name ].length;
       for (var j = 0; j < category_length; j++) {
         var emoji = items[ categories[i].name ][ j ];
