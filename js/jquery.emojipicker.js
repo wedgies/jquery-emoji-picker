@@ -19,8 +19,6 @@
       MAX_HEIGHT = 350,
       MAX_ICON_HEIGHT = 50;
 
-  var prevSectionPosition = 0;
-
   function Plugin( element, options ) {
 
     this.element = element;
@@ -256,16 +254,21 @@
         $(e.target).addClass('active');
       }
 
-      // Scroll to section
-      var scrollHeight = $('.sections')[0].scrollHeight;
-      var scrollTo = this.$picker.find('section.' + section + ' h1').position().top;
+      var $section = this.$picker.find('section.' + section);
 
-      if (scrollTo == 0) return; // Already on the active section
+      var heightOfSectionsHidden = $section.parent().scrollTop();
+      var heightOfSectionToPageTop = $section.offset().top;
+      var heightOfSectionsToPageTop = $section.parent().offset().top;
+      var heightOfH1Tag = 28;
+
+      var scrollDistance = heightOfSectionsHidden
+                           + heightOfSectionToPageTop
+                           - heightOfSectionsToPageTop
+                           - heightOfH1Tag;
+
       $('.sections').animate({
-        scrollTop: scrollTo + prevSectionPosition
+        scrollTop: scrollDistance
       }, 250);
-
-      prevSectionPosition = scrollTo + prevSectionPosition;
     },
 
     emojiRecentClicked: function(e) {
