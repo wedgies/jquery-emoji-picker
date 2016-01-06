@@ -259,12 +259,10 @@
       var heightOfSectionsHidden = $section.parent().scrollTop();
       var heightOfSectionToPageTop = $section.offset().top;
       var heightOfSectionsToPageTop = $section.parent().offset().top;
-      var heightOfH1Tag = 28;
 
       var scrollDistance = heightOfSectionsHidden
                            + heightOfSectionToPageTop
-                           - heightOfSectionsToPageTop
-                           - heightOfH1Tag;
+                           - heightOfSectionsToPageTop;
 
       $('.sections').animate({
         scrollTop: scrollDistance
