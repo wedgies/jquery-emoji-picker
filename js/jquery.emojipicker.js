@@ -138,6 +138,10 @@
       this.$picker.find('nav .tab')
         .click( $.proxy(this.emojiCategoryClicked, this) );
 
+      // Scroll event for active tab
+      this.$picker.find('.sections')
+        .scroll( $.proxy(this.emojiScroll, this) );
+
       // Click event for recent tab
       this.$picker.find('nav div[data-tab=recent]')
         .click( $.proxy(this.emojiRecentClicked, this) );
@@ -264,9 +268,33 @@
                            + heightOfSectionToPageTop
                            - heightOfSectionsToPageTop;
 
+      // Disable scroll event
+      $('.sections').off('scroll');
+
       $('.sections').animate({
         scrollTop: scrollDistance
       }, 250);
+
+      // Enable scroll event
+      $('.sections').off('scroll');
+    },
+
+    emojiScroll: function(e) {
+      var sections = $('section');
+      $.each(sections, function(key, value) {
+        var section = sections[key];
+        var offsetFromTop = $(section).position().top;
+
+        if (section.className == 'search') {
+          $(section).parents('.emojiPicker').find('nav tab.recent').addClass('active');
+          return;
+        }
+
+        if (offsetFromTop < -8) {
+          $(section).parents('.emojiPicker').find('nav .tab').removeClass('active');
+          $(section).parents('.emojiPicker').find('nav .tab[data-tab=' + section.className + ']').addClass('active');
+        }
+      });
     },
 
     emojiRecentClicked: function(e) {
