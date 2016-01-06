@@ -126,14 +126,11 @@
       }
 
       // Click event for emoji
-      this.$picker.find('section em')
-        .on('click', $.proxy(this.emojiClicked, this) );
+      this.$picker.on('click', 'em', $.proxy(this.emojiClicked, this));
 
       // Hover event for emoji
-      this.$picker.find('section em')
-        .on('mouseover', $.proxy(this.emojiMouseover, this) );
-      this.$picker.find('section em')
-        .on('mouseout', $.proxy(this.emojiMouseout, this) );
+      this.$picker.on('mouseover', 'em', $.proxy(this.emojiMouseover, this) );
+      this.$picker.on('mouseout',  'em', $.proxy(this.emojiMouseout, this) );
 
       // Click event for active tab
       this.$picker.find('nav .tab')

@@ -2815,41 +2815,1203 @@ $.fn.emojiPicker.emojis = [
     "description": "Fork and Knife With Plate",
     "category": "food"
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  {
+    "name": "soccer",
+    "unicode": {"apple":"26BD", "google":"26BD", "twitter":"26BD"},
+    "shortcode": "soccer",
+    "description": "SOCCER BALL",
+    "category": "activity"
+  },
+  {
+    "name": "basketball",
+    "unicode": {"apple":"1F3C0", "google":"1F3C0", "twitter":"1F3C0"},
+    "shortcode": "basketball",
+    "description": "BASKETBALL AND HOOP",
+    "category": "activity"
+  },
+  {
+    "name": "football",
+    "unicode": {"apple":"1F3C8", "google":"1F3C8", "twitter":"1F3C8"},
+    "shortcode": "football",
+    "description": "AMERICAN FOOTBALL",
+    "category": "activity"
+  },
+  {
+    "name": "baseball",
+    "unicode": {"apple":"26BE", "google":"26BE", "twitter":"26BE"},
+    "shortcode": "baseball",
+    "description": "BASEBALL",
+    "category": "activity"
+  },
+  {
+    "name": "tennis",
+    "unicode": {"apple":"1F3BE", "google":"1F3BE", "twitter":"1F3BE"},
+    "shortcode": "tennis",
+    "description": "TENNIS RACQUET AND BALL",
+    "category": "activity"
+  },
+  {
+    "name": "volleyball",
+    "unicode": {"apple":"1F3D0", "google":"1F3D0", "twitter":"1F3D0"},
+    "shortcode": "volleyball",
+    "description": "Volleyball",
+    "category": "activity"
+  },
+  {
+    "name": "rugby_football",
+    "unicode": {"apple":"1F3C9", "google":"1F3C9", "twitter":"1F3C9"},
+    "shortcode": "rugby_football",
+    "description": "RUGBY FOOTBALL",
+    "category": "activity"
+  },
+  {
+    "name": "8ball",
+    "unicode": {"apple":"1F3B1", "google":"1F3B1", "twitter":"1F3B1"},
+    "shortcode": "8ball",
+    "description": "BILLIARDS",
+    "category": "activity"
+  },
+  {
+    "name": "golf",
+    "unicode": {"apple":"26F3", "google":"26F3", "twitter":"26F3"},
+    "shortcode": "golf",
+    "description": "FLAG IN HOLE",
+    "category": "activity"
+  },
+  {
+    "name": "golfer",
+    "unicode": {"apple":"1F3CC", "google":"1F3CC", "twitter":"1F3CC"},
+    "shortcode": "golfer",
+    "description": "Golfer",
+    "category": "activity"
+  },
+  {
+    "name": "table_tennis_paddle_and_ball",
+    "unicode": {"apple":"1F3D3", "google":"1F3D3", "twitter":"1F3D3"},
+    "shortcode": "table_tennis_paddle_and_ball",
+    "description": "Table Tennis Paddle and Ball",
+    "category": "activity"
+  },
+  {
+    "name": "badminton_racquet_and_shuttlecock",
+    "unicode": {"apple":"1F3F8", "google":"1F3F8", "twitter":"1F3F8"},
+    "shortcode": "badminton_racquet_and_shuttlecock",
+    "description": "Badminton Racquet and Shuttlecock",
+    "category": "activity"
+  },
+  {
+    "name": "ice_hockey_stick_and_puck",
+    "unicode": {"apple":"1F3D2", "google":"1F3D2", "twitter":"1F3D2"},
+    "shortcode": "ice_hockey_stick_and_puck",
+    "description": "Ice Hockey Stick and Puck",
+    "category": "activity"
+  },
+  {
+    "name": "field_hockey_stick_and_ball",
+    "unicode": {"apple":"1F3D1", "google":"1F3D1", "twitter":"1F3D1"},
+    "shortcode": "field_hockey_stick_and_ball",
+    "description": "Field Hockey Stick and Ball",
+    "category": "activity"
+  },
+  {
+    "name": "cricket_bat_and_ball",
+    "unicode": {"apple":"1F3CF", "google":"1F3CF", "twitter":"1F3CF"},
+    "shortcode": "cricket_bat_and_ball",
+    "description": "Cricket Bat and Ball",
+    "category": "activity"
+  },
+  {
+    "name": "ski",
+    "unicode": {"apple":"1F3BF", "google":"1F3BF", "twitter":"1F3BF"},
+    "shortcode": "ski",
+    "description": "SKI AND SKI BOOT",
+    "category": "activity"
+  },
+  {
+    "name": "skier",
+    "unicode": {"apple":"26F7", "google":"26F7", "twitter":"26F7"},
+    "shortcode": "skier",
+    "description": "Skier",
+    "category": "activity"
+  },
+  {
+    "name": "snowboarder",
+    "unicode": {"apple":"1F3C2", "google":"1F3C2", "twitter":"1F3C2"},
+    "shortcode": "snowboarder",
+    "description": "SNOWBOARDER",
+    "category": "activity"
+  },
+  {
+    "name": "ice_skate",
+    "unicode": {"apple":"26F8", "google":"26F8", "twitter":"26F8"},
+    "shortcode": "ice_skate",
+    "description": "Ice Skate",
+    "category": "activity"
+  },
+  {
+    "name": "bow_and_arrow",
+    "unicode": {"apple":"1F3F9", "google":"1F3F9", "twitter":"1F3F9"},
+    "shortcode": "bow_and_arrow",
+    "description": "Bow and Arrow",
+    "category": "activity"
+  },
+  {
+    "name": "fishing_pole_and_fish",
+    "unicode": {"apple":"1F3A3", "google":"1F3A3", "twitter":"1F3A3"},
+    "shortcode": "fishing_pole_and_fish",
+    "description": "FISHING POLE AND FISH",
+    "category": "activity"
+  },
+  {
+    "name": "rowboat",
+    "unicode": {"apple":"1F6A3", "google":"1F6A3", "twitter":"1F6A3"},
+    "shortcode": "rowboat",
+    "description": "ROWBOAT",
+    "category": "activity"
+  },
+  {
+    "name": "swimmer",
+    "unicode": {"apple":"1F3CA", "google":"1F3CA", "twitter":"1F3CA"},
+    "shortcode": "swimmer",
+    "description": "SWIMMER",
+    "category": "activity"
+  },
+  {
+    "name": "surfer",
+    "unicode": {"apple":"1F3C4", "google":"1F3C4", "twitter":"1F3C4"},
+    "shortcode": "surfer",
+    "description": "SURFER",
+    "category": "activity"
+  },
+  {
+    "name": "bath",
+    "unicode": {"apple":"1F6C0", "google":"1F6C0", "twitter":"1F6C0"},
+    "shortcode": "bath",
+    "description": "BATH",
+    "category": "activity"
+  },
+  {
+    "name": "person_with_ball",
+    "unicode": {"apple":"26F9", "google":"26F9", "twitter":"26F9"},
+    "shortcode": "person_with_ball",
+    "description": "Person With Ball",
+    "category": "activity"
+  },
+  {
+    "name": "weight_lifter",
+    "unicode": {"apple":"1F3CB", "google":"1F3CB", "twitter":"1F3CB"},
+    "shortcode": "weight_lifter",
+    "description": "Weight Lifter",
+    "category": "activity"
+  },
+  {
+    "name": "bicyclist",
+    "unicode": {"apple":"1F6B4", "google":"1F6B4", "twitter":"1F6B4"},
+    "shortcode": "bicyclist",
+    "description": "BICYCLIST",
+    "category": "activity"
+  },
+  {
+    "name": "mountain_bicyclist",
+    "unicode": {"apple":"1F6B5", "google":"1F6B5", "twitter":"1F6B5"},
+    "shortcode": "mountain_bicyclist",
+    "description": "MOUNTAIN BICYCLIST",
+    "category": "activity"
+  },
+  {
+    "name": "horse_racing",
+    "unicode": {"apple":"1F3C7", "google":"1F3C7", "twitter":"1F3C7"},
+    "shortcode": "horse_racing",
+    "description": "HORSE RACING",
+    "category": "activity"
+  },
+  {
+    "name": "man_in_business_suit_levitating",
+    "unicode": {"apple":"1F574", "google":"1F574", "twitter":"1F574"},
+    "shortcode": "man_in_business_suit_levitating",
+    "description": "Man in Business Suit Levitating",
+    "category": "activity"
+  },
+  {
+    "name": "trophy",
+    "unicode": {"apple":"1F3C6", "google":"1F3C6", "twitter":"1F3C6"},
+    "shortcode": "trophy",
+    "description": "TROPHY",
+    "category": "activity"
+  },
+  {
+    "name": "running_shirt_with_sash",
+    "unicode": {"apple":"1F3BD", "google":"1F3BD", "twitter":"1F3BD"},
+    "shortcode": "running_shirt_with_sash",
+    "description": "RUNNING SHIRT WITH SASH",
+    "category": "activity"
+  },
+  {
+    "name": "sports_medal",
+    "unicode": {"apple":"1F3C5", "google":"1F3C5", "twitter":"1F3C5"},
+    "shortcode": "sports_medal",
+    "description": "Sports Medal",
+    "category": "activity"
+  },
+  {
+    "name": "medal",
+    "unicode": {"apple":"1F396", "google":"1F396", "twitter":"1F396"},
+    "shortcode": "medal",
+    "description": "Military Medal",
+    "category": "activity"
+  },
+  {
+    "name": "reminder_ribbon",
+    "unicode": {"apple":"1F397", "google":"1F397", "twitter":"1F397"},
+    "shortcode": "reminder_ribbon",
+    "description": "Reminder Ribbon",
+    "category": "activity"
+  },
+  {
+    "name": "rosette",
+    "unicode": {"apple":"1F3F5", "google":"1F3F5", "twitter":"1F3F5"},
+    "shortcode": "rosette",
+    "description": "Rosette",
+    "category": "activity"
+  },
+  {
+    "name": "ticket",
+    "unicode": {"apple":"1F3AB", "google":"1F3AB", "twitter":"1F3AB"},
+    "shortcode": "ticket",
+    "description": "TICKET",
+    "category": "activity"
+  },
+  {
+    "name": "admission_tickets",
+    "unicode": {"apple":"1F39F", "google":"1F39F", "twitter":"1F39F"},
+    "shortcode": "admission_tickets",
+    "description": "Admission Tickets",
+    "category": "activity"
+  },
+  {
+    "name": "performing_arts",
+    "unicode": {"apple":"1F3AD", "google":"1F3AD", "twitter":"1F3AD"},
+    "shortcode": "performing_arts",
+    "description": "PERFORMING ARTS",
+    "category": "activity"
+  },
+  {
+    "name": "art",
+    "unicode": {"apple":"1F3A8", "google":"1F3A8", "twitter":"1F3A8"},
+    "shortcode": "art",
+    "description": "ARTIST PALETTE",
+    "category": "activity"
+  },
+  {
+    "name": "circus_tent",
+    "unicode": {"apple":"1F3AA", "google":"1F3AA", "twitter":"1F3AA"},
+    "shortcode": "circus_tent",
+    "description": "CIRCUS TENT",
+    "category": "activity"
+  },
+  {
+    "name": "microphone",
+    "unicode": {"apple":"1F3A4", "google":"1F3A4", "twitter":"1F3A4"},
+    "shortcode": "microphone",
+    "description": "MICROPHONE",
+    "category": "activity"
+  },
+  {
+    "name": "headphones",
+    "unicode": {"apple":"1F3A7", "google":"1F3A7", "twitter":"1F3A7"},
+    "shortcode": "headphones",
+    "description": "HEADPHONE",
+    "category": "activity"
+  },
+  {
+    "name": "musical_score",
+    "unicode": {"apple":"1F3BC", "google":"1F3BC", "twitter":"1F3BC"},
+    "shortcode": "musical_score",
+    "description": "MUSICAL SCORE",
+    "category": "activity"
+  },
+  {
+    "name": "musical_keyboard",
+    "unicode": {"apple":"1F3B9", "google":"1F3B9", "twitter":"1F3B9"},
+    "shortcode": "musical_keyboard",
+    "description": "MUSICAL KEYBOARD",
+    "category": "activity"
+  },
+  {
+    "name": "saxophone",
+    "unicode": {"apple":"1F3B7", "google":"1F3B7", "twitter":"1F3B7"},
+    "shortcode": "saxophone",
+    "description": "SAXOPHONE",
+    "category": "activity"
+  },
+  {
+    "name": "trumpet",
+    "unicode": {"apple":"1F3BA", "google":"1F3BA", "twitter":"1F3BA"},
+    "shortcode": "trumpet",
+    "description": "TRUMPET",
+    "category": "activity"
+  },
+  {
+    "name": "guitar",
+    "unicode": {"apple":"1F3B8", "google":"1F3B8", "twitter":"1F3B8"},
+    "shortcode": "guitar",
+    "description": "GUITAR",
+    "category": "activity"
+  },
+  {
+    "name": "violin",
+    "unicode": {"apple":"1F3BB", "google":"1F3BB", "twitter":"1F3BB"},
+    "shortcode": "violin",
+    "description": "VIOLIN",
+    "category": "activity"
+  },
+  {
+    "name": "clapper",
+    "unicode": {"apple":"1F3AC", "google":"1F3AC", "twitter":"1F3AC"},
+    "shortcode": "clapper",
+    "description": "CLAPPER BOARD",
+    "category": "activity"
+  },
+  {
+    "name": "video_game",
+    "unicode": {"apple":"1F3AE", "google":"1F3AE", "twitter":"1F3AE"},
+    "shortcode": "video_game",
+    "description": "VIDEO GAME",
+    "category": "activity"
+  },
+  {
+    "name": "space_invader",
+    "unicode": {"apple":"1F47E", "google":"1F47E", "twitter":"1F47E"},
+    "shortcode": "space_invader",
+    "description": "ALIEN MONSTER",
+    "category": "activity"
+  },
+  {
+    "name": "dart",
+    "unicode": {"apple":"1F3AF", "google":"1F3AF", "twitter":"1F3AF"},
+    "shortcode": "dart",
+    "description": "DIRECT HIT",
+    "category": "activity"
+  },
+  {
+    "name": "game_die",
+    "unicode": {"apple":"1F3B2", "google":"1F3B2", "twitter":"1F3B2"},
+    "shortcode": "game_die",
+    "description": "GAME DIE",
+    "category": "activity"
+  },
+  {
+    "name": "slot_machine",
+    "unicode": {"apple":"1F3B0", "google":"1F3B0", "twitter":"1F3B0"},
+    "shortcode": "slot_machine",
+    "description": "SLOT MACHINE",
+    "category": "activity"
+  },
+  {
+    "name": "bowling",
+    "unicode": {"apple":"1F3B3", "google":"1F3B3", "twitter":"1F3B3"},
+    "shortcode": "bowling",
+    "description": "BOWLING",
+    "category": "activity"
+  },
+  {
+    "name": "car",
+    "unicode": {"apple":"1F697", "google":"1F697", "twitter":"1F697"},
+    "shortcode": "car",
+    "description": "AUTOMOBILE",
+    "category": "travel"
+  },
+  {
+    "name": "taxi",
+    "unicode": {"apple":"1F695", "google":"1F695", "twitter":"1F695"},
+    "shortcode": "taxi",
+    "description": "TAXI",
+    "category": "travel"
+  },
+  {
+    "name": "blue_car",
+    "unicode": {"apple":"1F699", "google":"1F699", "twitter":"1F699"},
+    "shortcode": "blue_car",
+    "description": "RECREATIONAL VEHICLE",
+    "category": "travel"
+  },
+  {
+    "name": "bus",
+    "unicode": {"apple":"1F68C", "google":"1F68C", "twitter":"1F68C"},
+    "shortcode": "bus",
+    "description": "BUS",
+    "category": "travel"
+  },
+  {
+    "name": "trolleybus",
+    "unicode": {"apple":"1F68E", "google":"1F68E", "twitter":"1F68E"},
+    "shortcode": "trolleybus",
+    "description": "TROLLEYBUS",
+    "category": "travel"
+  },
+  {
+    "name": "racing_car",
+    "unicode": {"apple":"1F3CE", "google":"1F3CE", "twitter":"1F3CE"},
+    "shortcode": "racing_car",
+    "description": "Racing Car",
+    "category": "travel"
+  },
+  {
+    "name": "police_car",
+    "unicode": {"apple":"1F693", "google":"1F693", "twitter":"1F693"},
+    "shortcode": "police_car",
+    "description": "POLICE CAR",
+    "category": "travel"
+  },
+  {
+    "name": "ambulance",
+    "unicode": {"apple":"1F691", "google":"1F691", "twitter":"1F691"},
+    "shortcode": "ambulance",
+    "description": "AMBULANCE",
+    "category": "travel"
+  },
+  {
+    "name": "fire_engine",
+    "unicode": {"apple":"1F692", "google":"1F692", "twitter":"1F692"},
+    "shortcode": "fire_engine",
+    "description": "FIRE ENGINE",
+    "category": "travel"
+  },
+  {
+    "name": "minibus",
+    "unicode": {"apple":"1F690", "google":"1F690", "twitter":"1F690"},
+    "shortcode": "minibus",
+    "description": "MINIBUS",
+    "category": "travel"
+  },
+  {
+    "name": "truck",
+    "unicode": {"apple":"1F69A", "google":"1F69A", "twitter":"1F69A"},
+    "shortcode": "truck",
+    "description": "DELIVERY TRUCK",
+    "category": "travel"
+  },
+  {
+    "name": "articulated_lorry",
+    "unicode": {"apple":"1F69B", "google":"1F69B", "twitter":"1F69B"},
+    "shortcode": "articulated_lorry",
+    "description": "ARTICULATED LORRY",
+    "category": "travel"
+  },
+  {
+    "name": "tractor",
+    "unicode": {"apple":"1F69C", "google":"1F69C", "twitter":"1F69C"},
+    "shortcode": "tractor",
+    "description": "TRACTOR",
+    "category": "travel"
+  },
+  {
+    "name": "racing_motorcycle",
+    "unicode": {"apple":"1F3CD", "google":"1F3CD", "twitter":"1F3CD"},
+    "shortcode": "racing_motorcycle",
+    "description": "Racing Motorcycle",
+    "category": "travel"
+  },
+  {
+    "name": "bike",
+    "unicode": {"apple":"1F6B2", "google":"1F6B2", "twitter":"1F6B2"},
+    "shortcode": "bike",
+    "description": "BICYCLE",
+    "category": "travel"
+  },
+  {
+    "name": "rotating_light",
+    "unicode": {"apple":"1F6A8", "google":"1F6A8", "twitter":"1F6A8"},
+    "shortcode": "rotating_light",
+    "description": "POLICE CARS REVOLVING LIGHT",
+    "category": "travel"
+  },
+  {
+    "name": "oncoming_police_car",
+    "unicode": {"apple":"1F694", "google":"1F694", "twitter":"1F694"},
+    "shortcode": "oncoming_police_car",
+    "description": "ONCOMING POLICE CAR",
+    "category": "travel"
+  },
+  {
+    "name": "oncoming_bus",
+    "unicode": {"apple":"1F68D", "google":"1F68D", "twitter":"1F68D"},
+    "shortcode": "oncoming_bus",
+    "description": "ONCOMING BUS",
+    "category": "travel"
+  },
+  {
+    "name": "oncoming_automobile",
+    "unicode": {"apple":"1F698", "google":"1F698", "twitter":"1F698"},
+    "shortcode": "oncoming_automobile",
+    "description": "ONCOMING AUTOMOBILE",
+    "category": "travel"
+  },
+  {
+    "name": "oncoming_taxi",
+    "unicode": {"apple":"1F696", "google":"1F696", "twitter":"1F696"},
+    "shortcode": "oncoming_taxi",
+    "description": "ONCOMING TAXI",
+    "category": "travel"
+  },
+  {
+    "name": "aerial_tramway",
+    "unicode": {"apple":"1F6A1", "google":"1F6A1", "twitter":"1F6A1"},
+    "shortcode": "aerial_tramway",
+    "description": "AERIAL TRAMWAY",
+    "category": "travel"
+  },
+  {
+    "name": "mountain_cableway",
+    "unicode": {"apple":"1F6A0", "google":"1F6A0", "twitter":"1F6A0"},
+    "shortcode": "mountain_cableway",
+    "description": "MOUNTAIN CABLEWAY",
+    "category": "travel"
+  },
+  {
+    "name": "suspension_railway",
+    "unicode": {"apple":"1F69F", "google":"1F69F", "twitter":"1F69F"},
+    "shortcode": "suspension_railway",
+    "description": "SUSPENSION RAILWAY",
+    "category": "travel"
+  },
+  {
+    "name": "railway_car",
+    "unicode": {"apple":"1F683", "google":"1F683", "twitter":"1F683"},
+    "shortcode": "railway_car",
+    "description": "RAILWAY CAR",
+    "category": "travel"
+  },
+  {
+    "name": "train",
+    "unicode": {"apple":"1F68B", "google":"1F68B", "twitter":"1F68B"},
+    "shortcode": "train",
+    "description": "TRAM CAR",
+    "category": "travel"
+  },
+  {
+    "name": "monorail",
+    "unicode": {"apple":"1F69D", "google":"1F69D", "twitter":"1F69D"},
+    "shortcode": "monorail",
+    "description": "MONORAIL",
+    "category": "travel"
+  },
+  {
+    "name": "bullettrain_side",
+    "unicode": {"apple":"1F684", "google":"1F684", "twitter":"1F684"},
+    "shortcode": "bullettrain_side",
+    "description": "HIGH-SPEED TRAIN",
+    "category": "travel"
+  },
+  {
+    "name": "bullettrain_front",
+    "unicode": {"apple":"1F685", "google":"1F685", "twitter":"1F685"},
+    "shortcode": "bullettrain_front",
+    "description": "HIGH-SPEED TRAIN WITH BULLET NOSE",
+    "category": "travel"
+  },
+  {
+    "name": "light_rail",
+    "unicode": {"apple":"1F688", "google":"1F688", "twitter":"1F688"},
+    "shortcode": "light_rail",
+    "description": "LIGHT RAIL",
+    "category": "travel"
+  },
+  {
+    "name": "mountain_railway",
+    "unicode": {"apple":"1F69E", "google":"1F69E", "twitter":"1F69E"},
+    "shortcode": "mountain_railway",
+    "description": "MOUNTAIN RAILWAY",
+    "category": "travel"
+  },
+  {
+    "name": "steam_locomotive",
+    "unicode": {"apple":"1F682", "google":"1F682", "twitter":"1F682"},
+    "shortcode": "steam_locomotive",
+    "description": "STEAM LOCOMOTIVE",
+    "category": "travel"
+  },
+  {
+    "name": "train2",
+    "unicode": {"apple":"1F686", "google":"1F686", "twitter":"1F686"},
+    "shortcode": "train2",
+    "description": "TRAIN",
+    "category": "travel"
+  },
+  {
+    "name": "metro",
+    "unicode": {"apple":"1F687", "google":"1F687", "twitter":"1F687"},
+    "shortcode": "metro",
+    "description": "METRO",
+    "category": "travel"
+  },
+  {
+    "name": "tram",
+    "unicode": {"apple":"1F68A", "google":"1F68A", "twitter":"1F68A"},
+    "shortcode": "tram",
+    "description": "TRAM",
+    "category": "travel"
+  },
+  {
+    "name": "station",
+    "unicode": {"apple":"1F689", "google":"1F689", "twitter":"1F689"},
+    "shortcode": "station",
+    "description": "STATION",
+    "category": "travel"
+  },
+  {
+    "name": "helicopter",
+    "unicode": {"apple":"1F681", "google":"1F681", "twitter":"1F681"},
+    "shortcode": "helicopter",
+    "description": "HELICOPTER",
+    "category": "travel"
+  },
+  {
+    "name": "small_airplane",
+    "unicode": {"apple":"1F6E9", "google":"1F6E9", "twitter":"1F6E9"},
+    "shortcode": "small_airplane",
+    "description": "Small Airplane",
+    "category": "travel"
+  },
+  {
+    "name": "airplane",
+    "unicode": {"apple":"2708", "google":"2708", "twitter":"2708"},
+    "shortcode": "airplane",
+    "description": "AIRPLANE",
+    "category": "travel"
+  },
+  {
+    "name": "airplane_departure",
+    "unicode": {"apple":"1F6EB", "google":"1F6EB", "twitter":"1F6EB"},
+    "shortcode": "airplane_departure",
+    "description": "Airplane Departure",
+    "category": "travel"
+  },
+  {
+    "name": "airplane_arriving",
+    "unicode": {"apple":"1F6EC", "google":"1F6EC", "twitter":"1F6EC"},
+    "shortcode": "airplane_arriving",
+    "description": "Airplane Arriving",
+    "category": "travel"
+  },
+  {
+    "name": "boat",
+    "unicode": {"apple":"26F5", "google":"26F5", "twitter":"26F5"},
+    "shortcode": "boat",
+    "description": "SAILBOAT",
+    "category": "travel"
+  },
+  {
+    "name": "motor_boat",
+    "unicode": {"apple":"1F6E5", "google":"1F6E5", "twitter":"1F6E5"},
+    "shortcode": "motor_boat",
+    "description": "Motor Boat",
+    "category": "travel"
+  },
+  {
+    "name": "speedboat",
+    "unicode": {"apple":"1F6A4", "google":"1F6A4", "twitter":"1F6A4"},
+    "shortcode": "speedboat",
+    "description": "SPEEDBOAT",
+    "category": "travel"
+  },
+  {
+    "name": "ferry",
+    "unicode": {"apple":"26F4", "google":"26F4", "twitter":"26F4"},
+    "shortcode": "ferry",
+    "description": "Ferry",
+    "category": "travel"
+  },
+  {
+    "name": "passenger_ship",
+    "unicode": {"apple":"1F6F3", "google":"1F6F3", "twitter":"1F6F3"},
+    "shortcode": "passenger_ship",
+    "description": "Passenger Ship",
+    "category": "travel"
+  },
+  {
+    "name": "rocket",
+    "unicode": {"apple":"1F680", "google":"1F680", "twitter":"1F680"},
+    "shortcode": "rocket",
+    "description": "ROCKET",
+    "category": "travel"
+  },
+  {
+    "name": "satellite",
+    "unicode": {"apple":"1F4E1", "google":"1F4E1", "twitter":"1F4E1"},
+    "shortcode": "satellite",
+    "description": "SATELLITE ANTENNA",
+    "category": "travel"
+  },
+  {
+    "name": "seat",
+    "unicode": {"apple":"1F4BA", "google":"1F4BA", "twitter":"1F4BA"},
+    "shortcode": "seat",
+    "description": "SEAT",
+    "category": "travel"
+  },
+  {
+    "name": "anchor",
+    "unicode": {"apple":"2693", "google":"2693", "twitter":"2693"},
+    "shortcode": "anchor",
+    "description": "ANCHOR",
+    "category": "travel"
+  },
+  {
+    "name": "construction",
+    "unicode": {"apple":"1F6A7", "google":"1F6A7", "twitter":"1F6A7"},
+    "shortcode": "construction",
+    "description": "CONSTRUCTION SIGN",
+    "category": "travel"
+  },
+  {
+    "name": "fuelpump",
+    "unicode": {"apple":"26FD", "google":"26FD", "twitter":"26FD"},
+    "shortcode": "fuelpump",
+    "description": "FUEL PUMP",
+    "category": "travel"
+  },
+  {
+    "name": "busstop",
+    "unicode": {"apple":"1F68F", "google":"1F68F", "twitter":"1F68F"},
+    "shortcode": "busstop",
+    "description": "BUS STOP",
+    "category": "travel"
+  },
+  {
+    "name": "vertical_traffic_light",
+    "unicode": {"apple":"1F6A6", "google":"1F6A6", "twitter":"1F6A6"},
+    "shortcode": "vertical_traffic_light",
+    "description": "VERTICAL TRAFFIC LIGHT",
+    "category": "travel"
+  },
+  {
+    "name": "traffic_light",
+    "unicode": {"apple":"1F6A5", "google":"1F6A5", "twitter":"1F6A5"},
+    "shortcode": "traffic_light",
+    "description": "HORIZONTAL TRAFFIC LIGHT",
+    "category": "travel"
+  },
+  {
+    "name": "checkered_flag",
+    "unicode": {"apple":"1F3C1", "google":"1F3C1", "twitter":"1F3C1"},
+    "shortcode": "checkered_flag",
+    "description": "CHEQUERED FLAG",
+    "category": "travel"
+  },
+  {
+    "name": "ship",
+    "unicode": {"apple":"1F6A2", "google":"1F6A2", "twitter":"1F6A2"},
+    "shortcode": "ship",
+    "description": "SHIP",
+    "category": "travel"
+  },
+  {
+    "name": "ferris_wheel",
+    "unicode": {"apple":"1F3A1", "google":"1F3A1", "twitter":"1F3A1"},
+    "shortcode": "ferris_wheel",
+    "description": "FERRIS WHEEL",
+    "category": "travel"
+  },
+  {
+    "name": "roller_coaster",
+    "unicode": {"apple":"1F3A2", "google":"1F3A2", "twitter":"1F3A2"},
+    "shortcode": "roller_coaster",
+    "description": "ROLLER COASTER",
+    "category": "travel"
+  },
+  {
+    "name": "carousel_horse",
+    "unicode": {"apple":"1F3A0", "google":"1F3A0", "twitter":"1F3A0"},
+    "shortcode": "carousel_horse",
+    "description": "CAROUSEL HORSE",
+    "category": "travel"
+  },
+  {
+    "name": "building_construction",
+    "unicode": {"apple":"1F3D7", "google":"1F3D7", "twitter":"1F3D7"},
+    "shortcode": "building_construction",
+    "description": "Building Construction",
+    "category": "travel"
+  },
+  {
+    "name": "foggy",
+    "unicode": {"apple":"1F301", "google":"1F301", "twitter":"1F301"},
+    "shortcode": "foggy",
+    "description": "FOGGY",
+    "category": "travel"
+  },
+  {
+    "name": "tokyo_tower",
+    "unicode": {"apple":"1F5FC", "google":"1F5FC", "twitter":"1F5FC"},
+    "shortcode": "tokyo_tower",
+    "description": "TOKYO TOWER",
+    "category": "travel"
+  },
+  {
+    "name": "factory",
+    "unicode": {"apple":"1F3ED", "google":"1F3ED", "twitter":"1F3ED"},
+    "shortcode": "factory",
+    "description": "FACTORY",
+    "category": "travel"
+  },
+  {
+    "name": "fountain",
+    "unicode": {"apple":"26F2", "google":"26F2", "twitter":"26F2"},
+    "shortcode": "fountain",
+    "description": "FOUNTAIN",
+    "category": "travel"
+  },
+  {
+    "name": "rice_scene",
+    "unicode": {"apple":"1F391", "google":"1F391", "twitter":"1F391"},
+    "shortcode": "rice_scene",
+    "description": "MOON VIEWING CEREMONY",
+    "category": "travel"
+  },
+  {
+    "name": "mountain",
+    "unicode": {"apple":"26F0", "google":"26F0", "twitter":"26F0"},
+    "shortcode": "mountain",
+    "description": "Mountain",
+    "category": "travel"
+  },
+  {
+    "name": "snow_capped_mountain",
+    "unicode": {"apple":"1F3D4", "google":"1F3D4", "twitter":"1F3D4"},
+    "shortcode": "snow_capped_mountain",
+    "description": "Snow Capped Mountain",
+    "category": "travel"
+  },
+  {
+    "name": "mount_fuji",
+    "unicode": {"apple":"1F5FB", "google":"1F5FB", "twitter":"1F5FB"},
+    "shortcode": "mount_fuji",
+    "description": "MOUNT FUJI",
+    "category": "travel"
+  },
+  {
+    "name": "volcano",
+    "unicode": {"apple":"1F30B", "google":"1F30B", "twitter":"1F30B"},
+    "shortcode": "volcano",
+    "description": "VOLCANO",
+    "category": "travel"
+  },
+  {
+    "name": "japan",
+    "unicode": {"apple":"1F5FE", "google":"1F5FE", "twitter":"1F5FE"},
+    "shortcode": "japan",
+    "description": "SILHOUETTE OF JAPAN",
+    "category": "travel"
+  },
+  {
+    "name": "camping",
+    "unicode": {"apple":"1F3D5", "google":"1F3D5", "twitter":"1F3D5"},
+    "shortcode": "camping",
+    "description": "Camping",
+    "category": "travel"
+  },
+  {
+    "name": "tent",
+    "unicode": {"apple":"26FA", "google":"26FA", "twitter":"26FA"},
+    "shortcode": "tent",
+    "description": "TENT",
+    "category": "travel"
+  },
+  {
+    "name": "national_park",
+    "unicode": {"apple":"1F3DE", "google":"1F3DE", "twitter":"1F3DE"},
+    "shortcode": "national_park",
+    "description": "National Park",
+    "category": "travel"
+  },
+  {
+    "name": "motorway",
+    "unicode": {"apple":"1F6E3", "google":"1F6E3", "twitter":"1F6E3"},
+    "shortcode": "motorway",
+    "description": "Motorway",
+    "category": "travel"
+  },
+  {
+    "name": "railway_track",
+    "unicode": {"apple":"1F6E4", "google":"1F6E4", "twitter":"1F6E4"},
+    "shortcode": "railway_track",
+    "description": "Railway Track",
+    "category": "travel"
+  },
+  {
+    "name": "sunrise",
+    "unicode": {"apple":"1F305", "google":"1F305", "twitter":"1F305"},
+    "shortcode": "sunrise",
+    "description": "SUNRISE",
+    "category": "travel"
+  },
+  {
+    "name": "sunrise_over_mountains",
+    "unicode": {"apple":"1F304", "google":"1F304", "twitter":"1F304"},
+    "shortcode": "sunrise_over_mountains",
+    "description": "SUNRISE OVER MOUNTAINS",
+    "category": "travel"
+  },
+  {
+    "name": "desert",
+    "unicode": {"apple":"1F3DC", "google":"1F3DC", "twitter":"1F3DC"},
+    "shortcode": "desert",
+    "description": "Desert",
+    "category": "travel"
+  },
+  {
+    "name": "beach_with_umbrella",
+    "unicode": {"apple":"1F3D6", "google":"1F3D6", "twitter":"1F3D6"},
+    "shortcode": "beach_with_umbrella",
+    "description": "Beach With Umbrella",
+    "category": "travel"
+  },
+  {
+    "name": "desert_island",
+    "unicode": {"apple":"1F3DD", "google":"1F3DD", "twitter":"1F3DD"},
+    "shortcode": "desert_island",
+    "description": "Desert Island",
+    "category": "travel"
+  },
+  {
+    "name": "city_sunrise",
+    "unicode": {"apple":"1F307", "google":"1F307", "twitter":"1F307"},
+    "shortcode": "city_sunrise",
+    "description": "SUNSET OVER BUILDINGS",
+    "category": "travel"
+  },
+  {
+    "name": "city_sunset",
+    "unicode": {"apple":"1F306", "google":"1F306", "twitter":"1F306"},
+    "shortcode": "city_sunset",
+    "description": "CITYSCAPE AT DUSK",
+    "category": "travel"
+  },
+  {
+    "name": "cityscape",
+    "unicode": {"apple":"1F3D9", "google":"1F3D9", "twitter":"1F3D9"},
+    "shortcode": "cityscape",
+    "description": "CITYSCAPE",
+    "category": "travel"
+  },
+  {
+    "name": "night_with_stars",
+    "unicode": {"apple":"1F303", "google":"1F303", "twitter":"1F303"},
+    "shortcode": "night_with_stars",
+    "description": "NIGHT WITH STARS",
+    "category": "travel"
+  },
+  {
+    "name": "bridge_at_night",
+    "unicode": {"apple":"1F309", "google":"1F309", "twitter":"1F309"},
+    "shortcode": "bridge_at_night",
+    "description": "BRIDGE AT NIGHT",
+    "category": "travel"
+  },
+  {
+    "name": "milky_way",
+    "unicode": {"apple":"1F30C", "google":"1F30C", "twitter":"1F30C"},
+    "shortcode": "milky_way",
+    "description": "MILKY WAY",
+    "category": "travel"
+  },
+  {
+    "name": "stars",
+    "unicode": {"apple":"1F320", "google":"1F320", "twitter":"1F320"},
+    "shortcode": "stars",
+    "description": "SHOOTING STAR",
+    "category": "travel"
+  },
+  {
+    "name": "sparkler",
+    "unicode": {"apple":"1F387", "google":"1F387", "twitter":"1F387"},
+    "shortcode": "sparkler",
+    "description": "FIREWORK SPARKLER",
+    "category": "travel"
+  },
+  {
+    "name": "fireworks",
+    "unicode": {"apple":"1F386", "google":"1F386", "twitter":"1F386"},
+    "shortcode": "fireworks",
+    "description": "FIREWORKS",
+    "category": "travel"
+  },
+  {
+    "name": "rainbow",
+    "unicode": {"apple":"1F308", "google":"1F308", "twitter":"1F308"},
+    "shortcode": "rainbow",
+    "description": "RAINBOW",
+    "category": "travel"
+  },
+  {
+    "name": "house_buildings",
+    "unicode": {"apple":"1F3D8", "google":"1F3D8", "twitter":"1F3D8"},
+    "shortcode": "house_buildings",
+    "description": "EUROPEAN CASTLE",
+    "category": "travel"
+  },
+  {
+    "name": "european_castle",
+    "unicode": {"apple":"1F3F0", "google":"1F3F0", "twitter":"1F3F0"},
+    "shortcode": "european_castle",
+    "description": "EUROPEAN CASTLE",
+    "category": "travel"
+  },
+  {
+    "name": "japanese_castle",
+    "unicode": {"apple":"1F3EF", "google":"1F3EF", "twitter":"1F3EF"},
+    "shortcode": "japanese_castle",
+    "description": "JAPANESE CASTLE",
+    "category": "travel"
+  },
+  {
+    "name": "stadium",
+    "unicode": {"apple":"1F3DF", "google":"1F3DF", "twitter":"1F3DF"},
+    "shortcode": "stadium",
+    "description": "Stadium",
+    "category": "travel"
+  },
+  {
+    "name": "statue_of_liberty",
+    "unicode": {"apple":"1F5FD", "google":"1F5FD", "twitter":"1F5FD"},
+    "shortcode": "statue_of_liberty",
+    "description": "STATUE OF LIBERTY",
+    "category": "travel"
+  },
+  {
+    "name": "house",
+    "unicode": {"apple":"1F3E0", "google":"1F3E0", "twitter":"1F3E0"},
+    "shortcode": "house",
+    "description": "HOUSE BUILDING",
+    "category": "travel"
+  },
+  {
+    "name": "house_with_garden",
+    "unicode": {"apple":"1F3E1", "google":"1F3E1", "twitter":"1F3E1"},
+    "shortcode": "house_with_garden",
+    "description": "HOUSE WITH GARDEN",
+    "category": "travel"
+  },
+  {
+    "name": "derelict_house_building",
+    "unicode": {"apple":"1F3DA", "google":"1F3DA", "twitter":"1F3DA"},
+    "shortcode": "derelict_house_building",
+    "description": "Derelict House Building",
+    "category": "travel"
+  },
+  {
+    "name": "office",
+    "unicode": {"apple":"1F3E2", "google":"1F3E2", "twitter":"1F3E2"},
+    "shortcode": "office",
+    "description": "OFFICE BUILDING",
+    "category": "travel"
+  },
+  {
+    "name": "department_store",
+    "unicode": {"apple":"1F3EC", "google":"1F3EC", "twitter":"1F3EC"},
+    "shortcode": "department_store",
+    "description": "DEPARTMENT STORE",
+    "category": "travel"
+  },
+  {
+    "name": "post_office",
+    "unicode": {"apple":"1F3E3", "google":"1F3E3", "twitter":"1F3E3"},
+    "shortcode": "post_office",
+    "description": "JAPANESE POST OFFICE",
+    "category": "travel"
+  },
+  {
+    "name": "european_post_office",
+    "unicode": {"apple":"1F3E4", "google":"1F3E4", "twitter":"1F3E4"},
+    "shortcode": "european_post_office",
+    "description": "EUROPEAN POST OFFICE",
+    "category": "travel"
+  },
+  {
+    "name": "bank",
+    "unicode": {"apple":"1F3E6", "google":"1F3E6", "twitter":"1F3E6"},
+    "shortcode": "bank",
+    "description": "BANK",
+    "category": "travel"
+  },
+  {
+    "name": "hotel",
+    "unicode": {"apple":"1F3E8", "google":"1F3E8", "twitter":"1F3E8"},
+    "shortcode": "hotel",
+    "description": "HOTEL",
+    "category": "travel"
+  },
+  {
+    "name": "convenience_store",
+    "unicode": {"apple":"1F3EA", "google":"1F3EA", "twitter":"1F3EA"},
+    "shortcode": "convenience_store",
+    "description": "CONVENIENCE STORE",
+    "category": "travel"
+  },
+  {
+    "name": "school",
+    "unicode": {"apple":"1F3EB", "google":"1F3EB", "twitter":"1F3EB"},
+    "shortcode": "school",
+    "description": "SCHOOL",
+    "category": "travel"
+  },
+  {
+    "name": "love_hotel",
+    "unicode": {"apple":"1F3E9", "google":"1F3E9", "twitter":"1F3E9"},
+    "shortcode": "love_hotel",
+    "description": "LOVE HOTEL",
+    "category": "travel"
+  },
+  {
+    "name": "wedding",
+    "unicode": {"apple":"1F492", "google":"1F492", "twitter":"1F492"},
+    "shortcode": "wedding",
+    "description": "WEDDING",
+    "category": "travel"
+  },
+  {
+    "name": "classical_building",
+    "unicode": {"apple":"1F3DB", "google":"1F3DB", "twitter":"1F3DB"},
+    "shortcode": "classical_building",
+    "description": "Classical Building",
+    "category": "travel"
+  },
+  {
+    "name": "church",
+    "unicode": {"apple":"26EA", "google":"26EA", "twitter":"26EA"},
+    "shortcode": "church",
+    "description": "CHURCH",
+    "category": "travel"
+  },
+  {
+    "name": "mosque",
+    "unicode": {"apple":"1F54C", "google":"1F54C", "twitter":"1F54C"},
+    "shortcode": "mosque",
+    "description": "Mosque",
+    "category": "travel"
+  },
+  {
+    "name": "synagogue",
+    "unicode": {"apple":"1F54D", "google":"1F54D", "twitter":"1F54D"},
+    "shortcode": "synagogue",
+    "description": "Synagogue",
+    "category": "travel"
+  },
+  {
+    "name": "kaaba",
+    "unicode": {"apple":"1F54B", "google":"1F54B", "twitter":"1F54B"},
+    "shortcode": "kaaba",
+    "description": "Kaaba",
+    "category": "travel"
+  },
+  {
+    "name": "shinto_shrine",
+    "unicode": {"apple":"26E9", "google":"26E9", "twitter":"26E9"},
+    "shortcode": "shinto_shrine",
+    "description": "Shinto Shrine",
+    "category": "travel"
+  },
 
 
 
@@ -3209,13 +4371,7 @@ $.fn.emojiPicker.emojis = [
     "description": "WHEELCHAIR SYMBOL",
     "category": "thing"
   },
-  {
-    "name": "anchor",
-    "unicode": {"apple":"", "google":"", "twitter":"2693"},
-    "shortcode": "anchor",
-    "description": "ANCHOR",
-    "category": "thing"
-  },
+
   {
     "name": "warning",
     "unicode": {"apple":"", "google":"", "twitter":"26A0"},
@@ -3239,28 +4395,6 @@ $.fn.emojiPicker.emojis = [
     "category": "folderol"
   },
   {
-    "name": "soccer",
-    "unicode": {"apple":"", "google":"", "twitter":"26BD"},
-    "shortcode": "soccer",
-    "description": "SOCCER BALL",
-    "category": "thing"
-  },
-  {
-    "name": "baseball",
-    "unicode": {"apple":"", "google":"", "twitter":"26BE"},
-    "shortcode": "baseball",
-    "description": "BASEBALL",
-    "category": "thing"
-  },
-  {
-    "name": "snowman",
-    "unicode": {"apple":"", "google":"", "twitter":"26C4"},
-    "shortcode": "snowman",
-    "description": "SNOWMAN WITHOUT SNOW",
-    "category": "thing"
-  },
-
-  {
     "name": "ophiuchus",
     "unicode": {"apple":"", "google":"", "twitter":"26CE"},
     "shortcode": "ophiuchus",
@@ -3274,48 +4408,12 @@ $.fn.emojiPicker.emojis = [
     "description": "NO ENTRY",
     "category": "folderol"
   },
-  {
-    "name": "church",
-    "unicode": {"apple":"", "google":"", "twitter":"26EA"},
-    "shortcode": "church",
-    "description": "CHURCH",
-    "category": "travel"
-  },
-  {
-    "name": "fountain",
-    "unicode": {"apple":"", "google":"", "twitter":"26F2"},
-    "shortcode": "fountain",
-    "description": "FOUNTAIN",
-    "category": "travel"
-  },
-  {
-    "name": "golf",
-    "unicode": {"apple":"", "google":"", "twitter":"26F3"},
-    "shortcode": "golf",
-    "description": "FLAG IN HOLE",
-    "category": "travel"
-  },
-  {
-    "name": "boat",
-    "unicode": {"apple":"", "google":"", "twitter":"26F5"},
-    "shortcode": "boat",
-    "description": "SAILBOAT",
-    "category": "travel"
-  },
-  {
-    "name": "tent",
-    "unicode": {"apple":"", "google":"", "twitter":"26FA"},
-    "shortcode": "tent",
-    "description": "TENT",
-    "category": "travel"
-  },
-  {
-    "name": "fuelpump",
-    "unicode": {"apple":"", "google":"", "twitter":"26FD"},
-    "shortcode": "fuelpump",
-    "description": "FUEL PUMP",
-    "category": "travel"
-  },
+
+
+
+
+
+
   {
     "name": "scissors",
     "unicode": {"apple":"", "google":"", "twitter":"2702"},
@@ -3330,13 +4428,7 @@ $.fn.emojiPicker.emojis = [
     "description": "WHITE HEAVY CHECK MARK",
     "category": "folderol"
   },
-  {
-    "name": "airplane",
-    "unicode": {"apple":"", "google":"", "twitter":"2708"},
-    "shortcode": "airplane",
-    "description": "AIRPLANE",
-    "category": "travel"
-  },
+
   {
     "name": "email",
     "unicode": {"apple":"", "google":"", "twitter":"2709"},
@@ -3802,77 +4894,12 @@ $.fn.emojiPicker.emojis = [
     "description": "CYCLONE",
     "category": "thing"
   },
-  {
-    "name": "foggy",
-    "unicode": {"apple":"", "google":"", "twitter":"1F301"},
-    "shortcode": "foggy",
-    "description": "FOGGY",
-    "category": "thing"
-  },
-  {
-    "name": "night_with_stars",
-    "unicode": {"apple":"", "google":"", "twitter":"1F303"},
-    "shortcode": "night_with_stars",
-    "description": "NIGHT WITH STARS",
-    "category": "thing"
-  },
-  {
-    "name": "sunrise_over_mountains",
-    "unicode": {"apple":"", "google":"", "twitter":"1F304"},
-    "shortcode": "sunrise_over_mountains",
-    "description": "SUNRISE OVER MOUNTAINS",
-    "category": "thing"
-  },
-  {
-    "name": "sunrise",
-    "unicode": {"apple":"", "google":"", "twitter":"1F305"},
-    "shortcode": "sunrise",
-    "description": "SUNRISE",
-    "category": "thing"
-  },
-  {
-    "name": "city_sunset",
-    "unicode": {"apple":"", "google":"", "twitter":"1F306"},
-    "shortcode": "city_sunset",
-    "description": "CITYSCAPE AT DUSK",
-    "category": "thing"
-  },
-  {
-    "name": "city_sunrise",
-    "unicode": {"apple":"", "google":"", "twitter":"1F307"},
-    "shortcode": "city_sunrise",
-    "description": "SUNSET OVER BUILDINGS",
-    "category": "thing"
-  },
-  {
-    "name": "rainbow",
-    "unicode": {"apple":"", "google":"", "twitter":"1F308"},
-    "shortcode": "rainbow",
-    "description": "RAINBOW",
-    "category": "thing"
-  },
-  {
-    "name": "bridge_at_night",
-    "unicode": {"apple":"", "google":"", "twitter":"1F309"},
-    "shortcode": "bridge_at_night",
-    "description": "BRIDGE AT NIGHT",
-    "category": "thing"
-  },
 
-  {
-    "name": "volcano",
-    "unicode": {"apple":"", "google":"", "twitter":"1F30B"},
-    "shortcode": "volcano",
-    "description": "VOLCANO",
-    "category": "thing"
-  },
-  {
-    "name": "milky_way",
-    "unicode": {"apple":"", "google":"", "twitter":"1F30C"},
-    "shortcode": "milky_way",
-    "description": "MILKY WAY",
-    "category": "thing"
-  },
+
+
+
+
+
 
   {
     "name": "globe_with_meridians",
@@ -3945,20 +4972,7 @@ $.fn.emojiPicker.emojis = [
 
 
 
-  {
-    "name": "fireworks",
-    "unicode": {"apple":"", "google":"", "twitter":"1F386"},
-    "shortcode": "fireworks",
-    "description": "FIREWORKS",
-    "category": "thing"
-  },
-  {
-    "name": "sparkler",
-    "unicode": {"apple":"", "google":"", "twitter":"1F387"},
-    "shortcode": "sparkler",
-    "description": "FIREWORK SPARKLER",
-    "category": "thing"
-  },
+
   {
     "name": "balloon",
     "unicode": {"apple":"", "google":"", "twitter":"1F388"},
@@ -4010,48 +5024,10 @@ $.fn.emojiPicker.emojis = [
     "description": "WIND CHIME",
     "category": "thing"
   },
-  {
-    "name": "rice_scene",
-    "unicode": {"apple":"", "google":"", "twitter":"1F391"},
-    "shortcode": "rice_scene",
-    "description": "MOON VIEWING CEREMONY",
-    "category": "thing"
-  },
-  {
-    "name": "carousel_horse",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3A0"},
-    "shortcode": "carousel_horse",
-    "description": "CAROUSEL HORSE",
-    "category": "thing"
-  },
-  {
-    "name": "ferris_wheel",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3A1"},
-    "shortcode": "ferris_wheel",
-    "description": "FERRIS WHEEL",
-    "category": "thing"
-  },
-  {
-    "name": "roller_coaster",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3A2"},
-    "shortcode": "roller_coaster",
-    "description": "ROLLER COASTER",
-    "category": "thing"
-  },
-  {
-    "name": "fishing_pole_and_fish",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3A3"},
-    "shortcode": "fishing_pole_and_fish",
-    "description": "FISHING POLE AND FISH",
-    "category": "thing"
-  },
-  {
-    "name": "microphone",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3A4"},
-    "shortcode": "microphone",
-    "description": "MICROPHONE",
-    "category": "thing"
-  },
+
+
+
+
   {
     "name": "movie_camera",
     "unicode": {"apple":"", "google":"", "twitter":"1F3A5"},
@@ -4066,91 +5042,14 @@ $.fn.emojiPicker.emojis = [
     "description": "CINEMA",
     "category": "thing"
   },
-  {
-    "name": "headphones",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3A7"},
-    "shortcode": "headphones",
-    "description": "HEADPHONE",
-    "category": "thing"
-  },
-  {
-    "name": "art",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3A8"},
-    "shortcode": "art",
-    "description": "ARTIST PALETTE",
-    "category": "thing"
-  },
 
-  {
-    "name": "circus_tent",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3AA"},
-    "shortcode": "circus_tent",
-    "description": "CIRCUS TENT",
-    "category": "thing"
-  },
-  {
-    "name": "ticket",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3AB"},
-    "shortcode": "ticket",
-    "description": "TICKET",
-    "category": "thing"
-  },
-  {
-    "name": "clapper",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3AC"},
-    "shortcode": "clapper",
-    "description": "CLAPPER BOARD",
-    "category": "thing"
-  },
-  {
-    "name": "performing_arts",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3AD"},
-    "shortcode": "performing_arts",
-    "description": "PERFORMING ARTS",
-    "category": "thing"
-  },
-  {
-    "name": "video_game",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3AE"},
-    "shortcode": "video_game",
-    "description": "VIDEO GAME",
-    "category": "thing"
-  },
-  {
-    "name": "dart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3AF"},
-    "shortcode": "dart",
-    "description": "DIRECT HIT",
-    "category": "thing"
-  },
-  {
-    "name": "slot_machine",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B0"},
-    "shortcode": "slot_machine",
-    "description": "SLOT MACHINE",
-    "category": "thing"
-  },
-  {
-    "name": "8ball",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B1"},
-    "shortcode": "8ball",
-    "description": "BILLIARDS",
-    "category": "thing"
-  },
-  {
-    "name": "game_die",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B2"},
-    "shortcode": "game_die",
-    "description": "GAME DIE",
-    "category": "thing"
-  },
-  {
-    "name": "bowling",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B3"},
-    "shortcode": "bowling",
-    "description": "BOWLING",
-    "category": "thing"
-  },
+
+
+
+
+
+
+
   {
     "name": "flower_playing_cards",
     "unicode": {"apple":"", "google":"", "twitter":"1F3B4"},
@@ -4172,167 +5071,22 @@ $.fn.emojiPicker.emojis = [
     "description": "MULTIPLE MUSICAL NOTES",
     "category": "thing"
   },
-  {
-    "name": "saxophone",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B7"},
-    "shortcode": "saxophone",
-    "description": "SAXOPHONE",
-    "category": "thing"
-  },
-  {
-    "name": "guitar",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B8"},
-    "shortcode": "guitar",
-    "description": "GUITAR",
-    "category": "thing"
-  },
-  {
-    "name": "musical_keyboard",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B9"},
-    "shortcode": "musical_keyboard",
-    "description": "MUSICAL KEYBOARD",
-    "category": "thing"
-  },
-  {
-    "name": "trumpet",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3BA"},
-    "shortcode": "trumpet",
-    "description": "TRUMPET",
-    "category": "thing"
-  },
-  {
-    "name": "violin",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3BB"},
-    "shortcode": "violin",
-    "description": "VIOLIN",
-    "category": "thing"
-  },
-  {
-    "name": "musical_score",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3BC"},
-    "shortcode": "musical_score",
-    "description": "MUSICAL SCORE",
-    "category": "thing"
-  },
-  {
-    "name": "running_shirt_with_sash",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3BD"},
-    "shortcode": "running_shirt_with_sash",
-    "description": "RUNNING SHIRT WITH SASH",
-    "category": "thing"
-  },
-  {
-    "name": "tennis",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3BE"},
-    "shortcode": "tennis",
-    "description": "TENNIS RACQUET AND BALL",
-    "category": "thing"
-  },
-  {
-    "name": "ski",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3BF"},
-    "shortcode": "ski",
-    "description": "SKI AND SKI BOOT",
-    "category": "thing"
-  },
-  {
-    "name": "basketball",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3C0"},
-    "shortcode": "basketball",
-    "description": "BASKETBALL AND HOOP",
-    "category": "thing"
-  },
-  {
-    "name": "checkered_flag",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3C1"},
-    "shortcode": "checkered_flag",
-    "description": "CHEQUERED FLAG",
-    "category": "thing"
-  },
-  {
-    "name": "snowboarder",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3C2"},
-    "shortcode": "snowboarder",
-    "description": "SNOWBOARDER",
-    "category": "object"
-  },
-  {
-    "name": "surfer",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3C4"},
-    "shortcode": "surfer",
-    "description": "SURFER",
-    "category": "symbol"
-  },
-  {
-    "name": "trophy",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3C6"},
-    "shortcode": "trophy",
-    "description": "TROPHY",
-    "category": "flag"
-  },
-  {
-    "name": "horse_racing",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3C7"},
-    "shortcode": "horse_racing",
-    "description": "HORSE RACING",
-    "category": "travel"
-  },
-  {
-    "name": "football",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3C8"},
-    "shortcode": "football",
-    "description": "AMERICAN FOOTBALL",
-    "category": "sport"
-  },
-  {
-    "name": "rugby_football",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3C9"},
-    "shortcode": "rugby_football",
-    "description": "RUGBY FOOTBALL",
-    "category": "activity"
-  },
-  {
-    "name": "swimmer",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3CA"},
-    "shortcode": "swimmer",
-    "description": "SWIMMER",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "house",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E0"},
-    "shortcode": "house",
-    "description": "HOUSE BUILDING",
-    "category": "travel"
-  },
-  {
-    "name": "house_with_garden",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E1"},
-    "shortcode": "house_with_garden",
-    "description": "HOUSE WITH GARDEN",
-    "category": "travel"
-  },
-  {
-    "name": "office",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E2"},
-    "shortcode": "office",
-    "description": "OFFICE BUILDING",
-    "category": "travel"
-  },
-  {
-    "name": "post_office",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E3"},
-    "shortcode": "post_office",
-    "description": "JAPANESE POST OFFICE",
-    "category": "travel"
-  },
-  {
-    "name": "european_post_office",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E4"},
-    "shortcode": "european_post_office",
-    "description": "EUROPEAN POST OFFICE",
-    "category": "travel"
-  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "name": "hospital",
     "unicode": {"apple":"", "google":"", "twitter":"1F3E5"},
@@ -4340,13 +5094,7 @@ $.fn.emojiPicker.emojis = [
     "description": "HOSPITAL",
     "category": "travel"
   },
-  {
-    "name": "bank",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E6"},
-    "shortcode": "bank",
-    "description": "BANK",
-    "category": "travel"
-  },
+
   {
     "name": "atm",
     "unicode": {"apple":"", "google":"", "twitter":"1F3E7"},
@@ -4354,48 +5102,11 @@ $.fn.emojiPicker.emojis = [
     "description": "AUTOMATED TELLER MACHINE",
     "category": "travel"
   },
-  {
-    "name": "hotel",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E8"},
-    "shortcode": "hotel",
-    "description": "HOTEL",
-    "category": "travel"
-  },
-  {
-    "name": "love_hotel",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E9"},
-    "shortcode": "love_hotel",
-    "description": "LOVE HOTEL",
-    "category": "travel"
-  },
-  {
-    "name": "convenience_store",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3EA"},
-    "shortcode": "convenience_store",
-    "description": "CONVENIENCE STORE",
-    "category": "travel"
-  },
-  {
-    "name": "school",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3EB"},
-    "shortcode": "school",
-    "description": "SCHOOL",
-    "category": "travel"
-  },
-  {
-    "name": "department_store",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3EC"},
-    "shortcode": "department_store",
-    "description": "DEPARTMENT STORE",
-    "category": "travel"
-  },
-  {
-    "name": "factory",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3ED"},
-    "shortcode": "factory",
-    "description": "FACTORY",
-    "category": "travel"
-  },
+
+
+
+
+
   {
     "name": "izakaya_lantern",
     "unicode": {"apple":"", "google":"", "twitter":"1F3EE"},
@@ -4403,20 +5114,8 @@ $.fn.emojiPicker.emojis = [
     "description": "IZAKAYA LANTERN",
     "category": "travel"
   },
-  {
-    "name": "japanese_castle",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3EF"},
-    "shortcode": "japanese_castle",
-    "description": "JAPANESE CASTLE",
-    "category": "travel"
-  },
-  {
-    "name": "european_castle",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3F0"},
-    "shortcode": "european_castle",
-    "description": "EUROPEAN CASTLE",
-    "category": "travel"
-  },
+
+
 
 
 
@@ -4429,13 +5128,7 @@ $.fn.emojiPicker.emojis = [
     "description": "PERSON WITH BLOND HAIR",
     "category": "XXXXXX"
   },
-  {
-    "name": "space_invader",
-    "unicode": {"apple":"", "google":"", "twitter":"1F47E"},
-    "shortcode": "space_invader",
-    "description": "ALIEN MONSTER",
-    "category": "XXXXXX"
-  },
+
 
   {
     "name": "barber",
@@ -4474,13 +5167,7 @@ $.fn.emojiPicker.emojis = [
     "category": "XXXXXX"
   },
 
-  {
-    "name": "wedding",
-    "unicode": {"apple":"", "google":"", "twitter":"1F492"},
-    "shortcode": "wedding",
-    "description": "WEDDING",
-    "category": "XXXXXX"
-  },
+
   {
     "name": "heartbeat",
     "unicode": {"apple":"", "google":"", "twitter":"1F493"},
@@ -4602,13 +5289,7 @@ $.fn.emojiPicker.emojis = [
   },
 
 
-  {
-    "name": "stars",
-    "unicode": {"apple":"", "google":"", "twitter":"1F320"},
-    "shortcode": "stars",
-    "description": "SHOOTING STAR",
-    "category": "thing"
-  },
+
   {
     "name": "speech_balloon",
     "unicode": {"apple":"", "google":"", "twitter":"1F4AC"},
@@ -4707,13 +5388,7 @@ $.fn.emojiPicker.emojis = [
     "description": "CHART WITH UPWARDS TREND AND YEN SIGN",
     "category": "thing"
   },
-  {
-    "name": "seat",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4BA"},
-    "shortcode": "seat",
-    "description": "SEAT",
-    "category": "thing"
-  },
+
   {
     "name": "computer",
     "unicode": {"apple":"", "google":"", "twitter":"1F4BB"},
@@ -4973,13 +5648,7 @@ $.fn.emojiPicker.emojis = [
     "description": "FAX MACHINE",
     "category": "thing"
   },
-  {
-    "name": "satellite",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E1"},
-    "shortcode": "satellite",
-    "description": "SATELLITE ANTENNA",
-    "category": "thing"
-  },
+
   {
     "name": "loudspeaker",
     "unicode": {"apple":"", "google":"", "twitter":"1F4E2"},
@@ -5758,34 +6427,10 @@ $.fn.emojiPicker.emojis = [
     "description": "CLOCK FACE TWELVE-THIRTY",
     "category": "folderol"
   },
-  {
-    "name": "mount_fuji",
-    "unicode": {"apple":"", "google":"", "twitter":"1F5FB"},
-    "shortcode": "mount_fuji",
-    "description": "MOUNT FUJI",
-    "category": "travel"
-  },
-  {
-    "name": "tokyo_tower",
-    "unicode": {"apple":"", "google":"", "twitter":"1F5FC"},
-    "shortcode": "tokyo_tower",
-    "description": "TOKYO TOWER",
-    "category": "travel"
-  },
-  {
-    "name": "statue_of_liberty",
-    "unicode": {"apple":"", "google":"", "twitter":"1F5FD"},
-    "shortcode": "statue_of_liberty",
-    "description": "STATUE OF LIBERTY",
-    "category": "travel"
-  },
-  {
-    "name": "japan",
-    "unicode": {"apple":"", "google":"", "twitter":"1F5FE"},
-    "shortcode": "japan",
-    "description": "SILHOUETTE OF JAPAN",
-    "category": "travel"
-  },
+
+
+
+
   {
     "name": "moyai",
     "unicode": {"apple":"", "google":"", "twitter":"1F5FF"},
@@ -5794,293 +6439,37 @@ $.fn.emojiPicker.emojis = [
     "category": "travel"
   },
 
-  {
-    "name": "rocket",
-    "unicode": {"apple":"", "google":"", "twitter":"1F680"},
-    "shortcode": "rocket",
-    "description": "ROCKET",
-    "category": "travel"
-  },
-  {
-    "name": "helicopter",
-    "unicode": {"apple":"", "google":"", "twitter":"1F681"},
-    "shortcode": "helicopter",
-    "description": "HELICOPTER",
-    "category": "travel"
-  },
-  {
-    "name": "steam_locomotive",
-    "unicode": {"apple":"", "google":"", "twitter":"1F682"},
-    "shortcode": "steam_locomotive",
-    "description": "STEAM LOCOMOTIVE",
-    "category": "travel"
-  },
-  {
-    "name": "railway_car",
-    "unicode": {"apple":"", "google":"", "twitter":"1F683"},
-    "shortcode": "railway_car",
-    "description": "RAILWAY CAR",
-    "category": "travel"
-  },
-  {
-    "name": "bullettrain_side",
-    "unicode": {"apple":"", "google":"", "twitter":"1F684"},
-    "shortcode": "bullettrain_side",
-    "description": "HIGH-SPEED TRAIN",
-    "category": "travel"
-  },
-  {
-    "name": "bullettrain_front",
-    "unicode": {"apple":"", "google":"", "twitter":"1F685"},
-    "shortcode": "bullettrain_front",
-    "description": "HIGH-SPEED TRAIN WITH BULLET NOSE",
-    "category": "travel"
-  },
-  {
-    "name": "train2",
-    "unicode": {"apple":"", "google":"", "twitter":"1F686"},
-    "shortcode": "train2",
-    "description": "TRAIN",
-    "category": "travel"
-  },
-  {
-    "name": "metro",
-    "unicode": {"apple":"", "google":"", "twitter":"1F687"},
-    "shortcode": "metro",
-    "description": "METRO",
-    "category": "travel"
-  },
-  {
-    "name": "light_rail",
-    "unicode": {"apple":"", "google":"", "twitter":"1F688"},
-    "shortcode": "light_rail",
-    "description": "LIGHT RAIL",
-    "category": "travel"
-  },
-  {
-    "name": "station",
-    "unicode": {"apple":"", "google":"", "twitter":"1F689"},
-    "shortcode": "station",
-    "description": "STATION",
-    "category": "travel"
-  },
-  {
-    "name": "tram",
-    "unicode": {"apple":"", "google":"", "twitter":"1F68A"},
-    "shortcode": "tram",
-    "description": "TRAM",
-    "category": "travel"
-  },
-  {
-    "name": "train",
-    "unicode": {"apple":"", "google":"", "twitter":"1F68B"},
-    "shortcode": "train",
-    "description": "TRAM CAR",
-    "category": "travel"
-  },
-  {
-    "name": "bus",
-    "unicode": {"apple":"", "google":"", "twitter":"1F68C"},
-    "shortcode": "bus",
-    "description": "BUS",
-    "category": "travel"
-  },
-  {
-    "name": "oncoming_bus",
-    "unicode": {"apple":"", "google":"", "twitter":"1F68D"},
-    "shortcode": "oncoming_bus",
-    "description": "ONCOMING BUS",
-    "category": "travel"
-  },
-  {
-    "name": "trolleybus",
-    "unicode": {"apple":"", "google":"", "twitter":"1F68E"},
-    "shortcode": "trolleybus",
-    "description": "TROLLEYBUS",
-    "category": "travel"
-  },
-  {
-    "name": "busstop",
-    "unicode": {"apple":"", "google":"", "twitter":"1F68F"},
-    "shortcode": "busstop",
-    "description": "BUS STOP",
-    "category": "travel"
-  },
-  {
-    "name": "minibus",
-    "unicode": {"apple":"", "google":"", "twitter":"1F690"},
-    "shortcode": "minibus",
-    "description": "MINIBUS",
-    "category": "travel"
-  },
-  {
-    "name": "ambulance",
-    "unicode": {"apple":"", "google":"", "twitter":"1F691"},
-    "shortcode": "ambulance",
-    "description": "AMBULANCE",
-    "category": "travel"
-  },
-  {
-    "name": "fire_engine",
-    "unicode": {"apple":"", "google":"", "twitter":"1F692"},
-    "shortcode": "fire_engine",
-    "description": "FIRE ENGINE",
-    "category": "travel"
-  },
-  {
-    "name": "police_car",
-    "unicode": {"apple":"", "google":"", "twitter":"1F693"},
-    "shortcode": "police_car",
-    "description": "POLICE CAR",
-    "category": "travel"
-  },
-  {
-    "name": "oncoming_police_car",
-    "unicode": {"apple":"", "google":"", "twitter":"1F694"},
-    "shortcode": "oncoming_police_car",
-    "description": "ONCOMING POLICE CAR",
-    "category": "travel"
-  },
-  {
-    "name": "taxi",
-    "unicode": {"apple":"", "google":"", "twitter":"1F695"},
-    "shortcode": "taxi",
-    "description": "TAXI",
-    "category": "travel"
-  },
-  {
-    "name": "oncoming_taxi",
-    "unicode": {"apple":"", "google":"", "twitter":"1F696"},
-    "shortcode": "oncoming_taxi",
-    "description": "ONCOMING TAXI",
-    "category": "travel"
-  },
-  {
-    "name": "car",
-    "unicode": {"apple":"", "google":"", "twitter":"1F697"},
-    "shortcode": "car",
-    "description": "AUTOMOBILE",
-    "category": "travel"
-  },
-  {
-    "name": "oncoming_automobile",
-    "unicode": {"apple":"", "google":"", "twitter":"1F698"},
-    "shortcode": "oncoming_automobile",
-    "description": "ONCOMING AUTOMOBILE",
-    "category": "travel"
-  },
-  {
-    "name": "blue_car",
-    "unicode": {"apple":"", "google":"", "twitter":"1F699"},
-    "shortcode": "blue_car",
-    "description": "RECREATIONAL VEHICLE",
-    "category": "travel"
-  },
-  {
-    "name": "truck",
-    "unicode": {"apple":"", "google":"", "twitter":"1F69A"},
-    "shortcode": "truck",
-    "description": "DELIVERY TRUCK",
-    "category": "travel"
-  },
-  {
-    "name": "articulated_lorry",
-    "unicode": {"apple":"", "google":"", "twitter":"1F69B"},
-    "shortcode": "articulated_lorry",
-    "description": "ARTICULATED LORRY",
-    "category": "travel"
-  },
-  {
-    "name": "tractor",
-    "unicode": {"apple":"", "google":"", "twitter":"1F69C"},
-    "shortcode": "tractor",
-    "description": "TRACTOR",
-    "category": "travel"
-  },
-  {
-    "name": "monorail",
-    "unicode": {"apple":"", "google":"", "twitter":"1F69D"},
-    "shortcode": "monorail",
-    "description": "MONORAIL",
-    "category": "travel"
-  },
-  {
-    "name": "mountain_railway",
-    "unicode": {"apple":"", "google":"", "twitter":"1F69E"},
-    "shortcode": "mountain_railway",
-    "description": "MOUNTAIN RAILWAY",
-    "category": "travel"
-  },
-  {
-    "name": "suspension_railway",
-    "unicode": {"apple":"", "google":"", "twitter":"1F69F"},
-    "shortcode": "suspension_railway",
-    "description": "SUSPENSION RAILWAY",
-    "category": "travel"
-  },
-  {
-    "name": "mountain_cableway",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A0"},
-    "shortcode": "mountain_cableway",
-    "description": "MOUNTAIN CABLEWAY",
-    "category": "travel"
-  },
-  {
-    "name": "aerial_tramway",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A1"},
-    "shortcode": "aerial_tramway",
-    "description": "AERIAL TRAMWAY",
-    "category": "travel"
-  },
-  {
-    "name": "ship",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A2"},
-    "shortcode": "ship",
-    "description": "SHIP",
-    "category": "travel"
-  },
-  {
-    "name": "rowboat",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A3"},
-    "shortcode": "rowboat",
-    "description": "ROWBOAT",
-    "category": "travel"
-  },
-  {
-    "name": "speedboat",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A4"},
-    "shortcode": "speedboat",
-    "description": "SPEEDBOAT",
-    "category": "travel"
-  },
-  {
-    "name": "traffic_light",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A5"},
-    "shortcode": "traffic_light",
-    "description": "HORIZONTAL TRAFFIC LIGHT",
-    "category": "travel"
-  },
-  {
-    "name": "vertical_traffic_light",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A6"},
-    "shortcode": "vertical_traffic_light",
-    "description": "VERTICAL TRAFFIC LIGHT",
-    "category": "travel"
-  },
-  {
-    "name": "construction",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A7"},
-    "shortcode": "construction",
-    "description": "CONSTRUCTION SIGN",
-    "category": "travel"
-  },
-  {
-    "name": "rotating_light",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A8"},
-    "shortcode": "rotating_light",
-    "description": "POLICE CARS REVOLVING LIGHT",
-    "category": "travel"
-  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "name": "triangular_flag_on_post",
     "unicode": {"apple":"", "google":"", "twitter":"1F6A9"},
@@ -6144,13 +6533,7 @@ $.fn.emojiPicker.emojis = [
     "description": "NON-POTABLE WATER SYMBOL",
     "category": "travel"
   },
-  {
-    "name": "bike",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6B2"},
-    "shortcode": "bike",
-    "description": "BICYCLE",
-    "category": "travel"
-  },
+
   {
     "name": "no_bicycles",
     "unicode": {"apple":"", "google":"", "twitter":"1F6B3"},
@@ -6158,20 +6541,7 @@ $.fn.emojiPicker.emojis = [
     "description": "NO BICYCLES",
     "category": "travel"
   },
-  {
-    "name": "bicyclist",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6B4"},
-    "shortcode": "bicyclist",
-    "description": "BICYCLIST",
-    "category": "travel"
-  },
-  {
-    "name": "mountain_bicyclist",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6B5"},
-    "shortcode": "mountain_bicyclist",
-    "description": "MOUNTAIN BICYCLIST",
-    "category": "travel"
-  },
+
 
   {
     "name": "no_pedestrians",
@@ -6236,13 +6606,7 @@ $.fn.emojiPicker.emojis = [
     "description": "SHOWER",
     "category": "travel"
   },
-  {
-    "name": "bath",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6C0"},
-    "shortcode": "bath",
-    "description": "BATH",
-    "category": "travel"
-  },
+
   {
     "name": "bathtub",
     "unicode": {"apple":"", "google":"", "twitter":"1F6C1"},
