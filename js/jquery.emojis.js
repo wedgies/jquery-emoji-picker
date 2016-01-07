@@ -762,9 +762,9 @@ $.fn.emojiPicker.emojis = [
     "category": "people"
   },
   {
-    "name": "spock_hand",
+    "name": "spock-hand",
     "unicode": {"apple":"1F596", "google":"1F596", "twitter":"1F596"},
-    "shortcode": "spock_hand",
+    "shortcode": "spock-hand",
     "description": "Raised Hand With Part Between Middle and Ring Fingers",
     "category": "people"
   },
@@ -881,6 +881,13 @@ $.fn.emojiPicker.emojis = [
     "category": "people"
   },
   {
+    "name": "person_with_blond_hair",
+    "unicode": {"apple":"1F471", "google":"1F471", "twitter":"1F471"},
+    "shortcode": "person_with_blond_hair",
+    "description": "PERSON WITH BLOND HAIR",
+    "category": "people"
+  },
+  {
     "name": "older_man",
     "unicode": {"apple":"1F474", "google":"1F474", "twitter":"1F474"},
     "shortcode": "older_man",
@@ -941,7 +948,7 @@ $.fn.emojiPicker.emojis = [
     "unicode": {"apple":"1F385", "google":"1F385", "twitter":"1F385"},
     "shortcode": "santa",
     "description": "FATHER CHRISTMAS",
-    "category": "nature"
+    "category": "people"
   },
   {
     "name": "angel",
@@ -1083,20 +1090,20 @@ $.fn.emojiPicker.emojis = [
     "description": "COUPLE WITH HEART",
     "category": "people"
   },
-  // {
-  //   "name": "woman_heart_woman",
-  //   "unicode": {"apple":"1F491", "google":"1F491", "twitter":"1F491"},
-  //   "shortcode": "woman_heart_woman",
-  //   "description": "Couple With Heart (Woman, Woman)",
-  //   "category": "people"
-  // },
-  // {
-  //   "name": "man_heart_man",
-  //   "unicode": {"apple":"1F491", "google":"1F491", "twitter":"1F491"},
-  //   "shortcode": "man_heart_man",
-  //   "description": "COUPLE WITH HEART",
-  //   "category": "people"
-  // },
+  {
+    "name": "woman-heart-woman",
+    "unicode": {"apple":"1F469-200D-2764-FE0F-200D-1F469", "google":"1F469-200D-2764-FE0F-200D-1F469", "twitter":"1F469-200D-2764-FE0F-200D-1F469"},
+    "shortcode": "woman-heart-woman",
+    "description": "Couple With Heart (Woman, Woman)",
+    "category": "people"
+  },
+  {
+    "name": "man-heart-man",
+    "unicode": {"apple":"1F468-200D-2764-FE0F-200D-1F468", "google":"1F468-200D-2764-FE0F-200D-1F468", "twitter":"1F468-200D-2764-FE0F-200D-1F468"},
+    "shortcode": "man-heart-man",
+    "description": "COUPLE WITH HEART",
+    "category": "people"
+  },
   {
     "name": "couplekiss",
     "unicode": {"apple":"1F48F", "google":"1F48F", "twitter":"1F48F"},
@@ -1104,24 +1111,122 @@ $.fn.emojiPicker.emojis = [
     "description": "KISS",
     "category": "people"
   },
-  // {
-  //   "name": "woman_kiss_woman",
-  //   "unicode": {"apple":"1F48F", "google":"1F48F", "twitter":"1F48F"},
-  //   "shortcode": "woman_kiss_woman",
-  //   "description": "KISS",
-  //   "category": "people"
-  // },
-  // {
-  //   "name": "man_kiss_man",
-  //   "unicode": {"apple":"1F48F", "google":"1F48F", "twitter":"1F48F"},
-  //   "shortcode": "man_kiss_man",
-  //   "description": "KISS",
-  //   "category": "people"
-  // },
+  {
+    "name": "woman-kiss-woman",
+    "unicode": {"apple":"1F469-200D-2764-FE0F-200D-1F48B-200D-1F469", "google":"1F469-200D-2764-FE0F-200D-1F48B-200D-1F469", "twitter":"1F469-200D-2764-FE0F-200D-1F48B-200D-1F469"},
+    "shortcode": "woman-kiss-woman",
+    "description": "KISS",
+    "category": "people"
+  },
+  {
+    "name": "man-kiss-man",
+    "unicode": {"apple":"1F468-200D-2764-FE0F-200D-1F48B-200D-1F468", "google":"1F468-200D-2764-FE0F-200D-1F48B-200D-1F468", "twitter":"1F468-200D-2764-FE0F-200D-1F48B-200D-1F468"},
+    "shortcode": "man-kiss-man",
+    "description": "KISS",
+    "category": "people"
+  },
   {
     "name": "family",
     "unicode": {"apple":"1F46A", "google":"1F46A", "twitter":"1F46A"},
     "shortcode": "family",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "man-woman-girl",
+    "unicode": {"apple":"1F468-200D-1F469-200D-1F467", "google":"1F468-200D-1F469-200D-1F467", "twitter":"1F468-200D-1F469-200D-1F467"},
+    "shortcode": "man-woman-girl",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "man-woman-girl-boy",
+    "unicode": {"apple":"1F469-200D-1F469-200D-1F467-200D-1F466", "google":"1F469-200D-1F469-200D-1F467-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F467-200D-1F466"},
+    "shortcode": "man-woman-girl-boy",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "man-woman-boy-boy",
+    "unicode": {"apple":"1F468-200D-1F469-200D-1F466-200D-1F466", "google":"1F468-200D-1F469-200D-1F466-200D-1F466", "twitter":"1F468-200D-1F469-200D-1F466-200D-1F466"},
+    "shortcode": "man-woman-boy-boy",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "man-woman-girl-girl",
+    "unicode": {"apple":"1F468-200D-1F469-200D-1F467-200D-1F467", "google":"1F468-200D-1F469-200D-1F467-200D-1F467", "twitter":"1F468-200D-1F469-200D-1F467-200D-1F467"},
+    "shortcode": "man-woman-girl-girl",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "woman-woman-boy",
+    "unicode": {"apple":"1F469-200D-1F469-200D-1F466", "google":"1F469-200D-1F469-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F466"},
+    "shortcode": "woman-woman-boy",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "woman-woman-girl",
+    "unicode": {"apple":"1F469-200D-1F469-200D-1F467", "google":"1F469-200D-1F469-200D-1F467", "twitter":"1F469-200D-1F469-200D-1F467"},
+    "shortcode": "woman-woman-girl",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "woman-woman-girl-boy",
+    "unicode": {"apple":"1F469-200D-1F469-200D-1F467-200D-1F466", "google":"1F469-200D-1F469-200D-1F467-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F467-200D-1F466"},
+    "shortcode": "woman-woman-girl-boy",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "woman-woman-boy-boy",
+    "unicode": {"apple":"1F469-200D-1F469-200D-1F466-200D-1F466", "google":"1F469-200D-1F469-200D-1F466-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F466-200D-1F466"},
+    "shortcode": "woman-woman-boy-boy",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "woman-woman-girl-girl",
+    "unicode": {"apple":"1F469-200D-1F469-200D-1F467-200D-1F467", "google":"1F469-200D-1F469-200D-1F467-200D-1F467", "twitter":"1F469-200D-1F469-200D-1F467-200D-1F467"},
+    "shortcode": "woman-woman-girl-girl",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "man-man-boy",
+    "unicode": {"apple":"1F468-200D-1F468-200D-1F466", "google":"1F468-200D-1F468-200D-1F466", "twitter":"1F468-200D-1F468-200D-1F466"},
+    "shortcode": "man-man-boy",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "man-man-girl",
+    "unicode": {"apple":"1F468-200D-1F468-200D-1F467", "google":"1F468-200D-1F468-200D-1F467", "twitter":"1F468-200D-1F468-200D-1F467"},
+    "shortcode": "man-man-girl",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "man-man-girl-boy",
+    "unicode": {"apple":"1F468-200D-1F468-200D-1F467-200D-1F466", "google":"1F468-200D-1F468-200D-1F467-200D-1F466", "twitter":"1F468-200D-1F468-200D-1F467-200D-1F466"},
+    "shortcode": "man-man-girl-boy",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "man-man-boy-boy",
+    "unicode": {"apple":"1F468-200D-1F468-200D-1F466-200D-1F466", "google":"1F468-200D-1F468-200D-1F466-200D-1F466", "twitter":"1F468-200D-1F468-200D-1F466-200D-1F466"},
+    "shortcode": "man-man-boy-boy",
+    "description": "FAMILY",
+    "category": "people"
+  },
+  {
+    "name": "man-man-girl-girl",
+    "unicode": {"apple":"1F468-200D-1F468-200D-1F467-200D-1F467", "google":"1F468-200D-1F468-200D-1F467-200D-1F467", "twitter":"1F468-200D-1F468-200D-1F467-200D-1F467"},
+    "shortcode": "man-man-girl-girl",
     "description": "FAMILY",
     "category": "people"
   },
@@ -2242,10 +2347,10 @@ $.fn.emojiPicker.emojis = [
     "category": "nature"
   },
   {
-    "name": "lightening",
+    "name": "lightning",
     "unicode": {"apple":"1F329", "google":"1F329", "twitter":"1F329"},
-    "shortcode": "lightening",
-    "description": "Cloud With Lightening",
+    "shortcode": "lightning",
+    "description": "Cloud With Lightning",
     "category": "nature"
   },
   {
@@ -3929,6 +4034,13 @@ $.fn.emojiPicker.emojis = [
     "category": "travel"
   },
   {
+    "name": "hospital",
+    "unicode": {"apple":"1F3E5", "google":"1F3E5", "twitter":"1F3E5"},
+    "shortcode": "hospital",
+    "description": "HOSPITAL",
+    "category": "travel"
+  },
+  {
     "name": "bank",
     "unicode": {"apple":"1F3E6", "google":"1F3E6", "twitter":"1F3E6"},
     "shortcode": "bank",
@@ -4012,2782 +4124,4952 @@ $.fn.emojiPicker.emojis = [
     "description": "Shinto Shrine",
     "category": "travel"
   },
-
-
-
-
-
-
-
-
+  {
+    "name": "watch",
+    "unicode": {"apple":"231A", "google":"231A", "twitter":"231A"},
+    "shortcode": "watch",
+    "description": "WATCH",
+    "category": "object"
+  },
+  {
+    "name": "iphone",
+    "unicode": {"apple":"1F4F1", "google":"1F4F1", "twitter":"1F4F1"},
+    "shortcode": "iphone",
+    "description": "MOBILE PHONE",
+    "category": "object"
+  },
+  {
+    "name": "calling",
+    "unicode": {"apple":"1F4F2", "google":"1F4F2", "twitter":"1F4F2"},
+    "shortcode": "calling",
+    "description": "MOBILE PHONE WITH RIGHTWARDS ARROW AT LEFT",
+    "category": "object"
+  },
+  {
+    "name": "computer",
+    "unicode": {"apple":"1F4BB", "google":"1F4BB", "twitter":"1F4BB"},
+    "shortcode": "computer",
+    "description": "PERSONAL COMPUTER",
+    "category": "object"
+  },
+  {
+    "name": "keyboard",
+    "unicode": {"apple":"2328", "google":"2328", "twitter":"2328"},
+    "shortcode": "keyboard",
+    "description": "KEYBOARD",
+    "category": "object"
+  },
+  {
+    "name": "desktop_computer",
+    "unicode": {"apple":"1F5A5", "google":"1F5A5", "twitter":"1F5A5"},
+    "shortcode": "desktop_computer",
+    "description": "DESKTOP COMPUTER",
+    "category": "object"
+  },
+  {
+    "name": "printer",
+    "unicode": {"apple":"1F5A8", "google":"1F5A8", "twitter":"1F5A8"},
+    "shortcode": "printer",
+    "description": "PRINTER",
+    "category": "object"
+  },
+  {
+    "name": "three_button_mouse",
+    "unicode": {"apple":"1F5B1", "google":"1F5B1", "twitter":"1F5B1"},
+    "shortcode": "three_button_mouse",
+    "description": "THREE BUTTON MOUSE",
+    "category": "object"
+  },
+  {
+    "name": "trackball",
+    "unicode": {"apple":"1F5B2", "google":"1F5B2", "twitter":"1F5B2"},
+    "shortcode": "trackball",
+    "description": "TRACKBALL",
+    "category": "object"
+  },
+  {
+    "name": "joystick",
+    "unicode": {"apple":"1F579", "google":"1F579", "twitter":"1F579"},
+    "shortcode": "joystick",
+    "description": "JOYSTICK",
+    "category": "object"
+  },
+  {
+    "name": "compression",
+    "unicode": {"apple":"1F5DC", "google":"1F5DC", "twitter":"1F5DC"},
+    "shortcode": "compression",
+    "description": "COMPRESSION",
+    "category": "object"
+  },
+  {
+    "name": "minidisc",
+    "unicode": {"apple":"1F4BD", "google":"1F4BD", "twitter":"1F4BD"},
+    "shortcode": "minidisc",
+    "description": "MINIDISC",
+    "category": "object"
+  },
+  {
+    "name": "floppy_disk",
+    "unicode": {"apple":"1F4BE", "google":"1F4BE", "twitter":"1F4BE"},
+    "shortcode": "floppy_disk",
+    "description": "FLOPPY DISK",
+    "category": "object"
+  },
+  {
+    "name": "cd",
+    "unicode": {"apple":"1F4BF", "google":"1F4BF", "twitter":"1F4BF"},
+    "shortcode": "cd",
+    "description": "OPTICAL DISC",
+    "category": "object"
+  },
+  {
+    "name": "dvd",
+    "unicode": {"apple":"1F4C0", "google":"1F4C0", "twitter":"1F4C0"},
+    "shortcode": "dvd",
+    "description": "DVD",
+    "category": "object"
+  },
+  {
+    "name": "vhs",
+    "unicode": {"apple":"1F4FC", "google":"1F4FC", "twitter":"1F4FC"},
+    "shortcode": "vhs",
+    "description": "VIDEOCASSETTE",
+    "category": "object"
+  },
+  {
+    "name": "camera",
+    "unicode": {"apple":"1F4F7", "google":"1F4F7", "twitter":"1F4F7"},
+    "shortcode": "camera",
+    "description": "CAMERA",
+    "category": "object"
+  },
+  {
+    "name": "camera_with_flash",
+    "unicode": {"apple":"1F4F8", "google":"1F4F8", "twitter":"1F4F8"},
+    "shortcode": "camera_with_flash",
+    "description": "CAMERA WITH FLASH",
+    "category": "object"
+  },
+  {
+    "name": "video_camera",
+    "unicode": {"apple":"1F4F9", "google":"1F4F9", "twitter":"1F4F9"},
+    "shortcode": "video_camera",
+    "description": "VIDEO CAMERA",
+    "category": "object"
+  },
+  {
+    "name": "movie_camera",
+    "unicode": {"apple":"1F3A5", "google":"1F3A5", "twitter":"1F3A5"},
+    "shortcode": "movie_camera",
+    "description": "MOVIE CAMERA",
+    "category": "object"
+  },
+  {
+    "name": "film_projector",
+    "unicode": {"apple":"1F4FD", "google":"1F4FD", "twitter":"1F4FD"},
+    "shortcode": "film_projector",
+    "description": "FILM PROJECTOR",
+    "category": "object"
+  },
+  {
+    "name": "film_frames",
+    "unicode": {"apple":"1F39E", "google":"1F39E", "twitter":"1F39E"},
+    "shortcode": "film_frames",
+    "description": "FILM FRAMES",
+    "category": "object"
+  },
+  {
+    "name": "telephone_receiver",
+    "unicode": {"apple":"1F4DE", "google":"1F4DE", "twitter":"1F4DE"},
+    "shortcode": "telephone_receiver",
+    "description": "TELEPHONE RECEIVER",
+    "category": "object"
+  },
+  {
+    "name": "phone",
+    "unicode": {"apple":"260E", "google":"260E", "twitter":"260E"},
+    "shortcode": "phone",
+    "description": "BLACK TELEPHONE",
+    "category": "object"
+  },
+  {
+    "name": "pager",
+    "unicode": {"apple":"1F4DF", "google":"1F4DF", "twitter":"1F4DF"},
+    "shortcode": "pager",
+    "description": "PAGER",
+    "category": "object"
+  },
+  {
+    "name": "fax",
+    "unicode": {"apple":"1F4E0", "google":"1F4E0", "twitter":"1F4E0"},
+    "shortcode": "fax",
+    "description": "FAX MACHINE",
+    "category": "object"
+  },
+  {
+    "name": "tv",
+    "unicode": {"apple":"1F4FA", "google":"1F4FA", "twitter":"1F4FA"},
+    "shortcode": "tv",
+    "description": "TELEVISION",
+    "category": "object"
+  },
+  {
+    "name": "radio",
+    "unicode": {"apple":"1F4FB", "google":"1F4FB", "twitter":"1F4FB"},
+    "shortcode": "radio",
+    "description": "RADIO",
+    "category": "object"
+  },
+  {
+    "name": "studio_microphone",
+    "unicode": {"apple":"1F399", "google":"1F399", "twitter":"1F399"},
+    "shortcode": "studio_microphone",
+    "description": "STUDIO MICROPHONE",
+    "category": "object"
+  },
+  {
+    "name": "level_slider",
+    "unicode": {"apple":"1F39A", "google":"1F39A", "twitter":"1F39A"},
+    "shortcode": "level_slider",
+    "description": "LEVEL SLIDER",
+    "category": "object"
+  },
+  {
+    "name": "control_knobs",
+    "unicode": {"apple":"1F39B", "google":"1F39B", "twitter":"1F39B"},
+    "shortcode": "control_knobs",
+    "description": "CONTROL KNOBS",
+    "category": "object"
+  },
+  {
+    "name": "stopwatch",
+    "unicode": {"apple":"23F1", "google":"23F1", "twitter":"23F1"},
+    "shortcode": "stopwatch",
+    "description": "STOPWATCH",
+    "category": "object"
+  },
+  {
+    "name": "timer_clock",
+    "unicode": {"apple":"23F2", "google":"23F2", "twitter":"23F2"},
+    "shortcode": "timer_clock",
+    "description": "TIMER CLOCK",
+    "category": "object"
+  },
+  {
+    "name": "alarm_clock",
+    "unicode": {"apple":"23F0", "google":"23F0", "twitter":"23F0"},
+    "shortcode": "alarm_clock",
+    "description": "ALARM CLOCK",
+    "category": "object"
+  },
+  {
+    "name": "mantelpiece_clock",
+    "unicode": {"apple":"1F570", "google":"1F570", "twitter":"1F570"},
+    "shortcode": "mantelpiece_clock",
+    "description": "MANTELPIECE CLOCK",
+    "category": "object"
+  },
+  {
+    "name": "hourglass_flowing_sand",
+    "unicode": {"apple":"23F3", "google":"23F3", "twitter":"23F3"},
+    "shortcode": "hourglass_flowing_sand",
+    "description": "HOURGLASS WITH FLOWING SAND",
+    "category": "object"
+  },
+  {
+    "name": "hourglass",
+    "unicode": {"apple":"231B", "google":"231B", "twitter":"231B"},
+    "shortcode": "hourglass",
+    "description": "HOURGLASS",
+    "category": "object"
+  },
+  {
+    "name": "satellite",
+    "unicode": {"apple":"1F6F0", "google":"1F6F0", "twitter":"1F6F0"},
+    "shortcode": "satellite",
+    "description": "SATELLITE",
+    "category": "object"
+  },
+  {
+    "name": "battery",
+    "unicode": {"apple":"1F50B", "google":"1F50B", "twitter":"1F50B"},
+    "shortcode": "battery",
+    "description": "BATTERY",
+    "category": "object"
+  },
+  {
+    "name": "electric_plug",
+    "unicode": {"apple":"1F50C", "google":"1F50C", "twitter":"1F50C"},
+    "shortcode": "electric_plug",
+    "description": "ELECTRIC PLUG",
+    "category": "object"
+  },
+  {
+    "name": "bulb",
+    "unicode": {"apple":"1F4A1", "google":"1F4A1", "twitter":"1F4A1"},
+    "shortcode": "bulb",
+    "description": "ELECTRIC LIGHT BULB",
+    "category": "object"
+  },
+  {
+    "name": "flashlight",
+    "unicode": {"apple":"1F526", "google":"1F526", "twitter":"1F526"},
+    "shortcode": "flashlight",
+    "description": "ELECTRIC TORCH",
+    "category": "object"
+  },
+  {
+    "name": "candle",
+    "unicode": {"apple":"1F56F", "google":"1F56F", "twitter":"1F56F"},
+    "shortcode": "candle",
+    "description": "CANDLE",
+    "category": "object"
+  },
+  {
+    "name": "wastebasket",
+    "unicode": {"apple":"1F5D1", "google":"1F5D1", "twitter":"1F5D1"},
+    "shortcode": "wastebasket",
+    "description": "WASTEBASKET",
+    "category": "object"
+  },
+  {
+    "name": "oil_drum",
+    "unicode": {"apple":"1F6E2", "google":"1F6E2", "twitter":"1F6E2"},
+    "shortcode": "oil_drum",
+    "description": "OIL DRUM",
+    "category": "object"
+  },
+  {
+    "name": "money_with_wings",
+    "unicode": {"apple":"1F4B8", "google":"1F4B8", "twitter":"1F4B8"},
+    "shortcode": "money_with_wings",
+    "description": "MONEY WITH WINGS",
+    "category": "object"
+  },
+  {
+    "name": "dollar",
+    "unicode": {"apple":"1F4B5", "google":"1F4B5", "twitter":"1F4B5"},
+    "shortcode": "dollar",
+    "description": "BANKNOTE WITH DOLLAR SIGN",
+    "category": "object"
+  },
+  {
+    "name": "yen",
+    "unicode": {"apple":"1F4B4", "google":"1F4B4", "twitter":"1F4B4"},
+    "shortcode": "yen",
+    "description": "BANKNOTE WITH YEN SIGN",
+    "category": "object"
+  },
+  {
+    "name": "euro",
+    "unicode": {"apple":"1F4B6", "google":"1F4B6", "twitter":"1F4B6"},
+    "shortcode": "euro",
+    "description": "BANKNOTE WITH EURO SIGN",
+    "category": "object"
+  },
+  {
+    "name": "pound",
+    "unicode": {"apple":"1F4B7", "google":"1F4B7", "twitter":"1F4B7"},
+    "shortcode": "pound",
+    "description": "BANKNOTE WITH POUND SIGN",
+    "category": "object"
+  },
+  {
+    "name": "moneybag",
+    "unicode": {"apple":"1F4B0", "google":"1F4B0", "twitter":"1F4B0"},
+    "shortcode": "moneybag",
+    "description": "MONEY BAG",
+    "category": "object"
+  },
+  {
+    "name": "credit_card",
+    "unicode": {"apple":"1F4B3", "google":"1F4B3", "twitter":"1F4B3"},
+    "shortcode": "credit_card",
+    "description": "CREDIT CARD",
+    "category": "object"
+  },
+  {
+    "name": "gem",
+    "unicode": {"apple":"1F48E", "google":"1F48E", "twitter":"1F48E"},
+    "shortcode": "gem",
+    "description": "GEM STONE",
+    "category": "object"
+  },
+  {
+    "name": "scales",
+    "unicode": {"apple":"2696", "google":"2696", "twitter":"2696"},
+    "shortcode": "scales",
+    "description": "SCALES",
+    "category": "object"
+  },
+  {
+    "name": "wrench",
+    "unicode": {"apple":"1F527", "google":"1F527", "twitter":"1F527"},
+    "shortcode": "wrench",
+    "description": "WRENCH",
+    "category": "object"
+  },
+  {
+    "name": "hammer",
+    "unicode": {"apple":"1F528", "google":"1F528", "twitter":"1F528"},
+    "shortcode": "hammer",
+    "description": "HAMMER",
+    "category": "object"
+  },
+  {
+    "name": "hammer_and_pick",
+    "unicode": {"apple":"2692", "google":"2692", "twitter":"2692"},
+    "shortcode": "hammer_and_pick",
+    "description": "HAMMER AND PICK",
+    "category": "object"
+  },
+  {
+    "name": "hammer_and_wrench",
+    "unicode": {"apple":"1F6E0", "google":"1F6E0", "twitter":"1F6E0"},
+    "shortcode": "hammer_and_wrench",
+    "description": "HAMMER AND WRENCH",
+    "category": "object"
+  },
+  {
+    "name": "pick",
+    "unicode": {"apple":"26CF", "google":"26CF", "twitter":"26CF"},
+    "shortcode": "pick",
+    "description": "PICK",
+    "category": "object"
+  },
+  {
+    "name": "nut_and_bolt",
+    "unicode": {"apple":"1F529", "google":"1F529", "twitter":"1F529"},
+    "shortcode": "nut_and_bolt",
+    "description": "NUT AND BOLT",
+    "category": "object"
+  },
+  {
+    "name": "gear",
+    "unicode": {"apple":"2699", "google":"2699", "twitter":"2699"},
+    "shortcode": "gear",
+    "description": "GEAR",
+    "category": "object"
+  },
+  {
+    "name": "chains",
+    "unicode": {"apple":"26D3", "google":"26D3", "twitter":"26D3"},
+    "shortcode": "chains",
+    "description": "CHAINS",
+    "category": "object"
+  },
+  {
+    "name": "gun",
+    "unicode": {"apple":"1F52B", "google":"1F52B", "twitter":"1F52B"},
+    "shortcode": "gun",
+    "description": "PISTOL",
+    "category": "object"
+  },
+  {
+    "name": "bomb",
+    "unicode": {"apple":"1F4A3", "google":"1F4A3", "twitter":"1F4A3"},
+    "shortcode": "bomb",
+    "description": "BOMB",
+    "category": "object"
+  },
+  {
+    "name": "hocho",
+    "unicode": {"apple":"1F52A", "google":"1F52A", "twitter":"1F52A"},
+    "shortcode": "hocho",
+    "description": "HOCHO",
+    "category": "object"
+  },
+  {
+    "name": "dagger_knife",
+    "unicode": {"apple":"1F5E1", "google":"1F5E1", "twitter":"1F5E1"},
+    "shortcode": "dagger_knife",
+    "description": "DAGGER KNIFE",
+    "category": "object"
+  },
+  {
+    "name": "crossed_swords",
+    "unicode": {"apple":"2694", "google":"2694", "twitter":"2694"},
+    "shortcode": "crossed_swords",
+    "description": "CROSSED SWORDS",
+    "category": "object"
+  },
+  {
+    "name": "shield",
+    "unicode": {"apple":"1F6E1", "google":"1F6E1", "twitter":"1F6E1"},
+    "shortcode": "shield",
+    "description": "SHIELD",
+    "category": "object"
+  },
+  {
+    "name": "smoking",
+    "unicode": {"apple":"1F6AC", "google":"1F6AC", "twitter":"1F6AC"},
+    "shortcode": "smoking",
+    "description": "SMOKING SYMBOL",
+    "category": "object"
+  },
+  {
+    "name": "skull_and_crossbones",
+    "unicode": {"apple":"2620", "google":"2620", "twitter":"2620"},
+    "shortcode": "skull_and_crossbones",
+    "description": "SKULL AND CROSSBONES",
+    "category": "object"
+  },
+  {
+    "name": "coffin",
+    "unicode": {"apple":"26B0", "google":"26B0", "twitter":"26B0"},
+    "shortcode": "coffin",
+    "description": "COFFIN",
+    "category": "object"
+  },
+  {
+    "name": "funeral_urn",
+    "unicode": {"apple":"26B1", "google":"26B1", "twitter":"26B1"},
+    "shortcode": "funeral_urn",
+    "description": "FUNERAL URN",
+    "category": "object"
+  },
+  {
+    "name": "amphora",
+    "unicode": {"apple":"1F3FA", "google":"1F3FA", "twitter":"1F3FA"},
+    "shortcode": "amphora",
+    "description": "AMPHORA",
+    "category": "object"
+  },
+  {
+    "name": "crystal_ball",
+    "unicode": {"apple":"1F52E", "google":"1F52E", "twitter":"1F52E"},
+    "shortcode": "crystal_ball",
+    "description": "CRYSTAL BALL",
+    "category": "object"
+  },
+  {
+    "name": "prayer_beads",
+    "unicode": {"apple":"1F4FF", "google":"1F4FF", "twitter":"1F4FF"},
+    "shortcode": "prayer_beads",
+    "description": "PRAYER BEADS",
+    "category": "object"
+  },
+  {
+    "name": "barber",
+    "unicode": {"apple":"1F488", "google":"1F488", "twitter":"1F488"},
+    "shortcode": "barber",
+    "description": "BARBER POLE",
+    "category": "object"
+  },
+  {
+    "name": "alembic",
+    "unicode": {"apple":"2697", "google":"2697", "twitter":"2697"},
+    "shortcode": "alembic",
+    "description": "ALEMBIC",
+    "category": "object"
+  },
+  {
+    "name": "telescope",
+    "unicode": {"apple":"1F52D", "google":"1F52D", "twitter":"1F52D"},
+    "shortcode": "telescope",
+    "description": "TELESCOPE",
+    "category": "object"
+  },
+  {
+    "name": "microscope",
+    "unicode": {"apple":"1F52C", "google":"1F52C", "twitter":"1F52C"},
+    "shortcode": "microscope",
+    "description": "MICROSCOPE",
+    "category": "object"
+  },
+  {
+    "name": "hole",
+    "unicode": {"apple":"1F573", "google":"1F573", "twitter":"1F573"},
+    "shortcode": "hole",
+    "description": "HOLE",
+    "category": "object"
+  },
+  {
+    "name": "pill",
+    "unicode": {"apple":"1F48A", "google":"1F48A", "twitter":"1F48A"},
+    "shortcode": "pill",
+    "description": "PILL",
+    "category": "object"
+  },
+  {
+    "name": "syringe",
+    "unicode": {"apple":"1F489", "google":"1F489", "twitter":"1F489"},
+    "shortcode": "syringe",
+    "description": "SYRINGE",
+    "category": "object"
+  },
+  {
+    "name": "thermometer",
+    "unicode": {"apple":"1F321", "google":"1F321", "twitter":"1F321"},
+    "shortcode": "thermometer",
+    "description": "THERMOMETER",
+    "category": "object"
+  },
+  {
+    "name": "label",
+    "unicode": {"apple":"1F3F7", "google":"1F3F7", "twitter":"1F3F7"},
+    "shortcode": "label",
+    "description": "LABEL",
+    "category": "object"
+  },
+  {
+    "name": "bookmark",
+    "unicode": {"apple":"1F516", "google":"1F516", "twitter":"1F516"},
+    "shortcode": "bookmark",
+    "description": "BOOKMARK",
+    "category": "object"
+  },
+  {
+    "name": "toilet",
+    "unicode": {"apple":"1F6BD", "google":"1F6BD", "twitter":"1F6BD"},
+    "shortcode": "toilet",
+    "description": "TOILET",
+    "category": "object"
+  },
+  {
+    "name": "shower",
+    "unicode": {"apple":"1F6BF", "google":"1F6BF", "twitter":"1F6BF"},
+    "shortcode": "shower",
+    "description": "SHOWER",
+    "category": "object"
+  },
+  {
+    "name": "bathtub",
+    "unicode": {"apple":"1F6C1", "google":"1F6C1", "twitter":"1F6C1"},
+    "shortcode": "bathtub",
+    "description": "BATHTUB",
+    "category": "object"
+  },
+  {
+    "name": "key",
+    "unicode": {"apple":"1F511", "google":"1F511", "twitter":"1F511"},
+    "shortcode": "key",
+    "description": "KEY",
+    "category": "object"
+  },
+  {
+    "name": "old_key",
+    "unicode": {"apple":"1F5DD", "google":"1F5DD", "twitter":"1F5DD"},
+    "shortcode": "old_key",
+    "description": "OLD KEY",
+    "category": "object"
+  },
+  {
+    "name": "couch_and_lamp",
+    "unicode": {"apple":"1F6CB", "google":"1F6CB", "twitter":"1F6CB"},
+    "shortcode": "couch_and_lamp",
+    "description": "COUCH AND LAMP",
+    "category": "object"
+  },
+  {
+    "name": "sleeping_accommodation",
+    "unicode": {"apple":"1F6CC", "google":"1F6CC", "twitter":"1F6CC"},
+    "shortcode": "sleeping_accommodation",
+    "description": "SLEEPING ACCOMMODATION",
+    "category": "object"
+  },
+  {
+    "name": "bed",
+    "unicode": {"apple":"1F6CF", "google":"1F6CF", "twitter":"1F6CF"},
+    "shortcode": "bed",
+    "description": "BED",
+    "category": "object"
+  },
+  {
+    "name": "door",
+    "unicode": {"apple":"1F6AA", "google":"1F6AA", "twitter":"1F6AA"},
+    "shortcode": "door",
+    "description": "DOOR",
+    "category": "object"
+  },
+  {
+    "name": "bellhop_bell",
+    "unicode": {"apple":"1F6CE", "google":"1F6CE", "twitter":"1F6CE"},
+    "shortcode": "bellhop_bell",
+    "description": "BELLHOP BELL",
+    "category": "object"
+  },
+  {
+    "name": "frame_with_picture",
+    "unicode": {"apple":"1F5BC", "google":"1F5BC", "twitter":"1F5BC"},
+    "shortcode": "frame_with_picture",
+    "description": "FRAME WITH PICTURE",
+    "category": "object"
+  },
+  {
+    "name": "world_map",
+    "unicode": {"apple":"1F5FA", "google":"1F5FA", "twitter":"1F5FA"},
+    "shortcode": "world_map",
+    "description": "WORLD MAP",
+    "category": "object"
+  },
+  {
+    "name": "umbrella_on_ground",
+    "unicode": {"apple":"26F1", "google":"26F1", "twitter":"26F1"},
+    "shortcode": "umbrella_on_ground",
+    "description": "UMBRELLA ON GROUND",
+    "category": "object"
+  },
+  {
+    "name": "moyai",
+    "unicode": {"apple":"1F5FF", "google":"1F5FF", "twitter":"1F5FF"},
+    "shortcode": "moyai",
+    "description": "MOYAI",
+    "category": "object"
+  },
+  {
+    "name": "shopping_bags",
+    "unicode": {"apple":"1F6CD", "google":"1F6CD", "twitter":"1F6CD"},
+    "shortcode": "shopping_bags",
+    "description": "SHOPPING BAGS",
+    "category": "object"
+  },
+  {
+    "name": "balloon",
+    "unicode": {"apple":"1F388", "google":"1F388", "twitter":"1F388"},
+    "shortcode": "balloon",
+    "description": "BALLOON",
+    "category": "object"
+  },
+  {
+    "name": "flags",
+    "unicode": {"apple":"1F38F", "google":"1F38F", "twitter":"1F38F"},
+    "shortcode": "flags",
+    "description": "CARP STREAMER",
+    "category": "object"
+  },
+  {
+    "name": "ribbon",
+    "unicode": {"apple":"1F380", "google":"1F380", "twitter":"1F380"},
+    "shortcode": "ribbon",
+    "description": "RIBBON",
+    "category": "object"
+  },
+  {
+    "name": "gift",
+    "unicode": {"apple":"1F381", "google":"1F381", "twitter":"1F381"},
+    "shortcode": "gift",
+    "description": "WRAPPED PRESENT",
+    "category": "object"
+  },
+{
+    "name": "confetti_ball",
+    "unicode": {"apple":"1F38A", "google":"1F38A", "twitter":"1F38A"},
+    "shortcode": "confetti_ball",
+    "description": "CONFETTI BALL",
+    "category": "object"
+  },
+  {
+    "name": "tada",
+    "unicode": {"apple":"1F389", "google":"1F389", "twitter":"1F389"},
+    "shortcode": "tada",
+    "description": "PARTY POPPER",
+    "category": "object"
+  },
+  {
+    "name": "dolls",
+    "unicode": {"apple":"1F38E", "google":"1F38E", "twitter":"1F38E"},
+    "shortcode": "dolls",
+    "description": "JAPANESE DOLLS",
+    "category": "object"
+  },
+  {
+    "name": "wind_chime",
+    "unicode": {"apple":"1F390", "google":"1F390", "twitter":"1F390"},
+    "shortcode": "wind_chime",
+    "description": "WIND CHIME",
+    "category": "object"
+  },
+  {
+    "name": "crossed_flags",
+    "unicode": {"apple":"1F38C", "google":"1F38C", "twitter":"1F38C"},
+    "shortcode": "crossed_flags",
+    "description": "CROSSED FLAGS",
+    "category": "object"
+  },
+  {
+    "name": "izakaya_lantern",
+    "unicode": {"apple":"1F3EE", "google":"1F3EE", "twitter":"1F3EE"},
+    "shortcode": "izakaya_lantern",
+    "description": "IZAKAYA LANTERN",
+    "category": "object"
+  },
+  {
+    "name": "email",
+    "unicode": {"apple":"2709", "google":"2709", "twitter":"2709"},
+    "shortcode": "email",
+    "description": "ENVELOPE",
+    "category": "object"
+  },
+  {
+    "name": "envelope_with_arrow",
+    "unicode": {"apple":"1F4E9", "google":"1F4E9", "twitter":"1F4E9"},
+    "shortcode": "envelope_with_arrow",
+    "description": "ENVELOPE WITH DOWNWARDS ARROW ABOVE",
+    "category": "object"
+  },
+  {
+    "name": "incoming_envelope",
+    "unicode": {"apple":"1F4E8", "google":"1F4E8", "twitter":"1F4E8"},
+    "shortcode": "incoming_envelope",
+    "description": "INCOMING ENVELOPE",
+    "category": "object"
+  },
+  {
+    "name": "e-mail",
+    "unicode": {"apple":"1F4E7", "google":"1F4E7", "twitter":"1F4E7"},
+    "shortcode": "e-mail",
+    "description": "E-MAIL SYMBOL",
+    "category": "object"
+  },
+  {
+    "name": "love_letter",
+    "unicode": {"apple":"1F48C", "google":"1F48C", "twitter":"1F48C"},
+    "shortcode": "love_letter",
+    "description": "LOVE LETTER",
+    "category": "object"
+  },
+  {
+    "name": "postbox",
+    "unicode": {"apple":"1F4EE", "google":"1F4EE", "twitter":"1F4EE"},
+    "shortcode": "postbox",
+    "description": "POSTBOX",
+    "category": "object"
+  },
+  {
+    "name": "mailbox_closed",
+    "unicode": {"apple":"1F4EA", "google":"1F4EA", "twitter":"1F4EA"},
+    "shortcode": "mailbox_closed",
+    "description": "CLOSED MAILBOX WITH LOWERED FLAG",
+    "category": "object"
+  },
+  {
+    "name": "mailbox",
+    "unicode": {"apple":"1F4EB", "google":"1F4EB", "twitter":"1F4EB"},
+    "shortcode": "mailbox",
+    "description": "CLOSED MAILBOX WITH RAISED FLAG",
+    "category": "object"
+  },
+  {
+    "name": "mailbox_with_mail",
+    "unicode": {"apple":"1F4EC", "google":"1F4EC", "twitter":"1F4EC"},
+    "shortcode": "mailbox_with_mail",
+    "description": "OPEN MAILBOX WITH RAISED FLAG",
+    "category": "object"
+  },
+  {
+    "name": "mailbox_with_no_mail",
+    "unicode": {"apple":"1F4ED", "google":"1F4ED", "twitter":"1F4ED"},
+    "shortcode": "mailbox_with_no_mail",
+    "description": "OPEN MAILBOX WITH LOWERED FLAG",
+    "category": "object"
+  },
+  {
+    "name": "package",
+    "unicode": {"apple":"1F4E6", "google":"1F4E6", "twitter":"1F4E6"},
+    "shortcode": "package",
+    "description": "PACKAGE",
+    "category": "object"
+  },
+  {
+    "name": "postal_horn",
+    "unicode": {"apple":"1F4EF", "google":"1F4EF", "twitter":"1F4EF"},
+    "shortcode": "postal_horn",
+    "description": "POSTAL HORN",
+    "category": "object"
+  },
+  {
+    "name": "inbox_tray",
+    "unicode": {"apple":"1F4E5", "google":"1F4E5", "twitter":"1F4E5"},
+    "shortcode": "inbox_tray",
+    "description": "INBOX TRAY",
+    "category": "object"
+  },
+  {
+    "name": "outbox_tray",
+    "unicode": {"apple":"1F4E4", "google":"1F4E4", "twitter":"1F4E4"},
+    "shortcode": "outbox_tray",
+    "description": "OUTBOX TRAY",
+    "category": "object"
+  },
+  {
+    "name": "scroll",
+    "unicode": {"apple":"1F4DC", "google":"1F4DC", "twitter":"1F4DC"},
+    "shortcode": "scroll",
+    "description": "SCROLL",
+    "category": "object"
+  },
+  {
+    "name": "page_with_curl",
+    "unicode": {"apple":"1F4C3", "google":"1F4C3", "twitter":"1F4C3"},
+    "shortcode": "page_with_curl",
+    "description": "PAGE WITH CURL",
+    "category": "object"
+  },
+  {
+    "name": "bookmark_tabs",
+    "unicode": {"apple":"1F4D1", "google":"1F4D1", "twitter":"1F4D1"},
+    "shortcode": "bookmark_tabs",
+    "description": "BOOKMARK TABS",
+    "category": "object"
+  },
+  {
+    "name": "bar_chart",
+    "unicode": {"apple":"1F4CA", "google":"1F4CA", "twitter":"1F4CA"},
+    "shortcode": "bar_chart",
+    "description": "BAR CHART",
+    "category": "object"
+  },
+  {
+    "name": "chart_with_upwards_trend",
+    "unicode": {"apple":"1F4C8", "google":"1F4C8", "twitter":"1F4C8"},
+    "shortcode": "chart_with_upwards_trend",
+    "description": "CHART WITH UPWARDS TREND",
+    "category": "object"
+  },
+  {
+    "name": "chart_with_downwards_trend",
+    "unicode": {"apple":"1F4C9", "google":"1F4C9", "twitter":"1F4C9"},
+    "shortcode": "chart_with_downwards_trend",
+    "description": "CHART WITH DOWNWARDS TREND",
+    "category": "object"
+  },
+  {
+    "name": "page_facing_up",
+    "unicode": {"apple":"1F4C4", "google":"1F4C4", "twitter":"1F4C4"},
+    "shortcode": "page_facing_up",
+    "description": "PAGE FACING UP",
+    "category": "object"
+  },
+  {
+    "name": "date",
+    "unicode": {"apple":"1F4C5", "google":"1F4C5", "twitter":"1F4C5"},
+    "shortcode": "date",
+    "description": "CALENDAR",
+    "category": "object"
+  },
+  {
+    "name": "calendar",
+    "unicode": {"apple":"1F4C6", "google":"1F4C6", "twitter":"1F4C6"},
+    "shortcode": "calendar",
+    "description": "TEAR-OFF CALENDAR",
+    "category": "object"
+  },
+  {
+    "name": "spiral_calendar_pad",
+    "unicode": {"apple":"1F5D3", "google":"1F5D3", "twitter":"1F5D3"},
+    "shortcode": "spiral_calendar_pad",
+    "description": "SPIRAL CALENDAR PAD",
+    "category": "object"
+  },
+  {
+    "name": "card_index",
+    "unicode": {"apple":"1F4C7", "google":"1F4C7", "twitter":"1F4C7"},
+    "shortcode": "card_index",
+    "description": "CARD INDEX",
+    "category": "object"
+  },
+  {
+    "name": "card_file_box",
+    "unicode": {"apple":"1F5C3", "google":"1F5C3", "twitter":"1F5C3"},
+    "shortcode": "card_file_box",
+    "description": "CARD FILE BOX",
+    "category": "object"
+  },
+  {
+    "name": "ballot_box_with_check",
+    "unicode": {"apple":"2611-FE0F", "google":"2611-FE0F", "twitter":"2611-FE0F"},
+    "shortcode": "ballot_box_with_check",
+    "description": "BALLOT BOX WITH CHECK",
+    "category": "object"
+  },
+  {
+    "name": "file_cabinet",
+    "unicode": {"apple":"1F5C4", "google":"1F5C4", "twitter":"1F5C4"},
+    "shortcode": "file_cabinet",
+    "description": "FILE CABINET",
+    "category": "object"
+  },
+  {
+    "name": "clipboard",
+    "unicode": {"apple":"1F4CB", "google":"1F4CB", "twitter":"1F4CB"},
+    "shortcode": "clipboard",
+    "description": "CLIPBOARD",
+    "category": "object"
+  },
+  {
+    "name": "spiral_note_pad",
+    "unicode": {"apple":"1F5D2", "google":"1F5D2", "twitter":"1F5D2"},
+    "shortcode": "spiral_note_pad",
+    "description": "SPIRAL NOTE PAD",
+    "category": "object"
+  },
+  {
+    "name": "file_folder",
+    "unicode": {"apple":"1F4C1", "google":"1F4C1", "twitter":"1F4C1"},
+    "shortcode": "file_folder",
+    "description": "FILE FOLDER",
+    "category": "object"
+  },
+  {
+    "name": "open_file_folder",
+    "unicode": {"apple":"1F4C2", "google":"1F4C2", "twitter":"1F4C2"},
+    "shortcode": "open_file_folder",
+    "description": "OPEN FILE FOLDER",
+    "category": "object"
+  },
+  {
+    "name": "card_index_dividers",
+    "unicode": {"apple":"1F5C2", "google":"1F5C2", "twitter":"1F5C2"},
+    "shortcode": "card_index_dividers",
+    "description": "CARD INDEX DIVIDERS",
+    "category": "object"
+  },
+  {
+    "name": "rolled_up_newspaper",
+    "unicode": {"apple":"1F5DE", "google":"1F5DE", "twitter":"1F5DE"},
+    "shortcode": "rolled_up_newspaper",
+    "description": "ROLLED-UP NEWSPAPER",
+    "category": "object"
+  },
+  {
+    "name": "newspaper",
+    "unicode": {"apple":"1F4F0", "google":"1F4F0", "twitter":"1F4F0"},
+    "shortcode": "newspaper",
+    "description": "NEWSPAPER",
+    "category": "object"
+  },
+  {
+    "name": "notebook",
+    "unicode": {"apple":"1F4D3", "google":"1F4D3", "twitter":"1F4D3"},
+    "shortcode": "notebook",
+    "description": "NOTEBOOK",
+    "category": "object"
+  },
+  {
+    "name": "closed_book",
+    "unicode": {"apple":"1F4D5", "google":"1F4D5", "twitter":"1F4D5"},
+    "shortcode": "closed_book",
+    "description": "CLOSED BOOK",
+    "category": "object"
+  },
+  {
+    "name": "green_book",
+    "unicode": {"apple":"1F4D7", "google":"1F4D7", "twitter":"1F4D7"},
+    "shortcode": "green_book",
+    "description": "GREEN BOOK",
+    "category": "object"
+  },
+  {
+    "name": "blue_book",
+    "unicode": {"apple":"1F4D8", "google":"1F4D8", "twitter":"1F4D8"},
+    "shortcode": "blue_book",
+    "description": "BLUE BOOK",
+    "category": "object"
+  },
+  {
+    "name": "orange_book",
+    "unicode": {"apple":"1F4D9", "google":"1F4D9", "twitter":"1F4D9"},
+    "shortcode": "orange_book",
+    "description": "ORANGE BOOK",
+    "category": "object"
+  },
+  {
+    "name": "notebook_with_decorative_cover",
+    "unicode": {"apple":"1F4D4", "google":"1F4D4", "twitter":"1F4D4"},
+    "shortcode": "notebook_with_decorative_cover",
+    "description": "NOTEBOOK WITH DECORATIVE COVER",
+    "category": "object"
+  },
+  {
+    "name": "ledger",
+    "unicode": {"apple":"1F4D2", "google":"1F4D2", "twitter":"1F4D2"},
+    "shortcode": "ledger",
+    "description": "LEDGER",
+    "category": "object"
+  },
+  {
+    "name": "books",
+    "unicode": {"apple":"1F4DA", "google":"1F4DA", "twitter":"1F4DA"},
+    "shortcode": "books",
+    "description": "BOOKS",
+    "category": "object"
+  },
+  {
+    "name": "book",
+    "unicode": {"apple":"1F4D6", "google":"1F4D6", "twitter":"1F4D6"},
+    "shortcode": "book",
+    "description": "OPEN BOOK",
+    "category": "object"
+  },
+  {
+    "name": "link",
+    "unicode": {"apple":"1F517", "google":"1F517", "twitter":"1F517"},
+    "shortcode": "link",
+    "description": "LINK SYMBOL",
+    "category": "object"
+  },
+  {
+    "name": "paperclip",
+    "unicode": {"apple":"1F4CE", "google":"1F4CE", "twitter":"1F4CE"},
+    "shortcode": "paperclip",
+    "description": "PAPERCLIP",
+    "category": "object"
+  },
+  {
+    "name": "linked_paperclips",
+    "unicode": {"apple":"1F587", "google":"1F587", "twitter":"1F587"},
+    "shortcode": "linked_paperclips",
+    "description": "LINKED PAPERCLIPS",
+    "category": "object"
+  },
+  {
+    "name": "scissors",
+    "unicode": {"apple":"2702", "google":"2702", "twitter":"2702"},
+    "shortcode": "scissors",
+    "description": "BLACK SCISSORS",
+    "category": "object"
+  },
+  {
+    "name": "triangular_ruler",
+    "unicode": {"apple":"1F4D0", "google":"1F4D0", "twitter":"1F4D0"},
+    "shortcode": "triangular_ruler",
+    "description": "TRIANGULAR RULER",
+    "category": "object"
+  },
+  {
+    "name": "straight_ruler",
+    "unicode": {"apple":"1F4CF", "google":"1F4CF", "twitter":"1F4CF"},
+    "shortcode": "straight_ruler",
+    "description": "STRAIGHT RULER",
+    "category": "object"
+  },
+  {
+    "name": "pushpin",
+    "unicode": {"apple":"1F4CC", "google":"1F4CC", "twitter":"1F4CC"},
+    "shortcode": "pushpin",
+    "description": "PUSHPIN",
+    "category": "object"
+  },
+  {
+    "name": "round_pushpin",
+    "unicode": {"apple":"1F4CD", "google":"1F4CD", "twitter":"1F4CD"},
+    "shortcode": "round_pushpin",
+    "description": "ROUND PUSHPIN",
+    "category": "object"
+  },
+  {
+    "name": "triangular_flag_on_post",
+    "unicode": {"apple":"1F6A9", "google":"1F6A9", "twitter":"1F6A9"},
+    "shortcode": "triangular_flag_on_post",
+    "description": "TRIANGULAR FLAG ON POST",
+    "category": "object"
+  },
+  {
+    "name": "waving_white_flag",
+    "unicode": {"apple":"1F3F3", "google":"1F3F3", "twitter":"1F3F3"},
+    "shortcode": "waving_white_flag",
+    "description": "WAVING WHITE FLAG",
+    "category": "object"
+  },
+  {
+    "name": "waving_black_flag",
+    "unicode": {"apple":"1F3F4", "google":"1F3F4", "twitter":"1F3F4"},
+    "shortcode": "waving_black_flag",
+    "description": "WAVING BLACK FLAG",
+    "category": "object"
+  },
+  {
+    "name": "closed_lock_with_key",
+    "unicode": {"apple":"1F510", "google":"1F510", "twitter":"1F510"},
+    "shortcode": "closed_lock_with_key",
+    "description": "CLOSED LOCK WITH KEY",
+    "category": "object"
+  },
+  {
+    "name": "lock",
+    "unicode": {"apple":"1F512", "google":"1F512", "twitter":"1F512"},
+    "shortcode": "lock",
+    "description": "LOCK",
+    "category": "object"
+  },
+  {
+    "name": "unlock",
+    "unicode": {"apple":"1F513", "google":"1F513", "twitter":"1F513"},
+    "shortcode": "unlock",
+    "description": "OPEN LOCK",
+    "category": "object"
+  },
+  {
+    "name": "lock_with_ink_pen",
+    "unicode": {"apple":"1F50F", "google":"1F50F", "twitter":"1F50F"},
+    "shortcode": "lock_with_ink_pen",
+    "description": "LOCK WITH INK PEN",
+    "category": "object"
+  },
+  {
+    "name": "lower_left_ballpoint_pen",
+    "unicode": {"apple":"1F58A", "google":"1F58A", "twitter":"1F58A"},
+    "shortcode": "lower_left_ballpoint_pen",
+    "description": "LOWER LEFT BALLPOINT PEN",
+    "category": "object"
+  },
+  {
+    "name": "lower_left_fountain_pen",
+    "unicode": {"apple":"1F58B", "google":"1F58B", "twitter":"1F58B"},
+    "shortcode": "lower_left_fountain_pen",
+    "description": "LOWER LEFT FOUNTAIN PEN",
+    "category": "object"
+  },
+  {
+    "name": "black_nib",
+    "unicode": {"apple":"2712", "google":"2712", "twitter":"2712"},
+    "shortcode": "black_nib",
+    "description": "BLACK NIB",
+    "category": "folderol"
+  },
+  {
+    "name": "memo",
+    "unicode": {"apple":"1F4DD", "google":"1F4DD", "twitter":"1F4DD"},
+    "shortcode": "memo",
+    "description": "MEMO",
+    "category": "object"
+  },
+  {
+    "name": "pencil2",
+    "unicode": {"apple":"270F-FE0F", "google":"270F-FE0F", "twitter":"270F-FE0F"},
+    "shortcode": "pencil2",
+    "description": "PENCIL",
+    "category": "object"
+  },
+  {
+    "name": "lower_left_crayon",
+    "unicode": {"apple":"1F58D", "google":"1F58D", "twitter":"1F58D"},
+    "shortcode": "lower_left_crayon",
+    "description": "LOWER LEFT CRAYON",
+    "category": "object"
+  },
+  {
+    "name": "lower_left_paintbrush",
+    "unicode": {"apple":"1F58C", "google":"1F58C", "twitter":"1F58C"},
+    "shortcode": "lower_left_paintbrush",
+    "description": "LOWER LEFT PAINTBRUSH",
+    "category": "object"
+  },
+  {
+    "name": "mag",
+    "unicode": {"apple":"1F50D", "google":"1F50D", "twitter":"1F50D"},
+    "shortcode": "mag",
+    "description": "LEFT-POINTING MAGNIFYING GLASS",
+    "category": "object"
+  },
+  {
+    "name": "mag_right",
+    "unicode": {"apple":"1F50E", "google":"1F50E", "twitter":"1F50E"},
+    "shortcode": "mag_right",
+    "description": "RIGHT-POINTING MAGNIFYING GLASS",
+    "category": "object"
+  },
+  {
+    "name": "heart",
+    "unicode": {"apple":"2764", "google":"2764", "twitter":"2764"},
+    "shortcode": "heart",
+    "description": "HEAVY BLACK HEART",
+    "category": "symbol"
+  },
+  {
+    "name": "yellow_heart",
+    "unicode": {"apple":"1F49B", "google":"1F49B", "twitter":"1F49B"},
+    "shortcode": "yellow_heart",
+    "description": "YELLOW HEART",
+    "category": "symbol"
+  },
+  {
+    "name": "green_heart",
+    "unicode": {"apple":"1F49A", "google":"1F49A", "twitter":"1F49A"},
+    "shortcode": "green_heart",
+    "description": "GREEN HEART",
+    "category": "symbol"
+  },
+  {
+    "name": "blue_heart",
+    "unicode": {"apple":"1F499", "google":"1F499", "twitter":"1F499"},
+    "shortcode": "blue_heart",
+    "description": "BLUE HEART",
+    "category": "symbol"
+  },
+  {
+    "name": "purple_heart",
+    "unicode": {"apple":"1F49C", "google":"1F49C", "twitter":"1F49C"},
+    "shortcode": "purple_heart",
+    "description": "PURPLE HEART",
+    "category": "symbol"
+  },
+  {
+    "name": "broken_heart",
+    "unicode": {"apple":"1F494", "google":"1F494", "twitter":"1F494"},
+    "shortcode": "broken_heart",
+    "description": "BROKEN HEART",
+    "category": "symbol"
+  },
+  {
+    "name": "heavy_heart_exclamation_mark_ornament",
+    "unicode": {"apple":"2763", "google":"2763", "twitter":"2763"},
+    "shortcode": "heavy_heart_exclamation_mark_ornament",
+    "description": "HEAVY HEART EXCLAMATION MARK ORNAMENT",
+    "category": "symbol"
+  },
+  {
+    "name": "two_hearts",
+    "unicode": {"apple":"1F495", "google":"1F495", "twitter":"1F495"},
+    "shortcode": "two_hearts",
+    "description": "TWO HEARTS",
+    "category": "symbol"
+  },
+  {
+    "name": "revolving_hearts",
+    "unicode": {"apple":"1F49E", "google":"1F49E", "twitter":"1F49E"},
+    "shortcode": "revolving_hearts",
+    "description": "REVOLVING HEARTS",
+    "category": "symbol"
+  },
+  {
+    "name": "heartbeat",
+    "unicode": {"apple":"1F493", "google":"1F493", "twitter":"1F493"},
+    "shortcode": "heartbeat",
+    "description": "BEATING HEART",
+    "category": "symbol"
+  },
+  {
+    "name": "heartpulse",
+    "unicode": {"apple":"1F497", "google":"1F497", "twitter":"1F497"},
+    "shortcode": "heartpulse",
+    "description": "GROWING HEART",
+    "category": "symbol"
+  },
+  {
+    "name": "sparkling_heart",
+    "unicode": {"apple":"1F496", "google":"1F496", "twitter":"1F496"},
+    "shortcode": "sparkling_heart",
+    "description": "SPARKLING HEART",
+    "category": "symbol"
+  },
+  {
+    "name": "cupid",
+    "unicode": {"apple":"1F498", "google":"1F498", "twitter":"1F498"},
+    "shortcode": "cupid",
+    "description": "HEART WITH ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "gift_heart",
+    "unicode": {"apple":"1F49D", "google":"1F49D", "twitter":"1F49D"},
+    "shortcode": "gift_heart",
+    "description": "HEART WITH RIBBON",
+    "category": "symbol"
+  },
+  {
+    "name": "heart_decoration",
+    "unicode": {"apple":"1F49F", "google":"1F49F", "twitter":"1F49F"},
+    "shortcode": "heart_decoration",
+    "description": "HEART DECORATION",
+    "category": "symbol"
+  },
+  {
+    "name": "peace_symbol",
+    "unicode": {"apple":"262E", "google":"262E", "twitter":"262E"},
+    "shortcode": "peace_symbol",
+    "description": "PEACE SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "latin_cross",
+    "unicode": {"apple":"271D", "google":"271D", "twitter":"271D"},
+    "shortcode": "latin_cross",
+    "description": "LATIN CROSS",
+    "category": "symbol"
+  },
+  {
+    "name": "star_and_crescent",
+    "unicode": {"apple":"262A", "google":"262A", "twitter":"262A"},
+    "shortcode": "star_and_crescent",
+    "description": "STAR AND CRESCENT",
+    "category": "symbol"
+  },
+  {
+    "name": "om_symbol",
+    "unicode": {"apple":"1F549", "google":"1F549", "twitter":"1F549"},
+    "shortcode": "om_symbol",
+    "description": "OM SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "wheel_of_dharma",
+    "unicode": {"apple":"2638", "google":"2638", "twitter":"2638"},
+    "shortcode": "wheel_of_dharma",
+    "description": "WHEEL OF DHARMA",
+    "category": "symbol"
+  },
+  {
+    "name": "star_of_david",
+    "unicode": {"apple":"2721", "google":"2721", "twitter":"2721"},
+    "shortcode": "star_of_david",
+    "description": "STAR OF DAVID",
+    "category": "symbol"
+  },
+  {
+    "name": "six_pointed_star",
+    "unicode": {"apple":"1F52F", "google":"1F52F", "twitter":"1F52F"},
+    "shortcode": "six_pointed_star",
+    "description": "SIX POINTED STAR WITH MIDDLE DOT",
+    "category": "symbol"
+  },
+  {
+    "name": "menorah_with_nine_branches",
+    "unicode": {"apple":"1F54E", "google":"1F54E", "twitter":"1F54E"},
+    "shortcode": "menorah_with_nine_branches",
+    "description": "MENORAH WITH NINE BRANCHES",
+    "category": "symbol"
+  },
+  {
+    "name": "yin_yang",
+    "unicode": {"apple":"262F", "google":"262F", "twitter":"262F"},
+    "shortcode": "yin_yang",
+    "description": "YIN YANG",
+    "category": "symbol"
+  },
+  {
+    "name": "orthodox_cross",
+    "unicode": {"apple":"2626", "google":"2626", "twitter":"2626"},
+    "shortcode": "orthodox_cross",
+    "description": "ORTHODOX CROSS",
+    "category": "symbol"
+  },
+  {
+    "name": "place_of_worship",
+    "unicode": {"apple":"1F6D0", "google":"1F6D0", "twitter":"1F6D0"},
+    "shortcode": "place_of_worship",
+    "description": "PLACE OF WORSHIP",
+    "category": "symbol"
+  },
+  {
+    "name": "ophiuchus",
+    "unicode": {"apple":"26CE", "google":"26CE", "twitter":"26CE"},
+    "shortcode": "ophiuchus",
+    "description": "OPHIUCHUS",
+    "category": "symbol"
+  },
+  {
+    "name": "aries",
+    "unicode": {"apple":"2648", "google":"2648", "twitter":"2648"},
+    "shortcode": "aries",
+    "description": "ARIES",
+    "category": "symbol"
+  },
+  {
+    "name": "taurus",
+    "unicode": {"apple":"2649", "google":"2649", "twitter":"2649"},
+    "shortcode": "taurus",
+    "description": "TAURUS",
+    "category": "symbol"
+  },
+  {
+    "name": "gemini",
+    "unicode": {"apple":"264A", "google":"264A", "twitter":"264A"},
+    "shortcode": "gemini",
+    "description": "GEMINI",
+    "category": "symbol"
+  },
+  {
+    "name": "cancer",
+    "unicode": {"apple":"264B", "google":"264B", "twitter":"264B"},
+    "shortcode": "cancer",
+    "description": "CANCER",
+    "category": "symbol"
+  },
+  {
+    "name": "leo",
+    "unicode": {"apple":"264C", "google":"264C", "twitter":"264C"},
+    "shortcode": "leo",
+    "description": "LEO",
+    "category": "symbol"
+  },
+  {
+    "name": "virgo",
+    "unicode": {"apple":"264D", "google":"264D", "twitter":"264D"},
+    "shortcode": "virgo",
+    "description": "VIRGO",
+    "category": "symbol"
+  },
+  {
+    "name": "libra",
+    "unicode": {"apple":"264E", "google":"264E", "twitter":"264E"},
+    "shortcode": "libra",
+    "description": "LIBRA",
+    "category": "symbol"
+  },
+  {
+    "name": "scorpius",
+    "unicode": {"apple":"264F", "google":"264F", "twitter":"264F"},
+    "shortcode": "scorpius",
+    "description": "SCORPIUS",
+    "category": "symbol"
+  },
+  {
+    "name": "sagittarius",
+    "unicode": {"apple":"2650", "google":"2650", "twitter":"2650"},
+    "shortcode": "sagittarius",
+    "description": "SAGITTARIUS",
+    "category": "symbol"
+  },
+  {
+    "name": "capricorn",
+    "unicode": {"apple":"2651", "google":"2651", "twitter":"2651"},
+    "shortcode": "capricorn",
+    "description": "CAPRICORN",
+    "category": "symbol"
+  },
+  {
+    "name": "aquarius",
+    "unicode": {"apple":"2652", "google":"2652", "twitter":"2652"},
+    "shortcode": "aquarius",
+    "description": "AQUARIUS",
+    "category": "symbol"
+  },
+  {
+    "name": "pisces",
+    "unicode": {"apple":"2653", "google":"2653", "twitter":"2653"},
+    "shortcode": "pisces",
+    "description": "PISCES",
+    "category": "symbol"
+  },
+  {
+    "name": "id",
+    "unicode": {"apple":"1F194", "google":"1F194", "twitter":"1F194"},
+    "shortcode": "id",
+    "description": "SQUARED ID",
+    "category": "symbol"
+  },
+  {
+    "name": "atom_symbol",
+    "unicode": {"apple":"269B", "google":"269B", "twitter":"269B"},
+    "shortcode": "atom_symbol",
+    "description": "ATOM SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "u7a7a",
+    "unicode": {"apple":"1F233", "google":"1F233", "twitter":"1F233"},
+    "shortcode": "u7a7a",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-7A7A",
+    "category": "symbol"
+  },
+  {
+    "name": "u5272",
+    "unicode": {"apple":"1F239", "google":"1F239", "twitter":"1F239"},
+    "shortcode": "u5272",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-5272",
+    "category": "symbol"
+  },
+  {
+    "name": "radioactive_sign",
+    "unicode": {"apple":"2622", "google":"2622", "twitter":"2622"},
+    "shortcode": "radioactive_sign",
+    "description": "RADIOACTIVE SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "biohazard_sign",
+    "unicode": {"apple":"2623", "google":"2623", "twitter":"2623"},
+    "shortcode": "biohazard_sign",
+    "description": "BIOHAZARD SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "mobile_phone_off",
+    "unicode": {"apple":"1F4F4", "google":"1F4F4", "twitter":"1F4F4"},
+    "shortcode": "mobile_phone_off",
+    "description": "MOBILE PHONE OFF",
+    "category": "symbol"
+  },
+  {
+    "name": "vibration_mode",
+    "unicode": {"apple":"1F4F3", "google":"1F4F3", "twitter":"1F4F3"},
+    "shortcode": "vibration_mode",
+    "description": "VIBRATION MODE",
+    "category": "symbol"
+  },
+  {
+    "name": "u6709",
+    "unicode": {"apple":"1F236", "google":"1F236", "twitter":"1F236"},
+    "shortcode": "u6709",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-6709",
+    "category": "symbol"
+  },
+  {
+    "name": "u7121",
+    "unicode": {"apple":"1F21A", "google":"1F21A", "twitter":"1F21A"},
+    "shortcode": "u7121",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-7121",
+    "category": "symbol"
+  },
+  {
+    "name": "u7533",
+    "unicode": {"apple":"1F238", "google":"1F238", "twitter":"1F238"},
+    "shortcode": "u7533",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-7533",
+    "category": "symbol"
+  },
+  {
+    "name": "u55b6",
+    "unicode": {"apple":"1F23A", "google":"1F23A", "twitter":"1F23A"},
+    "shortcode": "u55b6",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-55B6",
+    "category": "symbol"
+  },
+  {
+    "name": "u6708",
+    "unicode": {"apple":"1F237", "google":"1F237", "twitter":"1F237"},
+    "shortcode": "u6708",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-6708",
+    "category": "symbol"
+  },
+  {
+    "name": "eight_pointed_black_star",
+    "unicode": {"apple":"2734", "google":"2734", "twitter":"2734"},
+    "shortcode": "eight_pointed_black_star",
+    "description": "EIGHT POINTED BLACK STAR",
+    "category": "symbol"
+  },
+  {
+    "name": "vs",
+    "unicode": {"apple":"1F19A", "google":"1F19A", "twitter":"1F19A"},
+    "shortcode": "vs",
+    "description": "SQUARED VS",
+    "category": "symbol"
+  },
+  {
+    "name": "accept",
+    "unicode": {"apple":"1F251", "google":"1F251", "twitter":"1F251"},
+    "shortcode": "accept",
+    "description": "CIRCLED IDEOGRAPH ACCEPT",
+    "category": "symbol"
+  },
+  {
+    "name": "white_flower",
+    "unicode": {"apple":"1F4AE", "google":"1F4AE", "twitter":"1F4AE"},
+    "shortcode": "white_flower",
+    "description": "WHITE FLOWER",
+    "category": "symbol"
+  },
+  {
+    "name": "ideograph_advantage",
+    "unicode": {"apple":"1F250", "google":"1F250", "twitter":"1F250"},
+    "shortcode": "ideograph_advantage",
+    "description": "CIRCLED IDEOGRAPH ADVANTAGE",
+    "category": "symbol"
+  },
+  {
+    "name": "secret",
+    "unicode": {"apple":"3299", "google":"3299", "twitter":"3299"},
+    "shortcode": "secret",
+    "description": "CIRCLED IDEOGRAPH SECRET",
+    "category": "symbol"
+  },
+  {
+    "name": "congratulations",
+    "unicode": {"apple":"3297", "google":"3297", "twitter":"3297"},
+    "shortcode": "congratulations",
+    "description": "CIRCLED IDEOGRAPH CONGRATULATION",
+    "category": "symbol"
+  },
+  {
+    "name": "u5408",
+    "unicode": {"apple":"1F234", "google":"1F234", "twitter":"1F234"},
+    "shortcode": "u5408",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-5408",
+    "category": "symbol"
+  },
+  {
+    "name": "u6e80",
+    "unicode": {"apple":"1F235", "google":"1F235", "twitter":"1F235"},
+    "shortcode": "u6e80",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-6E80",
+    "category": "symbol"
+  },
+  {
+    "name": "u7981",
+    "unicode": {"apple":"1F232", "google":"1F232", "twitter":"1F232"},
+    "shortcode": "u7981",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-7981",
+    "category": "symbol"
+  },
+  {
+    "name": "a",
+    "unicode": {"apple":"1F170", "google":"1F170", "twitter":"1F170"},
+    "shortcode": "a",
+    "description": "NEGATIVE SQUARED LATIN CAPITAL LETTER A",
+    "category": "symbol"
+  },
+  {
+    "name": "b",
+    "unicode": {"apple":"1F171", "google":"1F171", "twitter":"1F171"},
+    "shortcode": "b",
+    "description": "NEGATIVE SQUARED LATIN CAPITAL LETTER B",
+    "category": "symbol"
+  },
+  {
+    "name": "ab",
+    "unicode": {"apple":"1F18E", "google":"1F18E", "twitter":"1F18E"},
+    "shortcode": "ab",
+    "description": "NEGATIVE SQUARED AB",
+    "category": "symbol"
+  },
+  {
+    "name": "cl",
+    "unicode": {"apple":"1F191", "google":"1F191", "twitter":"1F191"},
+    "shortcode": "cl",
+    "description": "SQUARED CL",
+    "category": "symbol"
+  },
+  {
+    "name": "o2",
+    "unicode": {"apple":"1F17E", "google":"1F17E", "twitter":"1F17E"},
+    "shortcode": "o2",
+    "description": "NEGATIVE SQUARED LATIN CAPITAL LETTER O",
+    "category": "symbol"
+  },
+  {
+    "name": "sos",
+    "unicode": {"apple":"1F198", "google":"1F198", "twitter":"1F198"},
+    "shortcode": "sos",
+    "description": "SQUARED SOS",
+    "category": "symbol"
+  },
+  {
+    "name": "no_entry",
+    "unicode": {"apple":"26D4", "google":"26D4", "twitter":"26D4"},
+    "shortcode": "no_entry",
+    "description": "NO ENTRY",
+    "category": "symbol"
+  },
+    {
+    "name": "name_badge",
+    "unicode": {"apple":"1F4DB", "google":"1F4DB", "twitter":"1F4DB"},
+    "shortcode": "name_badge",
+    "description": "NAME BADGE",
+    "category": "symbol"
+  },
+  {
+    "name": "no_entry_sign",
+    "unicode": {"apple":"1F6AB", "google":"1F6AB", "twitter":"1F6AB"},
+    "shortcode": "no_entry_sign",
+    "description": "NO ENTRY SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "x",
+    "unicode": {"apple":"274C", "google":"274C", "twitter":"274C"},
+    "shortcode": "x",
+    "description": "CROSS MARK",
+    "category": "symbol"
+  },
+  {
+    "name": "o",
+    "unicode": {"apple":"2B55", "google":"2B55", "twitter":"2B55"},
+    "shortcode": "o",
+    "description": "HEAVY LARGE CIRCLE",
+    "category": "symbol"
+  },
+  {
+    "name": "anger",
+    "unicode": {"apple":"1F4A2", "google":"1F4A2", "twitter":"1F4A2"},
+    "shortcode": "anger",
+    "description": "ANGER SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "hotsprings",
+    "unicode": {"apple":"2668", "google":"2668", "twitter":"2668"},
+    "shortcode": "hotsprings",
+    "description": "HOT SPRINGS",
+    "category": "symbol"
+  },
+  {
+    "name": "no_pedestrians",
+    "unicode": {"apple":"1F6B7", "google":"1F6B7", "twitter":"1F6B7"},
+    "shortcode": "no_pedestrians",
+    "description": "NO PEDESTRIANS",
+    "category": "symbol"
+  },
+  {
+    "name": "do_not_litter",
+    "unicode": {"apple":"1F6AF", "google":"1F6AF", "twitter":"1F6AF"},
+    "shortcode": "do_not_litter",
+    "description": "DO NOT LITTER SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "no_bicycles",
+    "unicode": {"apple":"1F6B3", "google":"1F6B3", "twitter":"1F6B3"},
+    "shortcode": "no_bicycles",
+    "description": "NO BICYCLES",
+    "category": "symbol"
+  },
+  {
+    "name": "non-potable_water",
+    "unicode": {"apple":"1F6B1", "google":"1F6B1", "twitter":"1F6B1"},
+    "shortcode": "non-potable_water",
+    "description": "NON-POTABLE WATER SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "underage",
+    "unicode": {"apple":"1F51E", "google":"1F51E", "twitter":"1F51E"},
+    "shortcode": "underage",
+    "description": "NO ONE UNDER EIGHTEEN SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "no_mobile_phones",
+    "unicode": {"apple":"1F4F5", "google":"1F4F5", "twitter":"1F4F5"},
+    "shortcode": "no_mobile_phones",
+    "description": "NO MOBILE PHONES",
+    "category": "symbol"
+  },
+  {
+    "name": "no_smoking",
+    "unicode": {"apple":"1F6AD", "google":"1F6AD", "twitter":"1F6AD"},
+    "shortcode": "no_smoking",
+    "description": "NO SMOKING SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "exclamation",
+    "unicode": {"apple":"2757", "google":"2757", "twitter":"2757"},
+    "shortcode": "exclamation",
+    "description": "HEAVY EXCLAMATION MARK SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "grey_exclamation",
+    "unicode": {"apple":"2755", "google":"2755", "twitter":"2755"},
+    "shortcode": "grey_exclamation",
+    "description": "WHITE EXCLAMATION MARK ORNAMENT",
+    "category": "symbol"
+  },
+  {
+    "name": "question",
+    "unicode": {"apple":"2753", "google":"2753", "twitter":"2753"},
+    "shortcode": "question",
+    "description": "BLACK QUESTION MARK ORNAMENT",
+    "category": "symbol"
+  },
+  {
+    "name": "grey_question",
+    "unicode": {"apple":"2754", "google":"2754", "twitter":"2754"},
+    "shortcode": "grey_question",
+    "description": "WHITE QUESTION MARK ORNAMENT",
+    "category": "symbol"
+  },
   {
     "name": "bangbang",
-    "unicode": {"apple":"", "google":"", "twitter":"203C"},
+    "unicode": {"apple":"203C", "google":"203C", "twitter":"203C"},
     "shortcode": "bangbang",
     "description": "DOUBLE EXCLAMATION MARK",
     "category": "symbol"
   },
   {
     "name": "interrobang",
-    "unicode": {"apple":"", "google":"", "twitter":"2049"},
+    "unicode": {"apple":"2049", "google":"2049", "twitter":"2049"},
     "shortcode": "interrobang",
     "description": "EXCLAMATION QUESTION MARK",
-    "category": "flag"
+    "category": "symbol"
   },
   {
-    "name": "tm",
-    "unicode": {"apple":"", "google":"", "twitter":"2122"},
-    "shortcode": "tm",
-    "description": "TRADE MARK SIGN",
-    "category": "folderol"
+    "name": "100",
+    "unicode": {"apple":"1F4AF", "google":"1F4AF", "twitter":"1F4AF"},
+    "shortcode": "100",
+    "description": "HUNDRED POINTS SYMBOL",
+    "category": "symbol"
   },
   {
-    "name": "information_source",
-    "unicode": {"apple":"", "google":"", "twitter":"2139"},
-    "shortcode": "information_source",
-    "description": "INFORMATION SOURCE",
-    "category": "folderol"
+    "name": "low_brightness",
+    "unicode": {"apple":"1F505", "google":"1F505", "twitter":"1F505"},
+    "shortcode": "low_brightness",
+    "description": "LOW BRIGHTNESS SYMBOL",
+    "category": "symbol"
   },
   {
-    "name": "left_right_arrow",
-    "unicode": {"apple":"", "google":"", "twitter":"2194"},
-    "shortcode": "left_right_arrow",
-    "description": "LEFT RIGHT ARROW",
-    "category": "folderol"
+    "name": "high_brightness",
+    "unicode": {"apple":"1F506", "google":"1F506", "twitter":"1F506"},
+    "shortcode": "high_brightness",
+    "description": "HIGH BRIGHTNESS SYMBOL",
+    "category": "symbol"
   },
   {
-    "name": "arrow_up_down",
-    "unicode": {"apple":"", "google":"", "twitter":"2195"},
-    "shortcode": "arrow_up_down",
-    "description": "UP DOWN ARROW",
-    "category": "folderol"
+    "name": "trident",
+    "unicode": {"apple":"1F531", "google":"1F531", "twitter":"1F531"},
+    "shortcode": "trident",
+    "description": "TRIDENT EMBLEM",
+    "category": "symbol"
   },
   {
-    "name": "arrow_upper_left",
-    "unicode": {"apple":"", "google":"", "twitter":"2196"},
-    "shortcode": "arrow_upper_left",
-    "description": "NORTH WEST ARROW",
-    "category": "folderol"
+    "name": "fleur_de_lis",
+    "unicode": {"apple":"269C", "google":"269C", "twitter":"269C"},
+    "shortcode": "fleur_de_lis",
+    "description": "FLEUR-DE-LIS",
+    "category": "symbol"
   },
   {
-    "name": "arrow_upper_right",
-    "unicode": {"apple":"", "google":"", "twitter":"2197"},
-    "shortcode": "arrow_upper_right",
-    "description": "NORTH EAST ARROW",
-    "category": "folderol"
+    "name": "part_alternation_mark",
+    "unicode": {"apple":"303D", "google":"303D", "twitter":"303D"},
+    "shortcode": "part_alternation_mark",
+    "description": "PART ALTERNATION MARK",
+    "category": "symbol"
   },
   {
-    "name": "arrow_lower_right",
-    "unicode": {"apple":"", "google":"", "twitter":"2198"},
-    "shortcode": "arrow_lower_right",
-    "description": "SOUTH EAST ARROW",
-    "category": "folderol"
+    "name": "warning",
+    "unicode": {"apple":"26A0", "google":"26A0", "twitter":"26A0"},
+    "shortcode": "warning",
+    "description": "WARNING SIGN",
+    "category": "symbol"
   },
   {
-    "name": "arrow_lower_left",
-    "unicode": {"apple":"", "google":"", "twitter":"2199"},
-    "shortcode": "arrow_lower_left",
-    "description": "SOUTH WEST ARROW",
-    "category": "folderol"
+    "name": "children_crossing",
+    "unicode": {"apple":"1F6B8", "google":"1F6B8", "twitter":"1F6B8"},
+    "shortcode": "children_crossing",
+    "description": "CHILDREN CROSSING",
+    "category": "symbol"
   },
   {
-    "name": "leftwards_arrow_with_hook",
-    "unicode": {"apple":"", "google":"", "twitter":"21A9"},
-    "shortcode": "leftwards_arrow_with_hook",
-    "description": "LEFTWARDS ARROW WITH HOOK",
-    "category": "folderol"
+    "name": "beginner",
+    "unicode": {"apple":"1F530", "google":"1F530", "twitter":"1F530"},
+    "shortcode": "beginner",
+    "description": "JAPANESE SYMBOL FOR BEGINNER",
+    "category": "symbol"
   },
   {
-    "name": "arrow_right_hook",
-    "unicode": {"apple":"", "google":"", "twitter":"21AA"},
-    "shortcode": "arrow_right_hook",
-    "description": "RIGHTWARDS ARROW WITH HOOK",
-    "category": "folderol"
+    "name": "recycle",
+    "unicode": {"apple":"267B", "google":"267B", "twitter":"267B"},
+    "shortcode": "recycle",
+    "description": "BLACK UNIVERSAL RECYCLING SYMBOL",
+    "category": "symbol"
   },
   {
-    "name": "watch",
-    "unicode": {"apple":"", "google":"", "twitter":"231A"},
-    "shortcode": "watch",
-    "description": "WATCH",
-    "category": "thing"
+    "name": "u6307",
+    "unicode": {"apple":"1F22F", "google":"1F22F", "twitter":"1F22F"},
+    "shortcode": "u6307",
+    "description": "SQUARED CJK UNIFIED IDEOGRAPH-6307",
+    "category": "symbol"
   },
   {
-    "name": "hourglass",
-    "unicode": {"apple":"", "google":"", "twitter":"231B"},
-    "shortcode": "hourglass",
-    "description": "HOURGLASS",
-    "category": "object"
+    "name": "chart",
+    "unicode": {"apple":"1F4B9", "google":"1F4B9", "twitter":"1F4B9"},
+    "shortcode": "chart",
+    "description": "CHART WITH UPWARDS TREND AND YEN SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "sparkle",
+    "unicode": {"apple":"2747", "google":"2747", "twitter":"2747"},
+    "shortcode": "sparkle",
+    "description": "SPARKLE",
+    "category": "symbol"
+  },
+  {
+    "name": "eight_spoked_asterisk",
+    "unicode": {"apple":"2733-FE0F", "google":"2733-FE0F", "twitter":"2733-FE0F"},
+    "shortcode": "eight_spoked_asterisk",
+    "description": "EIGHT SPOKED ASTERISK",
+    "category": "symbol"
+  },
+  {
+    "name": "negative_squared_cross_mark",
+    "unicode": {"apple":"274E", "google":"274E", "twitter":"274E"},
+    "shortcode": "negative_squared_cross_mark",
+    "description": "NEGATIVE SQUARED CROSS MARK",
+    "category": "symbol"
+  },
+  {
+    "name": "white_check_mark",
+    "unicode": {"apple":"2705", "google":"2705", "twitter":"2705"},
+    "shortcode": "white_check_mark",
+    "description": "WHITE HEAVY CHECK MARK",
+    "category": "symbol"
+  },
+  {
+    "name": "diamond_shape_with_a_dot_inside",
+    "unicode": {"apple":"1F4A0", "google":"1F4A0", "twitter":"1F4A0"},
+    "shortcode": "diamond_shape_with_a_dot_inside",
+    "description": "DIAMOND SHAPE WITH A DOT INSIDE",
+    "category": "symbol"
+  },
+  {
+    "name": "cyclone",
+    "unicode": {"apple":"1F300", "google":"1F300", "twitter":"1F300"},
+    "shortcode": "cyclone",
+    "description": "CYCLONE",
+    "category": "symbol"
+  },
+  {
+    "name": "loop",
+    "unicode": {"apple":"27BF", "google":"27BF", "twitter":"27BF"},
+    "shortcode": "loop",
+    "description": "DOUBLE CURLY LOOP",
+    "category": "symbol"
+  },
+  {
+    "name": "globe_with_meridians",
+    "unicode": {"apple":"1F310", "google":"1F310", "twitter":"1F310"},
+    "shortcode": "globe_with_meridians",
+    "description": "GLOBE WITH MERIDIANS",
+    "category": "symbol"
+  },
+  {
+    "name": "m",
+    "unicode": {"apple":"24C2", "google":"24C2", "twitter":"24C2"},
+    "shortcode": "m",
+    "description": "CIRCLED LATIN CAPITAL LETTER M",
+    "category": "symbol"
+  },
+  {
+    "name": "atm",
+    "unicode": {"apple":"1F3E7", "google":"1F3E7", "twitter":"1F3E7"},
+    "shortcode": "atm",
+    "description": "AUTOMATED TELLER MACHINE",
+    "category": "symbol"
+  },
+  {
+    "name": "sa",
+    "unicode": {"apple":"1F202", "google":"1F202", "twitter":"1F202"},
+    "shortcode": "sa",
+    "description": "SQUARED KATAKANA SA",
+    "category": "symbol"
+  },
+  {
+    "name": "passport_control",
+    "unicode": {"apple":"1F6C2", "google":"1F6C2", "twitter":"1F6C2"},
+    "shortcode": "passport_control",
+    "description": "PASSPORT CONTROL",
+    "category": "symbol"
+  },
+  {
+    "name": "customs",
+    "unicode": {"apple":"1F6C3", "google":"1F6C3", "twitter":"1F6C3"},
+    "shortcode": "customs",
+    "description": "CUSTOMS",
+    "category": "symbol"
+  },
+  {
+    "name": "baggage_claim",
+    "unicode": {"apple":"1F6C4", "google":"1F6C4", "twitter":"1F6C4"},
+    "shortcode": "baggage_claim",
+    "description": "BAGGAGE CLAIM",
+    "category": "symbol"
+  },
+  {
+    "name": "left_luggage",
+    "unicode": {"apple":"1F6C5", "google":"1F6C5", "twitter":"1F6C5"},
+    "shortcode": "left_luggage",
+    "description": "LEFT LUGGAGE",
+    "category": "symbol"
+  },
+    {
+    "name": "wheelchair",
+    "unicode": {"apple":"267F", "google":"267F", "twitter":"267F"},
+    "shortcode": "wheelchair",
+    "description": "WHEELCHAIR SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "wc",
+    "unicode": {"apple":"1F6BE", "google":"1F6BE", "twitter":"1F6BE"},
+    "shortcode": "wc",
+    "description": "WATER CLOSET",
+    "category": "symbol"
+  },
+  {
+    "name": "parking",
+    "unicode": {"apple":"1F17F", "google":"1F17F", "twitter":"1F17F"},
+    "shortcode": "parking",
+    "description": "NEGATIVE SQUARED LATIN CAPITAL LETTER P",
+    "category": "symbol"
+  },
+  {
+    "name": "potable_water",
+    "unicode": {"apple":"1F6B0", "google":"1F6B0", "twitter":"1F6B0"},
+    "shortcode": "potable_water",
+    "description": "POTABLE WATER SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "mens",
+    "unicode": {"apple":"1F6B9", "google":"1F6B9", "twitter":"1F6B9"},
+    "shortcode": "mens",
+    "description": "MENS SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "womens",
+    "unicode": {"apple":"1F6BA", "google":"1F6BA", "twitter":"1F6BA"},
+    "shortcode": "womens",
+    "description": "WOMENS SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "baby_symbol",
+    "unicode": {"apple":"1F6BC", "google":"1F6BC", "twitter":"1F6BC"},
+    "shortcode": "baby_symbol",
+    "description": "BABY SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "restroom",
+    "unicode": {"apple":"", "google":"1F6BB", "twitter":"1F6BB"},
+    "shortcode": "restroom",
+    "description": "RESTROOM",
+    "category": "symbol"
+  },
+  {
+    "name": "put_litter_in_its_place",
+    "unicode": {"apple":"1F6AE", "google":"1F6AE", "twitter":"1F6AE"},
+    "shortcode": "put_litter_in_its_place",
+    "description": "PUT LITTER IN ITS PLACE SYMBOL",
+    "category": "symbol"
+  },
+  {
+    "name": "cinema",
+    "unicode": {"apple":"1F3A6", "google":"1F3A6", "twitter":"1F3A6"},
+    "shortcode": "cinema",
+    "description": "CINEMA",
+    "category": "symbol"
+  },
+  {
+    "name": "signal_strength",
+    "unicode": {"apple":"1F4F6", "google":"1F4F6", "twitter":"1F4F6"},
+    "shortcode": "signal_strength",
+    "description": "ANTENNA WITH BARS",
+    "category": "symbol"
+  },
+  {
+    "name": "koko",
+    "unicode": {"apple":"", "google":"1F201", "twitter":"1F201"},
+    "shortcode": "koko",
+    "description": "SQUARED KATAKANA KOKO",
+    "category": "symbol"
+  },
+  {
+    "name": "ng",
+    "unicode": {"apple":"1F196", "google":"1F196", "twitter":"1F196"},
+    "shortcode": "ng",
+    "description": "SQUARED NG",
+    "category": "symbol"
+  },
+  {
+    "name": "ok",
+    "unicode": {"apple":"1F197", "google":"1F197", "twitter":"1F197"},
+    "shortcode": "ok",
+    "description": "SQUARED OK",
+    "category": "symbol"
+  },
+  {
+    "name": "up",
+    "unicode": {"apple":"1F199", "google":"1F199", "twitter":"1F199"},
+    "shortcode": "up",
+    "description": "SQUARED UP WITH EXCLAMATION MARK",
+    "category": "symbol"
+  },
+  {
+    "name": "cool",
+    "unicode": {"apple":"1F192", "google":"1F192", "twitter":"1F192"},
+    "shortcode": "cool",
+    "description": "SQUARED COOL",
+    "category": "symbol"
+  },
+  {
+    "name": "new",
+    "unicode": {"apple":"1F195", "google":"1F195", "twitter":"1F195"},
+    "shortcode": "new",
+    "description": "SQUARED NEW",
+    "category": "symbol"
+  },
+  {
+    "name": "free",
+    "unicode": {"apple":"1F193", "google":"1F193", "twitter":"1F193"},
+    "shortcode": "free",
+    "description": "SQUARED FREE",
+    "category": "symbol"
+  },
+  {
+    "name": "zero",
+    "unicode": {"apple":"0030-20E3", "google":"0030-20E3", "twitter":"0030-20E3"},
+    "shortcode": "zero",
+    "description": "KEYCAP 0",
+    "category": "symbol"
+  },
+  {
+    "name": "one",
+    "unicode": {"apple":"0031-20E3", "google":"0031-20E3", "twitter":"0031-20E3"},
+    "shortcode": "one",
+    "description": "KEYCAP 1",
+    "category": "symbol"
+  },
+  {
+    "name": "two",
+    "unicode": {"apple":"0032-20E3", "google":"0032-20E3", "twitter":"0032-20E3"},
+    "shortcode": "two",
+    "description": "KEYCAP 2",
+    "category": "symbol"
+  },
+  {
+    "name": "three",
+    "unicode": {"apple":"0033-20E3", "google":"0033-20E3", "twitter":"0033-20E3"},
+    "shortcode": "three",
+    "description": "KEYCAP 3",
+    "category": "symbol"
+  },
+  {
+    "name": "four",
+    "unicode": {"apple":"0034-20E3", "google":"0034-20E3", "twitter":"0034-20E3"},
+    "shortcode": "four",
+    "description": "KEYCAP 4",
+    "category": "symbol"
+  },
+  {
+    "name": "five",
+    "unicode": {"apple":"0035-20E3", "google":"0035-20E3", "twitter":"0035-20E3"},
+    "shortcode": "five",
+    "description": "KEYCAP 5",
+    "category": "symbol"
+  },
+  {
+    "name": "six",
+    "unicode": {"apple":"0036-20E3", "google":"0036-20E3", "twitter":"0036-20E3"},
+    "shortcode": "six",
+    "description": "KEYCAP 6",
+    "category": "symbol"
+  },
+  {
+    "name": "seven",
+    "unicode": {"apple":"0037-20E3", "google":"0037-20E3", "twitter":"0037-20E3"},
+    "shortcode": "seven",
+    "description": "KEYCAP 7",
+    "category": "symbol"
+  },
+  {
+    "name": "eight",
+    "unicode": {"apple":"0038-20E3", "google":"0038-20E3", "twitter":"0038-20E3"},
+    "shortcode": "eight",
+    "description": "KEYCAP 8",
+    "category": "symbol"
+  },
+  {
+    "name": "nine",
+    "unicode": {"apple":"0039-20E3", "google":"0039-20E3", "twitter":"0039-20E3"},
+    "shortcode": "nine",
+    "description": "KEYCAP 9",
+    "category": "symbol"
+  },
+  {
+    "name": "keycap_ten",
+    "unicode": {"apple":"1F51F", "google":"1F51F", "twitter":"1F51F"},
+    "shortcode": "keycap_ten",
+    "description": "KEYCAP TEN",
+    "category": "symbol"
+  },
+  {
+    "name": "1234",
+    "unicode": {"apple":"1F522", "google":"1F522", "twitter":"1F522"},
+    "shortcode": "1234",
+    "description": "INPUT SYMBOL FOR NUMBERS",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_forward",
+    "unicode": {"apple":"25B6", "google":"25B6", "twitter":"25B6"},
+    "shortcode": "arrow_forward",
+    "description": "BLACK RIGHT-POINTING TRIANGLE",
+    "category": "symbol"
+  },
+  {
+    "name": "double_vertical_bar",
+    "unicode": {"apple":"23F8", "google":"23F8", "twitter":"23F8"},
+    "shortcode": "double_vertical_bar",
+    "description": "DOUBLE VERTICAL BAR"
+  },
+  {
+    "name": "black_right_pointing_triangle_with_double_vertical_bar",
+    "unicode": {"apple":"23EF", "google":"23EF", "twitter":"23EF"},
+    "shortcode": "black_right_pointing_triangle_with_double_vertical_bar",
+    "description": "BLACK RIGHT-POINTING TRIANGLE WITH DOUBLE VERTICAL BAR"
+  },
+  {
+    "name": "black_square_for_stop",
+    "unicode": {"apple":"23F9", "google":"23F9", "twitter":"23F9"},
+    "shortcode": "black_square_for_stop",
+    "description": "BLACK SQUARE FOR STOP"
+  },
+  {
+    "name": "black_circle_for_record",
+    "unicode": {"apple":"23FA", "google":"23FA", "twitter":"23FA"},
+    "shortcode": "black_circle_for_record",
+    "description": "BLACK CIRCLE FOR RECORD"
+  },
+  {
+    "name": "black_right_pointing_double_triangle_with_vertical_bar",
+    "unicode": {"apple":"23ED", "google":"23ED", "twitter":"23ED"},
+    "shortcode": "black_right_pointing_double_triangle_with_vertical_bar",
+    "description": "BLACK RIGHT-POINTING DOUBLE TRIANGLE WITH VERTICAL BAR"
+  },
+  {
+    "name": "black_left_pointing_double_triangle_with_vertical_bar",
+    "unicode": {"apple":"23EE", "google":"23EE", "twitter":"23EE"},
+    "shortcode": "black_left_pointing_double_triangle_with_vertical_bar",
+    "description": "BLACK LEFT-POINTING DOUBLE TRIANGLE WITH VERTICAL BAR"
   },
   {
     "name": "fast_forward",
-    "unicode": {"apple":"", "google":"", "twitter":"23E9"},
+    "unicode": {"apple":"23E9", "google":"23E9", "twitter":"23E9"},
     "shortcode": "fast_forward",
     "description": "BLACK RIGHT-POINTING DOUBLE TRIANGLE"
   },
   {
     "name": "rewind",
-    "unicode": {"apple":"", "google":"", "twitter":"23EA"},
+    "unicode": {"apple":"23EA", "google":"23EA", "twitter":"23EA"},
     "shortcode": "rewind",
     "description": "BLACK LEFT-POINTING DOUBLE TRIANGLE",
-    "category": "thing"
+    "category": "symbol"
   },
   {
-    "name": "arrow_double_up",
-    "unicode": {"apple":"", "google":"", "twitter":"23EB"},
-    "shortcode": "arrow_double_up",
-    "description": "BLACK UP-POINTING DOUBLE TRIANGLE",
-    "category": "folderol"
+    "name": "twisted_rightwards_arrows",
+    "unicode": {"apple":"1F500", "google":"1F500", "twitter":"1F500"},
+    "shortcode": "twisted_rightwards_arrows",
+    "description": "TWISTED RIGHTWARDS ARROWS",
+    "category": "symbol"
   },
   {
-    "name": "arrow_double_down",
-    "unicode": {"apple":"", "google":"", "twitter":"23EC"},
-    "shortcode": "arrow_double_down",
-    "description": "BLACK DOWN-POINTING DOUBLE TRIANGLE",
-    "category": "folderol"
+    "name": "repeat",
+    "unicode": {"apple":"1F501", "google":"1F501", "twitter":"1F501"},
+    "shortcode": "repeat",
+    "description": "CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS",
+    "category": "symbol"
   },
   {
-    "name": "alarm_clock",
-    "unicode": {"apple":"", "google":"", "twitter":"23F0"},
-    "shortcode": "alarm_clock",
-    "description": "ALARM CLOCK",
-    "category": "thing"
-  },
-  {
-    "name": "hourglass_flowing_sand",
-    "unicode": {"apple":"", "google":"", "twitter":"23F3"},
-    "shortcode": "hourglass_flowing_sand",
-    "description": "HOURGLASS WITH FLOWING SAND",
-    "category": "thing"
-  },
-  {
-    "name": "m",
-    "unicode": {"apple":"", "google":"", "twitter":"24C2"},
-    "shortcode": "m",
-    "description": "CIRCLED LATIN CAPITAL LETTER M",
-    "category": "folderol"
-  },
-  {
-    "name": "black_small_square",
-    "unicode": {"apple":"", "google":"", "twitter":"25AA"},
-    "shortcode": "black_small_square",
-    "description": "BLACK SMALL SQUARE",
-    "category": "folderol"
-  },
-  {
-    "name": "white_small_square",
-    "unicode": {"apple":"", "google":"", "twitter":"25AB"},
-    "shortcode": "white_small_square",
-    "description": "WHITE SMALL SQUARE",
-    "category": "folderol"
-  },
-  {
-    "name": "arrow_forward",
-    "unicode": {"apple":"", "google":"", "twitter":"25B6"},
-    "shortcode": "arrow_forward",
-    "description": "BLACK RIGHT-POINTING TRIANGLE",
-    "category": "folderol"
+    "name": "repeat_one",
+    "unicode": {"apple":"1F502", "google":"1F502", "twitter":"1F502"},
+    "shortcode": "repeat_one",
+    "description": "CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS WITH CIRCLED ONE OVERLAY",
+    "category": "symbol"
   },
   {
     "name": "arrow_backward",
-    "unicode": {"apple":"", "google":"", "twitter":"25C0"},
+    "unicode": {"apple":"25C0", "google":"25C0", "twitter":"25C0"},
     "shortcode": "arrow_backward",
     "description": "BLACK LEFT-POINTING TRIANGLE",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
-    "name": "white_medium_square",
-    "unicode": {"apple":"", "google":"", "twitter":"25FB"},
-    "shortcode": "white_medium_square",
-    "description": "WHITE MEDIUM SQUARE",
-    "category": "folderol"
+    "name": "arrow_up_small",
+    "unicode": {"apple":"1F53C", "google":"1F53C", "twitter":"1F53C"},
+    "shortcode": "arrow_up_small",
+    "description": "UP-POINTING SMALL RED TRIANGLE",
+    "category": "symbol"
   },
   {
-    "name": "black_medium_square",
-    "unicode": {"apple":"", "google":"", "twitter":"25FC"},
-    "shortcode": "black_medium_square",
-    "description": "BLACK MEDIUM SQUARE",
-    "category": "folderol"
+    "name": "arrow_down_small",
+    "unicode": {"apple":"1F53D", "google":"1F53D", "twitter":"1F53D"},
+    "shortcode": "arrow_down_small",
+    "description": "DOWN-POINTING SMALL RED TRIANGLE",
+    "category": "symbol"
   },
   {
-    "name": "white_medium_small_square",
-    "unicode": {"apple":"", "google":"", "twitter":"25FD"},
-    "shortcode": "white_medium_small_square",
-    "description": "WHITE MEDIUM SMALL SQUARE",
-    "category": "folderol"
+    "name": "arrow_double_up",
+    "unicode": {"apple":"23EB", "google":"23EB", "twitter":"23EB"},
+    "shortcode": "arrow_double_up",
+    "description": "BLACK UP-POINTING DOUBLE TRIANGLE",
+    "category": "symbol"
   },
   {
-    "name": "black_medium_small_square",
-    "unicode": {"apple":"", "google":"", "twitter":"25FE"},
-    "shortcode": "black_medium_small_square",
-    "description": "BLACK MEDIUM SMALL SQUARE",
-    "category": "folderol"
+    "name": "arrow_double_down",
+    "unicode": {"apple":"23EC", "google":"23EC", "twitter":"23EC"},
+    "shortcode": "arrow_double_down",
+    "description": "BLACK DOWN-POINTING DOUBLE TRIANGLE",
+    "category": "symbol"
   },
-
   {
-    "name": "phone",
-    "unicode": {"apple":"", "google":"", "twitter":"260E"},
-    "shortcode": "phone",
-    "description": "BLACK TELEPHONE",
-    "category": "thing"
+    "name": "arrow_right",
+    "unicode": {"apple":"27A1", "google":"27A1", "twitter":"27A1"},
+    "shortcode": "arrow_right",
+    "description": "BLACK RIGHTWARDS ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_left",
+    "unicode": {"apple":"2B05", "google":"2B05", "twitter":"2B05"},
+    "shortcode": "arrow_left",
+    "description": "LEFTWARDS BLACK ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_up",
+    "unicode": {"apple":"2B06", "google":"2B06", "twitter":"2B06"},
+    "shortcode": "arrow_up",
+    "description": "UPWARDS BLACK ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_down",
+    "unicode": {"apple":"2B07", "google":"2B07", "twitter":"2B07"},
+    "shortcode": "arrow_down",
+    "description": "DOWNWARDS BLACK ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_upper_right",
+    "unicode": {"apple":"2197", "google":"2197", "twitter":"2197"},
+    "shortcode": "arrow_upper_right",
+    "description": "NORTH EAST ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_lower_right",
+    "unicode": {"apple":"2198", "google":"2198", "twitter":"2198"},
+    "shortcode": "arrow_lower_right",
+    "description": "SOUTH EAST ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_lower_left",
+    "unicode": {"apple":"2199", "google":"2199", "twitter":"2199"},
+    "shortcode": "arrow_lower_left",
+    "description": "SOUTH WEST ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_upper_left",
+    "unicode": {"apple":"2196", "google":"2196", "twitter":"2196"},
+    "shortcode": "arrow_upper_left",
+    "description": "NORTH WEST ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_up_down",
+    "unicode": {"apple":"2195", "google":"2195", "twitter":"2195"},
+    "shortcode": "arrow_up_down",
+    "description": "UP DOWN ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "left_right_arrow",
+    "unicode": {"apple":"2194", "google":"2194", "twitter":"2194"},
+    "shortcode": "left_right_arrow",
+    "description": "LEFT RIGHT ARROW",
+    "category": "symbol"
+  },
+  {
+    "name": "arrows_counterclockwise",
+    "unicode": {"apple":"1F504", "google":"1F504", "twitter":"1F504"},
+    "shortcode": "arrows_counterclockwise",
+    "description": "ANTICLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_right_hook",
+    "unicode": {"apple":"21AA", "google":"21AA", "twitter":"21AA"},
+    "shortcode": "arrow_right_hook",
+    "description": "RIGHTWARDS ARROW WITH HOOK",
+    "category": "symbol"
+  },
+  {
+    "name": "leftwards_arrow_with_hook",
+    "unicode": {"apple":"21A9", "google":"21A9", "twitter":"21A9"},
+    "shortcode": "leftwards_arrow_with_hook",
+    "description": "LEFTWARDS ARROW WITH HOOK",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_heading_up",
+    "unicode": {"apple":"2934", "google":"2934", "twitter":"2934"},
+    "shortcode": "arrow_heading_up",
+    "description": "ARROW POINTING RIGHTWARDS THEN CURVING UPWARDS",
+    "category": "symbol"
+  },
+  {
+    "name": "arrow_heading_down",
+    "unicode": {"apple":"2935", "google":"2935", "twitter":"2935"},
+    "shortcode": "arrow_heading_down",
+    "description": "ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS",
+    "category": "symbol"
+  },
+  {
+    "name": "arrows_clockwise",
+    "unicode": {"apple":"1F503", "google":"1F503", "twitter":"1F503"},
+    "shortcode": "arrows_clockwise",
+    "description": "CLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS",
+    "category": "symbol"
+  },
+  {
+    "name": "hash",
+    "unicode": {"apple":"0023-20E3", "google":"0023-20E3", "twitter":"0023-20E3"},
+    "shortcode": "hash",
+    "description": "HASH KEY",
+    "category": "symbol"
+  },
+  {
+    "name": "information_source",
+    "unicode": {"apple":"2139", "google":"2139", "twitter":"2139"},
+    "shortcode": "information_source",
+    "description": "INFORMATION SOURCE",
+    "category": "symbol"
+  },
+  {
+    "name": "abc",
+    "unicode": {"apple":"1F524", "google":"1F524", "twitter":"1F524"},
+    "shortcode": "abc",
+    "description": "INPUT SYMBOL FOR LATIN LETTERS",
+    "category": "symbol"
+  },
+  {
+    "name": "abcd",
+    "unicode": {"apple":"1F521", "google":"1F521", "twitter":"1F521"},
+    "shortcode": "abcd",
+    "description": "INPUT SYMBOL FOR LATIN SMALL LETTERS",
+    "category": "symbol"
+  },
+  {
+    "name": "capital_abcd",
+    "unicode": {"apple":"1F520", "google":"1F520", "twitter":"1F520"},
+    "shortcode": "capital_abcd",
+    "description": "INPUT SYMBOL FOR LATIN CAPITAL LETTERS",
+    "category": "symbol"
+  },
+  {
+    "name": "symbols",
+    "unicode": {"apple":"1F523", "google":"1F523", "twitter":"1F523"},
+    "shortcode": "symbols",
+    "description": "INPUT SYMBOL FOR SYMBOLS",
+    "category": "symbol"
+  },
+  {
+    "name": "musical_note",
+    "unicode": {"apple":"1F3B5", "google":"1F3B5", "twitter":"1F3B5"},
+    "shortcode": "musical_note",
+    "description": "MUSICAL NOTE",
+    "category": "symbol"
+  },
+  {
+    "name": "notes",
+    "unicode": {"apple":"1F3B6", "google":"1F3B6", "twitter":"1F3B6"},
+    "shortcode": "notes",
+    "description": "MULTIPLE MUSICAL NOTES",
+    "category": "symbol"
+  },
+  {
+    "name": "wavy_dash",
+    "unicode": {"apple":"3030", "google":"3030", "twitter":"3030"},
+    "shortcode": "wavy_dash",
+    "description": "WAVY DASH",
+    "category": "symbol"
+  },
+  {
+    "name": "curly_loop",
+    "unicode": {"apple":"27B0", "google":"27B0", "twitter":"27B0"},
+    "shortcode": "curly_loop",
+    "description": "CURLY LOOP",
+    "category": "symbol"
+  },
+  {
+    "name": "heavy_check_mark",
+    "unicode": {"apple":"2714", "google":"2714", "twitter":"2714"},
+    "shortcode": "heavy_check_mark",
+    "description": "HEAVY CHECK MARK",
+    "category": "symbol"
+  },
+  {
+    "name": "heavy_plus_sign",
+    "unicode": {"apple":"2795", "google":"2795", "twitter":"2795"},
+    "shortcode": "heavy_plus_sign",
+    "description": "HEAVY PLUS SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "heavy_minus_sign",
+    "unicode": {"apple":"2796", "google":"2796", "twitter":"2796"},
+    "shortcode": "heavy_minus_sign",
+    "description": "HEAVY MINUS SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "heavy_multiplication_x",
+    "unicode": {"apple":"2716", "google":"2716", "twitter":"2716"},
+    "shortcode": "heavy_multiplication_x",
+    "description": "HEAVY MULTIPLICATION X",
+    "category": "symbol"
+  },
+  {
+    "name": "heavy_division_sign",
+    "unicode": {"apple":"2797", "google":"2797", "twitter":"2797"},
+    "shortcode": "heavy_division_sign",
+    "description": "HEAVY DIVISION SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "heavy_dollar_sign",
+    "unicode": {"apple":"1F4B2", "google":"1F4B2", "twitter":"1F4B2"},
+    "shortcode": "heavy_dollar_sign",
+    "description": "HEAVY DOLLAR SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "copyright",
+    "unicode": {"apple":"00A9-FE0F", "google":"00A9-FE0F", "twitter":"00A9-FE0F"},
+    "shortcode": "copyright",
+    "description": "COPYRIGHT SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "registered",
+    "unicode": {"apple":"00AE-FE0F", "google":"00AE-FE0F", "twitter":"00AE-FE0F"},
+    "shortcode": "registered",
+    "description": "REGISTERED SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "tm",
+    "unicode": {"apple":"2122", "google":"2122", "twitter":"2122"},
+    "shortcode": "tm",
+    "description": "TRADE MARK SIGN",
+    "category": "symbol"
+  },
+  {
+    "name": "end",
+    "unicode": {"apple":"1F51A", "google":"1F51A", "twitter":"1F51A"},
+    "shortcode": "end",
+    "description": "END WITH LEFTWARDS ARROW ABOVE",
+    "category": "symbol"
+  },
+  {
+    "name": "back",
+    "unicode": {"apple":"1F519", "google":"1F519", "twitter":"1F519"},
+    "shortcode": "back",
+    "description": "BACK WITH LEFTWARDS ARROW ABOVE",
+    "category": "symbol"
+  },
+  {
+    "name": "on",
+    "unicode": {"apple":"1F51B", "google":"1F51B", "twitter":"1F51B"},
+    "shortcode": "on",
+    "description": "ON WITH EXCLAMATION MARK WITH LEFT RIGHT ARROW ABOVE",
+    "category": "symbol"
+  },
+  {
+    "name": "top",
+    "unicode": {"apple":"1F51D", "google":"1F51D", "twitter":"1F51D"},
+    "shortcode": "top",
+    "description": "TOP WITH UPWARDS ARROW ABOVE",
+    "category": "symbol"
+  },
+  {
+    "name": "soon",
+    "unicode": {"apple":"1F51C", "google":"1F51C", "twitter":"1F51C"},
+    "shortcode": "soon",
+    "description": "SOON WITH RIGHTWARDS ARROW ABOVE",
+    "category": "symbol"
   },
   {
     "name": "ballot_box_with_check",
-    "unicode": {"apple":"", "google":"", "twitter":"2611"},
+    "unicode": {"apple":"2611", "google":"2611", "twitter":"2611"},
     "shortcode": "ballot_box_with_check",
     "description": "BALLOT BOX WITH CHECK",
-    "category": "thing"
-  },
-
-  {
-    "name": "aries",
-    "unicode": {"apple":"", "google":"", "twitter":"2648"},
-    "shortcode": "aries",
-    "description": "ARIES",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
-    "name": "taurus",
-    "unicode": {"apple":"", "google":"", "twitter":"2649"},
-    "shortcode": "taurus",
-    "description": "TAURUS",
-    "category": "folderol"
+    "name": "radio_button",
+    "unicode": {"apple":"1F518", "google":"1F518", "twitter":"1F518"},
+    "shortcode": "radio_button",
+    "description": "RADIO BUTTON",
+    "category": "symbol"
   },
   {
-    "name": "gemini",
-    "unicode": {"apple":"", "google":"", "twitter":"264A"},
-    "shortcode": "gemini",
-    "description": "GEMINI",
-    "category": "folderol"
+    "name": "white_circle",
+    "unicode": {"apple":"26AA", "google":"26AA", "twitter":"26AA"},
+    "shortcode": "white_circle",
+    "description": "MEDIUM WHITE CIRCLE",
+    "category": "symbol"
   },
   {
-    "name": "cancer",
-    "unicode": {"apple":"", "google":"", "twitter":"264B"},
-    "shortcode": "cancer",
-    "description": "CANCER",
-    "category": "folderol"
+    "name": "black_circle",
+    "unicode": {"apple":"26AB", "google":"26AB", "twitter":"26AB"},
+    "shortcode": "black_circle",
+    "description": "MEDIUM BLACK CIRCLE",
+    "category": "symbol"
   },
   {
-    "name": "leo",
-    "unicode": {"apple":"", "google":"", "twitter":"264C"},
-    "shortcode": "leo",
-    "description": "LEO",
-    "category": "folderol"
+    "name": "red_circle",
+    "unicode": {"apple":"1F534", "google":"1F534", "twitter":"1F534"},
+    "shortcode": "red_circle",
+    "description": "LARGE RED CIRCLE",
+    "category": "symbol"
   },
   {
-    "name": "virgo",
-    "unicode": {"apple":"", "google":"", "twitter":"264D"},
-    "shortcode": "virgo",
-    "description": "VIRGO",
-    "category": "folderol"
+    "name": "large_blue_circle",
+    "unicode": {"apple":"1F535", "google":"1F535", "twitter":"1F535"},
+    "shortcode": "large_blue_circle",
+    "description": "LARGE BLUE CIRCLE",
+    "category": "symbol"
   },
   {
-    "name": "libra",
-    "unicode": {"apple":"", "google":"", "twitter":"264E"},
-    "shortcode": "libra",
-    "description": "LIBRA",
-    "category": "folderol"
+    "name": "small_orange_diamond",
+    "unicode": {"apple":"1F538", "google":"1F538", "twitter":"1F538"},
+    "shortcode": "small_orange_diamond",
+    "description": "SMALL ORANGE DIAMOND",
+    "category": "symbol"
   },
   {
-    "name": "scorpius",
-    "unicode": {"apple":"", "google":"", "twitter":"264F"},
-    "shortcode": "scorpius",
-    "description": "SCORPIUS",
-    "category": "folderol"
+    "name": "small_blue_diamond",
+    "unicode": {"apple":"1F539", "google":"1F539", "twitter":"1F539"},
+    "shortcode": "small_blue_diamond",
+    "description": "SMALL BLUE DIAMOND",
+    "category": "symbol"
   },
   {
-    "name": "sagittarius",
-    "unicode": {"apple":"", "google":"", "twitter":"2650"},
-    "shortcode": "sagittarius",
-    "description": "SAGITTARIUS",
-    "category": "folderol"
+    "name": "large_orange_diamond",
+    "unicode": {"apple":"1F536", "google":"1F536", "twitter":"1F536"},
+    "shortcode": "large_orange_diamond",
+    "description": "LARGE ORANGE DIAMOND",
+    "category": "symbol"
   },
   {
-    "name": "capricorn",
-    "unicode": {"apple":"", "google":"", "twitter":"2651"},
-    "shortcode": "capricorn",
-    "description": "CAPRICORN",
-    "category": "folderol"
+    "name": "large_blue_diamond",
+    "unicode": {"apple":"1F537", "google":"1F537", "twitter":"1F537"},
+    "shortcode": "large_blue_diamond",
+    "description": "LARGE BLUE DIAMOND",
+    "category": "symbol"
   },
   {
-    "name": "aquarius",
-    "unicode": {"apple":"", "google":"", "twitter":"2652"},
-    "shortcode": "aquarius",
-    "description": "AQUARIUS",
-    "category": "folderol"
+    "name": "small_red_triangle",
+    "unicode": {"apple":"1F53A", "google":"1F53A", "twitter":"1F53A"},
+    "shortcode": "small_red_triangle",
+    "description": "UP-POINTING RED TRIANGLE",
+    "category": "symbol"
   },
   {
-    "name": "pisces",
-    "unicode": {"apple":"", "google":"", "twitter":"2653"},
-    "shortcode": "pisces",
-    "description": "PISCES",
-    "category": "folderol"
+    "name": "black_small_square",
+    "unicode": {"apple":"25AA", "google":"25AA", "twitter":"25AA"},
+    "shortcode": "black_small_square",
+    "description": "BLACK SMALL SQUARE",
+    "category": "symbol"
+  },
+  {
+    "name": "white_small_square",
+    "unicode": {"apple":"25AB", "google":"25AB", "twitter":"25AB"},
+    "shortcode": "white_small_square",
+    "description": "WHITE SMALL SQUARE",
+    "category": "symbol"
+  },
+  {
+    "name": "black_large_square",
+    "unicode": {"apple":"2B1B", "google":"2B1B", "twitter":"2B1B"},
+    "shortcode": "black_large_square",
+    "description": "BLACK LARGE SQUARE",
+    "category": "symbol"
+  },
+  {
+    "name": "white_large_square",
+    "unicode": {"apple":"2B1C", "google":"2B1C", "twitter":"2B1C"},
+    "shortcode": "white_large_square",
+    "description": "WHITE LARGE SQUARE",
+    "category": "symbol"
+  },
+  {
+    "name": "small_red_triangle_down",
+    "unicode": {"apple":"1F53B", "google":"1F53B", "twitter":"1F53B"},
+    "shortcode": "small_red_triangle_down",
+    "description": "DOWN-POINTING RED TRIANGLE",
+    "category": "symbol"
+  },
+  {
+    "name": "black_medium_square",
+    "unicode": {"apple":"25FC", "google":"25FC", "twitter":"25FC"},
+    "shortcode": "black_medium_square",
+    "description": "BLACK MEDIUM SQUARE",
+    "category": "symbol"
+  },
+  {
+    "name": "white_medium_square",
+    "unicode": {"apple":"25FB", "google":"25FB", "twitter":"25FB"},
+    "shortcode": "white_medium_square",
+    "description": "WHITE MEDIUM SQUARE",
+    "category": "symbol"
+  },
+  {
+    "name": "black_medium_small_square",
+    "unicode": {"apple":"25FE", "google":"25FE", "twitter":"25FE"},
+    "shortcode": "black_medium_small_square",
+    "description": "BLACK MEDIUM SMALL SQUARE",
+    "category": "symbol"
+  },
+  {
+    "name": "white_medium_small_square",
+    "unicode": {"apple":"25FD", "google":"25FD", "twitter":"25FD"},
+    "shortcode": "white_medium_small_square",
+    "description": "WHITE MEDIUM SMALL SQUARE",
+    "category": "symbol"
+  },
+  {
+    "name": "black_square_button",
+    "unicode": {"apple":"1F532", "google":"1F532", "twitter":"1F532"},
+    "shortcode": "black_square_button",
+    "description": "BLACK SQUARE BUTTON",
+    "category": "symbol"
+  },
+  {
+    "name": "white_square_button",
+    "unicode": {"apple":"1F533", "google":"1F533", "twitter":"1F533"},
+    "shortcode": "white_square_button",
+    "description": "WHITE SQUARE BUTTON",
+    "category": "symbol"
+  },
+  {
+    "name": "speaker",
+    "unicode": {"apple":"1F508", "google":"1F508", "twitter":"1F508"},
+    "shortcode": "speaker",
+    "description": "SPEAKER",
+    "category": "symbol"
+  },
+  {
+    "name": "sound",
+    "unicode": {"apple":"1F509", "google":"1F509", "twitter":"1F509"},
+    "shortcode": "sound",
+    "description": "SPEAKER WITH ONE SOUND WAVE",
+    "category": "symbol"
+  },
+  {
+    "name": "loud_sound",
+    "unicode": {"apple":"1F50A", "google":"1F50A", "twitter":"1F50A"},
+    "shortcode": "loud_sound",
+    "description": "SPEAKER WITH THREE SOUND WAVES",
+    "category": "symbol"
+  },
+  {
+    "name": "mute",
+    "unicode": {"apple":"1F507", "google":"1F507", "twitter":"1F507"},
+    "shortcode": "mute",
+    "description": "SPEAKER WITH CANCELLATION STROKE",
+    "category": "symbol"
+  },
+  {
+    "name": "mega",
+    "unicode": {"apple":"1F4E3", "google":"1F4E3", "twitter":"1F4E3"},
+    "shortcode": "mega",
+    "description": "CHEERING MEGAPHONE",
+    "category": "symbol"
+  },
+  {
+    "name": "loudspeaker",
+    "unicode": {"apple":"1F4E2", "google":"1F4E2", "twitter":"1F4E2"},
+    "shortcode": "loudspeaker",
+    "description": "PUBLIC ADDRESS LOUDSPEAKER",
+    "category": "symbol"
+  },
+  {
+    "name": "bell",
+    "unicode": {"apple":"1F514", "google":"1F514", "twitter":"1F514"},
+    "shortcode": "bell",
+    "description": "BELL",
+    "category": "symbol"
+  },
+  {
+    "name": "no_bell",
+    "unicode": {"apple":"1F515", "google":"1F515", "twitter":"1F515"},
+    "shortcode": "no_bell",
+    "description": "BELL WITH CANCELLATION STROKE",
+    "category": "symbol"
+  },
+  {
+    "name": "black_joker",
+    "unicode": {"apple":"1F0CF", "google":"1F0CF", "twitter":"1F0CF"},
+    "shortcode": "black_joker",
+    "description": "PLAYING CARD BLACK JOKER",
+    "category": "symbol"
+  },
+  {
+    "name": "mahjong",
+    "unicode": {"apple":"1F004", "google":"1F004", "twitter":"1F004"},
+    "shortcode": "mahjong",
+    "description": "MAHJONG TILE RED DRAGON",
+    "category": "symbol"
   },
   {
     "name": "spades",
-    "unicode": {"apple":"", "google":"", "twitter":"2660"},
+    "unicode": {"apple":"2660", "google":"2660", "twitter":"2660"},
     "shortcode": "spades",
     "description": "BLACK SPADE SUIT",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clubs",
-    "unicode": {"apple":"", "google":"", "twitter":"2663"},
+    "unicode": {"apple":"2663", "google":"2663", "twitter":"2663"},
     "shortcode": "clubs",
     "description": "BLACK CLUB SUIT",
     "category": "symbol"
   },
   {
     "name": "hearts",
-    "unicode": {"apple":"", "google":"", "twitter":"2665"},
+    "unicode": {"apple":"2665", "google":"2665", "twitter":"2665"},
     "shortcode": "hearts",
     "description": "BLACK HEART SUIT",
     "category": "symbol"
   },
   {
     "name": "diamonds",
-    "unicode": {"apple":"", "google":"", "twitter":"2666"},
+    "unicode": {"apple":"2666", "google":"2666", "twitter":"2666"},
     "shortcode": "diamonds",
     "description": "BLACK DIAMOND SUIT",
-    "category": "folderol"
+    "category": "symbol"
   },
-  {
-    "name": "hotsprings",
-    "unicode": {"apple":"", "google":"", "twitter":"2668"},
-    "shortcode": "hotsprings",
-    "description": "HOT SPRINGS",
-    "category": "thing"
-  },
-  {
-    "name": "recycle",
-    "unicode": {"apple":"", "google":"", "twitter":"267B"},
-    "shortcode": "recycle",
-    "description": "BLACK UNIVERSAL RECYCLING SYMBOL",
-    "category": "folderol"
-  },
-  {
-    "name": "wheelchair",
-    "unicode": {"apple":"", "google":"", "twitter":"267F"},
-    "shortcode": "wheelchair",
-    "description": "WHEELCHAIR SYMBOL",
-    "category": "thing"
-  },
-
-  {
-    "name": "warning",
-    "unicode": {"apple":"", "google":"", "twitter":"26A0"},
-    "shortcode": "warning",
-    "description": "WARNING SIGN",
-    "category": "thing"
-  },
-
-  {
-    "name": "white_circle",
-    "unicode": {"apple":"", "google":"", "twitter":"26AA"},
-    "shortcode": "white_circle",
-    "description": "MEDIUM WHITE CIRCLE",
-    "category": "folderol"
-  },
-  {
-    "name": "black_circle",
-    "unicode": {"apple":"", "google":"", "twitter":"26AB"},
-    "shortcode": "black_circle",
-    "description": "MEDIUM BLACK CIRCLE",
-    "category": "folderol"
-  },
-  {
-    "name": "ophiuchus",
-    "unicode": {"apple":"", "google":"", "twitter":"26CE"},
-    "shortcode": "ophiuchus",
-    "description": "OPHIUCHUS",
-    "category": "folderol"
-  },
-  {
-    "name": "no_entry",
-    "unicode": {"apple":"", "google":"", "twitter":"26D4"},
-    "shortcode": "no_entry",
-    "description": "NO ENTRY",
-    "category": "folderol"
-  },
-
-
-
-
-
-
-  {
-    "name": "scissors",
-    "unicode": {"apple":"", "google":"", "twitter":"2702"},
-    "shortcode": "scissors",
-    "description": "BLACK SCISSORS",
-    "category": "thing"
-  },
-  {
-    "name": "white_check_mark",
-    "unicode": {"apple":"", "google":"", "twitter":"2705"},
-    "shortcode": "white_check_mark",
-    "description": "WHITE HEAVY CHECK MARK",
-    "category": "folderol"
-  },
-
-  {
-    "name": "email",
-    "unicode": {"apple":"", "google":"", "twitter":"2709"},
-    "shortcode": "email",
-    "description": "ENVELOPE",
-    "category": "thing"
-  },
-  {
-    "name": "pencil2",
-    "unicode": {"apple":"", "google":"", "twitter":"270F"},
-    "shortcode": "pencil2",
-    "description": "PENCIL",
-    "category": "thing"
-  },
-  {
-    "name": "black_nib",
-    "unicode": {"apple":"", "google":"", "twitter":"2712"},
-    "shortcode": "black_nib",
-    "description": "BLACK NIB",
-    "category": "folderol"
-  },
-  {
-    "name": "heavy_check_mark",
-    "unicode": {"apple":"", "google":"", "twitter":"2714"},
-    "shortcode": "heavy_check_mark",
-    "description": "HEAVY CHECK MARK",
-    "category": "folderol"
-  },
-  {
-    "name": "heavy_multiplication_x",
-    "unicode": {"apple":"", "google":"", "twitter":"2716"},
-    "shortcode": "heavy_multiplication_x",
-    "description": "HEAVY MULTIPLICATION X",
-    "category": "folderol"
-  },
-
-  {
-    "name": "eight_spoked_asterisk",
-    "unicode": {"apple":"", "google":"", "twitter":"2733"},
-    "shortcode": "eight_spoked_asterisk",
-    "description": "EIGHT SPOKED ASTERISK",
-    "category": "folderol"
-  },
-  {
-    "name": "eight_pointed_black_star",
-    "unicode": {"apple":"", "google":"", "twitter":"2734"},
-    "shortcode": "eight_pointed_black_star",
-    "description": "EIGHT POINTED BLACK STAR",
-    "category": "folderol"
-  },
-
-  {
-    "name": "sparkle",
-    "unicode": {"apple":"", "google":"", "twitter":"2747"},
-    "shortcode": "sparkle",
-    "description": "SPARKLE",
-    "category": "thing"
-  },
-  {
-    "name": "x",
-    "unicode": {"apple":"", "google":"", "twitter":"274C"},
-    "shortcode": "x",
-    "description": "CROSS MARK",
-    "category": "folderol"
-  },
-  {
-    "name": "negative_squared_cross_mark",
-    "unicode": {"apple":"", "google":"", "twitter":"274E"},
-    "shortcode": "negative_squared_cross_mark",
-    "description": "NEGATIVE SQUARED CROSS MARK",
-    "category": "folderol"
-  },
-  {
-    "name": "question",
-    "unicode": {"apple":"", "google":"", "twitter":"2753"},
-    "shortcode": "question",
-    "description": "BLACK QUESTION MARK ORNAMENT",
-    "category": "folderol"
-  },
-  {
-    "name": "grey_question",
-    "unicode": {"apple":"", "google":"", "twitter":"2754"},
-    "shortcode": "grey_question",
-    "description": "WHITE QUESTION MARK ORNAMENT",
-    "category": "folderol"
-  },
-  {
-    "name": "grey_exclamation",
-    "unicode": {"apple":"", "google":"", "twitter":"2755"},
-    "shortcode": "grey_exclamation",
-    "description": "WHITE EXCLAMATION MARK ORNAMENT",
-    "category": "folderol"
-  },
-  {
-    "name": "exclamation",
-    "unicode": {"apple":"", "google":"", "twitter":"2757"},
-    "shortcode": "exclamation",
-    "description": "HEAVY EXCLAMATION MARK SYMBOL",
-    "category": "folderol"
-  },
-  {
-    "name": "heart",
-    "unicode": {"apple":"", "google":"", "twitter":"2764"},
-    "shortcode": "heart",
-    "description": "HEAVY BLACK HEART",
-    "category": "folderol"
-  },
-  {
-    "name": "heavy_plus_sign",
-    "unicode": {"apple":"", "google":"", "twitter":"2795"},
-    "shortcode": "heavy_plus_sign",
-    "description": "HEAVY PLUS SIGN",
-    "category": "folderol"
-  },
-  {
-    "name": "heavy_minus_sign",
-    "unicode": {"apple":"", "google":"", "twitter":"2796"},
-    "shortcode": "heavy_minus_sign",
-    "description": "HEAVY MINUS SIGN",
-    "category": "folderol"
-  },
-  {
-    "name": "heavy_division_sign",
-    "unicode": {"apple":"", "google":"", "twitter":"2797"},
-    "shortcode": "heavy_division_sign",
-    "description": "HEAVY DIVISION SIGN",
-    "category": "folderol"
-  },
-  {
-    "name": "arrow_right",
-    "unicode": {"apple":"", "google":"", "twitter":"27A1"},
-    "shortcode": "arrow_right",
-    "description": "BLACK RIGHTWARDS ARROW",
-    "category": "folderol"
-  },
-  {
-    "name": "curly_loop",
-    "unicode": {"apple":"", "google":"", "twitter":"27B0"},
-    "shortcode": "curly_loop",
-    "description": "CURLY LOOP",
-    "category": "folderol"
-  },
-  {
-    "name": "loop",
-    "unicode": {"apple":"", "google":"", "twitter":"27BF"},
-    "shortcode": "loop",
-    "description": "DOUBLE CURLY LOOP",
-    "category": "folderol"
-  },
-  {
-    "name": "arrow_heading_up",
-    "unicode": {"apple":"", "google":"", "twitter":"2934"},
-    "shortcode": "arrow_heading_up",
-    "description": "ARROW POINTING RIGHTWARDS THEN CURVING UPWARDS",
-    "category": "folderol"
-  },
-  {
-    "name": "arrow_heading_down",
-    "unicode": {"apple":"", "google":"", "twitter":"2935"},
-    "shortcode": "arrow_heading_down",
-    "description": "ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS",
-    "category": "folderol"
-  },
-  {
-    "name": "arrow_left",
-    "unicode": {"apple":"", "google":"", "twitter":"2B05"},
-    "shortcode": "arrow_left",
-    "description": "LEFTWARDS BLACK ARROW",
-    "category": "folderol"
-  },
-  {
-    "name": "arrow_up",
-    "unicode": {"apple":"", "google":"", "twitter":"2B06"},
-    "shortcode": "arrow_up",
-    "description": "UPWARDS BLACK ARROW",
-    "category": "folderol"
-  },
-  {
-    "name": "arrow_down",
-    "unicode": {"apple":"", "google":"", "twitter":"2B07"},
-    "shortcode": "arrow_down",
-    "description": "DOWNWARDS BLACK ARROW",
-    "category": "folderol"
-  },
-  {
-    "name": "black_large_square",
-    "unicode": {"apple":"", "google":"", "twitter":"2B1B"},
-    "shortcode": "black_large_square",
-    "description": "BLACK LARGE SQUARE",
-    "category": "folderol"
-  },
-  {
-    "name": "white_large_square",
-    "unicode": {"apple":"", "google":"", "twitter":"2B1C"},
-    "shortcode": "white_large_square",
-    "description": "WHITE LARGE SQUARE",
-    "category": "folderol"
-  },
-
-  {
-    "name": "o",
-    "unicode": {"apple":"", "google":"", "twitter":"2B55"},
-    "shortcode": "o",
-    "description": "HEAVY LARGE CIRCLE",
-    "category": "folderol"
-  },
-  {
-    "name": "wavy_dash",
-    "unicode": {"apple":"", "google":"", "twitter":"3030"},
-    "shortcode": "wavy_dash",
-    "description": "WAVY DASH",
-    "category": "folderol"
-  },
-  {
-    "name": "part_alternation_mark",
-    "unicode": {"apple":"", "google":"", "twitter":"303D"},
-    "shortcode": "part_alternation_mark",
-    "description": "PART ALTERNATION MARK",
-    "category": "folderol"
-  },
-  {
-    "name": "congratulations",
-    "unicode": {"apple":"", "google":"", "twitter":"3297"},
-    "shortcode": "congratulations",
-    "description": "CIRCLED IDEOGRAPH CONGRATULATION",
-    "category": "folderol"
-  },
-  {
-    "name": "secret",
-    "unicode": {"apple":"", "google":"", "twitter":"3299"},
-    "shortcode": "secret",
-    "description": "CIRCLED IDEOGRAPH SECRET",
-    "category": "folderol"
-  },
-  {
-    "name": "mahjong",
-    "unicode": {"apple":"", "google":"", "twitter":"1F004"},
-    "shortcode": "mahjong",
-    "description": "MAHJONG TILE RED DRAGON",
-    "category": "folderol"
-  },
-  {
-    "name": "black_joker",
-    "unicode": {"apple":"", "google":"", "twitter":"1F0CF"},
-    "shortcode": "black_joker",
-    "description": "PLAYING CARD BLACK JOKER",
-    "category": "folderol"
-  },
-  {
-    "name": "a",
-    "unicode": {"apple":"", "google":"", "twitter":"1F170"},
-    "shortcode": "a",
-    "description": "NEGATIVE SQUARED LATIN CAPITAL LETTER A",
-    "category": "folderol"
-  },
-  {
-    "name": "b",
-    "unicode": {"apple":"", "google":"", "twitter":"1F171"},
-    "shortcode": "b",
-    "description": "NEGATIVE SQUARED LATIN CAPITAL LETTER B",
-    "category": "folderol"
-  },
-  {
-    "name": "o2",
-    "unicode": {"apple":"", "google":"", "twitter":"1F17E"},
-    "shortcode": "o2",
-    "description": "NEGATIVE SQUARED LATIN CAPITAL LETTER O",
-    "category": "folderol"
-  },
-  {
-    "name": "parking",
-    "unicode": {"apple":"", "google":"", "twitter":"1F17F"},
-    "shortcode": "parking",
-    "description": "NEGATIVE SQUARED LATIN CAPITAL LETTER P",
-    "category": "folderol"
-  },
-  {
-    "name": "ab",
-    "unicode": {"apple":"", "google":"", "twitter":"1F18E"},
-    "shortcode": "ab",
-    "description": "NEGATIVE SQUARED AB",
-    "category": "folderol"
-  },
-  {
-    "name": "cl",
-    "unicode": {"apple":"", "google":"", "twitter":"1F191"},
-    "shortcode": "cl",
-    "description": "SQUARED CL",
-    "category": "folderol"
-  },
-  {
-    "name": "cool",
-    "unicode": {"apple":"", "google":"", "twitter":"1F192"},
-    "shortcode": "cool",
-    "description": "SQUARED COOL",
-    "category": "folderol"
-  },
-  {
-    "name": "free",
-    "unicode": {"apple":"", "google":"", "twitter":"1F193"},
-    "shortcode": "free",
-    "description": "SQUARED FREE",
-    "category": "folderol"
-  },
-  {
-    "name": "id",
-    "unicode": {"apple":"", "google":"", "twitter":"1F194"},
-    "shortcode": "id",
-    "description": "SQUARED ID",
-    "category": "folderol"
-  },
-  {
-    "name": "new",
-    "unicode": {"apple":"", "google":"", "twitter":"1F195"},
-    "shortcode": "new",
-    "description": "SQUARED NEW",
-    "category": "folderol"
-  },
-  {
-    "name": "ng",
-    "unicode": {"apple":"", "google":"", "twitter":"1F196"},
-    "shortcode": "ng",
-    "description": "SQUARED NG",
-    "category": "folderol"
-  },
-  {
-    "name": "ok",
-    "unicode": {"apple":"", "google":"", "twitter":"1F197"},
-    "shortcode": "ok",
-    "description": "SQUARED OK",
-    "category": "folderol"
-  },
-  {
-    "name": "sos",
-    "unicode": {"apple":"", "google":"", "twitter":"1F198"},
-    "shortcode": "sos",
-    "description": "SQUARED SOS",
-    "category": "folderol"
-  },
-  {
-    "name": "up",
-    "unicode": {"apple":"", "google":"", "twitter":"1F199"},
-    "shortcode": "up",
-    "description": "SQUARED UP WITH EXCLAMATION MARK",
-    "category": "folderol"
-  },
-  {
-    "name": "vs",
-    "unicode": {"apple":"", "google":"", "twitter":"1F19A"},
-    "shortcode": "vs",
-    "description": "SQUARED VS",
-    "category": "folderol"
-  },
-  {
-    "name": "koko",
-    "unicode": {"apple":"", "google":"", "twitter":"1F201"},
-    "shortcode": "koko",
-    "description": "SQUARED KATAKANA KOKO",
-    "category": "folderol"
-  },
-  {
-    "name": "sa",
-    "unicode": {"apple":"", "google":"", "twitter":"1F202"},
-    "shortcode": "sa",
-    "description": "SQUARED KATAKANA SA",
-    "category": "folderol"
-  },
-  {
-    "name": "u7121",
-    "unicode": {"apple":"", "google":"", "twitter":"1F21A"},
-    "shortcode": "u7121",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-7121",
-    "category": "folderol"
-  },
-  {
-    "name": "u6307",
-    "unicode": {"apple":"", "google":"", "twitter":"1F22F"},
-    "shortcode": "u6307",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-6307",
-    "category": "folderol"
-  },
-  {
-    "name": "u7981",
-    "unicode": {"apple":"", "google":"", "twitter":"1F232"},
-    "shortcode": "u7981",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-7981",
-    "category": "folderol"
-  },
-  {
-    "name": "u7a7a",
-    "unicode": {"apple":"", "google":"", "twitter":"1F233"},
-    "shortcode": "u7a7a",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-7A7A",
-    "category": "folderol"
-  },
-  {
-    "name": "u5408",
-    "unicode": {"apple":"", "google":"", "twitter":"1F234"},
-    "shortcode": "u5408",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-5408",
-    "category": "folderol"
-  },
-  {
-    "name": "u6e80",
-    "unicode": {"apple":"", "google":"", "twitter":"1F235"},
-    "shortcode": "u6e80",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-6E80",
-    "category": "folderol"
-  },
-  {
-    "name": "u6709",
-    "unicode": {"apple":"", "google":"", "twitter":"1F236"},
-    "shortcode": "u6709",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-6709",
-    "category": "folderol"
-  },
-  {
-    "name": "u6708",
-    "unicode": {"apple":"", "google":"", "twitter":"1F237"},
-    "shortcode": "u6708",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-6708",
-    "category": "folderol"
-  },
-  {
-    "name": "u7533",
-    "unicode": {"apple":"", "google":"", "twitter":"1F238"},
-    "shortcode": "u7533",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-7533",
-    "category": "folderol"
-  },
-  {
-    "name": "u5272",
-    "unicode": {"apple":"", "google":"", "twitter":"1F239"},
-    "shortcode": "u5272",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-5272",
-    "category": "folderol"
-  },
-  {
-    "name": "u55b6",
-    "unicode": {"apple":"", "google":"", "twitter":"1F23A"},
-    "shortcode": "u55b6",
-    "description": "SQUARED CJK UNIFIED IDEOGRAPH-55B6",
-    "category": "folderol"
-  },
-  {
-    "name": "ideograph_advantage",
-    "unicode": {"apple":"", "google":"", "twitter":"1F250"},
-    "shortcode": "ideograph_advantage",
-    "description": "CIRCLED IDEOGRAPH ADVANTAGE",
-    "category": "folderol"
-  },
-  {
-    "name": "accept",
-    "unicode": {"apple":"", "google":"", "twitter":"1F251"},
-    "shortcode": "accept",
-    "description": "CIRCLED IDEOGRAPH ACCEPT",
-    "category": "folderol"
-  },
-  {
-    "name": "cyclone",
-    "unicode": {"apple":"", "google":"", "twitter":"1F300"},
-    "shortcode": "cyclone",
-    "description": "CYCLONE",
-    "category": "thing"
-  },
-
-
-
-
-
-
-
-  {
-    "name": "globe_with_meridians",
-    "unicode": {"apple":"", "google":"", "twitter":"1F310"},
-    "shortcode": "globe_with_meridians",
-    "description": "GLOBE WITH MERIDIANS",
-    "category": "thing"
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  {
-    "name": "ribbon",
-    "unicode": {"apple":"", "google":"", "twitter":"1F380"},
-    "shortcode": "ribbon",
-    "description": "RIBBON",
-    "category": "thing"
-  },
-  {
-    "name": "gift",
-    "unicode": {"apple":"", "google":"", "twitter":"1F381"},
-    "shortcode": "gift",
-    "description": "WRAPPED PRESENT",
-    "category": "thing"
-  },
-
-
-
-
-  {
-    "name": "balloon",
-    "unicode": {"apple":"", "google":"", "twitter":"1F388"},
-    "shortcode": "balloon",
-    "description": "BALLOON",
-    "category": "thing"
-  },
-  {
-    "name": "tada",
-    "unicode": {"apple":"", "google":"", "twitter":"1F389"},
-    "shortcode": "tada",
-    "description": "PARTY POPPER",
-    "category": "thing"
-  },
-  {
-    "name": "confetti_ball",
-    "unicode": {"apple":"", "google":"", "twitter":"1F38A"},
-    "shortcode": "confetti_ball",
-    "description": "CONFETTI BALL",
-    "category": "thing"
-  },
-
-  {
-    "name": "crossed_flags",
-    "unicode": {"apple":"", "google":"", "twitter":"1F38C"},
-    "shortcode": "crossed_flags",
-    "description": "CROSSED FLAGS",
-    "category": "thing"
-  },
-
-  {
-    "name": "dolls",
-    "unicode": {"apple":"", "google":"", "twitter":"1F38E"},
-    "shortcode": "dolls",
-    "description": "JAPANESE DOLLS",
-    "category": "thing"
-  },
-  {
-    "name": "flags",
-    "unicode": {"apple":"", "google":"", "twitter":"1F38F"},
-    "shortcode": "flags",
-    "description": "CARP STREAMER",
-    "category": "thing"
-  },
-  {
-    "name": "wind_chime",
-    "unicode": {"apple":"", "google":"", "twitter":"1F390"},
-    "shortcode": "wind_chime",
-    "description": "WIND CHIME",
-    "category": "thing"
-  },
-
-
-
-
-  {
-    "name": "movie_camera",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3A5"},
-    "shortcode": "movie_camera",
-    "description": "MOVIE CAMERA",
-    "category": "thing"
-  },
-  {
-    "name": "cinema",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3A6"},
-    "shortcode": "cinema",
-    "description": "CINEMA",
-    "category": "thing"
-  },
-
-
-
-
-
-
-
-
   {
     "name": "flower_playing_cards",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B4"},
+    "unicode": {"apple":"1F3B4", "google":"1F3B4", "twitter":"1F3B4"},
     "shortcode": "flower_playing_cards",
     "description": "FLOWER PLAYING CARDS",
-    "category": "thing"
-  },
-  {
-    "name": "musical_note",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B5"},
-    "shortcode": "musical_note",
-    "description": "MUSICAL NOTE",
-    "category": "thing"
-  },
-  {
-    "name": "notes",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3B6"},
-    "shortcode": "notes",
-    "description": "MULTIPLE MUSICAL NOTES",
-    "category": "thing"
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  {
-    "name": "hospital",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E5"},
-    "shortcode": "hospital",
-    "description": "HOSPITAL",
-    "category": "travel"
-  },
-
-  {
-    "name": "atm",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3E7"},
-    "shortcode": "atm",
-    "description": "AUTOMATED TELLER MACHINE",
-    "category": "travel"
-  },
-
-
-
-
-
-  {
-    "name": "izakaya_lantern",
-    "unicode": {"apple":"", "google":"", "twitter":"1F3EE"},
-    "shortcode": "izakaya_lantern",
-    "description": "IZAKAYA LANTERN",
-    "category": "travel"
-  },
-
-
-
-
-
-
-
-  {
-    "name": "person_with_blond_hair",
-    "unicode": {"apple":"", "google":"", "twitter":"1F471"},
-    "shortcode": "person_with_blond_hair",
-    "description": "PERSON WITH BLOND HAIR",
-    "category": "XXXXXX"
-  },
-
-
-  {
-    "name": "barber",
-    "unicode": {"apple":"", "google":"", "twitter":"1F488"},
-    "shortcode": "barber",
-    "description": "BARBER POLE",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "syringe",
-    "unicode": {"apple":"", "google":"", "twitter":"1F489"},
-    "shortcode": "syringe",
-    "description": "SYRINGE",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "pill",
-    "unicode": {"apple":"", "google":"", "twitter":"1F48A"},
-    "shortcode": "pill",
-    "description": "PILL",
-    "category": "XXXXXX"
-  },
-
-  {
-    "name": "love_letter",
-    "unicode": {"apple":"", "google":"", "twitter":"1F48C"},
-    "shortcode": "love_letter",
-    "description": "LOVE LETTER",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "gem",
-    "unicode": {"apple":"", "google":"", "twitter":"1F48E"},
-    "shortcode": "gem",
-    "description": "GEM STONE",
-    "category": "XXXXXX"
-  },
-
-
-  {
-    "name": "heartbeat",
-    "unicode": {"apple":"", "google":"", "twitter":"1F493"},
-    "shortcode": "heartbeat",
-    "description": "BEATING HEART",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "broken_heart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F494"},
-    "shortcode": "broken_heart",
-    "description": "BROKEN HEART",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "two_hearts",
-    "unicode": {"apple":"", "google":"", "twitter":"1F495"},
-    "shortcode": "two_hearts",
-    "description": "TWO HEARTS",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "sparkling_heart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F496"},
-    "shortcode": "sparkling_heart",
-    "description": "SPARKLING HEART",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "heartpulse",
-    "unicode": {"apple":"", "google":"", "twitter":"1F497"},
-    "shortcode": "heartpulse",
-    "description": "GROWING HEART",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "cupid",
-    "unicode": {"apple":"", "google":"", "twitter":"1F498"},
-    "shortcode": "cupid",
-    "description": "HEART WITH ARROW",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "blue_heart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F499"},
-    "shortcode": "blue_heart",
-    "description": "BLUE HEART",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "green_heart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F49A"},
-    "shortcode": "green_heart",
-    "description": "GREEN HEART",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "yellow_heart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F49B"},
-    "shortcode": "yellow_heart",
-    "description": "YELLOW HEART",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "purple_heart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F49C"},
-    "shortcode": "purple_heart",
-    "description": "PURPLE HEART",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "gift_heart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F49D"},
-    "shortcode": "gift_heart",
-    "description": "HEART WITH RIBBON",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "revolving_hearts",
-    "unicode": {"apple":"", "google":"", "twitter":"1F49E"},
-    "shortcode": "revolving_hearts",
-    "description": "REVOLVING HEARTS",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "heart_decoration",
-    "unicode": {"apple":"", "google":"", "twitter":"1F49F"},
-    "shortcode": "heart_decoration",
-    "description": "HEART DECORATION",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "diamond_shape_with_a_dot_inside",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4A0"},
-    "shortcode": "diamond_shape_with_a_dot_inside",
-    "description": "DIAMOND SHAPE WITH A DOT INSIDE",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "bulb",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4A1"},
-    "shortcode": "bulb",
-    "description": "ELECTRIC LIGHT BULB",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "anger",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4A2"},
-    "shortcode": "anger",
-    "description": "ANGER SYMBOL",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "bomb",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4A3"},
-    "shortcode": "bomb",
-    "description": "BOMB",
-    "category": "XXXXXX"
-  },
-
-
-
-  {
-    "name": "speech_balloon",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4AC"},
-    "shortcode": "speech_balloon",
-    "description": "SPEECH BALLOON",
-    "category": "XXXXXX"
+    "category": "symbol"
   },
   {
     "name": "thought_balloon",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4AD"},
+    "unicode": {"apple":"1F4AD", "google":"1F4AD", "twitter":"1F4AD"},
     "shortcode": "thought_balloon",
     "description": "THOUGHT BALLOON",
-    "category": "XXXXXX"
+    "category": "symbol"
   },
   {
-    "name": "white_flower",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4AE"},
-    "shortcode": "white_flower",
-    "description": "WHITE FLOWER",
-    "category": "XXXXXX"
+    "name": "right_anger_bubble",
+    "unicode": {"apple":"1F5EF", "google":"1F5EF", "twitter":"1F5EF"},
+    "shortcode": "right_anger_bubble",
+    "description": "RIGHT ANGER BUBBLE"
   },
   {
-    "name": "100",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4AF"},
-    "shortcode": "100",
-    "description": "HUNDRED POINTS SYMBOL",
-    "category": "XXXXXX"
+    "name": "speech_balloon",
+    "unicode": {"apple":"1F4AC", "google":"1F4AC", "twitter":"1F4AC"},
+    "shortcode": "speech_balloon",
+    "description": "SPEECH BALLOON",
+    "category": "symbol"
   },
   {
-    "name": "moneybag",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B0"},
-    "shortcode": "moneybag",
-    "description": "MONEY BAG",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "currency_exchange",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B1"},
-    "shortcode": "currency_exchange",
-    "description": "CURRENCY EXCHANGE",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "heavy_dollar_sign",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B2"},
-    "shortcode": "heavy_dollar_sign",
-    "description": "HEAVY DOLLAR SIGN",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "credit_card",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B3"},
-    "shortcode": "credit_card",
-    "description": "CREDIT CARD",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "yen",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B4"},
-    "shortcode": "yen",
-    "description": "BANKNOTE WITH YEN SIGN",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "dollar",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B5"},
-    "shortcode": "dollar",
-    "description": "BANKNOTE WITH DOLLAR SIGN",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "euro",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B6"},
-    "shortcode": "euro",
-    "description": "BANKNOTE WITH EURO SIGN",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "pound",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B7"},
-    "shortcode": "pound",
-    "description": "BANKNOTE WITH POUND SIGN",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "money_with_wings",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B8"},
-    "shortcode": "money_with_wings",
-    "description": "MONEY WITH WINGS",
-    "category": "XXXXXX"
-  },
-  {
-    "name": "chart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4B9"},
-    "shortcode": "chart",
-    "description": "CHART WITH UPWARDS TREND AND YEN SIGN",
-    "category": "thing"
-  },
-
-  {
-    "name": "computer",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4BB"},
-    "shortcode": "computer",
-    "description": "PERSONAL COMPUTER",
-    "category": "thing"
-  },
-  {
-    "name": "minidisc",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4BD"},
-    "shortcode": "minidisc",
-    "description": "MINIDISC",
-    "category": "thing"
-  },
-  {
-    "name": "floppy_disk",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4BE"},
-    "shortcode": "floppy_disk",
-    "description": "FLOPPY DISK",
-    "category": "thing"
-  },
-  {
-    "name": "cd",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4BF"},
-    "shortcode": "cd",
-    "description": "OPTICAL DISC",
-    "category": "thing"
-  },
-  {
-    "name": "dvd",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C0"},
-    "shortcode": "dvd",
-    "description": "DVD",
-    "category": "thing"
-  },
-  {
-    "name": "file_folder",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C1"},
-    "shortcode": "file_folder",
-    "description": "FILE FOLDER",
-    "category": "thing"
-  },
-  {
-    "name": "open_file_folder",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C2"},
-    "shortcode": "open_file_folder",
-    "description": "OPEN FILE FOLDER",
-    "category": "thing"
-  },
-  {
-    "name": "page_with_curl",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C3"},
-    "shortcode": "page_with_curl",
-    "description": "PAGE WITH CURL",
-    "category": "thing"
-  },
-  {
-    "name": "page_facing_up",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C4"},
-    "shortcode": "page_facing_up",
-    "description": "PAGE FACING UP",
-    "category": "thing"
-  },
-  {
-    "name": "date",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C5"},
-    "shortcode": "date",
-    "description": "CALENDAR",
-    "category": "thing"
-  },
-  {
-    "name": "calendar",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C6"},
-    "shortcode": "calendar",
-    "description": "TEAR-OFF CALENDAR",
-    "category": "thing"
-  },
-  {
-    "name": "card_index",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C7"},
-    "shortcode": "card_index",
-    "description": "CARD INDEX",
-    "category": "thing"
-  },
-  {
-    "name": "chart_with_upwards_trend",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C8"},
-    "shortcode": "chart_with_upwards_trend",
-    "description": "CHART WITH UPWARDS TREND",
-    "category": "thing"
-  },
-  {
-    "name": "chart_with_downwards_trend",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4C9"},
-    "shortcode": "chart_with_downwards_trend",
-    "description": "CHART WITH DOWNWARDS TREND",
-    "category": "thing"
-  },
-  {
-    "name": "bar_chart",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4CA"},
-    "shortcode": "bar_chart",
-    "description": "BAR CHART",
-    "category": "thing"
-  },
-  {
-    "name": "clipboard",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4CB"},
-    "shortcode": "clipboard",
-    "description": "CLIPBOARD",
-    "category": "thing"
-  },
-  {
-    "name": "pushpin",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4CC"},
-    "shortcode": "pushpin",
-    "description": "PUSHPIN",
-    "category": "thing"
-  },
-  {
-    "name": "round_pushpin",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4CD"},
-    "shortcode": "round_pushpin",
-    "description": "ROUND PUSHPIN",
-    "category": "thing"
-  },
-  {
-    "name": "paperclip",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4CE"},
-    "shortcode": "paperclip",
-    "description": "PAPERCLIP",
-    "category": "thing"
-  },
-  {
-    "name": "straight_ruler",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4CF"},
-    "shortcode": "straight_ruler",
-    "description": "STRAIGHT RULER",
-    "category": "thing"
-  },
-  {
-    "name": "triangular_ruler",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D0"},
-    "shortcode": "triangular_ruler",
-    "description": "TRIANGULAR RULER",
-    "category": "thing"
-  },
-  {
-    "name": "bookmark_tabs",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D1"},
-    "shortcode": "bookmark_tabs",
-    "description": "BOOKMARK TABS",
-    "category": "thing"
-  },
-  {
-    "name": "ledger",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D2"},
-    "shortcode": "ledger",
-    "description": "LEDGER",
-    "category": "thing"
-  },
-  {
-    "name": "notebook",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D3"},
-    "shortcode": "notebook",
-    "description": "NOTEBOOK",
-    "category": "thing"
-  },
-  {
-    "name": "notebook_with_decorative_cover",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D4"},
-    "shortcode": "notebook_with_decorative_cover",
-    "description": "NOTEBOOK WITH DECORATIVE COVER",
-    "category": "thing"
-  },
-  {
-    "name": "closed_book",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D5"},
-    "shortcode": "closed_book",
-    "description": "CLOSED BOOK",
-    "category": "thing"
-  },
-  {
-    "name": "book",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D6"},
-    "shortcode": "book",
-    "description": "OPEN BOOK",
-    "category": "thing"
-  },
-  {
-    "name": "green_book",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D7"},
-    "shortcode": "green_book",
-    "description": "GREEN BOOK",
-    "category": "thing"
-  },
-  {
-    "name": "blue_book",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D8"},
-    "shortcode": "blue_book",
-    "description": "BLUE BOOK",
-    "category": "thing"
-  },
-  {
-    "name": "orange_book",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4D9"},
-    "shortcode": "orange_book",
-    "description": "ORANGE BOOK",
-    "category": "thing"
-  },
-  {
-    "name": "books",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4DA"},
-    "shortcode": "books",
-    "description": "BOOKS",
-    "category": "thing"
-  },
-  {
-    "name": "name_badge",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4DB"},
-    "shortcode": "name_badge",
-    "description": "NAME BADGE",
-    "category": "thing"
-  },
-  {
-    "name": "scroll",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4DC"},
-    "shortcode": "scroll",
-    "description": "SCROLL",
-    "category": "thing"
-  },
-  {
-    "name": "memo",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4DD"},
-    "shortcode": "memo",
-    "description": "MEMO",
-    "category": "thing"
-  },
-  {
-    "name": "telephone_receiver",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4DE"},
-    "shortcode": "telephone_receiver",
-    "description": "TELEPHONE RECEIVER",
-    "category": "thing"
-  },
-  {
-    "name": "pager",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4DF"},
-    "shortcode": "pager",
-    "description": "PAGER",
-    "category": "thing"
-  },
-  {
-    "name": "fax",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E0"},
-    "shortcode": "fax",
-    "description": "FAX MACHINE",
-    "category": "thing"
-  },
-
-  {
-    "name": "loudspeaker",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E2"},
-    "shortcode": "loudspeaker",
-    "description": "PUBLIC ADDRESS LOUDSPEAKER",
-    "category": "thing"
-  },
-  {
-    "name": "mega",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E3"},
-    "shortcode": "mega",
-    "description": "CHEERING MEGAPHONE",
-    "category": "thing"
-  },
-  {
-    "name": "outbox_tray",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E4"},
-    "shortcode": "outbox_tray",
-    "description": "OUTBOX TRAY",
-    "category": "thing"
-  },
-  {
-    "name": "inbox_tray",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E5"},
-    "shortcode": "inbox_tray",
-    "description": "INBOX TRAY",
-    "category": "thing"
-  },
-  {
-    "name": "package",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E6"},
-    "shortcode": "package",
-    "description": "PACKAGE",
-    "category": "thing"
-  },
-  {
-    "name": "e-mail",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E7"},
-    "shortcode": "e-mail",
-    "description": "E-MAIL SYMBOL",
-    "category": "thing"
-  },
-  {
-    "name": "incoming_envelope",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E8"},
-    "shortcode": "incoming_envelope",
-    "description": "INCOMING ENVELOPE",
-    "category": "thing"
-  },
-  {
-    "name": "envelope_with_arrow",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4E9"},
-    "shortcode": "envelope_with_arrow",
-    "description": "ENVELOPE WITH DOWNWARDS ARROW ABOVE",
-    "category": "thing"
-  },
-  {
-    "name": "mailbox_closed",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4EA"},
-    "shortcode": "mailbox_closed",
-    "description": "CLOSED MAILBOX WITH LOWERED FLAG",
-    "category": "thing"
-  },
-  {
-    "name": "mailbox",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4EB"},
-    "shortcode": "mailbox",
-    "description": "CLOSED MAILBOX WITH RAISED FLAG",
-    "category": "thing"
-  },
-  {
-    "name": "mailbox_with_mail",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4EC"},
-    "shortcode": "mailbox_with_mail",
-    "description": "OPEN MAILBOX WITH RAISED FLAG",
-    "category": "thing"
-  },
-  {
-    "name": "mailbox_with_no_mail",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4ED"},
-    "shortcode": "mailbox_with_no_mail",
-    "description": "OPEN MAILBOX WITH LOWERED FLAG",
-    "category": "thing"
-  },
-  {
-    "name": "postbox",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4EE"},
-    "shortcode": "postbox",
-    "description": "POSTBOX",
-    "category": "thing"
-  },
-  {
-    "name": "postal_horn",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4EF"},
-    "shortcode": "postal_horn",
-    "description": "POSTAL HORN",
-    "category": "thing"
-  },
-  {
-    "name": "newspaper",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4F0"},
-    "shortcode": "newspaper",
-    "description": "NEWSPAPER",
-    "category": "thing"
-  },
-  {
-    "name": "iphone",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4F1"},
-    "shortcode": "iphone",
-    "description": "MOBILE PHONE",
-    "category": "thing"
-  },
-  {
-    "name": "calling",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4F2"},
-    "shortcode": "calling",
-    "description": "MOBILE PHONE WITH RIGHTWARDS ARROW AT LEFT",
-    "category": "thing"
-  },
-  {
-    "name": "vibration_mode",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4F3"},
-    "shortcode": "vibration_mode",
-    "description": "VIBRATION MODE",
-    "category": "thing"
-  },
-  {
-    "name": "mobile_phone_off",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4F4"},
-    "shortcode": "mobile_phone_off",
-    "description": "MOBILE PHONE OFF",
-    "category": "thing"
-  },
-  {
-    "name": "no_mobile_phones",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4F5"},
-    "shortcode": "no_mobile_phones",
-    "description": "NO MOBILE PHONES",
-    "category": "thing"
-  },
-  {
-    "name": "signal_strength",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4F6"},
-    "shortcode": "signal_strength",
-    "description": "ANTENNA WITH BARS",
-    "category": "thing"
-  },
-  {
-    "name": "camera",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4F7"},
-    "shortcode": "camera",
-    "description": "CAMERA",
-    "category": "thing"
-  },
-  {
-    "name": "video_camera",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4F9"},
-    "shortcode": "video_camera",
-    "description": "VIDEO CAMERA",
-    "category": "thing"
-  },
-  {
-    "name": "tv",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4FA"},
-    "shortcode": "tv",
-    "description": "TELEVISION",
-    "category": "thing"
-  },
-  {
-    "name": "radio",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4FB"},
-    "shortcode": "radio",
-    "description": "RADIO",
-    "category": "thing"
-  },
-  {
-    "name": "vhs",
-    "unicode": {"apple":"", "google":"", "twitter":"1F4FC"},
-    "shortcode": "vhs",
-    "description": "VIDEOCASSETTE",
-    "category": "thing"
-  },
-  {
-    "name": "twisted_rightwards_arrows",
-    "unicode": {"apple":"", "google":"", "twitter":"1F500"},
-    "shortcode": "twisted_rightwards_arrows",
-    "description": "TWISTED RIGHTWARDS ARROWS",
-    "category": "thing"
-  },
-  {
-    "name": "repeat",
-    "unicode": {"apple":"", "google":"", "twitter":"1F501"},
-    "shortcode": "repeat",
-    "description": "CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS",
-    "category": "thing"
-  },
-  {
-    "name": "repeat_one",
-    "unicode": {"apple":"", "google":"", "twitter":"1F502"},
-    "shortcode": "repeat_one",
-    "description": "CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS WITH CIRCLED ONE OVERLAY",
-    "category": "thing"
-  },
-  {
-    "name": "arrows_clockwise",
-    "unicode": {"apple":"", "google":"", "twitter":"1F503"},
-    "shortcode": "arrows_clockwise",
-    "description": "CLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS",
-    "category": "thing"
-  },
-  {
-    "name": "arrows_counterclockwise",
-    "unicode": {"apple":"", "google":"", "twitter":"1F504"},
-    "shortcode": "arrows_counterclockwise",
-    "description": "ANTICLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS",
-    "category": "thing"
-  },
-  {
-    "name": "low_brightness",
-    "unicode": {"apple":"", "google":"", "twitter":"1F505"},
-    "shortcode": "low_brightness",
-    "description": "LOW BRIGHTNESS SYMBOL",
-    "category": "thing"
-  },
-  {
-    "name": "high_brightness",
-    "unicode": {"apple":"", "google":"", "twitter":"1F506"},
-    "shortcode": "high_brightness",
-    "description": "HIGH BRIGHTNESS SYMBOL",
-    "category": "thing"
-  },
-  {
-    "name": "mute",
-    "unicode": {"apple":"", "google":"", "twitter":"1F507"},
-    "shortcode": "mute",
-    "description": "SPEAKER WITH CANCELLATION STROKE",
-    "category": "thing"
-  },
-  {
-    "name": "speaker",
-    "unicode": {"apple":"", "google":"", "twitter":"1F508"},
-    "shortcode": "speaker",
-    "description": "SPEAKER",
-    "category": "thing"
-  },
-  {
-    "name": "sound",
-    "unicode": {"apple":"", "google":"", "twitter":"1F509"},
-    "shortcode": "sound",
-    "description": "SPEAKER WITH ONE SOUND WAVE",
-    "category": "thing"
-  },
-  {
-    "name": "loud_sound",
-    "unicode": {"apple":"", "google":"", "twitter":"1F50A"},
-    "shortcode": "loud_sound",
-    "description": "SPEAKER WITH THREE SOUND WAVES",
-    "category": "thing"
-  },
-  {
-    "name": "battery",
-    "unicode": {"apple":"", "google":"", "twitter":"1F50B"},
-    "shortcode": "battery",
-    "description": "BATTERY",
-    "category": "thing"
-  },
-  {
-    "name": "electric_plug",
-    "unicode": {"apple":"", "google":"", "twitter":"1F50C"},
-    "shortcode": "electric_plug",
-    "description": "ELECTRIC PLUG",
-    "category": "thing"
-  },
-  {
-    "name": "mag",
-    "unicode": {"apple":"", "google":"", "twitter":"1F50D"},
-    "shortcode": "mag",
-    "description": "LEFT-POINTING MAGNIFYING GLASS",
-    "category": "thing"
-  },
-  {
-    "name": "mag_right",
-    "unicode": {"apple":"", "google":"", "twitter":"1F50E"},
-    "shortcode": "mag_right",
-    "description": "RIGHT-POINTING MAGNIFYING GLASS",
-    "category": "thing"
-  },
-  {
-    "name": "lock_with_ink_pen",
-    "unicode": {"apple":"", "google":"", "twitter":"1F50F"},
-    "shortcode": "lock_with_ink_pen",
-    "description": "LOCK WITH INK PEN",
-    "category": "thing"
-  },
-  {
-    "name": "closed_lock_with_key",
-    "unicode": {"apple":"", "google":"", "twitter":"1F510"},
-    "shortcode": "closed_lock_with_key",
-    "description": "CLOSED LOCK WITH KEY",
-    "category": "thing"
-  },
-  {
-    "name": "key",
-    "unicode": {"apple":"", "google":"", "twitter":"1F511"},
-    "shortcode": "key",
-    "description": "KEY",
-    "category": "thing"
-  },
-  {
-    "name": "lock",
-    "unicode": {"apple":"", "google":"", "twitter":"1F512"},
-    "shortcode": "lock",
-    "description": "LOCK",
-    "category": "thing"
-  },
-  {
-    "name": "unlock",
-    "unicode": {"apple":"", "google":"", "twitter":"1F513"},
-    "shortcode": "unlock",
-    "description": "OPEN LOCK",
-    "category": "thing"
-  },
-  {
-    "name": "bell",
-    "unicode": {"apple":"", "google":"", "twitter":"1F514"},
-    "shortcode": "bell",
-    "description": "BELL",
-    "category": "thing"
-  },
-  {
-    "name": "no_bell",
-    "unicode": {"apple":"", "google":"", "twitter":"1F515"},
-    "shortcode": "no_bell",
-    "description": "BELL WITH CANCELLATION STROKE",
-    "category": "thing"
-  },
-  {
-    "name": "bookmark",
-    "unicode": {"apple":"", "google":"", "twitter":"1F516"},
-    "shortcode": "bookmark",
-    "description": "BOOKMARK",
-    "category": "folderol"
-  },
-  {
-    "name": "link",
-    "unicode": {"apple":"", "google":"", "twitter":"1F517"},
-    "shortcode": "link",
-    "description": "LINK SYMBOL",
-    "category": "folderol"
-  },
-  {
-    "name": "radio_button",
-    "unicode": {"apple":"", "google":"", "twitter":"1F518"},
-    "shortcode": "radio_button",
-    "description": "RADIO BUTTON",
-    "category": "folderol"
-  },
-  {
-    "name": "back",
-    "unicode": {"apple":"", "google":"", "twitter":"1F519"},
-    "shortcode": "back",
-    "description": "BACK WITH LEFTWARDS ARROW ABOVE",
-    "category": "folderol"
-  },
-  {
-    "name": "end",
-    "unicode": {"apple":"", "google":"", "twitter":"1F51A"},
-    "shortcode": "end",
-    "description": "END WITH LEFTWARDS ARROW ABOVE",
-    "category": "folderol"
-  },
-  {
-    "name": "on",
-    "unicode": {"apple":"", "google":"", "twitter":"1F51B"},
-    "shortcode": "on",
-    "description": "ON WITH EXCLAMATION MARK WITH LEFT RIGHT ARROW ABOVE",
-    "category": "folderol"
-  },
-  {
-    "name": "soon",
-    "unicode": {"apple":"", "google":"", "twitter":"1F51C"},
-    "shortcode": "soon",
-    "description": "SOON WITH RIGHTWARDS ARROW ABOVE",
-    "category": "folderol"
-  },
-  {
-    "name": "top",
-    "unicode": {"apple":"", "google":"", "twitter":"1F51D"},
-    "shortcode": "top",
-    "description": "TOP WITH UPWARDS ARROW ABOVE",
-    "category": "folderol"
-  },
-  {
-    "name": "underage",
-    "unicode": {"apple":"", "google":"", "twitter":"1F51E"},
-    "shortcode": "underage",
-    "description": "NO ONE UNDER EIGHTEEN SYMBOL",
-    "category": "folderol"
-  },
-  {
-    "name": "keycap_ten",
-    "unicode": {"apple":"", "google":"", "twitter":"1F51F"},
-    "shortcode": "keycap_ten",
-    "description": "KEYCAP TEN",
-    "category": "folderol"
-  },
-  {
-    "name": "capital_abcd",
-    "unicode": {"apple":"", "google":"", "twitter":"1F520"},
-    "shortcode": "capital_abcd",
-    "description": "INPUT SYMBOL FOR LATIN CAPITAL LETTERS",
-    "category": "folderol"
-  },
-  {
-    "name": "abcd",
-    "unicode": {"apple":"", "google":"", "twitter":"1F521"},
-    "shortcode": "abcd",
-    "description": "INPUT SYMBOL FOR LATIN SMALL LETTERS",
-    "category": "folderol"
-  },
-  {
-    "name": "1234",
-    "unicode": {"apple":"", "google":"", "twitter":"1F522"},
-    "shortcode": "1234",
-    "description": "INPUT SYMBOL FOR NUMBERS",
-    "category": "folderol"
-  },
-  {
-    "name": "symbols",
-    "unicode": {"apple":"", "google":"", "twitter":"1F523"},
-    "shortcode": "symbols",
-    "description": "INPUT SYMBOL FOR SYMBOLS",
-    "category": "folderol"
-  },
-  {
-    "name": "abc",
-    "unicode": {"apple":"", "google":"", "twitter":"1F524"},
-    "shortcode": "abc",
-    "description": "INPUT SYMBOL FOR LATIN LETTERS",
-    "category": "folderol"
-  },
-
-  {
-    "name": "flashlight",
-    "unicode": {"apple":"", "google":"", "twitter":"1F526"},
-    "shortcode": "flashlight",
-    "description": "ELECTRIC TORCH",
-    "category": "thing"
-  },
-  {
-    "name": "wrench",
-    "unicode": {"apple":"", "google":"", "twitter":"1F527"},
-    "shortcode": "wrench",
-    "description": "WRENCH",
-    "category": "thing"
-  },
-  {
-    "name": "hammer",
-    "unicode": {"apple":"", "google":"", "twitter":"1F528"},
-    "shortcode": "hammer",
-    "description": "HAMMER",
-    "category": "thing"
-  },
-  {
-    "name": "nut_and_bolt",
-    "unicode": {"apple":"", "google":"", "twitter":"1F529"},
-    "shortcode": "nut_and_bolt",
-    "description": "NUT AND BOLT",
-    "category": "thing"
-  },
-  {
-    "name": "hocho",
-    "unicode": {"apple":"", "google":"", "twitter":"1F52A"},
-    "shortcode": "hocho",
-    "description": "HOCHO",
-    "category": "thing"
-  },
-  {
-    "name": "gun",
-    "unicode": {"apple":"", "google":"", "twitter":"1F52B"},
-    "shortcode": "gun",
-    "description": "PISTOL",
-    "category": "thing"
-  },
-  {
-    "name": "microscope",
-    "unicode": {"apple":"", "google":"", "twitter":"1F52C"},
-    "shortcode": "microscope",
-    "description": "MICROSCOPE",
-    "category": "thing"
-  },
-  {
-    "name": "telescope",
-    "unicode": {"apple":"", "google":"", "twitter":"1F52D"},
-    "shortcode": "telescope",
-    "description": "TELESCOPE",
-    "category": "thing"
-  },
-  {
-    "name": "crystal_ball",
-    "unicode": {"apple":"", "google":"", "twitter":"1F52E"},
-    "shortcode": "crystal_ball",
-    "description": "CRYSTAL BALL",
-    "category": "thing"
-  },
-  {
-    "name": "six_pointed_star",
-    "unicode": {"apple":"", "google":"", "twitter":"1F52F"},
-    "shortcode": "six_pointed_star",
-    "description": "SIX POINTED STAR WITH MIDDLE DOT",
-    "category": "thing"
-  },
-  {
-    "name": "beginner",
-    "unicode": {"apple":"", "google":"", "twitter":"1F530"},
-    "shortcode": "beginner",
-    "description": "JAPANESE SYMBOL FOR BEGINNER",
-    "category": "thing"
-  },
-  {
-    "name": "trident",
-    "unicode": {"apple":"", "google":"", "twitter":"1F531"},
-    "shortcode": "trident",
-    "description": "TRIDENT EMBLEM",
-    "category": "thing"
-  },
-  {
-    "name": "black_square_button",
-    "unicode": {"apple":"", "google":"", "twitter":"1F532"},
-    "shortcode": "black_square_button",
-    "description": "BLACK SQUARE BUTTON",
-    "category": "folderol"
-  },
-  {
-    "name": "white_square_button",
-    "unicode": {"apple":"", "google":"", "twitter":"1F533"},
-    "shortcode": "white_square_button",
-    "description": "WHITE SQUARE BUTTON",
-    "category": "folderol"
-  },
-  {
-    "name": "red_circle",
-    "unicode": {"apple":"", "google":"", "twitter":"1F534"},
-    "shortcode": "red_circle",
-    "description": "LARGE RED CIRCLE",
-    "category": "folderol"
-  },
-  {
-    "name": "large_blue_circle",
-    "unicode": {"apple":"", "google":"", "twitter":"1F535"},
-    "shortcode": "large_blue_circle",
-    "description": "LARGE BLUE CIRCLE",
-    "category": "folderol"
-  },
-  {
-    "name": "large_orange_diamond",
-    "unicode": {"apple":"", "google":"", "twitter":"1F536"},
-    "shortcode": "large_orange_diamond",
-    "description": "LARGE ORANGE DIAMOND",
-    "category": "folderol"
-  },
-  {
-    "name": "large_blue_diamond",
-    "unicode": {"apple":"", "google":"", "twitter":"1F537"},
-    "shortcode": "large_blue_diamond",
-    "description": "LARGE BLUE DIAMOND",
-    "category": "folderol"
-  },
-  {
-    "name": "small_orange_diamond",
-    "unicode": {"apple":"", "google":"", "twitter":"1F538"},
-    "shortcode": "small_orange_diamond",
-    "description": "SMALL ORANGE DIAMOND",
-    "category": "folderol"
-  },
-  {
-    "name": "small_blue_diamond",
-    "unicode": {"apple":"", "google":"", "twitter":"1F539"},
-    "shortcode": "small_blue_diamond",
-    "description": "SMALL BLUE DIAMOND",
-    "category": "folderol"
-  },
-  {
-    "name": "small_red_triangle",
-    "unicode": {"apple":"", "google":"", "twitter":"1F53A"},
-    "shortcode": "small_red_triangle",
-    "description": "UP-POINTING RED TRIANGLE",
-    "category": "folderol"
-  },
-  {
-    "name": "small_red_triangle_down",
-    "unicode": {"apple":"", "google":"", "twitter":"1F53B"},
-    "shortcode": "small_red_triangle_down",
-    "description": "DOWN-POINTING RED TRIANGLE",
-    "category": "folderol"
-  },
-  {
-    "name": "arrow_up_small",
-    "unicode": {"apple":"", "google":"", "twitter":"1F53C"},
-    "shortcode": "arrow_up_small",
-    "description": "UP-POINTING SMALL RED TRIANGLE",
-    "category": "folderol"
-  },
-  {
-    "name": "arrow_down_small",
-    "unicode": {"apple":"", "google":"", "twitter":"1F53D"},
-    "shortcode": "arrow_down_small",
-    "description": "DOWN-POINTING SMALL RED TRIANGLE",
-    "category": "folderol"
+    "name": "left_speech_bubble",
+    "unicode": {"apple":"1F5E8", "google":"1F5E8", "twitter":"1F5E8"},
+    "shortcode": "left_speech_bubble",
+    "description": "LEFT SPEECH BUBBLE"
   },
   {
     "name": "clock1",
-    "unicode": {"apple":"", "google":"", "twitter":"1F550"},
+    "unicode": {"apple":"1F550", "google":"1F550", "twitter":"1F550"},
     "shortcode": "clock1",
     "description": "CLOCK FACE ONE OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock2",
-    "unicode": {"apple":"", "google":"", "twitter":"1F551"},
+    "unicode": {"apple":"1F551", "google":"1F551", "twitter":"1F551"},
     "shortcode": "clock2",
     "description": "CLOCK FACE TWO OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock3",
-    "unicode": {"apple":"", "google":"", "twitter":"1F552"},
+    "unicode": {"apple":"1F552", "google":"1F552", "twitter":"1F552"},
     "shortcode": "clock3",
     "description": "CLOCK FACE THREE OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock4",
-    "unicode": {"apple":"", "google":"", "twitter":"1F553"},
+    "unicode": {"apple":"1F553", "google":"1F553", "twitter":"1F553"},
     "shortcode": "clock4",
     "description": "CLOCK FACE FOUR OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock5",
-    "unicode": {"apple":"", "google":"", "twitter":"1F554"},
+    "unicode": {"apple":"1F554", "google":"1F554", "twitter":"1F554"},
     "shortcode": "clock5",
     "description": "CLOCK FACE FIVE OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock6",
-    "unicode": {"apple":"", "google":"", "twitter":"1F555"},
+    "unicode": {"apple":"1F555", "google":"1F555", "twitter":"1F555"},
     "shortcode": "clock6",
     "description": "CLOCK FACE SIX OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock7",
-    "unicode": {"apple":"", "google":"", "twitter":"1F556"},
+    "unicode": {"apple":"1F556", "google":"1F556", "twitter":"1F556"},
     "shortcode": "clock7",
     "description": "CLOCK FACE SEVEN OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock8",
-    "unicode": {"apple":"", "google":"", "twitter":"1F557"},
+    "unicode": {"apple":"1F557", "google":"1F557", "twitter":"1F557"},
     "shortcode": "clock8",
     "description": "CLOCK FACE EIGHT OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock9",
-    "unicode": {"apple":"", "google":"", "twitter":"1F558"},
+    "unicode": {"apple":"1F558", "google":"1F558", "twitter":"1F558"},
     "shortcode": "clock9",
     "description": "CLOCK FACE NINE OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock10",
-    "unicode": {"apple":"", "google":"", "twitter":"1F559"},
+    "unicode": {"apple":"1F559", "google":"1F559", "twitter":"1F559"},
     "shortcode": "clock10",
     "description": "CLOCK FACE TEN OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock11",
-    "unicode": {"apple":"", "google":"", "twitter":"1F55A"},
+    "unicode": {"apple":"1F55A", "google":"1F55A", "twitter":"1F55A"},
     "shortcode": "clock11",
     "description": "CLOCK FACE ELEVEN OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock12",
-    "unicode": {"apple":"", "google":"", "twitter":"1F55B"},
+    "unicode": {"apple":"1F55B", "google":"1F55B", "twitter":"1F55B"},
     "shortcode": "clock12",
     "description": "CLOCK FACE TWELVE OCLOCK",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock130",
-    "unicode": {"apple":"", "google":"", "twitter":"1F55C"},
+    "unicode": {"apple":"1F55C", "google":"1F55C", "twitter":"1F55C"},
     "shortcode": "clock130",
     "description": "CLOCK FACE ONE-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock230",
-    "unicode": {"apple":"", "google":"", "twitter":"1F55D"},
+    "unicode": {"apple":"1F55D", "google":"1F55D", "twitter":"1F55D"},
     "shortcode": "clock230",
     "description": "CLOCK FACE TWO-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock330",
-    "unicode": {"apple":"", "google":"", "twitter":"1F55E"},
+    "unicode": {"apple":"1F55E", "google":"1F55E", "twitter":"1F55E"},
     "shortcode": "clock330",
     "description": "CLOCK FACE THREE-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock430",
-    "unicode": {"apple":"", "google":"", "twitter":"1F55F"},
+    "unicode": {"apple":"1F55F", "google":"1F55F", "twitter":"1F55F"},
     "shortcode": "clock430",
     "description": "CLOCK FACE FOUR-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock530",
-    "unicode": {"apple":"", "google":"", "twitter":"1F560"},
+    "unicode": {"apple":"1F560", "google":"1F560", "twitter":"1F560"},
     "shortcode": "clock530",
     "description": "CLOCK FACE FIVE-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock630",
-    "unicode": {"apple":"", "google":"", "twitter":"1F561"},
+    "unicode": {"apple":"1F561", "google":"1F561", "twitter":"1F561"},
     "shortcode": "clock630",
     "description": "CLOCK FACE SIX-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock730",
-    "unicode": {"apple":"", "google":"", "twitter":"1F562"},
+    "unicode": {"apple":"1F562", "google":"1F562", "twitter":"1F562"},
     "shortcode": "clock730",
     "description": "CLOCK FACE SEVEN-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock830",
-    "unicode": {"apple":"", "google":"", "twitter":"1F563"},
+    "unicode": {"apple":"1F563", "google":"1F563", "twitter":"1F563"},
     "shortcode": "clock830",
     "description": "CLOCK FACE EIGHT-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock930",
-    "unicode": {"apple":"", "google":"", "twitter":"1F564"},
+    "unicode": {"apple":"1F564", "google":"1F564", "twitter":"1F564"},
     "shortcode": "clock930",
     "description": "CLOCK FACE NINE-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock1030",
-    "unicode": {"apple":"", "google":"", "twitter":"1F565"},
+    "unicode": {"apple":"1F565", "google":"1F565", "twitter":"1F565"},
     "shortcode": "clock1030",
     "description": "CLOCK FACE TEN-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock1130",
-    "unicode": {"apple":"", "google":"", "twitter":"1F566"},
+    "unicode": {"apple":"1F566", "google":"1F566", "twitter":"1F566"},
     "shortcode": "clock1130",
     "description": "CLOCK FACE ELEVEN-THIRTY",
-    "category": "folderol"
+    "category": "symbol"
   },
   {
     "name": "clock1230",
-    "unicode": {"apple":"", "google":"", "twitter":"1F567"},
+    "unicode": {"apple":"1F567", "google":"1F567", "twitter":"1F567"},
     "shortcode": "clock1230",
     "description": "CLOCK FACE TWELVE-THIRTY",
-    "category": "folderol"
-  },
-
-
-
-
-  {
-    "name": "moyai",
-    "unicode": {"apple":"", "google":"", "twitter":"1F5FF"},
-    "shortcode": "moyai",
-    "description": "MOYAI",
-    "category": "travel"
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  {
-    "name": "triangular_flag_on_post",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6A9"},
-    "shortcode": "triangular_flag_on_post",
-    "description": "TRIANGULAR FLAG ON POST",
-    "category": "travel"
+    "category": "symbol"
   },
   {
-    "name": "door",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6AA"},
-    "shortcode": "door",
-    "description": "DOOR",
-    "category": "travel"
+    "name": "flag-ac",
+    "unicode": {"apple":"1F1E6-1F1E8", "google":"1F1E6-1F1E8", "twitter":"1F1E6-1F1E8"},
+    "shortcode": "flag-ac",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AC",
+    "category": "flag"
   },
   {
-    "name": "no_entry_sign",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6AB"},
-    "shortcode": "no_entry_sign",
-    "description": "NO ENTRY SIGN",
-    "category": "travel"
+    "name": "flag-ad",
+    "unicode": {"apple":"1F1E6-1F1E9", "google":"1F1E6-1F1E9", "twitter":"1F1E6-1F1E9"},
+    "shortcode": "flag-ad",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AD",
+    "category": "flag"
   },
   {
-    "name": "smoking",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6AC"},
-    "shortcode": "smoking",
-    "description": "SMOKING SYMBOL",
-    "category": "travel"
+    "name": "flag-ae",
+    "unicode": {"apple":"1F1E6-1F1EA", "google":"1F1E6-1F1EA", "twitter":"1F1E6-1F1EA"},
+    "shortcode": "flag-ae",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AE",
+    "category": "folderol",
+    "category": "flag"
   },
   {
-    "name": "no_smoking",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6AD"},
-    "shortcode": "no_smoking",
-    "description": "NO SMOKING SYMBOL",
-    "category": "travel"
+    "name": "flag-af",
+    "unicode": {"apple":"1F1E6-1F1EB", "google":"1F1E6-1F1EB", "twitter":"1F1E6-1F1EB"},
+    "shortcode": "flag-af",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AF",
+    "category": "flag"
   },
   {
-    "name": "put_litter_in_its_place",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6AE"},
-    "shortcode": "put_litter_in_its_place",
-    "description": "PUT LITTER IN ITS PLACE SYMBOL",
-    "category": "travel"
+    "name": "flag-ag",
+    "unicode": {"apple":"1F1E6-1F1EC", "google":"1F1E6-1F1EC", "twitter":"1F1E6-1F1EC"},
+    "shortcode": "flag-ag",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AG",
+    "category": "flag"
   },
   {
-    "name": "do_not_litter",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6AF"},
-    "shortcode": "do_not_litter",
-    "description": "DO NOT LITTER SYMBOL",
-    "category": "travel"
+    "name": "flag-ai",
+    "unicode": {"apple":"1F1E6-1F1EE", "google":"1F1E6-1F1EE", "twitter":"1F1E6-1F1EE"},
+    "shortcode": "flag-ai",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AI",
+    "category": "flag"
   },
   {
-    "name": "potable_water",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6B0"},
-    "shortcode": "potable_water",
-    "description": "POTABLE WATER SYMBOL",
-    "category": "travel"
+    "name": "flag-al",
+    "unicode": {"apple":"1F1E6-1F1F1", "google":"1F1E6-1F1F1", "twitter":"1F1E6-1F1F1"},
+    "shortcode": "flag-al",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AL",
+    "category": "flag"
   },
   {
-    "name": "non-potable_water",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6B1"},
-    "shortcode": "non-potable_water",
-    "description": "NON-POTABLE WATER SYMBOL",
-    "category": "travel"
-  },
-
-  {
-    "name": "no_bicycles",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6B3"},
-    "shortcode": "no_bicycles",
-    "description": "NO BICYCLES",
-    "category": "travel"
-  },
-
-
-  {
-    "name": "no_pedestrians",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6B7"},
-    "shortcode": "no_pedestrians",
-    "description": "NO PEDESTRIANS",
-    "category": "travel"
+    "name": "flag-am",
+    "unicode": {"apple":"1F1E6-1F1F2", "google":"1F1E6-1F1F2", "twitter":"1F1E6-1F1F2"},
+    "shortcode": "flag-am",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AM",
+    "category": "flag"
   },
   {
-    "name": "children_crossing",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6B8"},
-    "shortcode": "children_crossing",
-    "description": "CHILDREN CROSSING",
-    "category": "travel"
+    "name": "flag-ao",
+    "unicode": {"apple":"1F1E6-1F1F4", "google":"1F1E6-1F1F4", "twitter":"1F1E6-1F1F4"},
+    "shortcode": "flag-ao",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AO",
+    "category": "flag"
   },
   {
-    "name": "mens",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6B9"},
-    "shortcode": "mens",
-    "description": "MENS SYMBOL",
-    "category": "travel"
+    "name": "flag-aq",
+    "unicode": {"apple":"1F1E6-1F1F6", "google":"1F1E6-1F1F6", "twitter":"1F1E6-1F1F6"},
+    "shortcode": "flag-aq",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AQ",
+    "category": "flag"
   },
   {
-    "name": "womens",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6BA"},
-    "shortcode": "womens",
-    "description": "WOMENS SYMBOL",
-    "category": "travel"
+    "name": "flag-ar",
+    "unicode": {"apple":"1F1E6-1F1F7", "google":"1F1E6-1F1F7", "twitter":"1F1E6-1F1F7"},
+    "shortcode": "flag-ar",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AR",
+    "category": "flag"
   },
   {
-    "name": "restroom",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6BB"},
-    "shortcode": "restroom",
-    "description": "RESTROOM",
-    "category": "travel"
+    "name": "flag-as",
+    "unicode": {"apple":"1F1E6-1F1F8", "google":"1F1E6-1F1F8", "twitter":"1F1E6-1F1F8"},
+    "shortcode": "flag-as",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AS",
+    "category": "flag"
   },
   {
-    "name": "baby_symbol",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6BC"},
-    "shortcode": "baby_symbol",
-    "description": "BABY SYMBOL",
-    "category": "travel"
+    "name": "flag-at",
+    "unicode": {"apple":"1F1E6-1F1F9", "google":"1F1E6-1F1F9", "twitter":"1F1E6-1F1F9"},
+    "shortcode": "flag-at",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AT",
+    "category": "folderol",
+    "category": "flag"
   },
   {
-    "name": "toilet",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6BD"},
-    "shortcode": "toilet",
-    "description": "TOILET",
-    "category": "travel"
+    "name": "flag-au",
+    "unicode": {"apple":"1F1E6-1F1FA", "google":"1F1E6-1F1FA", "twitter":"1F1E6-1F1FA"},
+    "shortcode": "flag-au",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AU",
+    "category": "folderol",
+    "category": "flag"
   },
   {
-    "name": "wc",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6BE"},
-    "shortcode": "wc",
-    "description": "WATER CLOSET",
-    "category": "travel"
+    "name": "flag-aw",
+    "unicode": {"apple":"1F1E6-1F1FC", "google":"1F1E6-1F1FC", "twitter":"1F1E6-1F1FC"},
+    "shortcode": "flag-aw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AW",
+    "category": "flag"
   },
   {
-    "name": "shower",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6BF"},
-    "shortcode": "shower",
-    "description": "SHOWER",
-    "category": "travel"
-  },
-
-  {
-    "name": "bathtub",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6C1"},
-    "shortcode": "bathtub",
-    "description": "BATHTUB",
-    "category": "travel"
+    "name": "flag-ax",
+    "unicode": {"apple":"1F1E6-1F1FD", "google":"1F1E6-1F1FD", "twitter":"1F1E6-1F1FD"},
+    "shortcode": "flag-ax",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AX",
+    "category": "flag"
   },
   {
-    "name": "passport_control",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6C2"},
-    "shortcode": "passport_control",
-    "description": "PASSPORT CONTROL",
-    "category": "travel"
+    "name": "flag-az",
+    "unicode": {"apple":"1F1E6-1F1FF", "google":"1F1E6-1F1FF", "twitter":"1F1E6-1F1FF"},
+    "shortcode": "flag-az",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS AZ",
+    "category": "flag"
   },
   {
-    "name": "customs",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6C3"},
-    "shortcode": "customs",
-    "description": "CUSTOMS",
-    "category": "travel"
+    "name": "flag-ba",
+    "unicode": {"apple":"1F1E7-1F1E6", "google":"1F1E7-1F1E6", "twitter":"1F1E7-1F1E6"},
+    "shortcode": "flag-ba",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BA",
+    "category": "flag"
   },
   {
-    "name": "baggage_claim",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6C4"},
-    "shortcode": "baggage_claim",
-    "description": "BAGGAGE CLAIM",
-    "category": "travel"
+    "name": "flag-bb",
+    "unicode": {"apple":"1F1E7-1F1E7", "google":"1F1E7-1F1E7", "twitter":"1F1E7-1F1E7"},
+    "shortcode": "flag-bb",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BB",
+    "category": "flag"
   },
   {
-    "name": "left_luggage",
-    "unicode": {"apple":"", "google":"", "twitter":"1F6C5"},
-    "shortcode": "left_luggage",
-    "description": "LEFT LUGGAGE",
-    "category": "travel"
+    "name": "flag-bd",
+    "unicode": {"apple":"1F1E7-1F1E9", "google":"1F1E7-1F1E9", "twitter":"1F1E7-1F1E9"},
+    "shortcode": "flag-bd",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BD",
+    "category": "flag"
   },
   {
-    "name": "hash",
-    "unicode": {"apple":"", "google":"", "twitter":"0023-20E3"},
-    "shortcode": "hash",
-    "description": "HASH KEY",
-    "category": "folderol"
+    "name": "flag-be",
+    "unicode": {"apple":"1F1E7-1F1EA", "google":"1F1E7-1F1EA", "twitter":"1F1E7-1F1EA"},
+    "shortcode": "flag-be",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BE",
+    "category": "folderol",
+    "category": "flag"
   },
   {
-    "name": "zero",
-    "unicode": {"apple":"", "google":"", "twitter":"0030-20E3"},
-    "shortcode": "zero",
-    "description": "KEYCAP 0",
-    "category": "folderol"
+    "name": "flag-bf",
+    "unicode": {"apple":"1F1E7-1F1EB", "google":"1F1E7-1F1EB", "twitter":"1F1E7-1F1EB"},
+    "shortcode": "flag-bf",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BF",
+    "category": "flag"
   },
   {
-    "name": "one",
-    "unicode": {"apple":"", "google":"", "twitter":"0031-20E3"},
-    "shortcode": "one",
-    "description": "KEYCAP 1",
-    "category": "folderol"
+    "name": "flag-bg",
+    "unicode": {"apple":"1F1E7-1F1EC", "google":"1F1E7-1F1EC", "twitter":"1F1E7-1F1EC"},
+    "shortcode": "flag-bg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BG",
+    "category": "flag"
   },
   {
-    "name": "two",
-    "unicode": {"apple":"", "google":"", "twitter":"0032-20E3"},
-    "shortcode": "two",
-    "description": "KEYCAP 2",
-    "category": "folderol"
+    "name": "flag-bh",
+    "unicode": {"apple":"1F1E7-1F1ED", "google":"1F1E7-1F1ED", "twitter":"1F1E7-1F1ED"},
+    "shortcode": "flag-bh",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BH",
+    "category": "flag"
   },
   {
-    "name": "three",
-    "unicode": {"apple":"", "google":"", "twitter":"0033-20E3"},
-    "shortcode": "three",
-    "description": "KEYCAP 3",
-    "category": "folderol"
+    "name": "flag-bi",
+    "unicode": {"apple":"1F1E7-1F1EE", "google":"1F1E7-1F1EE", "twitter":"1F1E7-1F1EE"},
+    "shortcode": "flag-bi",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BI",
+    "category": "flag"
   },
   {
-    "name": "four",
-    "unicode": {"apple":"", "google":"", "twitter":"0034-20E3"},
-    "shortcode": "four",
-    "description": "KEYCAP 4",
-    "category": "folderol"
+    "name": "flag-bj",
+    "unicode": {"apple":"1F1E7-1F1EF", "google":"1F1E7-1F1EF", "twitter":"1F1E7-1F1EF"},
+    "shortcode": "flag-bj",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BJ",
+    "category": "flag"
   },
   {
-    "name": "five",
-    "unicode": {"apple":"", "google":"", "twitter":"0035-20E3"},
-    "shortcode": "five",
-    "description": "KEYCAP 5",
-    "category": "folderol"
+    "name": "flag-bl",
+    "unicode": {"apple":"1F1E7-1F1F1", "google":"1F1E7-1F1F1", "twitter":"1F1E7-1F1F1"},
+    "shortcode": "flag-bl",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BL",
+    "category": "flag"
   },
   {
-    "name": "six",
-    "unicode": {"apple":"", "google":"", "twitter":"0036-20E3"},
-    "shortcode": "six",
-    "description": "KEYCAP 6",
-    "category": "folderol"
+    "name": "flag-bm",
+    "unicode": {"apple":"1F1E7-1F1F2", "google":"1F1E7-1F1F2", "twitter":"1F1E7-1F1F2"},
+    "shortcode": "flag-bm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BM",
+    "category": "flag"
   },
   {
-    "name": "seven",
-    "unicode": {"apple":"", "google":"", "twitter":"0037-20E3"},
-    "shortcode": "seven",
-    "description": "KEYCAP 7",
-    "category": "folderol"
+    "name": "flag-bn",
+    "unicode": {"apple":"1F1E7-1F1F3", "google":"1F1E7-1F1F3", "twitter":"1F1E7-1F1F3"},
+    "shortcode": "flag-bn",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BN",
+    "category": "flag"
   },
   {
-    "name": "eight",
-    "unicode": {"apple":"", "google":"", "twitter":"0038-20E3"},
-    "shortcode": "eight",
-    "description": "KEYCAP 8",
-    "category": "folderol"
+    "name": "flag-bo",
+    "unicode": {"apple":"1F1E7-1F1F4", "google":"1F1E7-1F1F4", "twitter":"1F1E7-1F1F4"},
+    "shortcode": "flag-bo",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BO",
+    "category": "flag"
   },
   {
-    "name": "nine",
-    "unicode": {"apple":"", "google":"", "twitter":"0039-20E3"},
-    "shortcode": "nine",
-    "description": "KEYCAP 9",
-    "category": "folderol"
+    "name": "flag-bq",
+    "unicode": {"apple":"1F1E7-1F1F6", "google":"1F1E7-1F1F6", "twitter":"1F1E7-1F1F6"},
+    "shortcode": "flag-bq",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BQ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-br",
+    "unicode": {"apple":"1F1E7-1F1F7", "google":"1F1E7-1F1F7", "twitter":"1F1E7-1F1F7"},
+    "shortcode": "flag-br",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BR",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-bs",
+    "unicode": {"apple":"1F1E7-1F1F8", "google":"1F1E7-1F1F8", "twitter":"1F1E7-1F1F8"},
+    "shortcode": "flag-bs",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BS",
+    "category": "flag"
+  },
+  {
+    "name": "flag-bt",
+    "unicode": {"apple":"1F1E7-1F1F9", "google":"1F1E7-1F1F9", "twitter":"1F1E7-1F1F9"},
+    "shortcode": "flag-bt",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BT",
+    "category": "flag"
+  },
+  {
+    "name": "flag-bv",
+    "unicode": {"apple":"1F1E7-1F1FB", "google":"1F1E7-1F1FB", "twitter":"1F1E7-1F1FB"},
+    "shortcode": "flag-bv",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BV",
+    "category": "flag"
+  },
+  {
+    "name": "flag-bw",
+    "unicode": {"apple":"1F1E7-1F1FC", "google":"1F1E7-1F1FC", "twitter":"1F1E7-1F1FC"},
+    "shortcode": "flag-bw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BW",
+    "category": "flag"
+  },
+  {
+    "name": "flag-by",
+    "unicode": {"apple":"1F1E7-1F1FE", "google":"1F1E7-1F1FE", "twitter":"1F1E7-1F1FE"},
+    "shortcode": "flag-by",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BY",
+    "category": "flag"
+  },
+  {
+    "name": "flag-bz",
+    "unicode": {"apple":"1F1E7-1F1FF", "google":"1F1E7-1F1FF", "twitter":"1F1E7-1F1FF"},
+    "shortcode": "flag-bz",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS BZ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ca",
+    "unicode": {"apple":"1F1E8-1F1E6", "google":"1F1E8-1F1E6", "twitter":"1F1E8-1F1E6"},
+    "shortcode": "flag-ca",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CA",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cc",
+    "unicode": {"apple":"1F1E8-1F1E8", "google":"1F1E8-1F1E8", "twitter":"1F1E8-1F1E8"},
+    "shortcode": "flag-cc",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CC",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cd",
+    "unicode": {"apple":"1F1E8-1F1E9", "google":"1F1E8-1F1E9", "twitter":"1F1E8-1F1E9"},
+    "shortcode": "flag-cd",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CD",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cf",
+    "unicode": {"apple":"1F1E8-1F1EB", "google":"1F1E8-1F1EB", "twitter":"1F1E8-1F1EB"},
+    "shortcode": "flag-cf",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CF",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cg",
+    "unicode": {"apple":"1F1E8-1F1EC", "google":"1F1E8-1F1EC", "twitter":"1F1E8-1F1EC"},
+    "shortcode": "flag-cg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ch",
+    "unicode": {"apple":"1F1E8-1F1ED", "google":"1F1E8-1F1ED", "twitter":"1F1E8-1F1ED"},
+    "shortcode": "flag-ch",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CH",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ci",
+    "unicode": {"apple":"1F1E8-1F1EE", "google":"1F1E8-1F1EE", "twitter":"1F1E8-1F1EE"},
+    "shortcode": "flag-ci",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CI",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ck",
+    "unicode": {"apple":"1F1E8-1F1F0", "google":"1F1E8-1F1F0", "twitter":"1F1E8-1F1F0"},
+    "shortcode": "flag-ck",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CK",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cl",
+    "unicode": {"apple":"1F1E8-1F1F1", "google":"1F1E8-1F1F1", "twitter":"1F1E8-1F1F1"},
+    "shortcode": "flag-cl",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CL",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cm",
+    "unicode": {"apple":"1F1E8-1F1F2", "google":"1F1E8-1F1F2", "twitter":"1F1E8-1F1F2"},
+    "shortcode": "flag-cm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CM",
+    "category": "flag"
   },
   {
     "name": "flag-cn",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1E8-1F1F3"},
+    "unicode": {"apple":"1F1E8-1F1F3", "google":"1F1E8-1F1F3", "twitter":"1F1E8-1F1F3"},
     "shortcode": "flag-cn",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS CN",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-co",
+    "unicode": {"apple":"1F1E8-1F1F4", "google":"1F1E8-1F1F4", "twitter":"1F1E8-1F1F4"},
+    "shortcode": "flag-co",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CO",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cp",
+    "unicode": {"apple":"1F1E8-1F1F5", "google":"1F1E8-1F1F5", "twitter":"1F1E8-1F1F5"},
+    "shortcode": "flag-cp",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CP",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cr",
+    "unicode": {"apple":"1F1E8-1F1F7", "google":"1F1E8-1F1F7", "twitter":"1F1E8-1F1F7"},
+    "shortcode": "flag-cr",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CR",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cu",
+    "unicode": {"apple":"1F1E8-1F1FA", "google":"1F1E8-1F1FA", "twitter":"1F1E8-1F1FA"},
+    "shortcode": "flag-cu",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CU",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cv",
+    "unicode": {"apple":"1F1E8-1F1FB", "google":"1F1E8-1F1FB", "twitter":"1F1E8-1F1FB"},
+    "shortcode": "flag-cv",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CV",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cw",
+    "unicode": {"apple":"1F1E8-1F1FC", "google":"1F1E8-1F1FC", "twitter":"1F1E8-1F1FC"},
+    "shortcode": "flag-cw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CW",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cx",
+    "unicode": {"apple":"1F1E8-1F1FD", "google":"1F1E8-1F1FD", "twitter":"1F1E8-1F1FD"},
+    "shortcode": "flag-cx",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CX",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cy",
+    "unicode": {"apple":"1F1E8-1F1FE", "google":"1F1E8-1F1FE", "twitter":"1F1E8-1F1FE"},
+    "shortcode": "flag-cy",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CY",
+    "category": "flag"
+  },
+  {
+    "name": "flag-cz",
+    "unicode": {"apple":"1F1E8-1F1FF", "google":"1F1E8-1F1FF", "twitter":"1F1E8-1F1FF"},
+    "shortcode": "flag-cz",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS CZ",
     "category": "flag"
   },
   {
     "name": "flag-de",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1E9-1F1EA"},
+    "unicode": {"apple":"1F1E9-1F1EA", "google":"1F1E9-1F1EA", "twitter":"1F1E9-1F1EA"},
     "shortcode": "flag-de",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS DE",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-dg",
+    "unicode": {"apple":"1F1E9-1F1EC", "google":"1F1E9-1F1EC", "twitter":"1F1E9-1F1EC"},
+    "shortcode": "flag-dg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS DG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-dj",
+    "unicode": {"apple":"1F1E9-1F1EF", "google":"1F1E9-1F1EF", "twitter":"1F1E9-1F1EF"},
+    "shortcode": "flag-dj",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS DJ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-dk",
+    "unicode": {"apple":"1F1E9-1F1F0", "google":"1F1E9-1F1F0", "twitter":"1F1E9-1F1F0"},
+    "shortcode": "flag-dk",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS DK",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-dm",
+    "unicode": {"apple":"1F1E9-1F1F2", "google":"1F1E9-1F1F2", "twitter":"1F1E9-1F1F2"},
+    "shortcode": "flag-dm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS DM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-do",
+    "unicode": {"apple":"1F1E9-1F1F4", "google":"1F1E9-1F1F4", "twitter":"1F1E9-1F1F4"},
+    "shortcode": "flag-do",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS DO",
+    "category": "flag"
+  },
+  {
+    "name": "flag-dz",
+    "unicode": {"apple":"1F1E9-1F1FF", "google":"1F1E9-1F1FF", "twitter":"1F1E9-1F1FF"},
+    "shortcode": "flag-dz",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS DZ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ea",
+    "unicode": {"apple":"1F1EA-1F1E6", "google":"1F1EA-1F1E6", "twitter":"1F1EA-1F1E6"},
+    "shortcode": "flag-ea",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS EA",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ec",
+    "unicode": {"apple":"1F1EA-1F1E8", "google":"1F1EA-1F1E8", "twitter":"1F1EA-1F1E8"},
+    "shortcode": "flag-ec",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS EC",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ee",
+    "unicode": {"apple":"1F1EA-1F1EA", "google":"1F1EA-1F1EA", "twitter":"1F1EA-1F1EA"},
+    "shortcode": "flag-ee",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS EE",
+    "category": "flag"
+  },
+  {
+    "name": "flag-eg",
+    "unicode": {"apple":"1F1EA-1F1EC", "google":"1F1EA-1F1EC", "twitter":"1F1EA-1F1EC"},
+    "shortcode": "flag-eg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS EG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-eh",
+    "unicode": {"apple":"1F1EA-1F1ED", "google":"1F1EA-1F1ED", "twitter":"1F1EA-1F1ED"},
+    "shortcode": "flag-eh",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS EH",
+    "category": "flag"
+  },
+  {
+    "name": "flag-er",
+    "unicode": {"apple":"1F1EA-1F1F7", "google":"1F1EA-1F1F7", "twitter":"1F1EA-1F1F7"},
+    "shortcode": "flag-er",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS ER",
     "category": "flag"
   },
   {
     "name": "flag-es",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1EA-1F1F8"},
+    "unicode": {"apple":"1F1EA-1F1F8", "google":"1F1EA-1F1F8", "twitter":"1F1EA-1F1F8"},
     "shortcode": "flag-es",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS ES",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-et",
+    "unicode": {"apple":"1F1EA-1F1F9", "google":"1F1EA-1F1F9", "twitter":"1F1EA-1F1F9"},
+    "shortcode": "flag-et",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS ET",
+    "category": "flag"
+  },
+  {
+    "name": "flag-eu",
+    "unicode": {"apple":"1F1EA-1F1FA", "google":"1F1EA-1F1FA", "twitter":"1F1EA-1F1FA"},
+    "shortcode": "flag-eu",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS EU",
+    "category": "flag"
+  },
+  {
+    "name": "flag-fi",
+    "unicode": {"apple":"1F1EB-1F1EE", "google":"1F1EB-1F1EE", "twitter":"1F1EB-1F1EE"},
+    "shortcode": "flag-fi",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS FI",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-fj",
+    "unicode": {"apple":"1F1EB-1F1EF", "google":"1F1EB-1F1EF", "twitter":"1F1EB-1F1EF"},
+    "shortcode": "flag-fj",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS FJ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-fk",
+    "unicode": {"apple":"1F1EB-1F1F0", "google":"1F1EB-1F1F0", "twitter":"1F1EB-1F1F0"},
+    "shortcode": "flag-fk",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS FK",
+    "category": "flag"
+  },
+  {
+    "name": "flag-fm",
+    "unicode": {"apple":"1F1EB-1F1F2", "google":"1F1EB-1F1F2", "twitter":"1F1EB-1F1F2"},
+    "shortcode": "flag-fm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS FM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-fo",
+    "unicode": {"apple":"1F1EB-1F1F4", "google":"1F1EB-1F1F4", "twitter":"1F1EB-1F1F4"},
+    "shortcode": "flag-fo",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS FO",
     "category": "flag"
   },
   {
     "name": "flag-fr",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1EB-1F1F7"},
+    "unicode": {"apple":"1F1EB-1F1F7", "google":"1F1EB-1F1F7", "twitter":"1F1EB-1F1F7"},
     "shortcode": "flag-fr",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS FR",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ga",
+    "unicode": {"apple":"1F1EC-1F1E6", "google":"1F1EC-1F1E6", "twitter":"1F1EC-1F1E6"},
+    "shortcode": "flag-ga",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GA",
     "category": "flag"
   },
   {
     "name": "flag-gb",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1EC-1F1E7"},
+    "unicode": {"apple":"1F1EC-1F1E7", "google":"1F1EC-1F1E7", "twitter":"1F1EC-1F1E7"},
     "shortcode": "flag-gb",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS GB",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gd",
+    "unicode": {"apple":"1F1EC-1F1E9", "google":"1F1EC-1F1E9", "twitter":"1F1EC-1F1E9"},
+    "shortcode": "flag-gd",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GD",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ge",
+    "unicode": {"apple":"1F1EC-1F1EA", "google":"1F1EC-1F1EA", "twitter":"1F1EC-1F1EA"},
+    "shortcode": "flag-ge",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GE",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gf",
+    "unicode": {"apple":"1F1EC-1F1EB", "google":"1F1EC-1F1EB", "twitter":"1F1EC-1F1EB"},
+    "shortcode": "flag-gf",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GF",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gg",
+    "unicode": {"apple":"1F1EC-1F1EC", "google":"1F1EC-1F1EC", "twitter":"1F1EC-1F1EC"},
+    "shortcode": "flag-gg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gh",
+    "unicode": {"apple":"1F1EC-1F1ED", "google":"1F1EC-1F1ED", "twitter":"1F1EC-1F1ED"},
+    "shortcode": "flag-gh",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GH",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gi",
+    "unicode": {"apple":"1F1EC-1F1EE", "google":"1F1EC-1F1EE", "twitter":"1F1EC-1F1EE"},
+    "shortcode": "flag-gi",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GI",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gl",
+    "unicode": {"apple":"1F1EC-1F1F1", "google":"1F1EC-1F1F1", "twitter":"1F1EC-1F1F1"},
+    "shortcode": "flag-gl",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GL",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gm",
+    "unicode": {"apple":"1F1EC-1F1F2", "google":"1F1EC-1F1F2", "twitter":"1F1EC-1F1F2"},
+    "shortcode": "flag-gm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gn",
+    "unicode": {"apple":"1F1EC-1F1F3", "google":"1F1EC-1F1F3", "twitter":"1F1EC-1F1F3"},
+    "shortcode": "flag-gn",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GN",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gp",
+    "unicode": {"apple":"1F1EC-1F1F5", "google":"1F1EC-1F1F5", "twitter":"1F1EC-1F1F5"},
+    "shortcode": "flag-gp",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GP",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gq",
+    "unicode": {"apple":"1F1EC-1F1F6", "google":"1F1EC-1F1F6", "twitter":"1F1EC-1F1F6"},
+    "shortcode": "flag-gq",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GQ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gr",
+    "unicode": {"apple":"1F1EC-1F1F7", "google":"1F1EC-1F1F7", "twitter":"1F1EC-1F1F7"},
+    "shortcode": "flag-gr",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GR",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gs",
+    "unicode": {"apple":"1F1EC-1F1F8", "google":"1F1EC-1F1F8", "twitter":"1F1EC-1F1F8"},
+    "shortcode": "flag-gs",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GS",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gt",
+    "unicode": {"apple":"1F1EC-1F1F9", "google":"1F1EC-1F1F9", "twitter":"1F1EC-1F1F9"},
+    "shortcode": "flag-gt",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GT",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gu",
+    "unicode": {"apple":"1F1EC-1F1FA", "google":"1F1EC-1F1FA", "twitter":"1F1EC-1F1FA"},
+    "shortcode": "flag-gu",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GU",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gw",
+    "unicode": {"apple":"1F1EC-1F1FC", "google":"1F1EC-1F1FC", "twitter":"1F1EC-1F1FC"},
+    "shortcode": "flag-gw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GW",
+    "category": "flag"
+  },
+  {
+    "name": "flag-gy",
+    "unicode": {"apple":"1F1EC-1F1FE", "google":"1F1EC-1F1FE", "twitter":"1F1EC-1F1FE"},
+    "shortcode": "flag-gy",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS GY",
+    "category": "flag"
+  },
+  {
+    "name": "flag-hk",
+    "unicode": {"apple":"1F1ED-1F1F0", "google":"1F1ED-1F1F0", "twitter":"1F1ED-1F1F0"},
+    "shortcode": "flag-hk",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS HK",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-hm",
+    "unicode": {"apple":"1F1ED-1F1F2", "google":"1F1ED-1F1F2", "twitter":"1F1ED-1F1F2"},
+    "shortcode": "flag-hm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS HM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-hn",
+    "unicode": {"apple":"1F1ED-1F1F3", "google":"1F1ED-1F1F3", "twitter":"1F1ED-1F1F3"},
+    "shortcode": "flag-hn",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS HN",
+    "category": "flag"
+  },
+  {
+    "name": "flag-hr",
+    "unicode": {"apple":"1F1ED-1F1F7", "google":"1F1ED-1F1F7", "twitter":"1F1ED-1F1F7"},
+    "shortcode": "flag-hr",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS HR",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ht",
+    "unicode": {"apple":"1F1ED-1F1F9", "google":"1F1ED-1F1F9", "twitter":"1F1ED-1F1F9"},
+    "shortcode": "flag-ht",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS HT",
+    "category": "flag"
+  },
+  {
+    "name": "flag-hu",
+    "unicode": {"apple":"1F1ED-1F1FA", "google":"1F1ED-1F1FA", "twitter":"1F1ED-1F1FA"},
+    "shortcode": "flag-hu",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS HU",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ic",
+    "unicode": {"apple":"1F1EE-1F1E8", "google":"1F1EE-1F1E8", "twitter":"1F1EE-1F1E8"},
+    "shortcode": "flag-ic",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS IC",
+    "category": "flag"
+  },
+  {
+    "name": "flag-id",
+    "unicode": {"apple":"1F1EE-1F1E9", "google":"1F1EE-1F1E9", "twitter":"1F1EE-1F1E9"},
+    "shortcode": "flag-id",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS ID",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ie",
+    "unicode": {"apple":"1F1EE-1F1EA", "google":"1F1EE-1F1EA", "twitter":"1F1EE-1F1EA"},
+    "shortcode": "flag-ie",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS IE",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-il",
+    "unicode": {"apple":"1F1EE-1F1F1", "google":"1F1EE-1F1F1", "twitter":"1F1EE-1F1F1"},
+    "shortcode": "flag-il",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS IL",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-im",
+    "unicode": {"apple":"1F1EE-1F1F2", "google":"1F1EE-1F1F2", "twitter":"1F1EE-1F1F2"},
+    "shortcode": "flag-im",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS IM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-in",
+    "unicode": {"apple":"1F1EE-1F1F3", "google":"1F1EE-1F1F3", "twitter":"1F1EE-1F1F3"},
+    "shortcode": "flag-in",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS IN",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-io",
+    "unicode": {"apple":"1F1EE-1F1F4", "google":"1F1EE-1F1F4", "twitter":"1F1EE-1F1F4"},
+    "shortcode": "flag-io",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS IO",
+    "category": "flag"
+  },
+  {
+    "name": "flag-iq",
+    "unicode": {"apple":"1F1EE-1F1F6", "google":"1F1EE-1F1F6", "twitter":"1F1EE-1F1F6"},
+    "shortcode": "flag-iq",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS IQ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ir",
+    "unicode": {"apple":"1F1EE-1F1F7", "google":"1F1EE-1F1F7", "twitter":"1F1EE-1F1F7"},
+    "shortcode": "flag-ir",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS IR",
+    "category": "flag"
+  },
+  {
+    "name": "flag-is",
+    "unicode": {"apple":"1F1EE-1F1F8", "google":"1F1EE-1F1F8", "twitter":"1F1EE-1F1F8"},
+    "shortcode": "flag-is",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS IS",
     "category": "flag"
   },
   {
     "name": "flag-it",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1EE-1F1F9"},
+    "unicode": {"apple":"1F1EE-1F1F9", "google":"1F1EE-1F1F9", "twitter":"1F1EE-1F1F9"},
     "shortcode": "flag-it",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS IT",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-je",
+    "unicode": {"apple":"1F1EF-1F1EA", "google":"1F1EF-1F1EA", "twitter":"1F1EF-1F1EA"},
+    "shortcode": "flag-je",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS JE",
+    "category": "flag"
+  },
+  {
+    "name": "flag-jm",
+    "unicode": {"apple":"1F1EF-1F1F2", "google":"1F1EF-1F1F2", "twitter":"1F1EF-1F1F2"},
+    "shortcode": "flag-jm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS JM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-jo",
+    "unicode": {"apple":"1F1EF-1F1F4", "google":"1F1EF-1F1F4", "twitter":"1F1EF-1F1F4"},
+    "shortcode": "flag-jo",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS JO",
     "category": "flag"
   },
   {
     "name": "flag-jp",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1EF-1F1F5"},
+    "unicode": {"apple":"1F1EF-1F1F5", "google":"1F1EF-1F1F5", "twitter":"1F1EF-1F1F5"},
     "shortcode": "flag-jp",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS JP",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ke",
+    "unicode": {"apple":"1F1F0-1F1EA", "google":"1F1F0-1F1EA", "twitter":"1F1F0-1F1EA"},
+    "shortcode": "flag-ke",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KE",
+    "category": "flag"
+  },
+  {
+    "name": "flag-kg",
+    "unicode": {"apple":"1F1F0-1F1EC", "google":"1F1F0-1F1EC", "twitter":"1F1F0-1F1EC"},
+    "shortcode": "flag-kg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-kh",
+    "unicode": {"apple":"1F1F0-1F1ED", "google":"1F1F0-1F1ED", "twitter":"1F1F0-1F1ED"},
+    "shortcode": "flag-kh",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KH",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ki",
+    "unicode": {"apple":"1F1F0-1F1EE", "google":"1F1F0-1F1EE", "twitter":"1F1F0-1F1EE"},
+    "shortcode": "flag-ki",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KI",
+    "category": "flag"
+  },
+  {
+    "name": "flag-km",
+    "unicode": {"apple":"1F1F0-1F1F2", "google":"1F1F0-1F1F2", "twitter":"1F1F0-1F1F2"},
+    "shortcode": "flag-km",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-kn",
+    "unicode": {"apple":"1F1F0-1F1F3", "google":"1F1F0-1F1F3", "twitter":"1F1F0-1F1F3"},
+    "shortcode": "flag-kn",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KN",
+    "category": "flag"
+  },
+  {
+    "name": "flag-kp",
+    "unicode": {"apple":"1F1F0-1F1F5", "google":"1F1F0-1F1F5", "twitter":"1F1F0-1F1F5"},
+    "shortcode": "flag-kp",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KP",
     "category": "flag"
   },
   {
     "name": "flag-kr",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1F0-1F1F7"},
+    "unicode": {"apple":"1F1F0-1F1F7", "google":"1F1F0-1F1F7", "twitter":"1F1F0-1F1F7"},
     "shortcode": "flag-kr",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS KR",
-    "category": "folderol"
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-kw",
+    "unicode": {"apple":"1F1F0-1F1FC", "google":"1F1F0-1F1FC", "twitter":"1F1F0-1F1FC"},
+    "shortcode": "flag-kw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KW",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ky",
+    "unicode": {"apple":"1F1F0-1F1FE", "google":"1F1F0-1F1FE", "twitter":"1F1F0-1F1FE"},
+    "shortcode": "flag-ky",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KY",
+    "category": "flag"
+  },
+  {
+    "name": "flag-kz",
+    "unicode": {"apple":"1F1F0-1F1FF", "google":"1F1F0-1F1FF", "twitter":"1F1F0-1F1FF"},
+    "shortcode": "flag-kz",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS KZ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-la",
+    "unicode": {"apple":"1F1F1-1F1E6", "google":"1F1F1-1F1E6", "twitter":"1F1F1-1F1E6"},
+    "shortcode": "flag-la",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LA",
+    "category": "flag"
+  },
+  {
+    "name": "flag-lb",
+    "unicode": {"apple":"1F1F1-1F1E7", "google":"1F1F1-1F1E7", "twitter":"1F1F1-1F1E7"},
+    "shortcode": "flag-lb",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LB",
+    "category": "flag"
+  },
+  {
+    "name": "flag-lc",
+    "unicode": {"apple":"1F1F1-1F1E8", "google":"1F1F1-1F1E8", "twitter":"1F1F1-1F1E8"},
+    "shortcode": "flag-lc",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LC",
+    "category": "flag"
+  },
+  {
+    "name": "flag-li",
+    "unicode": {"apple":"1F1F1-1F1EE", "google":"1F1F1-1F1EE", "twitter":"1F1F1-1F1EE"},
+    "shortcode": "flag-li",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LI",
+    "category": "flag"
+  },
+  {
+    "name": "flag-lk",
+    "unicode": {"apple":"1F1F1-1F1F0", "google":"1F1F1-1F1F0", "twitter":"1F1F1-1F1F0"},
+    "shortcode": "flag-lk",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LK",
+    "category": "flag"
+  },
+  {
+    "name": "flag-lr",
+    "unicode": {"apple":"1F1F1-1F1F7", "google":"1F1F1-1F1F7", "twitter":"1F1F1-1F1F7"},
+    "shortcode": "flag-lr",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LR",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ls",
+    "unicode": {"apple":"1F1F1-1F1F8", "google":"1F1F1-1F1F8", "twitter":"1F1F1-1F1F8"},
+    "shortcode": "flag-ls",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LS",
+    "category": "flag"
+  },
+  {
+    "name": "flag-lt",
+    "unicode": {"apple":"1F1F1-1F1F9", "google":"1F1F1-1F1F9", "twitter":"1F1F1-1F1F9"},
+    "shortcode": "flag-lt",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LT",
+    "category": "flag"
+  },
+  {
+    "name": "flag-lu",
+    "unicode": {"apple":"1F1F1-1F1FA", "google":"1F1F1-1F1FA", "twitter":"1F1F1-1F1FA"},
+    "shortcode": "flag-lu",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LU",
+    "category": "flag"
+  },
+  {
+    "name": "flag-lv",
+    "unicode": {"apple":"1F1F1-1F1FB", "google":"1F1F1-1F1FB", "twitter":"1F1F1-1F1FB"},
+    "shortcode": "flag-lv",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LV",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ly",
+    "unicode": {"apple":"1F1F1-1F1FE", "google":"1F1F1-1F1FE", "twitter":"1F1F1-1F1FE"},
+    "shortcode": "flag-ly",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS LY",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ma",
+    "unicode": {"apple":"1F1F2-1F1E6", "google":"1F1F2-1F1E6", "twitter":"1F1F2-1F1E6"},
+    "shortcode": "flag-ma",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MA",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mc",
+    "unicode": {"apple":"1F1F2-1F1E8", "google":"1F1F2-1F1E8", "twitter":"1F1F2-1F1E8"},
+    "shortcode": "flag-mc",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MC",
+    "category": "flag"
+  },
+  {
+    "name": "flag-md",
+    "unicode": {"apple":"1F1F2-1F1E9", "google":"1F1F2-1F1E9", "twitter":"1F1F2-1F1E9"},
+    "shortcode": "flag-md",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MD",
+    "category": "flag"
+  },
+  {
+    "name": "flag-me",
+    "unicode": {"apple":"1F1F2-1F1EA", "google":"1F1F2-1F1EA", "twitter":"1F1F2-1F1EA"},
+    "shortcode": "flag-me",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS ME",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mf",
+    "unicode": {"apple":"1F1F2-1F1EB", "google":"1F1F2-1F1EB", "twitter":"1F1F2-1F1EB"},
+    "shortcode": "flag-mf",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MF",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mg",
+    "unicode": {"apple":"1F1F2-1F1EC", "google":"1F1F2-1F1EC", "twitter":"1F1F2-1F1EC"},
+    "shortcode": "flag-mg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mh",
+    "unicode": {"apple":"1F1F2-1F1ED", "google":"1F1F2-1F1ED", "twitter":"1F1F2-1F1ED"},
+    "shortcode": "flag-mh",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MH",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mk",
+    "unicode": {"apple":"1F1F2-1F1F0", "google":"1F1F2-1F1F0", "twitter":"1F1F2-1F1F0"},
+    "shortcode": "flag-mk",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MK",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ml",
+    "unicode": {"apple":"1F1F2-1F1F1", "google":"1F1F2-1F1F1", "twitter":"1F1F2-1F1F1"},
+    "shortcode": "flag-ml",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS ML",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mm",
+    "unicode": {"apple":"1F1F2-1F1F2", "google":"1F1F2-1F1F2", "twitter":"1F1F2-1F1F2"},
+    "shortcode": "flag-mm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mn",
+    "unicode": {"apple":"1F1F2-1F1F3", "google":"1F1F2-1F1F3", "twitter":"1F1F2-1F1F3"},
+    "shortcode": "flag-mn",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MN",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mo",
+    "unicode": {"apple":"1F1F2-1F1F4", "google":"1F1F2-1F1F4", "twitter":"1F1F2-1F1F4"},
+    "shortcode": "flag-mo",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MO",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mp",
+    "unicode": {"apple":"1F1F2-1F1F5", "google":"1F1F2-1F1F5", "twitter":"1F1F2-1F1F5"},
+    "shortcode": "flag-mp",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MP",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mq",
+    "unicode": {"apple":"1F1F2-1F1F6", "google":"1F1F2-1F1F6", "twitter":"1F1F2-1F1F6"},
+    "shortcode": "flag-mq",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MQ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mr",
+    "unicode": {"apple":"1F1F2-1F1F7", "google":"1F1F2-1F1F7", "twitter":"1F1F2-1F1F7"},
+    "shortcode": "flag-mr",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MR",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ms",
+    "unicode": {"apple":"1F1F2-1F1F8", "google":"1F1F2-1F1F8", "twitter":"1F1F2-1F1F8"},
+    "shortcode": "flag-ms",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MS",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mt",
+    "unicode": {"apple":"1F1F2-1F1F9", "google":"1F1F2-1F1F9", "twitter":"1F1F2-1F1F9"},
+    "shortcode": "flag-mt",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MT",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mu",
+    "unicode": {"apple":"1F1F2-1F1FA", "google":"1F1F2-1F1FA", "twitter":"1F1F2-1F1FA"},
+    "shortcode": "flag-mu",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MU",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mv",
+    "unicode": {"apple":"1F1F2-1F1FB", "google":"1F1F2-1F1FB", "twitter":"1F1F2-1F1FB"},
+    "shortcode": "flag-mv",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MV",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mw",
+    "unicode": {"apple":"1F1F2-1F1FC", "google":"1F1F2-1F1FC", "twitter":"1F1F2-1F1FC"},
+    "shortcode": "flag-mw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MW",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mx",
+    "unicode": {"apple":"1F1F2-1F1FD", "google":"1F1F2-1F1FD", "twitter":"1F1F2-1F1FD"},
+    "shortcode": "flag-mx",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MX",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-my",
+    "unicode": {"apple":"1F1F2-1F1FE", "google":"1F1F2-1F1FE", "twitter":"1F1F2-1F1FE"},
+    "shortcode": "flag-my",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MY",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-mz",
+    "unicode": {"apple":"1F1F2-1F1FF", "google":"1F1F2-1F1FF", "twitter":"1F1F2-1F1FF"},
+    "shortcode": "flag-mz",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS MZ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-na",
+    "unicode": {"apple":"1F1F3-1F1E6", "google":"1F1F3-1F1E6", "twitter":"1F1F3-1F1E6"},
+    "shortcode": "flag-na",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NA",
+    "category": "flag"
+  },
+  {
+    "name": "flag-nc",
+    "unicode": {"apple":"1F1F3-1F1E8", "google":"1F1F3-1F1E8", "twitter":"1F1F3-1F1E8"},
+    "shortcode": "flag-nc",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NC",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ne",
+    "unicode": {"apple":"1F1F3-1F1EA", "google":"1F1F3-1F1EA", "twitter":"1F1F3-1F1EA"},
+    "shortcode": "flag-ne",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NE",
+    "category": "flag"
+  },
+  {
+    "name": "flag-nf",
+    "unicode": {"apple":"1F1F3-1F1EB", "google":"1F1F3-1F1EB", "twitter":"1F1F3-1F1EB"},
+    "shortcode": "flag-nf",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NF",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ng",
+    "unicode": {"apple":"1F1F3-1F1EC", "google":"1F1F3-1F1EC", "twitter":"1F1F3-1F1EC"},
+    "shortcode": "flag-ng",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ni",
+    "unicode": {"apple":"1F1F3-1F1EE", "google":"1F1F3-1F1EE", "twitter":"1F1F3-1F1EE"},
+    "shortcode": "flag-ni",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NI",
+    "category": "flag"
+  },
+  {
+    "name": "flag-nl",
+    "unicode": {"apple":"1F1F3-1F1F1", "google":"1F1F3-1F1F1", "twitter":"1F1F3-1F1F1"},
+    "shortcode": "flag-nl",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NL",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-no",
+    "unicode": {"apple":"1F1F3-1F1F4", "google":"1F1F3-1F1F4", "twitter":"1F1F3-1F1F4"},
+    "shortcode": "flag-no",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NO",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-np",
+    "unicode": {"apple":"1F1F3-1F1F5", "google":"1F1F3-1F1F5", "twitter":"1F1F3-1F1F5"},
+    "shortcode": "flag-np",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NP",
+    "category": "flag"
+  },
+  {
+    "name": "flag-nr",
+    "unicode": {"apple":"1F1F3-1F1F7", "google":"1F1F3-1F1F7", "twitter":"1F1F3-1F1F7"},
+    "shortcode": "flag-nr",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NR",
+    "category": "flag"
+  },
+  {
+    "name": "flag-nu",
+    "unicode": {"apple":"1F1F3-1F1FA", "google":"1F1F3-1F1FA", "twitter":"1F1F3-1F1FA"},
+    "shortcode": "flag-nu",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NU",
+    "category": "flag"
+  },
+  {
+    "name": "flag-nz",
+    "unicode": {"apple":"1F1F3-1F1FF", "google":"1F1F3-1F1FF", "twitter":"1F1F3-1F1FF"},
+    "shortcode": "flag-nz",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS NZ",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-om",
+    "unicode": {"apple":"1F1F4-1F1F2", "google":"1F1F4-1F1F2", "twitter":"1F1F4-1F1F2"},
+    "shortcode": "flag-om",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS OM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pa",
+    "unicode": {"apple":"1F1F5-1F1E6", "google":"1F1F5-1F1E6", "twitter":"1F1F5-1F1E6"},
+    "shortcode": "flag-pa",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PA",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pe",
+    "unicode": {"apple":"1F1F5-1F1EA", "google":"1F1F5-1F1EA", "twitter":"1F1F5-1F1EA"},
+    "shortcode": "flag-pe",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PE",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pf",
+    "unicode": {"apple":"1F1F5-1F1EB", "google":"1F1F5-1F1EB", "twitter":"1F1F5-1F1EB"},
+    "shortcode": "flag-pf",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PF",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pg",
+    "unicode": {"apple":"1F1F5-1F1EC", "google":"1F1F5-1F1EC", "twitter":"1F1F5-1F1EC"},
+    "shortcode": "flag-pg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ph",
+    "unicode": {"apple":"1F1F5-1F1ED", "google":"1F1F5-1F1ED", "twitter":"1F1F5-1F1ED"},
+    "shortcode": "flag-ph",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PH",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pk",
+    "unicode": {"apple":"1F1F5-1F1F0", "google":"1F1F5-1F1F0", "twitter":"1F1F5-1F1F0"},
+    "shortcode": "flag-pk",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PK",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pl",
+    "unicode": {"apple":"1F1F5-1F1F1", "google":"1F1F5-1F1F1", "twitter":"1F1F5-1F1F1"},
+    "shortcode": "flag-pl",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PL",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pm",
+    "unicode": {"apple":"1F1F5-1F1F2", "google":"1F1F5-1F1F2", "twitter":"1F1F5-1F1F2"},
+    "shortcode": "flag-pm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pn",
+    "unicode": {"apple":"1F1F5-1F1F3", "google":"1F1F5-1F1F3", "twitter":"1F1F5-1F1F3"},
+    "shortcode": "flag-pn",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PN",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pr",
+    "unicode": {"apple":"1F1F5-1F1F7", "google":"1F1F5-1F1F7", "twitter":"1F1F5-1F1F7"},
+    "shortcode": "flag-pr",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PR",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ps",
+    "unicode": {"apple":"1F1F5-1F1F8", "google":"1F1F5-1F1F8", "twitter":"1F1F5-1F1F8"},
+    "shortcode": "flag-ps",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PS",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pt",
+    "unicode": {"apple":"1F1F5-1F1F9", "google":"1F1F5-1F1F9", "twitter":"1F1F5-1F1F9"},
+    "shortcode": "flag-pt",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PT",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-pw",
+    "unicode": {"apple":"1F1F5-1F1FC", "google":"1F1F5-1F1FC", "twitter":"1F1F5-1F1FC"},
+    "shortcode": "flag-pw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PW",
+    "category": "flag"
+  },
+  {
+    "name": "flag-py",
+    "unicode": {"apple":"1F1F5-1F1FE", "google":"1F1F5-1F1FE", "twitter":"1F1F5-1F1FE"},
+    "shortcode": "flag-py",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS PY",
+    "category": "flag"
+  },
+  {
+    "name": "flag-qa",
+    "unicode": {"apple":"1F1F6-1F1E6", "google":"1F1F6-1F1E6", "twitter":"1F1F6-1F1E6"},
+    "shortcode": "flag-qa",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS QA",
+    "category": "flag"
+  },
+  {
+    "name": "flag-re",
+    "unicode": {"apple":"1F1F7-1F1EA", "google":"1F1F7-1F1EA", "twitter":"1F1F7-1F1EA"},
+    "shortcode": "flag-re",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS RE",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ro",
+    "unicode": {"apple":"1F1F7-1F1F4", "google":"1F1F7-1F1F4", "twitter":"1F1F7-1F1F4"},
+    "shortcode": "flag-ro",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS RO",
+    "category": "flag"
+  },
+  {
+    "name": "flag-rs",
+    "unicode": {"apple":"1F1F7-1F1F8", "google":"1F1F7-1F1F8", "twitter":"1F1F7-1F1F8"},
+    "shortcode": "flag-rs",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS RS",
+    "category": "flag"
   },
   {
     "name": "flag-ru",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1F7-1F1FA"},
+    "unicode": {"apple":"1F1F7-1F1FA", "google":"1F1F7-1F1FA", "twitter":"1F1F7-1F1FA"},
     "shortcode": "flag-ru",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS RU",
-    "category": "folderol"
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-rw",
+    "unicode": {"apple":"1F1F7-1F1FC", "google":"1F1F7-1F1FC", "twitter":"1F1F7-1F1FC"},
+    "shortcode": "flag-rw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS RW",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sa",
+    "unicode": {"apple":"1F1F8-1F1E6", "google":"1F1F8-1F1E6", "twitter":"1F1F8-1F1E6"},
+    "shortcode": "flag-sa",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SA",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sb",
+    "unicode": {"apple":"1F1F8-1F1E7", "google":"1F1F8-1F1E7", "twitter":"1F1F8-1F1E7"},
+    "shortcode": "flag-sb",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SB",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sc",
+    "unicode": {"apple":"1F1F8-1F1E8", "google":"1F1F8-1F1E8", "twitter":"1F1F8-1F1E8"},
+    "shortcode": "flag-sc",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SC",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sd",
+    "unicode": {"apple":"1F1F8-1F1E9", "google":"1F1F8-1F1E9", "twitter":"1F1F8-1F1E9"},
+    "shortcode": "flag-sd",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SD",
+    "category": "flag"
+  },
+  {
+    "name": "flag-se",
+    "unicode": {"apple":"1F1F8-1F1EA", "google":"1F1F8-1F1EA", "twitter":"1F1F8-1F1EA"},
+    "shortcode": "flag-se",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SE",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sg",
+    "unicode": {"apple":"1F1F8-1F1EC", "google":"1F1F8-1F1EC", "twitter":"1F1F8-1F1EC"},
+    "shortcode": "flag-sg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SG",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sh",
+    "unicode": {"apple":"1F1F8-1F1ED", "google":"1F1F8-1F1ED", "twitter":"1F1F8-1F1ED"},
+    "shortcode": "flag-sh",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SH",
+    "category": "flag"
+  },
+  {
+    "name": "flag-si",
+    "unicode": {"apple":"1F1F8-1F1EE", "google":"1F1F8-1F1EE", "twitter":"1F1F8-1F1EE"},
+    "shortcode": "flag-si",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SI",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sj",
+    "unicode": {"apple":"1F1F8-1F1EF", "google":"1F1F8-1F1EF", "twitter":"1F1F8-1F1EF"},
+    "shortcode": "flag-sj",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SJ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sk",
+    "unicode": {"apple":"1F1F8-1F1F0", "google":"1F1F8-1F1F0", "twitter":"1F1F8-1F1F0"},
+    "shortcode": "flag-sk",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SK",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sl",
+    "unicode": {"apple":"1F1F8-1F1F1", "google":"1F1F8-1F1F1", "twitter":"1F1F8-1F1F1"},
+    "shortcode": "flag-sl",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SL",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sm",
+    "unicode": {"apple":"1F1F8-1F1F2", "google":"1F1F8-1F1F2", "twitter":"1F1F8-1F1F2"},
+    "shortcode": "flag-sm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sn",
+    "unicode": {"apple":"1F1F8-1F1F3", "google":"1F1F8-1F1F3", "twitter":"1F1F8-1F1F3"},
+    "shortcode": "flag-sn",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SN",
+    "category": "flag"
+  },
+  {
+    "name": "flag-so",
+    "unicode": {"apple":"1F1F8-1F1F4", "google":"1F1F8-1F1F4", "twitter":"1F1F8-1F1F4"},
+    "shortcode": "flag-so",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SO",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sr",
+    "unicode": {"apple":"1F1F8-1F1F7", "google":"1F1F8-1F1F7", "twitter":"1F1F8-1F1F7"},
+    "shortcode": "flag-sr",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SR",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ss",
+    "unicode": {"apple":"1F1F8-1F1F8", "google":"1F1F8-1F1F8", "twitter":"1F1F8-1F1F8"},
+    "shortcode": "flag-ss",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SS",
+    "category": "flag"
+  },
+  {
+    "name": "flag-st",
+    "unicode": {"apple":"1F1F8-1F1F9", "google":"1F1F8-1F1F9", "twitter":"1F1F8-1F1F9"},
+    "shortcode": "flag-st",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS ST",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sv",
+    "unicode": {"apple":"1F1F8-1F1FB", "google":"1F1F8-1F1FB", "twitter":"1F1F8-1F1FB"},
+    "shortcode": "flag-sv",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SV",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sx",
+    "unicode": {"apple":"1F1F8-1F1FD", "google":"1F1F8-1F1FD", "twitter":"1F1F8-1F1FD"},
+    "shortcode": "flag-sx",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SX",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sy",
+    "unicode": {"apple":"1F1F8-1F1FE", "google":"1F1F8-1F1FE", "twitter":"1F1F8-1F1FE"},
+    "shortcode": "flag-sy",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SY",
+    "category": "flag"
+  },
+  {
+    "name": "flag-sz",
+    "unicode": {"apple":"1F1F8-1F1FF", "google":"1F1F8-1F1FF", "twitter":"1F1F8-1F1FF"},
+    "shortcode": "flag-sz",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS SZ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ta",
+    "unicode": {"apple":"1F1F9-1F1E6", "google":"1F1F9-1F1E6", "twitter":"1F1F9-1F1E6"},
+    "shortcode": "flag-ta",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TA",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tc",
+    "unicode": {"apple":"1F1F9-1F1E8", "google":"1F1F9-1F1E8", "twitter":"1F1F9-1F1E8"},
+    "shortcode": "flag-tc",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TC",
+    "category": "flag"
+  },
+  {
+    "name": "flag-td",
+    "unicode": {"apple":"1F1F9-1F1E9", "google":"1F1F9-1F1E9", "twitter":"1F1F9-1F1E9"},
+    "shortcode": "flag-td",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TD",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tf",
+    "unicode": {"apple":"1F1F9-1F1EB", "google":"1F1F9-1F1EB", "twitter":"1F1F9-1F1EB"},
+    "shortcode": "flag-tf",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TF",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tg",
+    "unicode": {"apple":"1F1F9-1F1EC", "google":"1F1F9-1F1EC", "twitter":"1F1F9-1F1EC"},
+    "shortcode": "flag-tg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-th",
+    "unicode": {"apple":"1F1F9-1F1ED", "google":"1F1F9-1F1ED", "twitter":"1F1F9-1F1ED"},
+    "shortcode": "flag-th",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TH",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tj",
+    "unicode": {"apple":"1F1F9-1F1EF", "google":"1F1F9-1F1EF", "twitter":"1F1F9-1F1EF"},
+    "shortcode": "flag-tj",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TJ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tk",
+    "unicode": {"apple":"1F1F9-1F1F0", "google":"1F1F9-1F1F0", "twitter":"1F1F9-1F1F0"},
+    "shortcode": "flag-tk",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TK",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tl",
+    "unicode": {"apple":"1F1F9-1F1F1", "google":"1F1F9-1F1F1", "twitter":"1F1F9-1F1F1"},
+    "shortcode": "flag-tl",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TL",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tm",
+    "unicode": {"apple":"1F1F9-1F1F2", "google":"1F1F9-1F1F2", "twitter":"1F1F9-1F1F2"},
+    "shortcode": "flag-tm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tn",
+    "unicode": {"apple":"1F1F9-1F1F3", "google":"1F1F9-1F1F3", "twitter":"1F1F9-1F1F3"},
+    "shortcode": "flag-tn",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TN",
+    "category": "flag"
+  },
+  {
+    "name": "flag-to",
+    "unicode": {"apple":"1F1F9-1F1F4", "google":"1F1F9-1F1F4", "twitter":"1F1F9-1F1F4"},
+    "shortcode": "flag-to",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TO",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tr",
+    "unicode": {"apple":"1F1F9-1F1F7", "google":"1F1F9-1F1F7", "twitter":"1F1F9-1F1F7"},
+    "shortcode": "flag-tr",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TR",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tt",
+    "unicode": {"apple":"1F1F9-1F1F9", "google":"1F1F9-1F1F9", "twitter":"1F1F9-1F1F9"},
+    "shortcode": "flag-tt",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TT",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tv",
+    "unicode": {"apple":"1F1F9-1F1FB", "google":"1F1F9-1F1FB", "twitter":"1F1F9-1F1FB"},
+    "shortcode": "flag-tv",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TV",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tw",
+    "unicode": {"apple":"1F1F9-1F1FC", "google":"1F1F9-1F1FC", "twitter":"1F1F9-1F1FC"},
+    "shortcode": "flag-tw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TW",
+    "category": "flag"
+  },
+  {
+    "name": "flag-tz",
+    "unicode": {"apple":"1F1F9-1F1FF", "google":"1F1F9-1F1FF", "twitter":"1F1F9-1F1FF"},
+    "shortcode": "flag-tz",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS TZ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ua",
+    "unicode": {"apple":"1F1FA-1F1E6", "google":"1F1FA-1F1E6", "twitter":"1F1FA-1F1E6"},
+    "shortcode": "flag-ua",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS UA",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ug",
+    "unicode": {"apple":"1F1FA-1F1EC", "google":"1F1FA-1F1EC", "twitter":"1F1FA-1F1EC"},
+    "shortcode": "flag-ug",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS UG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-um",
+    "unicode": {"apple":"1F1FA-1F1F2", "google":"1F1FA-1F1F2", "twitter":"1F1FA-1F1F2"},
+    "shortcode": "flag-um",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS UM",
+    "category": "flag"
   },
   {
     "name": "flag-us",
-    "unicode": {"apple":"", "google":"", "twitter":"1F1FA-1F1F8"},
+    "unicode": {"apple":"1F1FA-1F1F8", "google":"1F1FA-1F1F8", "twitter":"1F1FA-1F1F8"},
     "shortcode": "flag-us",
     "description": "REGIONAL INDICATOR SYMBOL LETTERS US",
-    "category": "folderol"
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-uy",
+    "unicode": {"apple":"1F1FA-1F1FE", "google":"1F1FA-1F1FE", "twitter":"1F1FA-1F1FE"},
+    "shortcode": "flag-uy",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS UY",
+    "category": "flag"
+  },
+  {
+    "name": "flag-uz",
+    "unicode": {"apple":"1F1FA-1F1FF", "google":"1F1FA-1F1FF", "twitter":"1F1FA-1F1FF"},
+    "shortcode": "flag-uz",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS UZ",
+    "category": "flag"
+  },
+  {
+    "name": "flag-va",
+    "unicode": {"apple":"1F1FB-1F1E6", "google":"1F1FB-1F1E6", "twitter":"1F1FB-1F1E6"},
+    "shortcode": "flag-va",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS VA",
+    "category": "flag"
+  },
+  {
+    "name": "flag-vc",
+    "unicode": {"apple":"1F1FB-1F1E8", "google":"1F1FB-1F1E8", "twitter":"1F1FB-1F1E8"},
+    "shortcode": "flag-vc",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS VC",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ve",
+    "unicode": {"apple":"1F1FB-1F1EA", "google":"1F1FB-1F1EA", "twitter":"1F1FB-1F1EA"},
+    "shortcode": "flag-ve",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS VE",
+    "category": "flag"
+  },
+  {
+    "name": "flag-vg",
+    "unicode": {"apple":"1F1FB-1F1EC", "google":"1F1FB-1F1EC", "twitter":"1F1FB-1F1EC"},
+    "shortcode": "flag-vg",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS VG",
+    "category": "flag"
+  },
+  {
+    "name": "flag-vi",
+    "unicode": {"apple":"1F1FB-1F1EE", "google":"1F1FB-1F1EE", "twitter":"1F1FB-1F1EE"},
+    "shortcode": "flag-vi",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS VI",
+    "category": "flag"
+  },
+  {
+    "name": "flag-vn",
+    "unicode": {"apple":"1F1FB-1F1F3", "google":"1F1FB-1F1F3", "twitter":"1F1FB-1F1F3"},
+    "shortcode": "flag-vn",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS VN",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-vu",
+    "unicode": {"apple":"1F1FB-1F1FA", "google":"1F1FB-1F1FA", "twitter":"1F1FB-1F1FA"},
+    "shortcode": "flag-vu",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS VU",
+    "category": "flag"
+  },
+  {
+    "name": "flag-wf",
+    "unicode": {"apple":"1F1FC-1F1EB", "google":"1F1FC-1F1EB", "twitter":"1F1FC-1F1EB"},
+    "shortcode": "flag-wf",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS WF",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ws",
+    "unicode": {"apple":"1F1FC-1F1F8", "google":"1F1FC-1F1F8", "twitter":"1F1FC-1F1F8"},
+    "shortcode": "flag-ws",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS WS",
+    "category": "flag"
+  },
+  {
+    "name": "flag-xk",
+    "unicode": {"apple":"1F1FD-1F1F0", "google":"1F1FD-1F1F0", "twitter":"1F1FD-1F1F0"},
+    "shortcode": "flag-xk",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS XK",
+    "category": "flag"
+  },
+  {
+    "name": "flag-ye",
+    "unicode": {"apple":"1F1FE-1F1EA", "google":"1F1FE-1F1EA", "twitter":"1F1FE-1F1EA"},
+    "shortcode": "flag-ye",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS YE",
+    "category": "flag"
+  },
+  {
+    "name": "flag-yt",
+    "unicode": {"apple":"1F1FE-1F1F9", "google":"1F1FE-1F1F9", "twitter":"1F1FE-1F1F9"},
+    "shortcode": "flag-yt",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS YT",
+    "category": "flag"
+  },
+  {
+    "name": "flag-za",
+    "unicode": {"apple":"1F1FF-1F1E6", "google":"1F1FF-1F1E6", "twitter":"1F1FF-1F1E6"},
+    "shortcode": "flag-za",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS ZA",
+    "category": "folderol",
+    "category": "flag"
+  },
+  {
+    "name": "flag-zm",
+    "unicode": {"apple":"1F1FF-1F1F2", "google":"1F1FF-1F1F2", "twitter":"1F1FF-1F1F2"},
+    "shortcode": "flag-zm",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS ZM",
+    "category": "flag"
+  },
+  {
+    "name": "flag-zw",
+    "unicode": {"apple":"1F1FF-1F1FC", "google":"1F1FF-1F1FC", "twitter":"1F1FF-1F1FC"},
+    "shortcode": "flag-zw",
+    "description": "REGIONAL INDICATOR SYMBOL LETTERS ZW",
+    "category": "flag"
   }
 ]
 });
