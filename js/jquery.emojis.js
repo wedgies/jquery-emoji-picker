@@ -1090,20 +1090,20 @@ $.fn.emojiPicker.emojis = [
     "description": "COUPLE WITH HEART",
     "category": "people"
   },
-  {
-    "name": "woman-heart-woman",
-    "unicode": {"apple":"1F469-200D-2764-FE0F-200D-1F469", "google":"1F469-200D-2764-FE0F-200D-1F469", "twitter":"1F469-200D-2764-FE0F-200D-1F469"},
-    "shortcode": "woman-heart-woman",
-    "description": "Couple With Heart (Woman, Woman)",
-    "category": "people"
-  },
-  {
-    "name": "man-heart-man",
-    "unicode": {"apple":"1F468-200D-2764-FE0F-200D-1F468", "google":"1F468-200D-2764-FE0F-200D-1F468", "twitter":"1F468-200D-2764-FE0F-200D-1F468"},
-    "shortcode": "man-heart-man",
-    "description": "COUPLE WITH HEART",
-    "category": "people"
-  },
+  // {
+  //   "name": "woman-heart-woman",
+  //   "unicode": {"apple":"1F469-200D-2764-FE0F-200D-1F469", "google":"1F469-200D-2764-FE0F-200D-1F469", "twitter":"1F469-200D-2764-FE0F-200D-1F469"},
+  //   "shortcode": "woman-heart-woman",
+  //   "description": "Couple With Heart (Woman, Woman)",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-heart-man",
+  //   "unicode": {"apple":"1F468-200D-2764-FE0F-200D-1F468", "google":"1F468-200D-2764-FE0F-200D-1F468", "twitter":"1F468-200D-2764-FE0F-200D-1F468"},
+  //   "shortcode": "man-heart-man",
+  //   "description": "COUPLE WITH HEART",
+  //   "category": "people"
+  // },
   {
     "name": "couplekiss",
     "unicode": {"apple":"1F48F", "google":"1F48F", "twitter":"1F48F"},
@@ -1111,20 +1111,20 @@ $.fn.emojiPicker.emojis = [
     "description": "KISS",
     "category": "people"
   },
-  {
-    "name": "woman-kiss-woman",
-    "unicode": {"apple":"1F469-200D-2764-FE0F-200D-1F48B-200D-1F469", "google":"1F469-200D-2764-FE0F-200D-1F48B-200D-1F469", "twitter":"1F469-200D-2764-FE0F-200D-1F48B-200D-1F469"},
-    "shortcode": "woman-kiss-woman",
-    "description": "KISS",
-    "category": "people"
-  },
-  {
-    "name": "man-kiss-man",
-    "unicode": {"apple":"1F468-200D-2764-FE0F-200D-1F48B-200D-1F468", "google":"1F468-200D-2764-FE0F-200D-1F48B-200D-1F468", "twitter":"1F468-200D-2764-FE0F-200D-1F48B-200D-1F468"},
-    "shortcode": "man-kiss-man",
-    "description": "KISS",
-    "category": "people"
-  },
+  // {
+  //   "name": "woman-kiss-woman",
+  //   "unicode": {"apple":"1F469-200D-2764-FE0F-200D-1F48B-200D-1F469", "google":"1F469-200D-2764-FE0F-200D-1F48B-200D-1F469", "twitter":"1F469-200D-2764-FE0F-200D-1F48B-200D-1F469"},
+  //   "shortcode": "woman-kiss-woman",
+  //   "description": "KISS",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-kiss-man",
+  //   "unicode": {"apple":"1F468-200D-2764-FE0F-200D-1F48B-200D-1F468", "google":"1F468-200D-2764-FE0F-200D-1F48B-200D-1F468", "twitter":"1F468-200D-2764-FE0F-200D-1F48B-200D-1F468"},
+  //   "shortcode": "man-kiss-man",
+  //   "description": "KISS",
+  //   "category": "people"
+  // },
   {
     "name": "family",
     "unicode": {"apple":"1F46A", "google":"1F46A", "twitter":"1F46A"},
@@ -1132,104 +1132,104 @@ $.fn.emojiPicker.emojis = [
     "description": "FAMILY",
     "category": "people"
   },
-  {
-    "name": "man-woman-girl",
-    "unicode": {"apple":"1F468-200D-1F469-200D-1F467", "google":"1F468-200D-1F469-200D-1F467", "twitter":"1F468-200D-1F469-200D-1F467"},
-    "shortcode": "man-woman-girl",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "man-woman-girl-boy",
-    "unicode": {"apple":"1F469-200D-1F469-200D-1F467-200D-1F466", "google":"1F469-200D-1F469-200D-1F467-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F467-200D-1F466"},
-    "shortcode": "man-woman-girl-boy",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "man-woman-boy-boy",
-    "unicode": {"apple":"1F468-200D-1F469-200D-1F466-200D-1F466", "google":"1F468-200D-1F469-200D-1F466-200D-1F466", "twitter":"1F468-200D-1F469-200D-1F466-200D-1F466"},
-    "shortcode": "man-woman-boy-boy",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "man-woman-girl-girl",
-    "unicode": {"apple":"1F468-200D-1F469-200D-1F467-200D-1F467", "google":"1F468-200D-1F469-200D-1F467-200D-1F467", "twitter":"1F468-200D-1F469-200D-1F467-200D-1F467"},
-    "shortcode": "man-woman-girl-girl",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "woman-woman-boy",
-    "unicode": {"apple":"1F469-200D-1F469-200D-1F466", "google":"1F469-200D-1F469-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F466"},
-    "shortcode": "woman-woman-boy",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "woman-woman-girl",
-    "unicode": {"apple":"1F469-200D-1F469-200D-1F467", "google":"1F469-200D-1F469-200D-1F467", "twitter":"1F469-200D-1F469-200D-1F467"},
-    "shortcode": "woman-woman-girl",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "woman-woman-girl-boy",
-    "unicode": {"apple":"1F469-200D-1F469-200D-1F467-200D-1F466", "google":"1F469-200D-1F469-200D-1F467-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F467-200D-1F466"},
-    "shortcode": "woman-woman-girl-boy",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "woman-woman-boy-boy",
-    "unicode": {"apple":"1F469-200D-1F469-200D-1F466-200D-1F466", "google":"1F469-200D-1F469-200D-1F466-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F466-200D-1F466"},
-    "shortcode": "woman-woman-boy-boy",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "woman-woman-girl-girl",
-    "unicode": {"apple":"1F469-200D-1F469-200D-1F467-200D-1F467", "google":"1F469-200D-1F469-200D-1F467-200D-1F467", "twitter":"1F469-200D-1F469-200D-1F467-200D-1F467"},
-    "shortcode": "woman-woman-girl-girl",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "man-man-boy",
-    "unicode": {"apple":"1F468-200D-1F468-200D-1F466", "google":"1F468-200D-1F468-200D-1F466", "twitter":"1F468-200D-1F468-200D-1F466"},
-    "shortcode": "man-man-boy",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "man-man-girl",
-    "unicode": {"apple":"1F468-200D-1F468-200D-1F467", "google":"1F468-200D-1F468-200D-1F467", "twitter":"1F468-200D-1F468-200D-1F467"},
-    "shortcode": "man-man-girl",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "man-man-girl-boy",
-    "unicode": {"apple":"1F468-200D-1F468-200D-1F467-200D-1F466", "google":"1F468-200D-1F468-200D-1F467-200D-1F466", "twitter":"1F468-200D-1F468-200D-1F467-200D-1F466"},
-    "shortcode": "man-man-girl-boy",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "man-man-boy-boy",
-    "unicode": {"apple":"1F468-200D-1F468-200D-1F466-200D-1F466", "google":"1F468-200D-1F468-200D-1F466-200D-1F466", "twitter":"1F468-200D-1F468-200D-1F466-200D-1F466"},
-    "shortcode": "man-man-boy-boy",
-    "description": "FAMILY",
-    "category": "people"
-  },
-  {
-    "name": "man-man-girl-girl",
-    "unicode": {"apple":"1F468-200D-1F468-200D-1F467-200D-1F467", "google":"1F468-200D-1F468-200D-1F467-200D-1F467", "twitter":"1F468-200D-1F468-200D-1F467-200D-1F467"},
-    "shortcode": "man-man-girl-girl",
-    "description": "FAMILY",
-    "category": "people"
-  },
+  // {
+  //   "name": "man-woman-girl",
+  //   "unicode": {"apple":"1F468-200D-1F469-200D-1F467", "google":"1F468-200D-1F469-200D-1F467", "twitter":"1F468-200D-1F469-200D-1F467"},
+  //   "shortcode": "man-woman-girl",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-woman-girl-boy",
+  //   "unicode": {"apple":"1F469-200D-1F469-200D-1F467-200D-1F466", "google":"1F469-200D-1F469-200D-1F467-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F467-200D-1F466"},
+  //   "shortcode": "man-woman-girl-boy",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-woman-boy-boy",
+  //   "unicode": {"apple":"1F468-200D-1F469-200D-1F466-200D-1F466", "google":"1F468-200D-1F469-200D-1F466-200D-1F466", "twitter":"1F468-200D-1F469-200D-1F466-200D-1F466"},
+  //   "shortcode": "man-woman-boy-boy",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-woman-girl-girl",
+  //   "unicode": {"apple":"1F468-200D-1F469-200D-1F467-200D-1F467", "google":"1F468-200D-1F469-200D-1F467-200D-1F467", "twitter":"1F468-200D-1F469-200D-1F467-200D-1F467"},
+  //   "shortcode": "man-woman-girl-girl",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "woman-woman-boy",
+  //   "unicode": {"apple":"1F469-200D-1F469-200D-1F466", "google":"1F469-200D-1F469-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F466"},
+  //   "shortcode": "woman-woman-boy",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "woman-woman-girl",
+  //   "unicode": {"apple":"1F469-200D-1F469-200D-1F467", "google":"1F469-200D-1F469-200D-1F467", "twitter":"1F469-200D-1F469-200D-1F467"},
+  //   "shortcode": "woman-woman-girl",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "woman-woman-girl-boy",
+  //   "unicode": {"apple":"1F469-200D-1F469-200D-1F467-200D-1F466", "google":"1F469-200D-1F469-200D-1F467-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F467-200D-1F466"},
+  //   "shortcode": "woman-woman-girl-boy",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "woman-woman-boy-boy",
+  //   "unicode": {"apple":"1F469-200D-1F469-200D-1F466-200D-1F466", "google":"1F469-200D-1F469-200D-1F466-200D-1F466", "twitter":"1F469-200D-1F469-200D-1F466-200D-1F466"},
+  //   "shortcode": "woman-woman-boy-boy",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "woman-woman-girl-girl",
+  //   "unicode": {"apple":"1F469-200D-1F469-200D-1F467-200D-1F467", "google":"1F469-200D-1F469-200D-1F467-200D-1F467", "twitter":"1F469-200D-1F469-200D-1F467-200D-1F467"},
+  //   "shortcode": "woman-woman-girl-girl",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-man-boy",
+  //   "unicode": {"apple":"1F468-200D-1F468-200D-1F466", "google":"1F468-200D-1F468-200D-1F466", "twitter":"1F468-200D-1F468-200D-1F466"},
+  //   "shortcode": "man-man-boy",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-man-girl",
+  //   "unicode": {"apple":"1F468-200D-1F468-200D-1F467", "google":"1F468-200D-1F468-200D-1F467", "twitter":"1F468-200D-1F468-200D-1F467"},
+  //   "shortcode": "man-man-girl",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-man-girl-boy",
+  //   "unicode": {"apple":"1F468-200D-1F468-200D-1F467-200D-1F466", "google":"1F468-200D-1F468-200D-1F467-200D-1F466", "twitter":"1F468-200D-1F468-200D-1F467-200D-1F466"},
+  //   "shortcode": "man-man-girl-boy",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-man-boy-boy",
+  //   "unicode": {"apple":"1F468-200D-1F468-200D-1F466-200D-1F466", "google":"1F468-200D-1F468-200D-1F466-200D-1F466", "twitter":"1F468-200D-1F468-200D-1F466-200D-1F466"},
+  //   "shortcode": "man-man-boy-boy",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
+  // {
+  //   "name": "man-man-girl-girl",
+  //   "unicode": {"apple":"1F468-200D-1F468-200D-1F467-200D-1F467", "google":"1F468-200D-1F468-200D-1F467-200D-1F467", "twitter":"1F468-200D-1F468-200D-1F467-200D-1F467"},
+  //   "shortcode": "man-man-girl-girl",
+  //   "description": "FAMILY",
+  //   "category": "people"
+  // },
   {
     "name": "womans_clothes",
     "unicode": {"apple":"1F45A", "google":"1F45A", "twitter":"1F45A"},
