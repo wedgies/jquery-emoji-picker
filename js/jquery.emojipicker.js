@@ -144,7 +144,8 @@
 
       // Key events for search
       this.$picker.find('section.search input')
-        .keyup( $.proxy(this.searchCharEntered, this) );
+        .on('keyup search', $.proxy(this.searchCharEntered, this) );
+
 
       $(document.body).click( $.proxy(this.clickOutside, this) );
 
@@ -308,6 +309,12 @@
       var searchEmojiWrap = searchEmojis.find('.wrap');
       var sections = $(e.target).parents('.sections').find('section');
 
+      // Clear if X is clicked within input
+      if (searchTerm == '') {
+        sections.show();
+        searchEmojiWrap.hide();
+      }
+
       if (searchTerm.length > 0) {
         sections.hide();
         searchEmojis.show();
@@ -405,7 +412,7 @@
 
     // Search
     nodes.push('<section class="search">');
-    nodes.push('<input type="text" placeholder="Search...">');
+    nodes.push('<input type="search" placeholder="Search...">');
     nodes.push('<div class="wrap" style="display:none;"><h1>Search Results</h1></div>');
     nodes.push('</section>');
 
