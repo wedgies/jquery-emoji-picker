@@ -20,6 +20,17 @@
       MAX_HEIGHT = 350,
       MAX_ICON_HEIGHT = 50;
 
+  var categories = [
+    { name: 'people', label: 'People' },
+    { name: 'nature', label: 'Nature' },
+    { name: 'food', label: 'Food' },
+    { name: 'activity', label: 'Activities' },
+    { name: 'travel', label: 'Travel & Places' },
+    { name: 'object', label: 'Objects' },
+    { name: 'symbol', label: 'Symbols' },
+    { name: 'flag', label: 'Flags' }
+  ];
+
   function Plugin( element, options ) {
 
     this.element = element;
@@ -134,7 +145,9 @@
 
       // Click event for active tab
       this.$picker.find('nav .tab')
-        .click( $.proxy(this.emojiCategoryClicked, this) );
+        .click( $.proxy(this.emojiCategoryClicked, this) )
+        .mouseover( $.proxy(this.emojiTabMouseover, this) )
+        .mouseout( $.proxy(this.emojiMouseout, this) );
 
       // Scroll event for active tab
       this.$picker.find('.sections')
@@ -275,6 +288,26 @@
       
     },
 
+    emojiTabMouseover: function(e) {
+      var section = '';
+      if ($(e.target).parent().hasClass('tab')) {
+        section = $(e.target).parent().attr('data-tab');
+      }
+      else {
+        section = $(e.target).attr('data-tab');
+      }
+
+      var categoryTitle = '';
+      for (var i = 0; i < categories.length; i++) {
+        if (categories[i].name == section) { categoryTitle = categories[i].label; }
+      }
+      if (categoryTitle == '') { categoryTitle = 'Recently Used'; }
+      
+      var categoryCount = $('section.' + section).attr('data-count');
+      var categoryHtml = '<em class="tabTitle">' + categoryTitle + ' <span class="count">(' + categoryCount + ' emojis)</span></em>';
+      $(e.target).parents('.emojiPicker').find('.shortcode').html(categoryHtml);
+    },
+
     emojiScroll: function(e) {
       var sections = $('section');
       $.each(sections, function(key, value) {
@@ -365,16 +398,6 @@
 
   function getPickerHTML() {
     var nodes = [];
-    var categories = [
-      { name: 'people', label: 'People' },
-      { name: 'nature', label: 'Nature' },
-      { name: 'food', label: 'Food' },
-      { name: 'activity', label: 'Activity' },
-      { name: 'travel', label: 'Travel & Places' },
-      { name: 'object', label: 'Objects' },
-      { name: 'symbol', label: 'Symbols' },
-      { name: 'flag', label: 'Flags' }
-    ];
     var aliases = {
       'undefined': 'object'
     }
@@ -396,7 +419,7 @@
       nodes.push('<div class="tab active" data-tab="recent"><div class="emoji emoji-tab-recent"></div></div>');
     }
 
-    // Emoji categories
+    // Emoji category tabs
     var categories_length = categories.length;
     for (var i = 0; i < categories_length; i++) {
       nodes.push('<div class="tab' +
@@ -419,7 +442,7 @@
     // Recent Section, if localstorage support
     if (localStorageSupport && localStorage.emojis) {
       var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
-      nodes.push('<section class="recent">');
+      nodes.push('<section class="recent" data-count="' + recentlyUsedEmojis.length + '">');
       nodes.push('<h1>Recently Used</h1><div class="wrap">');
 
       for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
@@ -428,10 +451,11 @@
       nodes.push('</div></section>');
     }
 
+    // Emoji sections
     for (var i = 0; i < categories_length; i++) {
-      nodes.push('<section class="' + categories[i].name + '">');
-      nodes.push('<h1>' + categories[i].label + '</h1><div class="wrap">');
       var category_length = items[ categories[i].name ].length;
+      nodes.push('<section class="' + categories[i].name + '" data-count="' + category_length + '">');
+      nodes.push('<h1>' + categories[i].label + '</h1><div class="wrap">');
       for (var j = 0; j < category_length; j++) {
         var emoji = items[ categories[i].name ][ j ];
         nodes.push('<em><span class="emoji emoji-' + emoji.shortcode + '"></span></em>');
@@ -440,7 +464,7 @@
     }
     nodes.push('</div>');
 
-    // Shortcode
+    // Shortcode section
     nodes.push('<div class="shortcode"></div>');
 
     nodes.push('</div>');
