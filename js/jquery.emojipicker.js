@@ -281,7 +281,7 @@
         var section = sections[key];
         var offsetFromTop = $(section).position().top;
 
-        if (section.className == 'search') {
+        if (section.className == 'search' || (section.className == 'people' && offsetFromTop > 0)) {
           $(section).parents('.emojiPicker').find('nav tab.recent').addClass('active');
           return;
         }
