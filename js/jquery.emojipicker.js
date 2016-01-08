@@ -264,15 +264,15 @@
                            + heightOfSectionToPageTop
                            - heightOfSectionsToPageTop;
 
-      // Disable scroll event
-      $('.sections').off('scroll');
+      $('.sections').off('scroll'); // Disable scroll event until animation finishes
 
+      var that = this;
       $('.sections').animate({
         scrollTop: scrollDistance
-      }, 250);
-
-      // Enable scroll event
-      $('.sections').off('scroll');
+      }, 250, function() {
+        that.$picker.find('.sections').on('scroll', $.proxy(that.emojiScroll, that) ); // Enable scroll event
+      });
+      
     },
 
     emojiScroll: function(e) {
@@ -286,7 +286,7 @@
           return;
         }
 
-        if (offsetFromTop < -8) {
+        if (offsetFromTop <= 0) {
           $(section).parents('.emojiPicker').find('nav .tab').removeClass('active');
           $(section).parents('.emojiPicker').find('nav .tab[data-tab=' + section.className + ']').addClass('active');
         }

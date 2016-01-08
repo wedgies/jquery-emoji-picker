@@ -6723,14 +6723,14 @@ $.fn.emojiPicker.emojis = [
   },
   {
     "name": "copyright",
-    "unicode": {"apple":"00A9-FE0F", "google":"00A9-FE0F", "twitter":"00A9-FE0F"},
+    "unicode": {"apple":"00A9", "google":"00A9-FE0F", "twitter":"00A9-FE0F"},
     "shortcode": "copyright",
     "description": "COPYRIGHT SIGN",
     "category": "symbol"
   },
   {
     "name": "registered",
-    "unicode": {"apple":"00AE-FE0F", "google":"00AE-FE0F", "twitter":"00AE-FE0F"},
+    "unicode": {"apple":"00AE", "google":"00AE-FE0F", "twitter":"00AE-FE0F"},
     "shortcode": "registered",
     "description": "REGISTERED SIGN",
     "category": "symbol"
