@@ -34,28 +34,25 @@ Add the following to your `<head></head>` tag:
 
 <!-- Emoji Data -->
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.a.css">
-<script type="text/javascript" src="js/jquery.emojipicker.a.js"></script>
+<script type="text/javascript" src="js/jquery.emojis.js"></script>
 ```
 
-The jQuery Emoji Picker has 3 icon sets to choose from - Apple, Twitter, and Google icons. The Apple icons are used by default. To instead use Twitter or Google icons, replace:
+The jQuery Emoji Picker has 3 icon sets to choose from - Apple, Twitter, and Google icons. The Apple icons are used by default. To instead use Twitter or Google icons, replace the stylesheet:
 
 ```html
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.a.css">
-<script type="text/javascript" src="js/jquery.emojipicker.a.js"></script>
 ```
 
 with either Google:
 
 ```html
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.g.css">
-<script type="text/javascript" src="js/jquery.emojipicker.g.js"></script>
 ```
 
 or Twitter:
 
 ```html
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.tw.css">
-<script type="text/javascript" src="js/jquery.emojipicker.tw.js"></script>
 ```
 
 Initialize the jQuery Emoji Picker by calling `emojiPicker` on an input element with optional parameters, described below:
@@ -63,7 +60,7 @@ Initialize the jQuery Emoji Picker by calling `emojiPicker` on an input element 
 ```javascript
 $('.question').emojiPicker({
   height: '300px',
-  width: '450px'
+  width:  '450px'
 });
 ```
 
