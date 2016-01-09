@@ -67,7 +67,7 @@ $('.question').emojiPicker({
 ## Parameters ##
 
 ### width (int) ###
-The width of the picker in pixels. Must be between 200-600px. Defaults to 200px if no width is specified.
+The width of the picker in pixels. Must be between 280-600px. Defaults to 280px if no width is specified.
 
 ### height (int) ###
 The height of the picker in pixels. Must be between 100-350px. Defaults to 250px if no height is specified.

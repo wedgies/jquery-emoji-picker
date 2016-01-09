@@ -159,6 +159,8 @@
       this.$picker.find('section.search input')
         .on('keyup search', $.proxy(this.searchCharEntered, this) );
 
+      // Shortcode hover
+      this.$picker.find('.shortcode').mouseover(function(e) { e.stopPropagation(); });
 
       $(document.body).click( $.proxy(this.clickOutside, this) );
 
@@ -246,11 +248,15 @@
 
     emojiMouseover: function(e) {
       var emojiShortcode = $(e.target).parent().find('.emoji').attr('class').split('emoji-')[1];
-      $(e.target).parents('.emojiPicker').find('.shortcode').html('<div class="emoji emoji-' + emojiShortcode + '"></div><em>' + emojiShortcode + '</em>');
+      var $shortcode = $(e.target).parents('.emojiPicker').find('.shortcode');
+      $shortcode.find('.random').hide();
+      $shortcode.find('.info').show().html('<div class="emoji emoji-' + emojiShortcode + '"></div><em>' + emojiShortcode + '</em>');
     },
 
     emojiMouseout: function(e) {
-      $(e.target).parents('.emojiPicker').find('.shortcode').empty();
+      $(e.target).parents('.emojiPicker').find('.shortcode .info').empty().hide();
+      $(e.target).parents('.emojiPicker').find('.shortcode .random').show();
+      
     },
 
     emojiCategoryClicked: function(e) {
@@ -285,7 +291,6 @@
       }, 250, function() {
         that.$picker.find('.sections').on('scroll', $.proxy(that.emojiScroll, that) ); // Enable scroll event
       });
-      
     },
 
     emojiTabMouseover: function(e) {
@@ -305,7 +310,10 @@
       
       var categoryCount = $('section.' + section).attr('data-count');
       var categoryHtml = '<em class="tabTitle">' + categoryTitle + ' <span class="count">(' + categoryCount + ' emojis)</span></em>';
-      $(e.target).parents('.emojiPicker').find('.shortcode').html(categoryHtml);
+      
+      var $shortcode = $(e.target).parents('.emojiPicker').find('.shortcode');
+      $shortcode.find('.random').hide();
+      $shortcode.find('.info').show().html(categoryHtml);
     },
 
     emojiScroll: function(e) {
@@ -465,10 +473,20 @@
     nodes.push('</div>');
 
     // Shortcode section
-    nodes.push('<div class="shortcode"></div>');
+    nodes.push('<div class="shortcode"><span class="random">');
+    nodes.push('<em class="tabTitle">' + generateEmojiOfDay() + '</em>');
+    nodes.push('</span><span class="info"></span></div>');
 
     nodes.push('</div>');
     return nodes.join("\n");
+  }
+
+  function generateEmojiOfDay() { 
+    var emojis = $.fn.emojiPicker.emojis;
+    var i = Math.floor(Math.random() * (364 - 0) + 0);
+    var emoji = emojis[i];
+    console.log(emoji.name);
+    return 'Daily Emoji: <span class="eod"><span class="emoji emoji-' + emoji.name + '"></span> <span class="emojiName">' + emoji.name + '</span></span>';
   }
 
   function findEmoji(emojiShortcode) {

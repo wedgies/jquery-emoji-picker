@@ -42,7 +42,12 @@
 .emojiPicker section.search input {display:block; width:96%; height:28px; margin:2%; padding:1%; font-size:12px; border:1px solid #ddd; border-radius:4px;}
 
 .emojiPicker .shortcode {height:40px; background:#eee; border-top:1px solid #ddd; vertical-align:middle;}
+.emojiPicker .shortcode .info {display:none;}
 .emojiPicker .shortcode .emoji {position:relative; top:4px; left:8px; width:1.9em; height:1.9em; margin-right:20px;}
 .emojiPicker .shortcode em {position:relative; top:-5px; color:#444; font-size:12px; font-weight:900; font-style:normal;}
 .emojiPicker .shortcode em.tabTitle {position:relative; top:10px; left:8px; font-size:14px;}
 .emojiPicker .shortcode em.tabTitle .count {font-size:12px; font-weight:500;}
+.emojiPicker .shortcode .random .tabTitle {color:#7d7d7d; font-size:12px;}
+.emojiPicker .shortcode .eod {float:right; padding:8px 10px 0 0; max-width:200px;}
+.emojiPicker .shortcode .eod .emoji {top:-10px; left:0; margin-right:10px;}
+.emojiPicker .shortcode .eod .emojiName {max-width:70%; padding:5px 0 0 0; font-size:10px; font-weight:normal;}
