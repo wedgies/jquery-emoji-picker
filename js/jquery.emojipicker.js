@@ -256,7 +256,6 @@
     emojiMouseout: function(e) {
       $(e.target).parents('.emojiPicker').find('.shortcode .info').empty().hide();
       $(e.target).parents('.emojiPicker').find('.shortcode .random').show();
-      
     },
 
     emojiCategoryClicked: function(e) {
@@ -448,9 +447,18 @@
     nodes.push('</section>');
 
     // Recent Section, if localstorage support
-    if (localStorageSupport && localStorage.emojis) {
-      var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
-      nodes.push('<section class="recent" data-count="' + recentlyUsedEmojis.length + '">');
+    if (localStorageSupport) {
+      var recentlyUsedEmojis = [];
+      var recentlyUsedCount = 0;
+      var displayRecentlyUsed = ' style="display:none;"';
+
+      if (localStorage.emojis) {
+        recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+        recentlyUsedCount = recentlyUsedEmojis.length;
+        displayRecentlyUsed = ' style="display:block;"';
+      }
+      
+      nodes.push('<section class="recent" data-count="' + recentlyUsedEmojis.length + '"' + displayRecentlyUsed + '>');
       nodes.push('<h1>Recently Used</h1><div class="wrap">');
 
       for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
@@ -485,7 +493,6 @@
     var emojis = $.fn.emojiPicker.emojis;
     var i = Math.floor(Math.random() * (364 - 0) + 0);
     var emoji = emojis[i];
-    console.log(emoji.name);
     return 'Daily Emoji: <span class="eod"><span class="emoji emoji-' + emoji.name + '"></span> <span class="emojiName">' + emoji.name + '</span></span>';
   }
 
@@ -552,12 +559,29 @@
   function updateRecentlyUsed(emoji) {
     var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
     var emojis = [];
+    var recent = $('section.recent');
 
     for (var i = recentlyUsedEmojis.length-1; i >= 0; i--) {
       emojis.push('<em><span class="emoji emoji-' + recentlyUsedEmojis[i] + '"></span></em>');
     }
 
+    // Fix height as emojis are added
+    var prevHeight = recent.outerHeight();
     $('section.recent .wrap').html(emojis.join(''));
+    var currentScrollTop = $('.sections').scrollTop();
+    var newHeight = recent.outerHeight();
+    var newScrollToHeight = 0;
+
+    if (!$('section.recent').is(':visible')) { 
+      recent.show();
+      newScrollToHeight = newHeight;
+    } else if (prevHeight != newHeight) {
+      newScrollToHeight = newHeight - prevHeight;
+    }
+
+    $('.sections').animate({
+      scrollTop: currentScrollTop + newScrollToHeight
+    }, 0);
   }
 
   if (!String.fromCodePoint) {
