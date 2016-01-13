@@ -306,10 +306,10 @@
         if (categories[i].name == section) { categoryTitle = categories[i].label; }
       }
       if (categoryTitle == '') { categoryTitle = 'Recently Used'; }
-      
+
       var categoryCount = $('section.' + section).attr('data-count');
       var categoryHtml = '<em class="tabTitle">' + categoryTitle + ' <span class="count">(' + categoryCount + ' emojis)</span></em>';
-      
+
       var $shortcode = $(e.target).parents('.emojiPicker').find('.shortcode');
       $shortcode.find('.random').hide();
       $shortcode.find('.info').show().html(categoryHtml);
@@ -457,7 +457,7 @@
         recentlyUsedCount = recentlyUsedEmojis.length;
         displayRecentlyUsed = ' style="display:block;"';
       }
-      
+
       nodes.push('<section class="recent" data-count="' + recentlyUsedEmojis.length + '"' + displayRecentlyUsed + '>');
       nodes.push('<h1>Recently Used</h1><div class="wrap">');
 
@@ -489,11 +489,11 @@
     return nodes.join("\n");
   }
 
-  function generateEmojiOfDay() { 
+  function generateEmojiOfDay() {
     var emojis = $.fn.emojiPicker.emojis;
     var i = Math.floor(Math.random() * (364 - 0) + 0);
     var emoji = emojis[i];
-    return 'Daily Emoji: <span class="eod"><span class="emoji emoji-' + emoji.name + '"></span> <span class="emojiName">' + emoji.name + '</span></span>';
+    return 'Random Emoji: <span class="eod"><span class="emoji emoji-' + emoji.name + '"></span> <span class="emojiName">' + emoji.name + '</span></span>';
   }
 
   function findEmoji(emojiShortcode) {
@@ -572,7 +572,7 @@
     var newHeight = recent.outerHeight();
     var newScrollToHeight = 0;
 
-    if (!$('section.recent').is(':visible')) { 
+    if (!$('section.recent').is(':visible')) {
       recent.show();
       newScrollToHeight = newHeight;
     } else if (prevHeight != newHeight) {
