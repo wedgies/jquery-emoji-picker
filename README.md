@@ -34,28 +34,25 @@ Add the following to your `<head></head>` tag:
 
 <!-- Emoji Data -->
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.a.css">
-<script type="text/javascript" src="js/jquery.emojipicker.a.js"></script>
+<script type="text/javascript" src="js/jquery.emojis.js"></script>
 ```
 
-The jQuery Emoji Picker has 3 icon sets to choose from - Apple, Twitter, and Google icons. The Apple icons are used by default. To instead use Twitter or Google icons, replace:
+The jQuery Emoji Picker has 3 icon sets to choose from - Apple, Twitter, and Google icons. The Apple icons are used by default. To instead use Twitter or Google icons, replace the stylesheet:
 
 ```html
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.a.css">
-<script type="text/javascript" src="js/jquery.emojipicker.a.js"></script>
 ```
 
 with either Google:
 
 ```html
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.g.css">
-<script type="text/javascript" src="js/jquery.emojipicker.g.js"></script>
 ```
 
 or Twitter:
 
 ```html
 <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.tw.css">
-<script type="text/javascript" src="js/jquery.emojipicker.tw.js"></script>
 ```
 
 Initialize the jQuery Emoji Picker by calling `emojiPicker` on an input element with optional parameters, described below:
@@ -63,14 +60,14 @@ Initialize the jQuery Emoji Picker by calling `emojiPicker` on an input element 
 ```javascript
 $('.question').emojiPicker({
   height: '300px',
-  width: '450px'
+  width:  '450px'
 });
 ```
 
 ## Parameters ##
 
 ### width (int) ###
-The width of the picker in pixels. Must be between 200-600px. Defaults to 200px if no width is specified.
+The width of the picker in pixels. Must be between 280-600px. Defaults to 280px if no width is specified.
 
 ### height (int) ###
 The height of the picker in pixels. Must be between 100-350px. Defaults to 250px if no height is specified.
@@ -83,6 +80,11 @@ The color of the smiley image that appears on the picker button. Acceptable valu
 
 ### iconBackgroundColor (string) ###
 The background color of the picker button. Any hex value is acceptable. Defaults to '#eee' if no iconBackgroundColor is specified.
+
+### recentCount (int) ###
+The number of emojis that should show in the 'Recently Used' section. Defaults to 36 if no recentCount is specified. 
+
+Note: 'Recently Used' will only show for the user if their browser supports HTML5 Local Storage.
 
 ### button (boolean) ###
 Whether to show the emoji button on the input or not. Defaults to true. If you hide the button, you will probably need to trigger the emoji entry manually (see below).
@@ -120,8 +122,8 @@ The jQuery Emoji Picker was developed by the team at [Wedgies](http://www.wedgie
 
 Wedgies is a digital survey platform that gives media, journalists and brands in-line survey capabilities inside social media, their website, and their apps — where they can collect millions of opinions from their readers and users. Wedgies is the leading social survey platform that enables publishers to collect survey respondents directly within social media streams.
 
-Wedgies, a darling of Tony Hsieh’s Las Vegas’ Vegas Tech Fund, is backed by an all-star list of investors including Greycroft, Advancit Capital, MESA Ventures, Knight Foundation, kbs+ Ventures, Battle Born Ventures, Twilio, 500 Startups and SV Angel.
+Wedgies is backed by an all-star list of investors including Vegas Tech Fund, Greycroft, Advancit Capital, MESA Ventures, Knight Foundation, kbs+ Ventures, Battle Born Ventures, Twilio, 500 Startups and SV Angel.
 
-Wedgies founding team consists of top talent in developer tools and community management with experience that includes Zappos.com, Overstock.com, and Backcountry.com.
+Wedgies' founding team consists of top talent in developer tools and community management with experience that includes Zappos.com, Overstock.com, and Backcountry.com.
 
 [![Built with Wedgies](https://d3v9r9uda02hel.cloudfront.net/production/1.55.17/img/built-with-wedgies.png)](http://wedgies.com)

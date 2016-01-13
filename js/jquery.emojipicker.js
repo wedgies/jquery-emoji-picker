@@ -8,15 +8,28 @@
         fadeTime: 100,
         iconColor: 'black',
         iconBackgroundColor: '#eee',
+        recentCount: 36,
+        emojiSet: 'apple',
         container: 'body',
         button: true
       };
 
-  var MIN_WIDTH = 200,
+  var MIN_WIDTH = 300,
       MAX_WIDTH = 600,
       MIN_HEIGHT = 100,
       MAX_HEIGHT = 350,
       MAX_ICON_HEIGHT = 50;
+
+  var categories = [
+    { name: 'people', label: 'People' },
+    { name: 'nature', label: 'Nature' },
+    { name: 'food', label: 'Food' },
+    { name: 'activity', label: 'Activities' },
+    { name: 'travel', label: 'Travel & Places' },
+    { name: 'object', label: 'Objects' },
+    { name: 'symbol', label: 'Symbols' },
+    { name: 'flag', label: 'Flags' }
+  ];
 
   function Plugin( element, options ) {
 
@@ -104,7 +117,7 @@
         .css('z-index',10000);
 
       // Picker height
-      this.$picker.find('section')
+      this.$picker.find('.sections')
         .height(parseInt(this.settings.height) - 40); // 40 is height of the tabs
 
       // Tab size based on width
@@ -124,14 +137,30 @@
       }
 
       // Click event for emoji
-      this.$picker.find('section div')
-        .click( $.proxy(this.emojiClicked, this) );
+      this.$picker.on('click', 'em', $.proxy(this.emojiClicked, this));
+
+      // Hover event for emoji
+      this.$picker.on('mouseover', 'em', $.proxy(this.emojiMouseover, this) );
+      this.$picker.on('mouseout',  'em', $.proxy(this.emojiMouseout, this) );
 
       // Click event for active tab
       this.$picker.find('nav .tab')
-        .click( $.proxy(this.emojiCategoryClicked, this) );
+        .click( $.proxy(this.emojiCategoryClicked, this) )
+        .mouseover( $.proxy(this.emojiTabMouseover, this) )
+        .mouseout( $.proxy(this.emojiMouseout, this) );
+
+      // Scroll event for active tab
+      this.$picker.find('.sections')
+        .scroll( $.proxy(this.emojiScroll, this) );
 
       this.$picker.click( $.proxy(this.pickerClicked, this) );
+
+      // Key events for search
+      this.$picker.find('section.search input')
+        .on('keyup search', $.proxy(this.searchCharEntered, this) );
+
+      // Shortcode hover
+      this.$picker.find('.shortcode').mouseover(function(e) { e.stopPropagation(); });
 
       $(document.body).click( $.proxy(this.clickOutside, this) );
 
@@ -197,19 +226,36 @@
     iconClicked : function(e) {
       if ( this.$picker.is(':hidden') ) {
         this.show();
+        if( this.$picker.find('.search input').length > 0 ) {
+          this.$picker.find('.search input').focus();
+        }
       } else {
         this.hide();
       }
     },
 
     emojiClicked: function(e) {
-      var emojiShortcode = $(e.target).attr('class').split('emoji-')[1];
-      var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode);
+      var emojiShortcode = $(e.target).parent().find('.emoji').attr('class').split('emoji-')[1];
+      var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode[defaults.emojiSet]);
 
       insertAtCaret(this.element, emojiUnicode);
+      addToLocalStorage(emojiShortcode);
+      updateRecentlyUsed(emojiShortcode);
 
       // trigger change event on input
       $(this.element).trigger("keyup");
+    },
+
+    emojiMouseover: function(e) {
+      var emojiShortcode = $(e.target).parent().find('.emoji').attr('class').split('emoji-')[1];
+      var $shortcode = $(e.target).parents('.emojiPicker').find('.shortcode');
+      $shortcode.find('.random').hide();
+      $shortcode.find('.info').show().html('<div class="emoji emoji-' + emojiShortcode + '"></div><em>' + emojiShortcode + '</em>');
+    },
+
+    emojiMouseout: function(e) {
+      $(e.target).parents('.emojiPicker').find('.shortcode .info').empty().hide();
+      $(e.target).parents('.emojiPicker').find('.shortcode .random').show();
     },
 
     emojiCategoryClicked: function(e) {
@@ -220,14 +266,71 @@
       if ($(e.target).parent().hasClass('tab')) {
         section = $(e.target).parent().attr('data-tab');
         $(e.target).parent('.tab').addClass('active');
-      } else {
+      }
+      else {
         section = $(e.target).attr('data-tab');
         $(e.target).addClass('active');
       }
 
-      // Update section
-      this.$picker.find('section').addClass('hidden');//.hide();
-      this.$picker.find('section.' + section).removeClass('hidden');//.show();
+      var $section = this.$picker.find('section.' + section);
+
+      var heightOfSectionsHidden = $section.parent().scrollTop();
+      var heightOfSectionToPageTop = $section.offset().top;
+      var heightOfSectionsToPageTop = $section.parent().offset().top;
+
+      var scrollDistance = heightOfSectionsHidden
+                           + heightOfSectionToPageTop
+                           - heightOfSectionsToPageTop;
+
+      $('.sections').off('scroll'); // Disable scroll event until animation finishes
+
+      var that = this;
+      $('.sections').animate({
+        scrollTop: scrollDistance
+      }, 250, function() {
+        that.$picker.find('.sections').on('scroll', $.proxy(that.emojiScroll, that) ); // Enable scroll event
+      });
+    },
+
+    emojiTabMouseover: function(e) {
+      var section = '';
+      if ($(e.target).parent().hasClass('tab')) {
+        section = $(e.target).parent().attr('data-tab');
+      }
+      else {
+        section = $(e.target).attr('data-tab');
+      }
+
+      var categoryTitle = '';
+      for (var i = 0; i < categories.length; i++) {
+        if (categories[i].name == section) { categoryTitle = categories[i].label; }
+      }
+      if (categoryTitle == '') { categoryTitle = 'Recently Used'; }
+      
+      var categoryCount = $('section.' + section).attr('data-count');
+      var categoryHtml = '<em class="tabTitle">' + categoryTitle + ' <span class="count">(' + categoryCount + ' emojis)</span></em>';
+      
+      var $shortcode = $(e.target).parents('.emojiPicker').find('.shortcode');
+      $shortcode.find('.random').hide();
+      $shortcode.find('.info').show().html(categoryHtml);
+    },
+
+    emojiScroll: function(e) {
+      var sections = $('section');
+      $.each(sections, function(key, value) {
+        var section = sections[key];
+        var offsetFromTop = $(section).position().top;
+
+        if (section.className == 'search' || (section.className == 'people' && offsetFromTop > 0)) {
+          $(section).parents('.emojiPicker').find('nav tab.recent').addClass('active');
+          return;
+        }
+
+        if (offsetFromTop <= 0) {
+          $(section).parents('.emojiPicker').find('nav .tab').removeClass('active');
+          $(section).parents('.emojiPicker').find('nav .tab[data-tab=' + section.className + ']').addClass('active');
+        }
+      });
     },
 
     pickerClicked: function(e) {
@@ -238,8 +341,40 @@
       if ( this.active ) {
         this.hide();
       }
-    }
+    },
 
+    searchCharEntered: function(e) {
+      var searchTerm = $(e.target).val();
+      var searchEmojis = $(e.target).parents('.sections').find('section.search');
+      var searchEmojiWrap = searchEmojis.find('.wrap');
+      var sections = $(e.target).parents('.sections').find('section');
+
+      // Clear if X is clicked within input
+      if (searchTerm == '') {
+        sections.show();
+        searchEmojiWrap.hide();
+      }
+
+      if (searchTerm.length > 0) {
+        sections.hide();
+        searchEmojis.show();
+        searchEmojiWrap.show();
+
+        var results = [];
+        searchEmojiWrap.find('em').remove();
+
+        $.each($.fn.emojiPicker.emojis, function(i, emoji) {
+          var shortcode = emoji.shortcode;
+          if ( shortcode.indexOf(searchTerm) > -1 ) {
+            results.push('<em><div class="emoji emoji-' + shortcode + '"></div></em>');
+          }
+        });
+        searchEmojiWrap.append(results.join(''));
+      } else {
+        sections.show();
+        searchEmojiWrap.hide();
+      }
+    }
   });
 
   $.fn[ pluginName ] = function ( options ) {
@@ -270,20 +405,11 @@
 
   function getPickerHTML() {
     var nodes = [];
-    var categories = [
-      { name: 'emotion',  symbol: 'grinning' },
-      { name: 'animal',   symbol: 'whale' },
-      { name: 'food',     symbol: 'hamburger' },
-      { name: 'folderol', symbol: 'sunny' },
-      { name: 'thing',    symbol: 'kiss' },
-      { name: 'travel',   symbol: 'rocket' }
-    ];
     var aliases = {
-      'people':    'emotion',
-      'symbol':    'thing',
-      'undefined': 'thing'
+      'undefined': 'object'
     }
     var items = {};
+    var localStorageSupport = (typeof(Storage) !== 'undefined') ? true : false;
 
     // Re-Sort Emoji table
     $.each($.fn.emojiPicker.emojis, function(i, emoji) {
@@ -294,31 +420,80 @@
 
     nodes.push('<div class="emojiPicker">');
     nodes.push('<nav>');
+
+    // Recent Tab, if localstorage support
+    if (localStorageSupport) {
+      nodes.push('<div class="tab active" data-tab="recent"><div class="emoji emoji-tab-recent"></div></div>');
+    }
+
+    // Emoji category tabs
     var categories_length = categories.length;
     for (var i = 0; i < categories_length; i++) {
       nodes.push('<div class="tab' +
-      ( i == 0 ? ' active' : '' ) +
+      ( !localStorageSupport && i == 0 ? ' active' : '' ) +
       '" data-tab="' +
       categories[i].name +
-      '"><div class="emoji emoji-' +
-      categories[i].symbol +
+      '"><div class="emoji emoji-tab-' +
+      categories[i].name +
       '"></div></div>');
     }
     nodes.push('</nav>');
+    nodes.push('<div class="sections">');
+
+    // Search
+    nodes.push('<section class="search">');
+    nodes.push('<input type="search" placeholder="Search...">');
+    nodes.push('<div class="wrap" style="display:none;"><h1>Search Results</h1></div>');
+    nodes.push('</section>');
+
+    // Recent Section, if localstorage support
+    if (localStorageSupport) {
+      var recentlyUsedEmojis = [];
+      var recentlyUsedCount = 0;
+      var displayRecentlyUsed = ' style="display:none;"';
+
+      if (localStorage.emojis) {
+        recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+        recentlyUsedCount = recentlyUsedEmojis.length;
+        displayRecentlyUsed = ' style="display:block;"';
+      }
+      
+      nodes.push('<section class="recent" data-count="' + recentlyUsedEmojis.length + '"' + displayRecentlyUsed + '>');
+      nodes.push('<h1>Recently Used</h1><div class="wrap">');
+
+      for (var i = recentlyUsedEmojis.length-1; i > -1 ; i--) {
+        nodes.push('<em><span class="emoji emoji-' + recentlyUsedEmojis[i] + '"></span></em>');
+      }
+      nodes.push('</div></section>');
+    }
+
+    // Emoji sections
     for (var i = 0; i < categories_length; i++) {
-      nodes.push('<section class="' +
-        categories[i].name +
-        ( i == 0 ? '' : ' hidden' ) +
-        '">');
       var category_length = items[ categories[i].name ].length;
+      nodes.push('<section class="' + categories[i].name + '" data-count="' + category_length + '">');
+      nodes.push('<h1>' + categories[i].label + '</h1><div class="wrap">');
       for (var j = 0; j < category_length; j++) {
         var emoji = items[ categories[i].name ][ j ];
-        nodes.push('<div class="emoji emoji-' + emoji.shortcode + '"></div>');
+        nodes.push('<em><span class="emoji emoji-' + emoji.shortcode + '"></span></em>');
       }
-      nodes.push('</section>');
+      nodes.push('</div></section>');
     }
     nodes.push('</div>');
+
+    // Shortcode section
+    nodes.push('<div class="shortcode"><span class="random">');
+    nodes.push('<em class="tabTitle">' + generateEmojiOfDay() + '</em>');
+    nodes.push('</span><span class="info"></span></div>');
+
+    nodes.push('</div>');
     return nodes.join("\n");
+  }
+
+  function generateEmojiOfDay() { 
+    var emojis = $.fn.emojiPicker.emojis;
+    var i = Math.floor(Math.random() * (364 - 0) + 0);
+    var emoji = emojis[i];
+    return 'Daily Emoji: <span class="eod"><span class="emoji emoji-' + emoji.name + '"></span> <span class="emojiName">' + emoji.name + '</span></span>';
   }
 
   function findEmoji(emojiShortcode) {
@@ -359,6 +534,54 @@
       return parseInt(value, 16);
     });
     return String.fromCodePoint.apply(null, codes);
+  }
+
+  function addToLocalStorage(emoji) {
+    var recentlyUsedEmojis = [];
+    if (localStorage.emojis) {
+      recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+    }
+
+    // If already in recently used, move to front
+    var index = recentlyUsedEmojis.indexOf(emoji);
+    if (index > -1) {
+      recentlyUsedEmojis.splice(index, 1);
+    }
+    recentlyUsedEmojis.push(emoji);
+
+    if (recentlyUsedEmojis.length > defaults.recentCount) {
+      recentlyUsedEmojis.shift();
+    }
+
+    localStorage.emojis = JSON.stringify(recentlyUsedEmojis);
+  }
+
+  function updateRecentlyUsed(emoji) {
+    var recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+    var emojis = [];
+    var recent = $('section.recent');
+
+    for (var i = recentlyUsedEmojis.length-1; i >= 0; i--) {
+      emojis.push('<em><span class="emoji emoji-' + recentlyUsedEmojis[i] + '"></span></em>');
+    }
+
+    // Fix height as emojis are added
+    var prevHeight = recent.outerHeight();
+    $('section.recent .wrap').html(emojis.join(''));
+    var currentScrollTop = $('.sections').scrollTop();
+    var newHeight = recent.outerHeight();
+    var newScrollToHeight = 0;
+
+    if (!$('section.recent').is(':visible')) { 
+      recent.show();
+      newScrollToHeight = newHeight;
+    } else if (prevHeight != newHeight) {
+      newScrollToHeight = newHeight - prevHeight;
+    }
+
+    $('.sections').animate({
+      scrollTop: currentScrollTop + newScrollToHeight
+    }, 0);
   }
 
   if (!String.fromCodePoint) {
