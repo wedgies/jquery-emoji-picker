@@ -31,7 +31,7 @@
     { name: 'flag', label: 'Flags' }
   ];
 
-  function Plugin( element, options ) {
+  function EmojiPicker( element, options ) {
 
     this.element = element;
     this.$el = $(element);
@@ -71,7 +71,7 @@
 
   }
 
-  $.extend(Plugin.prototype, {
+  $.extend(EmojiPicker.prototype, {
 
     init: function() {
       this.active = false;
@@ -395,7 +395,7 @@
     this.each(function() {
       // Don't attach to the same element twice
       if ( !$.data( this, pluginName ) ) {
-        $.data( this, pluginName, new Plugin( this, options ) );
+        $.data( this, pluginName, new EmojiPicker( this, options ) );
       }
     });
     return this;
