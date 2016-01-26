@@ -208,6 +208,9 @@
     hide: function() {
       this.$picker.hide(this.settings.fadeTime, 'linear', function() {
         this.active = false;
+        if (this.settings.onHide) {
+          this.settings.onHide( this.$picker, this.settings, this.active );
+        }
       }.bind(this));
     },
 
@@ -216,6 +219,9 @@
       this.updatePosition();
       this.$picker.show(this.settings.fadeTime, 'linear', function() {
         this.active = true;
+        if (this.settings.onShow) {
+          this.settings.onShow( this.$picker, this.settings, this.active );
+        }
       }.bind(this));
     },
 
@@ -223,7 +229,7 @@
      *  EVENTS  *
      ************/
 
-    iconClicked : function(e) {
+    iconClicked : function() {
       if ( this.$picker.is(':hidden') ) {
         this.show();
         if( this.$picker.find('.search input').length > 0 ) {
@@ -493,7 +499,7 @@
     var emojis = $.fn.emojiPicker.emojis;
     var i = Math.floor(Math.random() * (364 - 0) + 0);
     var emoji = emojis[i];
-    return 'Random Emoji: <span class="eod"><span class="emoji emoji-' + emoji.name + '"></span> <span class="emojiName">' + emoji.name + '</span></span>';
+    return 'Daily Emoji: <span class="eod"><span class="emoji emoji-' + emoji.name + '"></span> <span class="emojiName">' + emoji.name + '</span></span>';
   }
 
   function findEmoji(emojiShortcode) {

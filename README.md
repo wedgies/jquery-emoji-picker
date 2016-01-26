@@ -89,6 +89,28 @@ Note: 'Recently Used' will only show for the user if their browser supports HTML
 ### button (boolean) ###
 Whether to show the emoji button on the input or not. Defaults to true. If you hide the button, you will probably need to trigger the emoji entry manually (see below).
 
+### onShow (function) ###
+Triggered once the emoji picker appears. `picker` (Object), `settings` (Object), and `isActive` (boolean) are returned. Example usage:
+
+```javascript
+$('#question').emojiPicker({
+  onShow: function(picker, settings, isActive) {
+  	...
+  }
+});
+```
+
+### onHide (function) ###
+Triggered once the emoji picker disappears. `picker` (Object), `settings` (Object), and `isActive` (boolean) are returned. Example usage:
+
+```javascript
+$('#question').emojiPicker({
+  onHide: function(picker, settings, isActive) {
+  	...
+  }
+});
+```
+
 ## Triggering Emoji Picker Manually ##
 
 To trigger the button manually, you can call a jQuery function on the same element you bound it to.
