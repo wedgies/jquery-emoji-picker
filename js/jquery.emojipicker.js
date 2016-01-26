@@ -209,7 +209,7 @@
       this.$picker.hide(this.settings.fadeTime, 'linear', function() {
         this.active = false;
         if (this.settings.onHide) {
-          this.settings.onHide(this.$picker);
+          this.settings.onHide( this.$picker, this.settings, this.active );
         }
       }.bind(this));
     },
@@ -220,7 +220,7 @@
       this.$picker.show(this.settings.fadeTime, 'linear', function() {
         this.active = true;
         if (this.settings.onShow) {
-          this.settings.onShow(this.$picker);
+          this.settings.onShow( this.$picker, this.settings, this.active );
         }
       }.bind(this));
     },
