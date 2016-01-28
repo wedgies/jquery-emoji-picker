@@ -13,12 +13,6 @@
   <script type="text/javascript">
     $(document).ready(function(e) {
 
-      $('#text-custom-trigger').emojiPicker({
-        width: '300px',
-        height: '200px',
-        button: false
-      });
-      
       $('#input-default').emojiPicker();
 
       $('#input-custom-size').emojiPicker({
@@ -30,12 +24,26 @@
         position: 'left'
       });
 
-      $('#trigger').click(function(e) {
+      $('#create').click(function(e) {
+        e.preventDefault();
+        $('#text-custom-trigger').emojiPicker({
+          width: '300px',
+          height: '200px',
+          button: false
+        });
+      });
+
+      $('#toggle').click(function(e) {
         e.preventDefault();
         $('#text-custom-trigger').emojiPicker('toggle');
       });
 
-      // keyup event is fired 
+      $('#destroy').click(function(e) {
+        e.preventDefault();
+        $('#text-custom-trigger').emojiPicker('destroy');
+      })
+
+      // keyup event is fired
       $(".emojiable-question, .emojiable-option").on("keyup", function () {
         //console.log("emoji added, input val() is: " + $(this).val());
       });
@@ -58,7 +66,11 @@
   <!-- &#x1F335; -->
   <form>
 
-    <button id="trigger">Custom emoji trigger</button>
+    <button id="create">create</button>
+
+    <button id="toggle">toggle</button>
+
+    <button id="destroy">destroy</button>
 
     <div class="field">
       <textarea id="text-custom-trigger" class="emojiable-question" placeholder="Your Question"></textarea>
