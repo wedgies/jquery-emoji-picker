@@ -127,6 +127,17 @@
 
     },
 
+    destroyPicker: function() {
+      this.$picker.unbind('mouseover');
+      this.$picker.unbind('mouseout');
+      this.$picker.unbind('click');
+      this.$picker.remove();
+
+      $.removeData(this.$el.get(0), 'emojiPicker');
+
+      return this;
+    },
+
     listen: function() {
       // If the button is being used, wrapper has not been set,
       //    and will not need a listener
@@ -392,7 +403,10 @@
         switch(options) {
           case 'toggle':
             plugin.iconClicked();
-          break;
+            break;
+          case 'destroy':
+            plugin.destroyPicker();
+            break;
         }
       });
       return this;

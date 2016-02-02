@@ -82,7 +82,7 @@ The color of the smiley image that appears on the picker button. Acceptable valu
 The background color of the picker button. Any hex value is acceptable. Defaults to '#eee' if no iconBackgroundColor is specified.
 
 ### recentCount (int) ###
-The number of emojis that should show in the 'Recently Used' section. Defaults to 36 if no recentCount is specified. 
+The number of emojis that should show in the 'Recently Used' section. Defaults to 36 if no recentCount is specified.
 
 Note: 'Recently Used' will only show for the user if their browser supports HTML5 Local Storage.
 
@@ -120,6 +120,18 @@ $('#question').emojiPicker('toggle');
 ```
 
 You can see an example of this in the [demo](http://wedgies.github.io/jquery-emoji-picker/demo.html).
+
+## Destroying the Emoji Picker ##
+
+To remove the the emoji picker html and event listeners, simply call the emoji picker function with the `destroy` option:
+
+```javascript
+$('#question').emojiPicker('destroy');
+```
+
+An example of this can be found in the [demo](http://wedgies.github.io/jquery-emoji-picker/demo.html).
+
+
 
 ## Notes ##
 
