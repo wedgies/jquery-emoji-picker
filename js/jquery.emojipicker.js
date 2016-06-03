@@ -259,8 +259,13 @@
       addToLocalStorage(emojiShortcode);
       updateRecentlyUsed(emojiShortcode);
 
-      // trigger change event on input
+      // For anyone who is relying on the keyup event
       $(this.element).trigger("keyup");
+
+      // trigger change event on input
+      var event = document.createEvent("HTMLEvents");
+      event.initEvent("input", true, true);
+      this.element.dispatchEvent(event);
     },
 
     emojiMouseover: function(e) {
