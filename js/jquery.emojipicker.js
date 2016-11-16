@@ -14,7 +14,7 @@
         button: true
       };
 
-  var MIN_WIDTH = 300,
+  var MIN_WIDTH = 280,
       MAX_WIDTH = 600,
       MIN_HEIGHT = 100,
       MAX_HEIGHT = 350,
@@ -67,6 +67,8 @@
     // Do not enable if on mobile device (emojis already present)
     if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       this.init();
+    } else {
+      this.isMobile = true;
     }
 
   }
@@ -128,6 +130,8 @@
     },
 
     destroyPicker: function() {
+      if (this.isMobile) return this;
+
       this.$picker.unbind('mouseover');
       this.$picker.unbind('mouseout');
       this.$picker.unbind('click');
