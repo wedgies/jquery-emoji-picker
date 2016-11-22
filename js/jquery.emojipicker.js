@@ -256,7 +256,9 @@
     },
 
     emojiClicked: function(e) {
-      var emojiShortcode = $(e.target).parent().find('.emoji').attr('class').split('emoji-')[1];
+      var emojiDiv = $(e.target);
+      if (!emojiDiv.hasClass("emoji")){ emojiDiv = emojiDiv.find('.emoji');}
+      var emojiShortcode = emojiDiv.attr('class').split('emoji-')[1];
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode[defaults.emojiSet]);
 
       insertAtCaret(this.element, emojiUnicode);
@@ -273,7 +275,9 @@
     },
 
     emojiMouseover: function(e) {
-      var emojiShortcode = $(e.target).parent().find('.emoji').attr('class').split('emoji-')[1];
+      var emojiDiv = $(e.target);
+      if (!emojiDiv.hasClass("emoji")){ emojiDiv = emojiDiv.find('.emoji');}
+      var emojiShortcode = emojiDiv.attr('class').split('emoji-')[1];
       var $shortcode = $(e.target).parents('.emojiPicker').find('.shortcode');
       $shortcode.find('.random').hide();
       $shortcode.find('.info').show().html('<div class="emoji emoji-' + emojiShortcode + '"></div><em>' + emojiShortcode + '</em>');
