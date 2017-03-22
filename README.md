@@ -89,6 +89,19 @@ Note: 'Recently Used' will only show for the user if their browser supports HTML
 ### button (boolean) ###
 Whether to show the emoji button on the input or not. Defaults to true. If you hide the button, you will probably need to trigger the emoji entry manually (see below).
 
+### buttonPosition ###
+The IconButton position "left" or "right", Defualt to "left".
+
+### enableSearch ###
+Control to show or hide the searchInput, Default to true.
+
+### showDailyEmoji ###
+Enable to show the DailyEmoji, Default to true.
+
+### position ###
+The picker panel position, value of ["left", "right", "topLeft", "topRight"].
+
+
 ### onShow (function) ###
 Triggered once the emoji picker appears. `picker` (Object), `settings` (Object), and `isActive` (boolean) are returned. Example usage:
 
