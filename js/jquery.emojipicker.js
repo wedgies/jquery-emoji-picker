@@ -255,8 +255,15 @@
       }
     },
 
-    emojiClicked: function(e) {
-      var emojiShortcode = $(e.target).parent().find('.emoji').attr('class').split('emoji-')[1];
+    emojiClicked: function(e) { var clickTarget = $(e.target);
+      var emojiSpan;
+      if (clickTarget.is('em')) {
+        emojiSpan = clickTarget.find('span');
+      } else {
+        emojiSpan = clickTarget.parent().find('.emoji');
+      }
+
+      var emojiShortcode = emojiSpan.attr('class').split('emoji-')[1];
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode[defaults.emojiSet]);
 
       insertAtCaret(this.element, emojiUnicode);
