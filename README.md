@@ -1,5 +1,9 @@
 # jQuery Emoji Picker #
 
+## Unmaintained Notice ##
+
+This code is not currently maintained. Feel free to fork away!
+
 ## Description ##
 
 The top 3 things your users love:
