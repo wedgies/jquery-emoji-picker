@@ -22,6 +22,7 @@
 
   var categories = [
     { name: 'people', label: 'People' },
+    { name: 'animal', label: 'Animal' },
     { name: 'nature', label: 'Nature' },
     { name: 'food', label: 'Food' },
     { name: 'activity', label: 'Activities' },
