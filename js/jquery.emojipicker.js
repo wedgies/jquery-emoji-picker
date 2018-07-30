@@ -194,10 +194,18 @@
           N.B. The removed code had a reference to top/bottom positioning, but I don't see the use case for this..
       */
 
+      // Step 0
+      // Show picker, otherwise we CANNOT get offsetParent
+      this.$picker.show();
+
       // Step 1
       // Luckily jquery already does this...
       var positionedParent = this.$picker.offsetParent();
       var parentOffset = positionedParent.offset(); // now have a top/left object
+
+      // Step 1.b
+      // Hide picker, because there is toggle next in the code
+      this.$picker.hide();
 
       // Step 2
       var elOffset = this.$el.offset();
@@ -209,7 +217,7 @@
       // Step 3
       var diffOffset = {
         top: (elOffset.top - parentOffset.top),
-        left: (elOffset.left - parentOffset.top)
+        left: (elOffset.left - parentOffset.left)
       };
 
       this.$picker.css({
