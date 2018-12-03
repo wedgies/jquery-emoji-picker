@@ -11,7 +11,8 @@
         recentCount: 36,
         emojiSet: 'apple',
         container: 'body',
-        button: true
+        button: true,
+        richInput: true
       };
 
   var MIN_WIDTH = 280,
@@ -35,6 +36,9 @@
 
     this.element = element;
     this.$el = $(element);
+
+    // This will either be the element or the rich text area.
+    this.$input = this.$el;
 
     this.settings = $.extend( {}, defaults, options );
 
@@ -77,12 +81,41 @@
 
     init: function() {
       this.active = false;
+      if (this.settings.richInput) {
+        this.emojifyInput();
+      }
       this.addPickerIcon();
       this.createPicker();
       this.listen();
     },
 
+    // TODO : Placeholder http://stackoverflow.com/questions/20726174/placeholder-for-contenteditable-div
+
+    emojifyInput: function() {
+      this.$emojiArea = $('<div>', {
+        class: 'emojiArea',
+        contenteditable: 'true'
+      })
+
+      this.$emojiArea.width( this.$el.width() );
+      this.$emojiArea.height( this.$el.height() );
+
+      this.$emojiArea.copyCSS( this.$el, [
+        /^(padding|font|color|background|border|margin)/
+      ]);
+
+      // TODO : remove visual debugging aid
+      this.$emojiArea.css( 'background-color', '#c8fccf' );
+
+      // Replace the textarea
+      this.$el.hide()
+        .after(this.$emojiArea);
+
+      this.$input = this.$emojiArea;
+    },
+
     addPickerIcon: function() {
+// <<<<<<< master
       // The wrapper is not needed if they have chosen to not use a button
       if (this.settings.button) {
         var elementHeight = this.$el.outerHeight();
@@ -98,6 +131,19 @@
         this.$wrapper = this.$el
           .wrap("<div class='emojiPickerIconWrap'></div>")
           .parent();
+// =======
+//       var elementHeight = this.$input.outerHeight();
+//       var iconHeight = elementHeight > MAX_ICON_HEIGHT ?
+//         MAX_ICON_HEIGHT :
+//         elementHeight;
+//       var objectWidth = this.$input.width();
+
+//       this.$input.width(objectWidth)
+
+//       this.$wrapper = this.$input
+//         .wrap("<div class='emojiPickerIconWrap'></div>")
+//         .parent()
+// >>>>>>> content-editable
 
         this.$icon = $('<div class="emojiPickerIcon"></div>')
           .height(iconHeight)
@@ -168,6 +214,7 @@
       this.$picker.find('.sections')
         .scroll( $.proxy(this.emojiScroll, this) );
 
+// <<<<<<< master
       this.$picker.click( $.proxy(this.pickerClicked, this) );
 
       // Key events for search
@@ -203,6 +250,24 @@
       var elOffset = this.$el.offset();
       if(this.settings.position == 'right'){
         elOffset.left += this.$el.outerWidth() - this.settings.width;
+// =======
+//       // Clicking inside and outside of the picker
+//       this.$picker
+//         .click( $.proxy(this.pickerClicked, this) );
+//       $(document.body)
+//         .click( $.proxy(this.clickOutside, this) );
+//     },
+
+//     updatePosition: function() {
+//       var top, left;
+//       if (this.settings.container === 'body') {
+//           top = this.$input.offset().top + this.$input.height();
+//           left = this.$input.offset().left;
+//       }
+//       else {
+//           top = this.$input.position().top + this.$input.height();
+//           left = this.$input.position().left;
+// >>>>>>> content-editable
       }
       elOffset.top += this.$el.outerHeight();
 
@@ -213,8 +278,13 @@
       };
 
       this.$picker.css({
+// <<<<<<< master
         top: diffOffset.top,
         left: diffOffset.left
+// =======
+//           top: top + 15,
+//           left: left + this.$input.outerWidth() - this.settings.width
+// >>>>>>> content-editable
       });
 
       return this;
@@ -230,7 +300,7 @@
     },
 
     show: function() {
-      this.$el.focus();
+      this.$input.focus();
       this.updatePosition();
       this.$picker.show(this.settings.fadeTime, 'linear', function() {
         this.active = true;
@@ -266,6 +336,7 @@
       var emojiShortcode = emojiSpan.attr('class').split('emoji-')[1];
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode[defaults.emojiSet]);
 
+// <<<<<<< master
       insertAtCaret(this.element, emojiUnicode);
       addToLocalStorage(emojiShortcode);
       updateRecentlyUsed(emojiShortcode);
@@ -289,6 +360,17 @@
     emojiMouseout: function(e) {
       $(e.target).parents('.emojiPicker').find('.shortcode .info').empty().hide();
       $(e.target).parents('.emojiPicker').find('.shortcode .random').show();
+// =======
+//       if (this.settings.richInput) {
+
+//         var emoji = $(emojiHTML( emojiShortcode, emojiUnicode ));
+//         this.$input.focus();
+//         insertTextAtCursor( emojiUnicode );
+
+//       } else {
+//         insertAtCaret(this.element, emojiUnicode);
+//       }
+// >>>>>>> content-editable
     },
 
     emojiCategoryClicked: function(e) {
@@ -439,6 +521,58 @@
 
   /* ---------------------------------------------------------------------- */
 
+  /*
+   * getStyleObject Plugin for jQuery JavaScript Library
+   * From: http://upshots.org/?p=112
+   */
+  $.fn.getStyleObject = function(){
+      var dom = this.get(0);
+      var style;
+      var returns = {};
+      if(window.getComputedStyle){
+          var camelize = function(a,b){
+              return b.toUpperCase();
+          };
+          style = window.getComputedStyle(dom, null);
+          for(var i = 0, l = style.length; i < l; i++){
+              var prop = style[i];
+              var camel = prop.replace(/\-([a-z])/g, camelize);
+              var val = style.getPropertyValue(prop);
+              returns[camel] = val;
+          };
+          return returns;
+      };
+      if(style = dom.currentStyle){
+          for(var prop in style){
+              returns[prop] = style[prop];
+          };
+          return returns;
+      };
+      return this.css();
+  }
+
+  $.fn.copyCSS = function(source, attributes){
+    var styles = $(source).getStyleObject();
+    var copiedStyles = {};
+    for (var i in attributes) {
+      var attr = attributes[i];
+      if ( attr instanceof RegExp ) {
+        for (prop in styles) {
+          if (prop.match(attr))
+            copiedStyles[ prop ] = styles[ prop ];
+        }
+      } else {
+        if (attr in styles)
+          copiedStyles[ attr ] = styles[ attr ];
+      }
+    };
+    this.css(copiedStyles);
+  }
+
+  function emojiHTML(shortcode,unicode) {
+    return '<span class="emoji emoji-' + shortcode + '">' + unicode + '</span>';
+  }
+
   function getPickerHTML() {
     var nodes = [];
     var aliases = {
@@ -541,6 +675,22 @@
     }
   }
 
+  // For contenteditable
+  function insertTextAtCursor(text) {
+    var sel, range, html;
+    if (window.getSelection) {
+        sel = window.getSelection();
+        if (sel.getRangeAt && sel.rangeCount) {
+            range = sel.getRangeAt(0);
+            range.deleteContents();
+            range.insertNode( document.createTextNode(text) );
+        }
+    } else if (document.selection && document.selection.createRange) {
+        document.selection.createRange().text = text;
+    }
+  }
+
+  // For text area
   function insertAtCaret(inputField, myValue) {
     if (document.selection) {
       //For browsers like Internet Explorer
