@@ -7,26 +7,46 @@
   <script type="text/javascript" src="js/jquery.emojipicker.js"></script>
 
   <!-- Emoji Data -->
-  <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.a.css">
-  <script type="text/javascript" src="js/jquery.emojipicker.a.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.emojipicker.tw.css">
+  <script type="text/javascript" src="js/jquery.emojis.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function(e) {
+      
+      $('#input-default').emojiPicker();
 
-      $('.emojiable-question').emojiPicker({
-        width: '260px',
-        height: '170px',
-        button: false
+      $('#input-custom-size').emojiPicker({
+        width: '300px',
+        height: '200px'
       });
 
-      $('.emojiable-option').emojiPicker({
-        width: '200px',
-        height: '140px'
+      $('#input-left-position').emojiPicker({
+        position: 'left'
       });
 
-      $('#trigger').click(function(e) {
+      $('#create').click(function(e) {
         e.preventDefault();
-        $('#question').emojiPicker('toggle');
+        $('#text-custom-trigger').emojiPicker({
+          width: '300px',
+          height: '200px',
+          button: false
+        });
+
+      });
+
+      $('#toggle').click(function(e) {
+        e.preventDefault();
+        $('#text-custom-trigger').emojiPicker('toggle');
+      });
+
+      $('#destroy').click(function(e) {
+        e.preventDefault();
+        $('#text-custom-trigger').emojiPicker('destroy');
+      })
+
+      // keyup event is fired
+      $(".emojiable-question, .emojiable-option").on("keyup", function () {
+        //console.log("emoji added, input val() is: " + $(this).val());
       });
 
     });
@@ -47,18 +67,26 @@
   <!-- &#x1F335; -->
   <form>
 
-    <button id="trigger">Custom emoji trigger</button>
+    <button id="create">create</button>
+
+    <button id="toggle">toggle</button>
+
+    <button id="destroy">destroy</button>
 
     <div class="field">
-      <textarea id="question" class="emojiable-question" placeholder="Your Question"></textarea>
+      <textarea id="text-custom-trigger" class="emojiable-question" placeholder="Your Question"></textarea>
     </div>
 
     <div class="field">
-      <input type="text" id="option1" class="emojiable-option" placeholder="Choice Text">
+      <input type="text" id="input-default" class="emojiable-option" placeholder="Default">
     </div>
 
     <div class="field">
-      <input type="text" id="option2" class="emojiable-option" placeholder="Choice Text">
+      <input type="text" id="input-custom-size" class="emojiable-option" placeholder="Custom Size">
+    </div>
+
+    <div class="field">
+      <input type="text" id="input-left-position" class="emojiable-option" placeholder="Position Left">
     </div>
 
   </form>
