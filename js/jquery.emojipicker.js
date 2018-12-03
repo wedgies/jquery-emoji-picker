@@ -104,9 +104,6 @@
         /^(padding|font|color|background|border|margin)/
       ]);
 
-      // TODO : remove visual debugging aid
-      this.$emojiArea.css( 'background-color', '#c8fccf' );
-
       // Replace the textarea
       this.$el.hide()
         .after(this.$emojiArea);
