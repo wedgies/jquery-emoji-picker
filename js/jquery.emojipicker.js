@@ -336,8 +336,8 @@
       var emojiShortcode = emojiSpan.attr('class').split('emoji-')[1];
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode[defaults.emojiSet]);
 
-// <<<<<<< master
-      insertAtCaret(this.element, emojiUnicode);
+      this.$input.focus();
+      insertTextAtCursor( emojiUnicode );
       addToLocalStorage(emojiShortcode);
       updateRecentlyUsed(emojiShortcode);
 
@@ -360,17 +360,6 @@
     emojiMouseout: function(e) {
       $(e.target).parents('.emojiPicker').find('.shortcode .info').empty().hide();
       $(e.target).parents('.emojiPicker').find('.shortcode .random').show();
-// =======
-//       if (this.settings.richInput) {
-
-//         var emoji = $(emojiHTML( emojiShortcode, emojiUnicode ));
-//         this.$input.focus();
-//         insertTextAtCursor( emojiUnicode );
-
-//       } else {
-//         insertAtCaret(this.element, emojiUnicode);
-//       }
-// >>>>>>> content-editable
     },
 
     emojiCategoryClicked: function(e) {
