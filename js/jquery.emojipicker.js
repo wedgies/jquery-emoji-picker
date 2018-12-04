@@ -236,11 +236,11 @@
       var emojiShortcode = emojiSpan.attr('class').split('emoji-')[1];
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode[defaults.emojiSet]);
 
-      console.log('about to insert emoji');
-      console.log(emojiUnicode);
-      console.log(emojiShortcode);
-      console.log(this.$el);
-      console.log(this.$input);
+//       console.log('about to insert emoji');
+//       console.log(emojiUnicode);
+//       console.log(emojiShortcode);
+//       console.log(this.$el);
+//       console.log(this.$input);
 
       var emoji = angular.element('<span></span>').html(emojiUnicode)[0];
 
@@ -547,7 +547,7 @@
         range.insertNode(text);
       } else {
         // We are not writting
-        console.log(text);
+//         console.log(text);
         inputArea[0].appendChild(text).after('');
       }
       sel.removeAllRanges();
