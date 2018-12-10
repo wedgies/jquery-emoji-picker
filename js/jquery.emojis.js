@@ -8,13 +8,6 @@ $.fn.emojiPicker.emojis = [
     "category": "people"
   },
   {
-    "name": "grin",
-    "unicode": {"apple":"1F601", "google":"1F601", "twitter":"1F601"},
-    "shortcode": "grin",
-    "description": "GRINNING FACE WITH SMILING EYES",
-    "category": "people"
-  },
-  {
     "name": "grimacing",
     "unicode": {"apple":"1F62C", "google":"1F62C", "twitter":"1F62C"},
     "shortcode": "grimacing",
@@ -184,7 +177,7 @@ $.fn.emojiPicker.emojis = [
   },
   {
     "name": "sunglasses",
-    "unicode": {"apple":"", "google":"", "twitter":"1F60E"},
+    "unicode": {"apple":"1F60E", "google":"1F60E", "twitter":"1F60E"},
     "shortcode": "sunglasses",
     "description": "SMILING FACE WITH SUNGLASSES",
     "category": "people"
@@ -819,7 +812,7 @@ $.fn.emojiPicker.emojis = [
   },
   {
     "name": "eyes",
-    "unicode": {"apple":"", "google":"", "twitter":"1F440"},
+    "unicode": {"apple":"1F440", "google":"1F440", "twitter":"1F440"},
     "shortcode": "eyes",
     "description": "EYES",
     "category": "people"
@@ -2214,7 +2207,7 @@ $.fn.emojiPicker.emojis = [
   },
   {
     "name": "new_moon_with_face",
-    "unicode": {"apple":"", "google":"1F31A", "twitter":"1F31A"},
+    "unicode": {"apple":"1F31A", "google":"1F31A", "twitter":"1F31A"},
     "shortcode": "new_moon_with_face",
     "description": "NEW MOON WITH FACE",
     "category": "nature"
@@ -6226,7 +6219,7 @@ $.fn.emojiPicker.emojis = [
   },
   {
     "name": "restroom",
-    "unicode": {"apple":"", "google":"1F6BB", "twitter":"1F6BB"},
+    "unicode": {"apple":"1F6BB", "google":"1F6BB", "twitter":"1F6BB"},
     "shortcode": "restroom",
     "description": "RESTROOM",
     "category": "symbol"
@@ -6254,7 +6247,7 @@ $.fn.emojiPicker.emojis = [
   },
   {
     "name": "koko",
-    "unicode": {"apple":"", "google":"1F201", "twitter":"1F201"},
+    "unicode": {"apple":"1F201", "google":"1F201", "twitter":"1F201"},
     "shortcode": "koko",
     "description": "SQUARED KATAKANA KOKO",
     "category": "symbol"
