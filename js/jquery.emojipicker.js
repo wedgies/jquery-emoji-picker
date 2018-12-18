@@ -582,7 +582,7 @@
     if (window.getSelection()) {
       // Add a space after the pill
       sel = window.getSelection();
-      if (inputArea.hasClass('.contenteditable') && sel.getRangeAt && sel.rangeCount && inputArea[0].hasChildNodes(window.getSelection().anchorNode)) {
+      if (inputArea.hasClass('.editable-message') && sel.getRangeAt && sel.rangeCount && inputArea[0].hasChildNodes(window.getSelection().anchorNode)) {
         range = sel.getRangeAt(0);
         range.deleteContents();
         range.insertNode(text);
