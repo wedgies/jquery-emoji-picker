@@ -11,8 +11,7 @@
       recentCount: 36,
       emojiSet: 'apple',
       container: 'body',
-      button: true,
-      richInput: true,
+      button: true
     };
 
   var MIN_WIDTH = 280,
@@ -37,9 +36,6 @@
     this.element = element;
     this.$el = $(element);
 
-    // This will either be the element or the rich text area.
-    this.$input = this.$el;
-
     this.settings = $.extend( {}, defaults, options );
 
     this.$container = $(this.settings.container);
@@ -61,8 +57,9 @@
     }
 
     var possiblePositions = [ 'left',
-      'right'];
-
+      'right'
+      /*,'top',
+      'bottom'*/];
     if($.inArray(this.settings.position,possiblePositions) == -1) {
       this.settings.position = defaults.position; //current default
     }
@@ -85,31 +82,8 @@
       this.listen();
     },
 
-    listen: function() {
-      // Click event for emoji
-      this.$picker.on('click', 'em', $.proxy(this.emojiClicked, this));
-      // Hover event for emoji
-      this.$picker.on('mouseover', 'em', $.proxy(this.emojiMouseover, this) );
-      this.$picker.on('mouseout', 'em', $.proxy(this.emojiMouseout, this) );
-
-      // Click event for active tab
-      this.$picker.find('nav .tab')
-        .click( $.proxy(this.emojiCategoryClicked, this) )
-        .mouseover( $.proxy(this.emojiTabMouseover, this) )
-        .mouseout( $.proxy(this.emojiMouseout, this) );
-
-      // Scroll event for active tab
-      this.$picker.find('.sections')
-        .scroll( $.proxy(this.emojiScroll, this) );
-
-      this.$picker.click( $.proxy(this.pickerClicked, this) );
-
-      // Key events for search
-      this.$picker.find('section.search input')
-        .on('keyup search', $.proxy(this.searchCharEntered, this) );
-    },
-
     addPickerIcon: function() {
+      // The wrapper is not needed if they have chosen to not use a button
       if (this.settings.button) {
         var elementHeight = this.$el.outerHeight();
         var iconHeight = elementHeight > MAX_ICON_HEIGHT ?
@@ -130,18 +104,19 @@
           .width(iconHeight)
           .addClass(this.settings.iconColor)
           .css('backgroundColor', this.settings.iconBackgroundColor);
-        this.$wrapper.append(this.$icon);
+        this.$wrapper.append( this.$icon );
       }
+
     },
 
-    createPicker: function () {
+    createPicker: function() {
 
       // Show template
-      this.$picker = $(getPickerHTML())
-        .appendTo(this.$container)
+      this.$picker = $( getPickerHTML() )
+        .appendTo( this.$container )
         .width(this.settings.width)
         .height(this.settings.height)
-        .css('z-index', 10000);
+        .css('z-index',10000);
 
       // Picker height
       this.$picker.find('.sections')
@@ -149,12 +124,12 @@
 
       // Tab size based on width
       if (this.settings.width < 240) {
-        this.$picker.find('.emoji').css({'width': '1em', 'height': '1em'});
+        this.$picker.find('.emoji').css({'width':'1em', 'height':'1em'});
       }
 
     },
 
-    destroyPicker: function () {
+    destroyPicker: function() {
       if (this.isMobile) return this;
 
       this.$picker.unbind('mouseover');
@@ -167,7 +142,48 @@
       return this;
     },
 
-    updatePosition: function () {
+    listen: function() {
+      // If the button is being used, wrapper has not been set,
+      //    and will not need a listener
+      if (this.settings.button){
+        // Clicking on the picker icon
+        this.$wrapper.find('.emojiPickerIcon')
+          .click( $.proxy(this.iconClicked, this) );
+      }
+
+      // Click event for emoji
+      this.$picker.on('click', 'em', $.proxy(this.emojiClicked, this));
+
+      // Hover event for emoji
+      this.$picker.on('mouseover', 'em', $.proxy(this.emojiMouseover, this) );
+      this.$picker.on('mouseout',  'em', $.proxy(this.emojiMouseout, this) );
+
+      // Click event for active tab
+      this.$picker.find('nav .tab')
+        .click( $.proxy(this.emojiCategoryClicked, this) )
+        .mouseover( $.proxy(this.emojiTabMouseover, this) )
+        .mouseout( $.proxy(this.emojiMouseout, this) );
+
+      // Scroll event for active tab
+      this.$picker.find('.sections')
+        .scroll( $.proxy(this.emojiScroll, this) );
+
+      this.$picker.click( $.proxy(this.pickerClicked, this) );
+
+      // Key events for search
+      this.$picker.find('section.search input')
+        .on('keyup search', $.proxy(this.searchCharEntered, this) );
+
+      // Shortcode hover
+      this.$picker.find('.shortcode').mouseover(function(e) { e.stopPropagation(); });
+
+      $(document.body).click( $.proxy(this.clickOutside, this) );
+
+      // Resize events forces a reposition, which may or may not actually be required
+      $(window).resize( $.proxy(this.updatePosition, this) );
+    },
+
+    updatePosition: function() {
 
       /*  Process:
           1. Find the nearest positioned element by crawling up the ancestors, record it's offset
@@ -185,7 +201,7 @@
 
       // Step 2
       var elOffset = this.$el.offset();
-      if (this.settings.position == 'right') {
+      if(this.settings.position == 'right'){
         elOffset.left += this.$el.outerWidth() - this.settings.width;
       }
       elOffset.top += this.$el.outerHeight();
@@ -204,22 +220,22 @@
       return this;
     },
 
-    hide: function () {
-      this.$picker.hide(this.settings.fadeTime, 'linear', function () {
+    hide: function() {
+      this.$picker.hide(this.settings.fadeTime, 'linear', function() {
         this.active = false;
         if (this.settings.onHide) {
-          this.settings.onHide(this.$picker, this.settings, this.active);
+          this.settings.onHide( this.$picker, this.settings, this.active );
         }
       }.bind(this));
     },
 
-    show: function () {
+    show: function() {
       this.$el.focus();
       this.updatePosition();
-      this.$picker.show(this.settings.fadeTime, 'linear', function () {
+      this.$picker.show(this.settings.fadeTime, 'linear', function() {
         this.active = true;
         if (this.settings.onShow) {
-          this.settings.onShow(this.$picker, this.settings, this.active);
+          this.settings.onShow( this.$picker, this.settings, this.active );
         }
       }.bind(this));
     },
@@ -228,10 +244,10 @@
      *  EVENTS  *
      ************/
 
-    iconClicked: function () {
-      if (this.$picker.is(':hidden')) {
+    iconClicked : function() {
+      if ( this.$picker.is(':hidden') ) {
         this.show();
-        if (this.$picker.find('.search input').length > 0) {
+        if( this.$picker.find('.search input').length > 0 ) {
           this.$picker.find('.search input').focus();
         }
       } else {
@@ -239,21 +255,22 @@
       }
     },
 
-    emojiClicked: function (e) {
-      var clickTarget = $(e.target);
-      this.$input.focus();
+    emojiClicked: function(e) { var clickTarget = $(e.target);
       var emojiSpan;
       if (clickTarget.is('em')) {
         emojiSpan = clickTarget.find('span');
       } else {
         emojiSpan = clickTarget.parent().find('.emoji');
       }
-
       var emojiShortcode = emojiSpan.attr('class').split('emoji-')[1];
       var emojiUnicode = toUnicode(findEmoji(emojiShortcode).unicode[defaults.emojiSet]);
-      var emoji = angular.element('<span></span>').html(emojiUnicode)[0];
+      var emoji = $(emojiHTML(emojiShortcode, emojiUnicode));
 
-      insertTextAtCursor(emoji, this.$el);
+      if ($(e.target).hasClass('.contenteditable')) {
+        insertTextAtCursor(emoji, this.element);
+      } else {
+        insertAtCaret(this.element, emojiUnicode);
+      }
       addToLocalStorage(emojiShortcode);
       updateRecentlyUsed(emojiShortcode);
 
@@ -264,22 +281,21 @@
       var event = document.createEvent("HTMLEvents");
       event.initEvent("input", true, true);
       this.element.dispatchEvent(event);
-      this.$input.focus();
     },
 
-    emojiMouseover: function (e) {
+    emojiMouseover: function(e) {
       var emojiShortcode = $(e.target).parent().find('.emoji').attr('class').split('emoji-')[1];
       var $shortcode = $(e.target).parents('.emojiPicker').find('.shortcode');
       $shortcode.find('.random').hide();
       $shortcode.find('.info').show().html('<div class="emoji emoji-' + emojiShortcode + '"></div><em>' + emojiShortcode + '</em>');
     },
 
-    emojiMouseout: function (e) {
+    emojiMouseout: function(e) {
       $(e.target).parents('.emojiPicker').find('.shortcode .info').empty().hide();
       $(e.target).parents('.emojiPicker').find('.shortcode .random').show();
     },
 
-    emojiCategoryClicked: function (e) {
+    emojiCategoryClicked: function(e) {
       var section = '';
 
       // Update tab
@@ -308,12 +324,12 @@
       var that = this;
       $('.sections').animate({
         scrollTop: scrollDistance
-      }, 250, function () {
-        that.$picker.find('.sections').on('scroll', $.proxy(that.emojiScroll, that)); // Enable scroll event
+      }, 250, function() {
+        that.$picker.find('.sections').on('scroll', $.proxy(that.emojiScroll, that) ); // Enable scroll event
       });
     },
 
-    emojiTabMouseover: function (e) {
+    emojiTabMouseover: function(e) {
       var section = '';
       if ($(e.target).parent().hasClass('tab')) {
         section = $(e.target).parent().attr('data-tab');
@@ -324,13 +340,9 @@
 
       var categoryTitle = '';
       for (var i = 0; i < categories.length; i++) {
-        if (categories[i].name == section) {
-          categoryTitle = categories[i].label;
-        }
+        if (categories[i].name == section) { categoryTitle = categories[i].label; }
       }
-      if (categoryTitle == '') {
-        categoryTitle = 'Recently Used';
-      }
+      if (categoryTitle == '') { categoryTitle = 'Recently Used'; }
 
       var categoryCount = $('section.' + section).attr('data-count');
       var categoryHtml = '<em class="tabTitle">' + categoryTitle + ' <span class="count">(' + categoryCount + ' emojis)</span></em>';
@@ -340,9 +352,9 @@
       $shortcode.find('.info').show().html(categoryHtml);
     },
 
-    emojiScroll: function (e) {
+    emojiScroll: function(e) {
       var sections = $('section');
-      $.each(sections, function (key, value) {
+      $.each(sections, function(key, value) {
         var section = sections[key];
         var offsetFromTop = $(section).position().top;
 
@@ -358,12 +370,17 @@
       });
     },
 
-    clickOutside: function (e) {
-      if (this.active) {
+    pickerClicked: function(e) {
+      e.stopPropagation();
+    },
+
+    clickOutside: function(e) {
+      if ( this.active ) {
         this.hide();
       }
     },
-    searchCharEntered: function (e) {
+
+    searchCharEntered: function(e) {
       var searchTerm = $(e.target).val();
       var searchEmojis = $(e.target).parents('.sections').find('section.search');
       var searchEmojiWrap = searchEmojis.find('.wrap');
@@ -394,9 +411,8 @@
         sections.show();
         searchEmojiWrap.hide();
       }
-    },
+    }
   });
-
 
   $.fn[ pluginName ] = function ( options ) {
 
@@ -426,54 +442,6 @@
   };
 
   /* ---------------------------------------------------------------------- */
-
-  /*
-   * getStyleObject Plugin for jQuery JavaScript Library
-   * From: http://upshots.org/?p=112
-   */
-  $.fn.getStyleObject = function(){
-    var dom = this.get(0);
-    var style;
-    var returns = {};
-    if(window.getComputedStyle){
-      var camelize = function(a,b){
-        return b.toUpperCase();
-      };
-      style = window.getComputedStyle(dom, null);
-      for(var i = 0, l = style.length; i < l; i++){
-        var prop = style[i];
-        var camel = prop.replace(/\-([a-z])/g, camelize);
-        var val = style.getPropertyValue(prop);
-        returns[camel] = val;
-      };
-      return returns;
-    };
-    if(style = dom.currentStyle){
-      for(var prop in style){
-        returns[prop] = style[prop];
-      };
-      return returns;
-    };
-    return this.css();
-  }
-
-  $.fn.copyCSS = function(source, attributes){
-    var styles = $(source).getStyleObject();
-    var copiedStyles = {};
-    for (var i in attributes) {
-      var attr = attributes[i];
-      if ( attr instanceof RegExp ) {
-        for (prop in styles) {
-          if (prop.match(attr))
-            copiedStyles[ prop ] = styles[ prop ];
-        }
-      } else {
-        if (attr in styles)
-          copiedStyles[ attr ] = styles[ attr ];
-      }
-    };
-    this.css(copiedStyles);
-  }
 
   function getPickerHTML() {
     var nodes = [];
@@ -521,10 +489,12 @@
     // Recent Section, if localstorage support
     if (localStorageSupport) {
       var recentlyUsedEmojis = [];
+      var recentlyUsedCount = 0;
       var displayRecentlyUsed = ' style="display:none;"';
 
       if (localStorage.emojis) {
         recentlyUsedEmojis = JSON.parse(localStorage.emojis);
+        recentlyUsedCount = recentlyUsedEmojis.length;
         displayRecentlyUsed = ' style="display:block;"';
       }
 
@@ -569,37 +539,32 @@
   function findEmoji(emojiShortcode) {
     var emojis = $.fn.emojiPicker.emojis;
     for (var i = 0; i < emojis.length; i++) {
-      if (emojis[i].shortcode === emojiShortcode) {
+      if (emojis[i].shortcode == emojiShortcode) {
         return emojis[i];
       }
     }
   }
-
-  // For contenteditable
+// For contenteditable
   function insertTextAtCursor(text, inputArea) {
     var sel, range;
 
     if (window.getSelection()) {
-      // Add a space after the pill
       sel = window.getSelection();
-      if (inputArea.hasClass('.editable-message') && sel.getRangeAt && sel.rangeCount && inputArea[0].hasChildNodes(window.getSelection().anchorNode)) {
+      if (inputArea.hasClass('.contenteditable') && sel.getRangeAt && sel.rangeCount && inputArea[0].hasChildNodes(window.getSelection().anchorNode)) {
         range = sel.getRangeAt(0);
         range.deleteContents();
         range.insertNode(text);
       } else {
-        // We are not writting
-//         console.log(text);
         inputArea[0].appendChild(text).after('');
       }
       sel.removeAllRanges();
     }
   }
-  // For text area
   function insertAtCaret(inputField, myValue) {
-    if (window.selection) {
+    if (document.selection) {
       //For browsers like Internet Explorer
       inputField.focus();
-      var sel = window.getSelection();
+      var sel = document.selection.createRange();
       sel.text = myValue;
       inputField.focus();
     }
@@ -615,8 +580,12 @@
       inputField.scrollTop = scrollTop;
     } else {
       inputField.focus();
-      inputField.value
+      inputField.value += myValue;
     }
+  }
+
+  function emojiHTML(shortcode,unicode) {
+    return '<span class="emoji emoji-' + shortcode + '">' + unicode + '</span>';
   }
 
   function toUnicode(code) {
@@ -685,7 +654,8 @@
         chars.push(String.fromCharCode.apply(null, units));
       }
       return chars.join("");
-    }
+    };
   }
 
 })(jQuery);
+
